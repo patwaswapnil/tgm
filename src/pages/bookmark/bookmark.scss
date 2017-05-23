@@ -1,0 +1,158 @@
+page-bookmark {
+    .entity-wrapper ion-item {
+        padding-left: 8px !important;
+        background: #eeeeee !important;
+        margin-bottom: -1px !important;
+        border-bottom: 1px solid #ddd !important;
+    }
+    .entity-wrapper ion-item .item-inner {
+        padding: 0px !important;
+    }
+    .entity-wrapper .request-list .entity-title {
+        font-size: 16px;
+    }
+    .entity-wrapper ion-label {
+        margin: 0px !important;
+    }
+    .entity-wrapper ion-item img {
+        height: 100px;
+        width: 100px;
+        margin-bottom: -4px;
+    }
+    .entity-wrapper ion-item h2 {
+        font-size: 18px !important;
+    }
+    .entity-wrapper ion-item h4 {
+        font-size: 14px !important;
+        color: #555 !important;
+        font-weight: normal !important;
+        margin-top: 4px !important;
+    }
+    .entity-wrapper ion-item ion-icon {
+        // font-size: 12px !important;
+        // border: 1px solid #555;
+        // border-radius: 50%;
+        // padding: 4px;
+        // margin-right: 1px !important;
+        // margin-top: 6px !important;
+        // margin-bottom: 5px !important;
+    }
+    .count {
+        font-size: 12px;
+    }
+    ion-card ion-card-content {
+        border-bottom: 1px solid #efefef !important;
+    }
+    .category-icon img {
+        width: 56px !important;
+    }
+    .gossips-wrapper ion-card {
+        margin: 10px 0px 10px 0px !important;
+        width: 100% !important;
+    }
+    .gossips-wrapper .border-top {
+        border-top: 1px solid #efefef;
+    }
+    .users-wrapper ion-card {
+        margin: 10px 8px 10px 8px !important;
+        width: calc(100% - 16px) !important;
+    }
+    .users-wrapper .entity-status {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        text-transform: uppercase;
+        font-size: 11px;
+        padding: 2px 5px 0px 5px;
+        font-weight: 500;
+    }
+    .users-wrapper .entity-status button {
+        font-size: 11px !important;
+    }
+    .users-wrapper .entity-title {
+        font-size: 18px !important;
+    }
+    .users-wrapper img {
+        max-height: 90px;
+    }
+    .users-wrapper [col-8] {
+        flex: calc(100% - 80px) !important;
+        width: calc(100% - 80px) !important;
+        max-width: calc(100% - 80px) !important;
+    }
+    .sq-col {
+        max-height: 80px !important;
+        max-width: 80px !important;
+    }
+    .emoji {
+        height: 17px !important;
+        width: 17px !important;
+        display: inline;
+    }
+    // trending card
+    .trending-card .tending-content {
+        position: relative;
+        text-align: center;
+        background-repeat: no-repeat;
+        height: 200px;
+        background-size: cover;
+        margin: 0px !important;
+    }
+    .card-title {
+        position: absolute;
+        bottom: 15%;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        font-size: 16px;
+        text-align: left;
+        padding-left: 8px;
+    }
+    .card-subtitle {
+        font-size: 1.0em;
+        position: absolute;
+        bottom: 5%;
+        width: 100%;
+        color: #fff;
+        text-align: left;
+        padding-left: 8px;
+        font-style: italic;
+    }
+    .entity-icon img {
+        height: 17px !important;
+        width: 17px;
+        display: inline;
+        vertical-align: middle;
+        margin-right: 5px !important;
+    }
+    .entity-icon button {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 30px;
+    }
+    .entity-icon {
+        text-align: center !important;
+    }
+    .border-right {
+        border-right: 1px solid #dedcde;
+    }
+    .trending-card .tending-content {
+        padding: 2px !important;
+    }
+    .trending-card .row {
+        padding: 1px !important;
+    }
+    .trending-card ion-card {
+        margin: 0px 0px 0px 0px !important;
+    }
+    .trending-card ion-col[col-6] {
+        padding: 3px !important;
+    }
+    ion-card:first-child {
+        margin-top: 0px !important;
+    }
+    ion-card {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,29 @@
+page-add-gossip {
+    .icon-wrapper img {
+        width: 35px !important;
+    }
+    .text-area {
+        width: 100% !important;
+        resize: none;
+        border-color: #eee;
+        font-size: 14px;
+        height: 170px;
+    }
+    .emo-img img {
+    width: 40px;
+    vertical-align: middle;
+    display: inline-block;
+    }
+    .emo-img input {  
+    vertical-align: middle;
+    display: inline-block;
+    }
+    .news-display {
+    background: #eee;
+    padding:  5px;
+    white-space: normal;
+    font-size: 13px;
+}
+
+
+}

@@ -1,0 +1,121 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Add Entity</ion-title>
+    </ion-navbar> 
+</ion-header> 
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-segment [(ngModel)]="segment" color="whitec">
+            <ion-segment-button value="gossip">
+                Add Gossip
+            </ion-segment-button>
+            <ion-segment-button value="entity">
+                Add Entity
+            </ion-segment-button>
+             
+        </ion-segment>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list class="trending-card" *ngIf="segment == 'entity'">
+        <ion-row>
+            <ion-col col-6 col-md-4>
+                <ion-card>
+                    <div class="tending-content" style="background-image: linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url('assets/img/deepika.jpg')">
+                        <div class="card-title">Deepika Padukone</div>
+                        <div class="card-subtitle">Celebrity</div>
+                    </div>
+                    <ion-row>
+                        <ion-col class="entity-icon">
+                            <div class="entity-status approved">approved</div>
+
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+            </ion-col>
+
+            <ion-col col-6 col-md-4>
+                <ion-card>
+                    <div class="tending-content" style="background-image: linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url('assets/img/Sonakshi.jpg')">
+                        <div class="card-title">Sonakshi Sinha</div>
+                        <div class="card-subtitle">Bollywood</div>
+                    </div>
+                    <ion-row>
+                        <ion-col class="entity-icon">
+                            <div class="entity-status pending">Pending</div>
+
+                        </ion-col>
+                    </ion-row>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+
+
+    </ion-list>
+ <div class="add-gossip"  *ngIf="segment == 'gossip'">
+        <form #gossipForm="ngForm" novalidate>
+            <ion-card class="card-items ion-card-full">
+                <ion-card-header color="primary">
+                    Gossip Information
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-list>
+                            <ion-searchbar (click)="searchEntity()" placeholder="Search Entities"></ion-searchbar>
+  
+  <ion-item *ngIf="selectedEntity.id" style="margin-left: -6px">
+    <ion-avatar item-left >
+      <img [src]="selectedEntity.img">
+    </ion-avatar>
+    <h2>{{selectedEntity.title}}</h2>
+    <p>{{selectedEntity.category[0].name}}</p>
+  </ion-item>
+  
+  <ion-item  style="margin-left: -17px">
+     <ion-grid>
+         <ion-row class="emo-img">
+             <ion-col >
+                 <input type="radio" id="pos" [(ngModel)]="addGossip.type" name="type" value="0">
+                <label for="pos"> <img src="assets/img/loved.png"   alt=""> <span class="type-text">Positive Gossip</span></label>
+             </ion-col>
+             <ion-col >
+                 <input type="radio" id="neg" [(ngModel)]="addGossip.type" name="type" value="1">                 
+                <label for="neg">
+                    <img src="assets/img/hated.png"  alt=""> <span class="type-text">Negative Gossip</span>
+                    </label>                  
+             </ion-col>
+         </ion-row>
+     </ion-grid>
+  </ion-item>
+ 
+ 
+                         <ion-item class="pl8">
+                            <ion-label stacked>Gossip as</ion-label>
+                            <ion-select name="poastedAs" #poastedAs="ngModel" [(ngModel)]="addGossip.posted_as">
+                                <ion-option value="anonymous">Anonymous</ion-option>
+                                <ion-option [value]="user.ID">{{user.display_name}}</ion-option>
+                                <ion-option [value]="item.id" *ngFor="let item of myEntity">{{item.title}}</ion-option> 
+                            </ion-select>
+                        </ion-item>
+                        <ion-item class="pl8">
+                            <!--<ion-label stacked>Description*</ion-label>-->
+                            <textarea class="text-area" rows="6" placeholder="Gossip Content" cols="" [(ngModel)]="addGossip.name" name="gossip" #gossip="ngModel" required></textarea>
+                            <!--<ion-input type="text" [(ngModel)]="addGossip.name" name="gossip" #gossip="ngModel" required></ion-input>-->
+                        </ion-item>
+                        
+                    </ion-list>
+                    <div class="submit-btn">
+                        <br>
+                        <button [disabled]="!(addGossip.type && addGossip.name && addGossip.id)" ion-button  (click)="insertGossip(addGossip)"color="primary" type="submit" block>Post</button>
+                    </div>
+
+                </ion-card-content>
+            </ion-card>
+
+        </form>
+    </div>
+    <ion-fab bottom right *ngIf="segment == 'entity'">
+        <button ion-fab color="primary" (click)="addEntity()">
+      <ion-icon name="add"></ion-icon>
+   </button>
+    </ion-fab>
+</ion-content>

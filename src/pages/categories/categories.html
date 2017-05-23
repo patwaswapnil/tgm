@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>Categories</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <div class="category">
+        <ion-row>
+            <ion-col col-6 col-md-4 *ngFor="let category of categories">
+                <ion-card class="m0" (click)="gossips(category)">
+                    <div class="category-content" [style.background-image]="getBackground(category.attachment)">
+                        <div class="card-title">{{category.name}}</div>
+                    </div>
+                    <div class="entity-count border-right">
+                        {{category.count}} {{category.count > 1 ? 'Entities' : 'Entity'}}
+                    </div>
+
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

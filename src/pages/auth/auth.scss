@@ -1,0 +1,47 @@
+    page-auth {
+        .auth-bg {
+            background-image: url('../assets/img/auth-bg.jpg');
+            -webkit-animation: backgroundScroll 20s linear infinite;
+            animation: backgroundScroll 20s linear infinite;
+            background-size: cover;
+        }
+        .scroll-content {
+    background: none !important;
+}
+        @-webkit-keyframes backgroundScroll {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -400px 0;
+            }
+        }
+        @keyframes backgroundScroll {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: -400px 0;
+            }
+        }
+        .btn-wrapper {
+            position: absolute;
+            width: 100%;
+            bottom: 15px;
+        }
+        .fb-login,
+        .fb-login:hover {
+            background: #3b5998 !important;
+        }
+        .google-login,
+        .google-login:hover {
+            background: #db3236 !important;
+        }
+        .login-btn {
+            border-radius: 2px;
+            text-transform: inherit;
+        }
+        .logo {
+            margin-bottom: 130px;
+        }
+    }

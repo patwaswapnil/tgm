@@ -1,0 +1,82 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <button ion-button icon-only menuToggle="false" color="white" (click)="dismiss()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+        <ion-title>
+            Comments
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-card class="home-listing"> 
+              <ion-item class="user-block" *ngIf="gossip.is_anonymous != '1'">
+                <ion-avatar item-left  (click)="userProfile(gossip.author.ID)">
+                    <img [src]="gossip.author.img">
+                </ion-avatar>
+                <h2  (click)="userProfile(gossip.author.ID)">{{gossip.author.display_name}}</h2>
+                <!--<p> 04 April 2017 </p> -->
+            </ion-item> 
+              <ion-item class="user-block" *ngIf="gossip.is_anonymous == '1'">
+                <ion-avatar item-left>
+                    <img src="assets/img/anonymous.jpg">
+                </ion-avatar>
+                <h2>Anonymous</h2>
+                <!--<p> 04 April 2017 </p> -->
+            </ion-item> 
+           <ion-item class="border-top">
+                <ion-avatar item-left (click)="entityProfile(gossip.gossip_about.ID)">
+                    <img [src]="gossip.gossip_about.img">
+                </ion-avatar>
+                <h2>{{gossip.gossip_about.entity}}</h2>
+                <p>{{gossip.category[0].name}}</p>
+                <div class="category-icon">
+                    <img src="assets/img/hated.png" *ngIf="gossip.feedback_type == 1" alt="" class="bookmark-btn">
+                    <img src="assets/img/loved.png" *ngIf="gossip.feedback_type == 0" alt="" class="bookmark-btn">
+                </div>
+            </ion-item>
+            <ion-card-content>
+                <p>
+                    {{gossip.title}}
+                </p>
+                <img *ngIf="gossip.img" [src]="gossip.img" (click)="displayImage(gossip.img,gossip.title)">
+                <div class="news-display" *ngIf="gossip.newsDetails">
+                      <span class="bold" style="margin-left: 0px">Source - </span> {{gossip.newsDetails.title}}
+                 </div>
+                <p text-right class="gossip-id">Gossip #{{gossip.id}}</p>
+            </ion-card-content> 
+            <ion-list class="comments">
+                <ion-item class="border-top">
+                    <ion-row>
+                        <ion-col col-10 class="p0">
+                            <textarea rows="2" class="w100 textarea" [(ngModel)]="commentContent" placeholder="Write comment"></textarea>
+                        </ion-col>
+                        <ion-col col-2 class="send-btn-wrap">
+                            <div> 
+                                <button style="background-color: #ae00ff !important;" class="send-btn" [disabled]="!commentContent" (click)="insertComment(commentContent)" ion-button icon-only color="primary">
+                             <ion-icon name="send"></ion-icon>
+                         </button>
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-item>
+                <ion-list-header class="mb0 pl8">
+                    Recent Comments
+                </ion-list-header>
+                <ion-item *ngFor="let comment of comments">
+                    <ion-avatar item-left (click)="userProfile(comment.author.ID)">
+                        <img [src]="comment.author.img" class="user-radius">
+                    </ion-avatar>
+                    <h2 (click)="userProfile(comment.author.ID)">{{comment.author.display_name}}</h2>
+                    <h4 class="comment-date">{{comment.comment_date_gmt | date:'medium'}}</h4> 
+                    <p class="comment"> 
+                        {{comment.comment_content}}
+                    </p> 
+                </ion-item>
+                
+
+            </ion-list>
+        </ion-card>
+    </ion-list>
+</ion-content>

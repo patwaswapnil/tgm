@@ -1,0 +1,95 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>{{pageTitle}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <div class="category select-category" *ngIf="!isCategorySelected">
+        <ion-row>
+            <ion-col col-6 col-md-4 (click)="categorySelect()">
+                <ion-card class="m0">
+                    <div class="category-content" style="background-image: linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url('assets/img/electronics.jpg')">
+                        <div class="card-title">Electronics</div>
+                    </div>
+                </ion-card>
+            </ion-col>
+
+            <ion-col col-6 col-md-4 (click)="categorySelect()">
+                <ion-card class="m0">
+                    <div class="category-content" style="background-image: linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url('assets/img/celeb.jpg')">
+                        <div class="card-title">Celebrities</div>
+                    </div>
+
+                </ion-card>
+            </ion-col> 
+            <ion-col col-6 col-md-4 (click)="categorySelect()">
+                <ion-card class="m0">
+                    <div class="category-content" style="background-image: linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url('assets/img/restaurant.jpg')">
+                        <div class="card-title">Restaurant</div>
+                    </div>
+
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </div>
+    <div class="" *ngIf="isCategorySelected">
+        <div class="entity-fields">
+            <div class="profile-wrapper">
+                <div class="profile-data">
+                    <h1 color="whitec" ion-text>{{entityDetail.name || 'Name Here'}}</h1>
+                    <h4 color="whitec" ion-text class="mt0">{{entityDetail.subtitle || 'Subtitle Here'}} (Celebrities)</h4>
+                </div>
+                <img src="assets/img/image.png" class="profile-img" alt="">
+            </div>
+        </div>
+        <form #entityDetailForm="ngForm" novalidate>
+            <ion-card class="card-items ion-card-full">
+                <ion-card-header color="primary">
+                    Information
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-list>
+                        <ion-item class="pl8">
+                            <ion-label stacked>Name*</ion-label>
+                            <ion-input type="text" [(ngModel)]="entityDetail.name" name="firstname" #firstName="ngModel" required></ion-input>
+                        </ion-item>
+                        <p [hidden]="firstName.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>
+                            Name is required
+                        </p>
+                        <ion-item class="pl8">
+                            <ion-label stacked>Subtitles*</ion-label>
+                            <ion-input type="text" [(ngModel)]="entityDetail.subtitle" name="lastname" #lastName="ngModel" required></ion-input>
+                        </ion-item>
+                        <p [hidden]="lastName.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>
+                            Subtitles is required
+                        </p>
+                        <ion-item class="pl8">
+                            <ion-label stacked>Contact Number*</ion-label>
+                            <ion-input type="number" [(ngModel)]="entityDetail.contact" name="contact" #contact="ngModel" required></ion-input>
+                        </ion-item>
+                        <p [hidden]="contact.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>
+                            Contact Number is required
+                        </p>
+                        <ion-item class="pl8">
+                            <ion-label stacked>Own this entity?</ion-label>
+                            <ion-select name="owner" #owner="ngModel" [(ngModel)]="entityDetail.owner">
+                                <ion-option value="yes">Yes</ion-option>
+                                <ion-option value="no">No</ion-option>
+                            </ion-select>
+                        </ion-item>
+
+                    </ion-list>
+                    <div class="submit-btn">
+                        <br>
+                        <button ion-button color="primary" type="submit" block>Submit Request</button>
+                    </div>
+
+                </ion-card-content>
+            </ion-card>
+
+        </form>
+    </div>
+</ion-content>

@@ -1,0 +1,86 @@
+page-comments {
+    .p0 {
+        padding: 0 !important;
+    }
+    ion-card {
+        margin: 0px 0px 0px 0px !important;
+        width: 100% !important;
+    }
+    ion-card ion-card-content {
+        border-bottom: 1px solid #efefef;
+    }
+    .border-top {
+        border-top: 1px solid #efefef;
+    }
+    .home-listing ion-item {
+        padding-left: 8px !important;
+    }
+    .home-listing .item-inner {
+        padding-right: 8px !important;
+    }
+    .home-listing ion-card-content {
+        padding: 8px !important;
+    }
+    .home-listing ion-grid {
+        padding: 3px 0px !important;
+    }
+    .home-listing ion-label {
+        margin: 8px 8px 8px 0 !important;
+    }
+    .border-top {
+        border-top: 1px solid #efefef;
+    }
+    .seprator {
+        padding: 13px 16px 13px 16px;
+    }
+    ion-content .scroll-content {
+        background: #dedcde;
+    }
+    // POST styles
+    .comments ion-item {
+        align-items: flex-start;
+    }
+    .comments p {
+        white-space: normal !important;
+    }
+    .comments-like {
+        margin-left: -13px !important;
+    }
+    .comments ion-item .item-inner {
+        border-bottom: 1px solid #f3f3f3 !important;
+    }
+    .list-header-md {
+        border: 0px
+    }
+    .textarea {
+        font-size: 13px;
+        height: 44px;
+        margin-top: 5px;
+    }
+    .send-btn-wrap {
+        text-align: right;
+        padding-right: 0px;
+    }
+    .comment-date {
+        font-size: 12px !important;
+        margin-bottom: 10px !important;
+    }
+    .comment {
+        color: #000;
+        font-size: 15px;
+    }
+     h2 {
+        font-size: 14px !important;
+    }
+    .send-btn {
+        height: 42px;
+    }
+     .news-display {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 5px 7px;
+    margin-top: 10px;
+    background: #fdfdfd;
+    margin-bottom: 4px;
+}
+}

@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-searchbar color="primary" [(ngModel)]="queryText" (ionInput)="searchEntity()" placeholder="Search " showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">
+        </ion-searchbar>
+        <ion-spinner class="filterSpinner" *ngIf="loadingData" color="primary" icon="android"></ion-spinner>
+    </ion-toolbar>
+</ion-header>
+<!--<ion-searchbar color="primary" [(ngModel)]="queryText" (ionInput)="searchUser()" placeholder="Search customer" showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true" (ionClear)="clearUsers()">
+        </ion-searchbar>-->
+<ion-content class="outer-content">
+    <div class="" *ngIf="param != 'gossip'">
+        <ion-select name="param" class="full-width-select" [(ngModel)]="type">
+            <!--<ion-option value="gossip">Gossip</ion-option>-->
+            <ion-option value="gossip">Gossip</ion-option> 
+            <ion-option value="entity">Entity</ion-option>
+            <ion-option value="category">Category</ion-option>
+        </ion-select>
+    </div>
+    <ion-list>
+  <ion-item (click)="entitySelected(result)" *ngFor="let result of results" >
+    <ion-avatar item-left >
+      <img [src]="result.img">
+    </ion-avatar>
+    <h2>{{result.title}}</h2>
+    <p>{{result.category[0].name}}</p>
+  </ion-item>
+        <div *ngIf="showNotFound" class="listing-done" text-center padding>No result found.</div>
+</ion-list>
+    <!--<ion-list no-lines>
+        <button ion-item *ngFor="let user of users" >
+    <span class="user-name capitalize">{{user.first_name}} {{user.last_name}}</span> - <span class="user-mobile">{{user.mobile}}</span>
+    <ion-icon name="ios-person-outline" item-left></ion-icon> 
+  </button>
+    </ion-list>-->
+</ion-content>

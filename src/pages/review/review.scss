@@ -1,0 +1,39 @@
+page-review {
+    .review ion-item {
+        background: transparent;
+        align-items: flex-start;
+        padding-left: 8px;
+        border-bottom: 1px solid #333 !important;
+    }
+    .review p {
+        white-space: normal !important;
+        color: #333;
+    }
+    .item-inner {
+        border-bottom: 0px solid #333 !important;
+    }
+    ion-avatar {
+        margin-top: 15px !important;
+        padding-left: 8px !important;
+    }
+    ion-note {
+        font-size: 12px;
+    }
+    .button-group * {
+        color: #222
+    }
+    ion-item,
+    ion-card {
+        background: rgba(255, 255, 255, 0.19) !important;
+    }
+    ion-card:first-child {
+        margin-top: 0px !important;
+    }
+    .bg-gossip {
+            background-image: url(assets/img/positive.jpg);
+    min-height: 100%;
+    overflow: auto;
+    height: 100% !important;
+    margin-bottom: 0px;
+    }
+}

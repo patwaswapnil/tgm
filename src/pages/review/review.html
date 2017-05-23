@@ -1,0 +1,24 @@
+<ion-header>
+
+    <ion-toolbar color="primary">
+        <button ion-button icon-only menuToggle="false" left color="white" (click)="dismiss()">
+      <ion-icon name="arrow-back"></ion-icon> 
+        </button>
+        <ion-title>
+            Gossips 
+        </ion-title>
+
+    </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+    <ion-list class="comments bg-gossip"  [style.backgroundImage]="'url(' + bgImage + ')'">  
+ <gossip-card [gossips]="entityGossips"></gossip-card>
+    </ion-list>
+    <ion-fab bottom right>
+        <button ion-fab color="primary" (click)="addGossips()">
+      <ion-icon name="add"></ion-icon>
+   </button>
+    </ion-fab>
+</ion-content>
