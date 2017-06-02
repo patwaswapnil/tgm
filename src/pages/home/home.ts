@@ -8,7 +8,7 @@ import { CommentsPage } from '../comments/comments';
 
 import { SharedProvider } from '../../providers/shared.provider';
 import { MongerApi } from '../../providers/api.provider';
-import { GossipCardComponent } from '../components/gossip-card/gossip-card';
+import { GossipCardComponent } from '../../components/gossip-card/gossip-card';
 
 
 @Component({
