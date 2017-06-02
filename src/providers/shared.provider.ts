@@ -3,12 +3,13 @@ import { LoadingController, ToastController, AlertController } from 'ionic-angul
 import { Storage } from '@ionic/storage';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
+import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @Injectable()
 export class SharedProvider {
   private _loading;
   private _toastMsg;
-  constructor(private _loadingCtrl: LoadingController, private _toastCtrl: ToastController, private _storage: Storage, private _alert: AlertController, private _socialSharing: SocialSharing, public _photoViewer: PhotoViewer) { }
+  constructor(private camera: Camera, private _loadingCtrl: LoadingController, private _toastCtrl: ToastController, private _storage: Storage, private _alert: AlertController, private _socialSharing: SocialSharing, public _photoViewer: PhotoViewer) { }
   //Loader Start 
   public Loader = {
     show: (template?) => {
@@ -46,8 +47,8 @@ export class SharedProvider {
     get: (key: string) => {
       return this._storage.get(key);
     },
-    set: (key: string, value: string) => {
-      return this._storage.set(key, value);
+    set: (key: string, value) => {
+      return this._storage.set(key, JSON.stringify(value));
     },
     remove: (key: string) => {
       return this._storage.remove(key);
@@ -101,6 +102,27 @@ export class SharedProvider {
   public imageViewer = {
     show:  (url, title, share?) => {
        this._photoViewer.show(url, title, {share: share || true}); 
+    }
+  }
+  public uploadMedia = {
+    image: (source?) => {
+      let sourceType
+      if (source == 1) {
+        sourceType = this.camera.PictureSourceType.CAMERA;
+      }  else {
+        sourceType = this.camera.PictureSourceType.PHOTOLIBRARY;
+      }
+      const options: CameraOptions = {
+      quality: 20,
+      targetWidth: 600,
+      targetHeight: 600,
+      destinationType: this.camera.DestinationType.DATA_URL,
+      encodingType: this.camera.EncodingType.PNG,
+      mediaType: this.camera.MediaType.PICTURE,
+      sourceType: sourceType,
+      allowEdit: true
+    } 
+    return this.camera.getPicture(options);
     }
   }
 

@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar color="primary">
-        <ion-segment [(ngModel)]="segment" color="whitec" (ionChange)="tabChange(segment)">
+        <ion-segment [(ngModel)]="segment" color="whitec" (ionChange)="tabChange(segment, false)">
             <ion-segment-button value="trending">
                 Trending
             </ion-segment-button>
@@ -17,39 +17,11 @@
     </ion-toolbar>
 </ion-header>
 <ion-content (ionScroll)="update()"> 
-    <gossip-card *ngIf="segment == 'topHated'" [gossips]="hatedGossips"></gossip-card>
-    <gossip-card *ngIf="segment == 'topRated'" [gossips]="lovedGossips"></gossip-card>
-    <gossip-card *ngIf="segment == 'latest'" [gossips]="latestGossips"></gossip-card>
-     
-    <ion-list *ngIf="segment == 'trending'" class="trending-card">
-        <ion-row>
-            <ion-col col-6 col-md-4 *ngFor="let trendingEntity of trendingEntities">
-                <ion-card>
-                    <div>
-                        <div class="tending-content" (click)="entityProfile(trendingEntity.id)" [style.background-image]="getBackground(trendingEntity.img)">
-                            <div class="card-title">{{trendingEntity.title}}</div>
-                            <div class="card-subtitle">{{trendingEntity.category[0].name}}</div>
-                        </div>
-                    </div>
-                    <ion-row>
-                        <ion-col class="entity-icon border-right">
-                            <button color="dark" ion-button clear small (click)="entityProfile(trendingEntity.id, 1)"> 
-                            <img src="assets/img/loved.png" alt=""> {{trendingEntity.total_positive_gossips}}
-                             </button>
-                        </ion-col>
-                        <ion-col class="entity-icon">
-                            <button color="dark" ion-button clear small (click)="entityProfile(trendingEntity.id, 2)">  
-                            <img src="assets/img/hated.png" alt=""> {{trendingEntity.total_negative_gossips}}
-                             </button>
-                        </ion-col>
-                    </ion-row>
-                </ion-card>
-            </ion-col>
-
-        </ion-row>
-
-
-    </ion-list>
+    <gossip-card *ngIf="segment == 'topHated'" (dataUpdated)="tabChange(segment, true)" [gossips]="hatedGossips"></gossip-card>
+    <gossip-card *ngIf="segment == 'topRated'" (dataUpdated)="tabChange(segment, true)" [gossips]="lovedGossips"></gossip-card>
+    <gossip-card *ngIf="segment == 'latest'" (dataUpdated)="tabChange(segment, true)" [gossips]="latestGossips"></gossip-card>
+    <entity-card *ngIf="segment == 'trending'" (dataUpdated)="tabChange(segment, true)" [entities]="trendingEntities"></entity-card> 
+    
     <ion-fab bottom right *ngIf="showSearch" [@myAnimation]>
         <button ion-fab color="primary" (click)="search()">
       <ion-icon name="search"></ion-icon>

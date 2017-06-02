@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, ViewController, ModalController } from 'ionic-angular'; 
 import { SharedProvider } from '../../providers/shared.provider'
-import { MongerApi } from '../../providers/api.provider'
-import { userId } from '../../providers/config';
+import { MongerApi } from '../../providers/api.provider';
 import { AddGossipPage } from '../add-gossip/add-gossip';
 @Component({
   selector: 'page-review',

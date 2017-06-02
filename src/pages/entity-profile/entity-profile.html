@@ -14,7 +14,7 @@
         <div class="profile-wrapper">
             <div class="profile-data">
                 <h1 color="whitec" ion-text>{{entityDetail.title}}</h1>
-                <h4 color="whitec" ion-text class="mt0">{{entityDetail.category[0].name}}</h4>
+                <h4 color="whitec" ion-text class="mt0">{{ entityDetail.subtitle || entityDetail.category[0].name}}</h4>
             </div>
             <img [src]="entityDetail.img || 'assets/img/image.png'" class="profile-img" alt="">
             <div>   

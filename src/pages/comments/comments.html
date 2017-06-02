@@ -16,14 +16,14 @@
                     <img [src]="gossip.author.img">
                 </ion-avatar>
                 <h2  (click)="userProfile(gossip.author.ID)">{{gossip.author.display_name}}</h2>
-                <!--<p> 04 April 2017 </p> -->
+                <p> {{gossip.created_at}} </p> 
             </ion-item> 
               <ion-item class="user-block" *ngIf="gossip.is_anonymous == '1'">
                 <ion-avatar item-left>
                     <img src="assets/img/anonymous.jpg">
                 </ion-avatar>
                 <h2>Anonymous</h2>
-                <!--<p> 04 April 2017 </p> -->
+                <p> {{gossip.created_at}} </p> 
             </ion-item> 
            <ion-item class="border-top">
                 <ion-avatar item-left (click)="entityProfile(gossip.gossip_about.ID)">
@@ -38,7 +38,7 @@
             </ion-item>
             <ion-card-content>
                 <p>
-                    {{gossip.title}}
+                    {{gossip.content}}
                 </p>
                 <img *ngIf="gossip.img" [src]="gossip.img" (click)="displayImage(gossip.img,gossip.title)">
                 <div class="news-display" *ngIf="gossip.newsDetails">
@@ -74,7 +74,7 @@
                         {{comment.comment_content}}
                     </p> 
                 </ion-item>
-                
+                <div  center text-center class="no-data" *ngIf="showNotFound">No comments found.</div>
 
             </ion-list>
         </ion-card>

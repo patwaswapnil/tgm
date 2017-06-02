@@ -9,14 +9,14 @@
         </ion-searchbar>-->
 <ion-content class="outer-content">
     <div class="" *ngIf="param != 'gossip'">
-        <ion-select name="param" class="full-width-select" [(ngModel)]="type">
+        <ion-select interface="popover" name="param" (ionChange)="selectChange()" class="full-width-select" [(ngModel)]="type">
             <!--<ion-option value="gossip">Gossip</ion-option>-->
             <ion-option value="gossip">Gossip</ion-option> 
             <ion-option value="entity">Entity</ion-option>
-            <ion-option value="category">Category</ion-option>
+            <ion-option value="categories">Category</ion-option>
         </ion-select>
     </div>
-    <ion-list>
+    <ion-list *ngIf="type == 'entity'">
   <ion-item (click)="entitySelected(result)" *ngFor="let result of results" >
     <ion-avatar item-left >
       <img [src]="result.img">
@@ -24,8 +24,47 @@
     <h2>{{result.title}}</h2>
     <p>{{result.category[0].name}}</p>
   </ion-item>
-        <div *ngIf="showNotFound" class="listing-done" text-center padding>No result found.</div>
 </ion-list>
+<ion-list *ngIf="type == 'gossip'">
+      <ion-card class="home-listing" (click)="gossipSelected(gossip.id)" *ngFor="let gossip of results">
+            <ion-item class="border-top">
+                <ion-avatar item-left>
+                    <img [src]="gossip.gossip_about.img">
+                </ion-avatar>
+                <h2>{{gossip.gossip_about.entity}}</h2>
+                <p>{{gossip.category[0].name}}</p>
+                <div class="category-icon">
+                    <img src="assets/img/hated.png" alt="neg" *ngIf="gossip.feedback_type == 1" class="bookmark-btn">
+                    <img src="assets/img/loved.png" alt="pos" *ngIf="gossip.feedback_type == 0" class="bookmark-btn">
+                </div>
+            </ion-item>
+            <ion-card-content>
+                <p class="oneLiner">
+                    {{gossip.content}}
+                </p> 
+                <p text-right class="gossip-id">Gossip #{{gossip.id}}</p>
+            </ion-card-content> 
+        </ion-card> 
+  
+</ion-list>
+<ion-list *ngIf="type == 'categories'">
+        <div class="category">
+        <ion-row>
+            <ion-col col-6 col-md-4 *ngFor="let category of results">
+                <ion-card class="m0" (click)="categorySelected(category)">
+                    <div class="category-content" [style.background-image]="getBackground(category.attachment)">
+                        <div class="card-title">{{category.name}}</div>
+                    </div>
+                    <div class="entity-count border-right">
+                        {{category.count}} {{category.count > 1 ? 'Entities' : 'Entity'}}
+                    </div>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </div> 
+</ion-list>
+        <div *ngIf="showNotFound" class="listing-done" text-center padding>No result found.</div>
+
     <!--<ion-list no-lines>
         <button ion-item *ngFor="let user of users" >
     <span class="user-name capitalize">{{user.first_name}} {{user.last_name}}</span> - <span class="user-mobile">{{user.mobile}}</span>

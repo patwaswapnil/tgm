@@ -89,19 +89,8 @@ page-request {
     }
     .border-right {
         border-right: 1px solid #dedcde;
-    }
-    .trending-card .tending-content {
-        padding: 2px !important;
-    }
-    .trending-card .row {
-        padding: 1px !important;
-    }
-    .trending-card ion-card {
-        margin: 0px 0px 0px 0px !important;
-    }
-    .trending-card ion-col[col-6] {
-        padding: 3px !important;
-    }
+    } 
+   
     .entity-status {
         bottom: 5px;
         text-transform: uppercase !important;
@@ -140,5 +129,22 @@ page-request {
           
     vertical-align: middle;
     display: inline-block;
-    }
+    } 
+
+.img-preview img{
+    width: 100px;
+    height: 100px;
+}
+.img-preview button {
+   position: absolute;
+    top: 0;
+    /* border: 1px solid red; */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-left: 16px;
+    background: white;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    left: 92px;
+}
 }

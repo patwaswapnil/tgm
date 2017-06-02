@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.gossipmonger.infini" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>GossipMonger</name>
+    <name>Gossip Monger</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
     <content src="index.html" />
@@ -68,4 +68,5 @@
     <plugin name="cordova-plugin-vibration" spec="~2.1.4" />
     <plugin name="com-sarriaroman-photoviewer" spec="~1.1.10" />
     <plugin name="onesignal-cordova-plugin" spec="~2.1.1" />
+    <plugin name="cordova-plugin-camera" spec="~2.4.1" />
 </widget>

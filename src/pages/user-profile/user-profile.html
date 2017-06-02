@@ -13,9 +13,9 @@
 <ion-content>
     <ion-toolbar no-border-top color="primary"> 
         <div width-profile center text-center class="user-block" color="primary">
-            <img [src]="userDetail.img || 'assets/img/user.png'" class="profile-pic" item-left />
+            <img [src]="userDetail.img || 'assets/img/user.png'" (click)="displayImage(userDetail.img || 'assets/img/user.png', userDetail.display_name)" class="profile-pic" item-left />
         </div>
-        <div no-border center text-center class="pl0 no-border-custom" color="primary">
+        <div no-border center text-center  class="pl0 no-border-custom" color="primary">
             <h2 class="user-name capitalize">{{userDetail.display_name}}</h2>
         </div>
         <div no-border center text-center class="pl0 mb8" color="primary">
@@ -35,13 +35,13 @@
             <ion-segment-button value="following">
                 Following ({{userDetail.following_count}})
             </ion-segment-button>
-            <ion-segment-button value="editProfile" *ngIf="!id">
+            <!--<ion-segment-button value="editProfile" *ngIf="!id">
                 Edit Profile
-            </ion-segment-button>
+            </ion-segment-button>-->
         </ion-segment>
     </ion-scroll>
-    <gossip-card *ngIf="segment == 'myGossips'" [gossips]="myGossips"></gossip-card>  
-    <ion-list *ngIf="segment == 'editProfile'">
+    <gossip-card *ngIf="segment == 'myGossips'" (dataUpdated)="getMyGossips()" [gossips]="myGossips"></gossip-card>  
+    <!--<ion-list *ngIf="segment == 'editProfile'">
         <form #userDetailForm="ngForm" (ngSubmit)="updateUser(userDetailForm)" novalidate>
             <ion-card class="card-items">
                 <ion-card-header color="primary">
@@ -51,27 +51,21 @@
                     <ion-list>
                         <ion-item>
                             <ion-label stacked>First Name*</ion-label>
-                            <ion-input type="text" [(ngModel)]="userDetail.first_name" name="firstname" #firstName="ngModel" required></ion-input>
+                            <ion-input type="text" [(ngModel)]="userDetail.fname" name="firstname" #firstName="ngModel" required></ion-input>
                         </ion-item>
                         <p [hidden]="firstName.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>
                             First Name is required
                         </p>
                         <ion-item>
                             <ion-label stacked>Last Name*</ion-label>
-                            <ion-input type="text" [(ngModel)]="userDetail.last_name" name="lastname" #lastName="ngModel" required></ion-input>
+                            <ion-input type="text" [(ngModel)]="userDetail.lname" name="lastname" #lastName="ngModel" required></ion-input>
                         </ion-item>
                         <p [hidden]="lastName.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>
                             Last Name is required
-                        </p>
-
-                        <!--<ion-item class="pr0">
-                        <ion-label stacked>Email*</ion-label>
-                        <ion-input type="email" [(ngModel)]="userDetail.email" name="email" class="disabled-input"></ion-input>
-                    </ion-item>-->
-
+                        </p> 
                         <ion-item>
                             <ion-label stacked>Mobile Number*</ion-label>
-                            <ion-input type="tel" [(ngModel)]="userDetail.mobile" name="mobile" #mobile="ngModel" required></ion-input>
+                            <ion-input type="tel" [(ngModel)]="userDetail.mobileNo" name="mobile" #mobile="ngModel" required></ion-input>
                         </ion-item>
                         <p [hidden]="mobile.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>
                             Mobile Number is required
@@ -85,7 +79,7 @@
             </ion-card>
           
         </form>
-    </ion-list>
+    </ion-list>-->
     <ion-list class="users-wrapper" *ngIf="segment == 'following'">
         <ion-card *ngFor="let myFollowee of myFollowees">
             <ion-card-content class="p0">
@@ -100,6 +94,7 @@
                 </ion-row>
             </ion-card-content>
         </ion-card>
+                        <div  center text-center class="no-data" *ngIf="showNotFound">No data found.</div>
     </ion-list>
     <ion-list class="users-wrapper" *ngIf="segment == 'followers'">
         <ion-card *ngFor="let myFollower of myFollowers">
@@ -116,6 +111,8 @@
                 </ion-row>
             </ion-card-content>
         </ion-card>
+        <div  center text-center class="no-data" *ngIf="showNotFound1">No data found.</div>
+        
     </ion-list>
     <!--<ion-fab color="white" right>
         <button ion-fab>

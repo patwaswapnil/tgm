@@ -1,9 +1,9 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { NavController, ModalController } from 'ionic-angular';
+import { ModalController } from 'ionic-angular';
 import { EntityProfilePage } from '../../pages/entity-profile/entity-profile';
 import { SharedProvider } from '../../providers/shared.provider';
 import { MongerApi } from '../../providers/api.provider';
-import { userId } from '../../providers/config';
+import { GlobalProvider } from '../../providers/config';
 import { CommentsPage } from '../../pages/comments/comments';
  
 @Component({
@@ -12,20 +12,22 @@ import { CommentsPage } from '../../pages/comments/comments';
 })
 export class GossipCardComponent {
     @Input() 
-   gossips: any = []; 
+   gossips: any = [{}]; 
   @Output() unFollowEvent = new EventEmitter();
-  constructor(public api: MongerApi, public navCtrl: NavController, public modal: ModalController, public shared: SharedProvider) {
+  @Output() dataUpdated = new EventEmitter(); 
+  public showNotFound: Boolean = false;
+  constructor(public globalProvider: GlobalProvider, public api: MongerApi, public modal: ModalController, public shared: SharedProvider) {
    
    }
-   ionViewDidLoad () {
-     
-   }
+   ionViewDidLoad () {  }
 entityProfile (id) { 
     let modal = this.modal.create(EntityProfilePage,  {id: id});
+     modal.onDidDismiss(data => {
+      this.dataUpdated.next();
+    })
     modal.present();
   } 
-   displayImage (url, title) {
-    console.log(url);
+   displayImage (url, title) { 
     this.shared.imageViewer.show(url, title);
   }
   vote (gossip, type,  index) { 
@@ -36,7 +38,7 @@ entityProfile (id) {
                this.gossips[index].action.up = null;
             } else {
                this.gossips[index].total_upvotes = Number(this.gossips[index].total_upvotes) + 1;
-               this.gossips[index].action.up = {voter: userId};
+               this.gossips[index].action.up = {voter: this.globalProvider.userId};
             } 
           }
          else if (type == 'negative') { 
@@ -45,7 +47,7 @@ entityProfile (id) {
                this.gossips[index].action.down = null;
             } else {
                this.gossips[index].total_downvotes = Number(this.gossips[index].total_downvotes) + 1;
-               this.gossips[index].action.down = {voter: userId};
+               this.gossips[index].action.down = {voter: this.globalProvider.userId};
             }
              
           }
@@ -60,6 +62,9 @@ entityProfile (id) {
   }
    openComments (id) {
     let modal = this.modal.create(CommentsPage, {id: id});
+     modal.onDidDismiss(data => {
+      this.dataUpdated.next();
+    })
     modal.present();     
   }
         followGossip (gossip, index) {
@@ -68,7 +73,7 @@ entityProfile (id) {
                this.gossips[index].action.follow = null;
               action = 'unfollow';    
             } else { 
-               this.gossips[index].action.follow = {voter: userId};
+               this.gossips[index].action.follow = {voter: this.globalProvider.userId};
             }
    if (action == 'follow') {
     this.api.followGossip(gossip.id).subscribe(data => { 

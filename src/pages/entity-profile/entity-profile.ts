@@ -1,9 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, NavParams, ModalController, ViewController, Content } from 'ionic-angular'; 
 
-import { SharedProvider } from '../../providers/shared.provider'
-import { MongerApi } from '../../providers/api.provider'
-import { userId } from '../../providers/config';
+import { SharedProvider } from '../../providers/shared.provider';
+import { MongerApi } from '../../providers/api.provider';
 
 import { ReviewPage } from '../review/review';
 import { SmartAudio } from '../../providers/smart-audio/smart-audio';

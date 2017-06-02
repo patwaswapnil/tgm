@@ -1,59 +1,28 @@
-page-bookmark {
-    .entity-wrapper ion-item {
-        padding-left: 8px !important;
-        background: #eeeeee !important;
-        margin-bottom: -1px !important;
-        border-bottom: 1px solid #ddd !important;
+entity-card {
+    .trending-card .tending-content {
+        padding: 2px !important;
     }
-    .entity-wrapper ion-item .item-inner {
-        padding: 0px !important;
+    .trending-card .row {
+        padding: 1px !important;
     }
-    .entity-wrapper .request-list .entity-title {
-        font-size: 16px;
+    .trending-card ion-card {
+        margin: 0px 0px 0px 0px !important;
     }
-    .entity-wrapper ion-label {
-        margin: 0px !important;
+    .trending-card ion-col[col-6] {
+        padding: 3px !important;
     }
-    .entity-wrapper ion-item img {
-        height: 100px;
-        width: 100px;
-        margin-bottom: -4px;
+    ion-card:first-child {
+        margin-top: 0px !important;
     }
-    .entity-wrapper ion-item h2 {
-        font-size: 18px !important;
-    }
-    .entity-wrapper ion-item h4 {
-        font-size: 14px !important;
-        color: #555 !important;
-        font-weight: normal !important;
-        margin-top: 4px !important;
-    }
-    .entity-wrapper ion-item ion-icon {
-        // font-size: 12px !important;
-        // border: 1px solid #555;
-        // border-radius: 50%;
-        // padding: 4px;
-        // margin-right: 1px !important;
-        // margin-top: 6px !important;
-        // margin-bottom: 5px !important;
-    }
-    .count {
-        font-size: 12px;
-    }
-    ion-card ion-card-content {
-        border-bottom: 1px solid #efefef !important;
-    }
-    .category-icon img {
-        width: 56px !important;
-    }
-    .gossips-wrapper ion-card {
-        margin: 10px 0px 10px 0px !important;
+    ion-card {
         width: 100% !important;
     }
-    .gossips-wrapper .border-top {
-        border-top: 1px solid #efefef;
+    .bookmark-btn1 {
+            background: transparent;
+    box-shadow: none !important;
+    font-size: 12px !important;
     }
-    .users-wrapper ion-card {
+       .users-wrapper ion-card {
         margin: 10px 8px 10px 8px !important;
         width: calc(100% - 16px) !important;
     }
@@ -96,6 +65,7 @@ page-bookmark {
         background-repeat: no-repeat;
         height: 200px;
         background-size: cover;
+        background-position: center top !important;
         margin: 0px !important;
     }
     .card-title {
@@ -137,5 +107,4 @@ page-bookmark {
     .border-right {
         border-right: 1px solid #dedcde;
     }
-
 }

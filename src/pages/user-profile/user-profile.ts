@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, App, ViewController, ModalController } from 'ionic-angular';
 
-import { AuthPage } from '../auth/auth'; 
+import { AuthPage } from '../auth/auth';
 import { SharedProvider } from '../../providers/shared.provider';
 import { MongerApi } from '../../providers/api.provider';
-import { user, userId } from '../../providers/config'; 
+import { GlobalProvider } from '../../providers/config';
 
 @Component({
   selector: 'page-user-profile',
@@ -23,22 +23,24 @@ export class UserProfilePage {
   private _checkCached: boolean = false;
   private _anyAction: boolean = false;
   submitted = false;
-  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App, public viewCtrl: ViewController, public modal: ModalController, public api: MongerApi, public shared: SharedProvider) {
-    if (this.navParams.get('userId') != userId) {
-    this.id = this.navParams.get('userId'); 
-  } 
-  if (this.navParams.get('userId')) {
-    this.showBack = true; 
-    } 
+  public showNotFound: boolean = false;
+  public showNotFound1: boolean = false;
+  constructor(public globalProvier: GlobalProvider, public navCtrl: NavController, public navParams: NavParams, public app: App, public viewCtrl: ViewController, public modal: ModalController, public api: MongerApi, public shared: SharedProvider) {
+    if (this.navParams.get('userId') != this.globalProvier.userId) {
+      this.id = this.navParams.get('userId');
+    }
+    if (this.navParams.get('userId')) {
+      this.showBack = true;
+    }
   }
-ionViewDidEnter () { 
-  if (this._checkCached) {
- this.ionViewDidLoad();
-  } else {
-    this._checkCached = true;
+  ionViewDidEnter() {
+    if (this._checkCached) {
+      this.ionViewDidLoad();
+    } else {
+      this._checkCached = true;
+    }
   }
-}
-updateUser (form) {
+  updateUser(form) {
     // console.log(form.valid());
     // if (form.valid()) {
     //   this.api.updateProfile(form.first_name, form.last_name, form.mobile).subscribe(data => {
@@ -47,25 +49,37 @@ updateUser (form) {
     //     console.log(err);
     //   })
     // }
-}
-  ionViewDidLoad() { 
-    this.getFollowedEntities();
+  }
+  ionViewDidLoad() {
+    this.getMyGossips(true);
     this.getMyFollowers();
     this.getMyFollowees();
     if (this.id) {
       this.getUserDetail();
     } else {
-    this.userDetail = user;
+      this.userDetail = this.globalProvier.user;
     }
   }
   logOut() {
-    this.app.getRootNav().setRoot(AuthPage);
+    this.shared.Alert.confirm('Do you want to log out?').then(res => {
+      this.api.logout().subscribe(response => {
+      this.shared.LS.remove('user');
+      this.globalProvier.dropAuthData();
+      this.app.getRootNav().setRoot(AuthPage);
+      }, err => {
+        this.shared.Toast.show('Oops! something went wrong. Please try again');
+      });
+    
+    })
+  }
+   displayImage (url, title) { 
+    this.shared.imageViewer.show(url, title);
   }
   dismiss() {
     this.viewCtrl.dismiss(this._anyAction);
-  } 
-  userProfile(id) { 
-    let modal = this.modal.create(UserProfilePage, { userId: id,  });
+  }
+  userProfile(id) {
+    let modal = this.modal.create(UserProfilePage, { userId: id, });
     modal.onDidDismiss(data => {
       console.log(data);
       if (data) {
@@ -74,21 +88,29 @@ updateUser (form) {
     });
     modal.present();
   }
-  getFollowedEntities() {
-    this.shared.Loader.show();
+  getMyGossips(loader?) {
+    if (loader) {
+      this.shared.Loader.show();
+    }
     this.api.getMyGossips(this.id).subscribe(data => {
       this.myGossips = data;
-      this.myGossipsCount = data.length + 1;
-      console.log(data);
+      this.myGossipsCount = data.length + 1; 
+      if (loader) {
       this.shared.Loader.hide();
+    }
     }, err => {
+      if (loader) {
       this.shared.Loader.hide();
+    }
       console.error(err);
     });
   }
   getMyFollowers() {
     this.api.getMyFollowers(this.id).subscribe(data => {
       this.myFollowers = data;
+      if (!this.myFollowers.length) {
+        this.showNotFound1 = true;
+      }
     }, err => {
       console.error(err);
     });
@@ -103,30 +125,32 @@ updateUser (form) {
   getMyFollowees() {
     this.api.getMyFollowees(this.id).subscribe(data => {
       this.myFollowees = data;
-      console.log(data);
+       if (!this.myFollowees.length) {
+        this.showNotFound = true;
+      } 
     }, err => {
       console.error(err);
     });
-  } 
-   follow(id, type) {
-     this._anyAction = true;
-     if (type == 'userDetail') {
-       console.log(this.userDetail.isFollowing);
-       this.userDetail.isFollowing = !this.userDetail.isFollowing;
-       console.log(this.userDetail.isFollowing);
-       
-     }
- this.api.followUser(id).subscribe(data => {
-   if (this.segment == 'following') {
-     this.getMyFollowees();
-   } else if (this.segment == 'followers')  {
-     this.getMyFollowers(); 
-   }
-      
+  }
+  follow(id, type) {
+    this._anyAction = true;
+    if (type == 'userDetail') {
+      console.log(this.userDetail.isFollowing);
+      this.userDetail.isFollowing = !this.userDetail.isFollowing;
+      console.log(this.userDetail.isFollowing);
+
+    }
+    this.api.followUser(id).subscribe(data => {
+      if (this.segment == 'following') {
+        this.getMyFollowees();
+      } else if (this.segment == 'followers') {
+        this.getMyFollowers();
+      }
+
     }, err => {
       console.log(err);
     })
   }
- 
-   
+
+
 }

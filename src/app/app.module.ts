@@ -4,9 +4,10 @@ import { IonicStorageModule } from '@ionic/storage';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 import { HttpModule } from '@angular/http';
-
+ 
 import { GooglePlus } from '@ionic-native/google-plus';
 import { Facebook } from '@ionic-native/facebook';
+import { Camera } from '@ionic-native/camera';
 
 import { MyApp } from './app.component'; 
 import { HomePage } from '../pages/home/home';
@@ -26,6 +27,7 @@ import { GossipsPage } from '../pages/gossips/gossips';
 import { OneSignal } from '@ionic-native/onesignal';
 
 import { MongerApi } from '../providers/api.provider';
+import { GlobalProvider } from '../providers/config';
 
 import { Network } from '@ionic-native/network';
 import { Keyboard } from '@ionic-native/keyboard';
@@ -37,7 +39,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
-import { GossipCardComponent } from '../components/gossip-card/gossip-card'; 
+import { GossipCardComponent } from '../components/gossip-card/gossip-card';
+import { EntityCardComponent } from '../components/entity-card/entity-card'; 
 
 
 @NgModule({
@@ -57,7 +60,8 @@ import { GossipCardComponent } from '../components/gossip-card/gossip-card';
     AddEntityPage,
     AddGossipPage,
     GossipsPage,
-    GossipCardComponent 
+    GossipCardComponent,
+    EntityCardComponent 
   ],
   imports: [
     BrowserModule,
@@ -98,7 +102,9 @@ import { GossipCardComponent } from '../components/gossip-card/gossip-card';
     PhotoViewer,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     MongerApi,
-    OneSignal
+    OneSignal,
+    GlobalProvider, 
+    Camera 
   ]
 })
 export class AppModule {}

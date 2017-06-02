@@ -25,10 +25,16 @@
         color: red;
         font-weight: bold !important;
 }
+.mt10 {
+    margin-top: 10px !important;
+}
 .mt12 {
     margin-top: 12px !important;
 }
 
+.color-gray {
+    color: #9f9f9f !important;
+}
 .mt0 {
     margin-top: 0px !important;
 }
@@ -120,6 +126,12 @@ span.type-text {
     height: 100%;
         background: transparent !important;
     padding: 7px 0px 6px 0px;
+}
+.h35 {
+    height: 35px !important;
+}
+.mr5 {
+        margin-right: 5px !important;
 }
 
 .home-listing .item-inner {
@@ -223,4 +235,18 @@ ion-card {
 .ion-card-full {
     margin: 0px !important;
     width: 100% !important;
+}
+.no-data {
+    padding: 10px !important;
+    font-weight: bold;
+    color: #808080;
+    text-align: center;
+    width: 100%;
+}
+p.oneLiner, oneLiner {
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+        color: #222 !important;
 }

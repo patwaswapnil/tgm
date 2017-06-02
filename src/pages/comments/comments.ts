@@ -17,6 +17,7 @@ export class CommentsPage {
   public gossip:any = {gossip_about: {}, author: {}, category: [{}]};
   public comments:any;
   public commentContent:any;
+  public showNotFound:boolean = false;
   constructor(public modal: ModalController, public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public shared: SharedProvider, public api: MongerApi,) {
     this._id = this.navParams.get('id');
   }
@@ -60,6 +61,9 @@ entityProfile (id) {
     getGossipComment() { 
     this.api.getGossipComments(this._id).subscribe(data => {
       this.comments = data;   
+       if (!this.comments.length) {
+        this.showNotFound = true;
+      }
     }, err => { 
       console.error(err);
     });
