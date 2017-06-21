@@ -1,4 +1,5 @@
 import { Component } from '@angular/core'; 
+import { Events } from 'ionic-angular'; 
 import { HomePage } from '../home/home'; 
 import { CategoriesPage } from '../categories/categories'; 
 import { RequestPage } from '../request/request'; 
@@ -17,5 +18,8 @@ export class TabsPage {
   tab4Root: any = BookmarkPage;
   tab5Root: any = UserProfilePage;
 
-  constructor() {  }
+  constructor(public events: Events) {  }
+  ionViewDidLoad() { 
+    this.events.publish('root:created', Date.now());
+  }
 }

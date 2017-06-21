@@ -1,12 +1,12 @@
- <ion-list>
+ <ion-list class="mt10">
    <span *ngFor="let gossip of gossips; let index = index"> 
       <ion-card class="home-listing">
             <ion-item class="border-top">
                 <ion-avatar item-left (click)="entityProfile(gossip.gossip_about.ID)">
                     <img [src]="gossip.gossip_about.img">
                 </ion-avatar>
-                <h2>{{gossip.gossip_about.entity}}</h2>
-                <p>{{gossip.category[0].name}}</p>
+                <h2 (click)="entityProfile(gossip.gossip_about.ID)">{{gossip.gossip_about.entity}}</h2>
+                <p (click)="entityProfile(gossip.gossip_about.ID)">{{gossip.category[0].name}}</p>
                 <div class="category-icon">
                     <img src="assets/img/hated.png" alt="neg" *ngIf="gossip.feedback_type == 1" class="bookmark-btn">
                     <img src="assets/img/loved.png" alt="pos" *ngIf="gossip.feedback_type == 0" class="bookmark-btn">
@@ -43,12 +43,16 @@
                   </button>
                     </ion-col>
                     <ion-col class="p0" text-center center>
-                        <button [color]="gossip.action.follow != null ? 'primary' : 'dark'" class="action-btn" (click)="followGossip(gossip, index)" ion-button icon-left clear small>
+                        
+                        <button *ngIf="userId != gossip.author.ID" [color]="gossip.action.follow != null ? 'primary' : 'dark'" class="action-btn" (click)="followGossip(gossip, index)" ion-button icon-left clear small>
                      <ion-icon name="md-bookmark"></ion-icon> 
+                  </button>
+                    <button *ngIf="userId == gossip.author.ID" color="danger" class="action-btn" (click)="deleteGossip(gossip, index)" ion-button icon-left clear small>
+                     <ion-icon name="md-trash"></ion-icon> 
                   </button>
                     </ion-col>
                     <ion-col class="p0" center text-center>
-                        <button color="dark" class="action-btn" (click)="shareVia()" ion-button icon-left clear small>
+                        <button color="dark" class="action-btn" (click)="shareVia(gossip)" ion-button icon-left clear small>
                      <ion-icon name="share"></ion-icon> 
                   </button>
                     </ion-col>
@@ -56,5 +60,5 @@
             </ion-grid>
         </ion-card> 
         </span>
-        <div  center text-center class="no-data" *ngIf="showNotFound">No gossip found.</div>
+        <div  center text-center class="no-data" *ngIf="!gossips?.length">No gossip found.</div>
     </ion-list>

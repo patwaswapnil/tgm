@@ -12,6 +12,6 @@
 </ion-header>
 <ion-content>
     <gossip-card *ngIf="segment == 'gossips'" (dataUpdated)="getFollowedGossips()"  (unFollowEvent)="getFollowedGossips()" [gossips]="followedGossips"></gossip-card>
-    <div center text-center class="no-data" *ngIf="showNotFound1 && segment == 'gossips'">No gossip bookmared. Bookmark a gossip and stay tuned about any update on that gossip!</div>
+    <div center text-center class="no-data" *ngIf="showNotFound1 && segment == 'gossips'"> Bookmark a gossip and stay tuned about any update on that gossip!</div>
     <entity-card *ngIf="segment == 'entity'" (dataUpdated)="getFollowedEntities()" (unFollowEvent)="getFollowedEntities()" [entities]="followedEntities"></entity-card>
 </ion-content>

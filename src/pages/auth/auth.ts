@@ -33,6 +33,7 @@ export class AuthPage {
         let data = { fname: res.givenName, lname: res.familyName, email: res.email, userId: res.userId, source: 3 };
         this.api.socialLogin(data).subscribe(res => {
           this.shared.LS.set('user', res);
+          this.shared.LS.set('isMuted', false);
           this.globalProvider.setAuthData(res);
           this.googlePlus.logout();
           this.navCtrl.setRoot(TabsPage);

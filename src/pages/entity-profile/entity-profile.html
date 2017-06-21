@@ -16,30 +16,42 @@
                 <h1 color="whitec" ion-text>{{entityDetail.title}}</h1>
                 <h4 color="whitec" ion-text class="mt0">{{ entityDetail.subtitle || entityDetail.category[0].name}}</h4>
             </div>
-            <img [src]="entityDetail.img || 'assets/img/image.png'" class="profile-img" alt="">
-            <div>   
-            <button ion-button text-right outline color="whitec" (click)="addGossips()" class="add-btn"> Add Gossip </button>              
+            <img [src]="entityDetail.img || 'assets/img/image.png'" (click)="shared.imageViewer.show(entityDetail.img || 'assets/img/image.png', entityDetail.title)"
+                class="profile-img" alt="">
+            <div>
+                        <ion-row class="custom-row">
+                            <ion-col class="pt0">
+                                <button ion-button text-right outline color="whitec" (click)="jubToSegment('rated')" class="add-btn"> Top Rated </button>
+                            </ion-col>
+                            <ion-col  class="pt0">
+                                <button ion-button text-right outline color="whitec" (click)="jubToSegment('hated')" class="add-btn">   Top Hated </button>
+                            </ion-col>
+                        </ion-row>  
+
+                <button ion-button text-right outline color="whitec"  (click)="jubToSegment('news')" class="add-btn"> Word out there! </button>
+                <br>
+                <button ion-button text-right outline color="whitec" (click)="addGossips()" class="add-btn mt10"> Add Gossip </button>
             </div>
-            <div class="drag-section-wrap" padding-left padding-right> 
+            <div class="drag-section-wrap" padding-left padding-right>
                 <div class="drag-section">
                     <div class="slider-wrap" (swipe)="tapEvent($event)">
                         <ion-row>
 
-                            <ion-col text-center col-2 (click)="tapEvent(2)">
-                                  <h5 class="mt0 mb0 white">
-                                {{entityDetail.total_positive_gossips}}
-                            </h5>
+                            <ion-col text-center (click)="tapEvent(2)">
+                                <h5 class="mt0 mb0 white">
+                                    {{entityDetail.total_positive_gossips}}
+                                </h5>
                                 <img src="assets/img/loved.png" alt="">
                             </ion-col>
-                            <ion-col text-center col-8 class="slide-img-wrap">
-                                <button ion-button icon-only class="down-btn" (click)="scroll()">
+                            <ion-col text-center class="slide-img-wrap">
+                                <button ion-button icon-only class="down-btn mt10" (click)="scroll()">
   <ion-icon name="ios-arrow-down-outline"></ion-icon>
 </button>
                             </ion-col>
-                            <ion-col col-2 (click)="tapEvent(1)" text-center>
-                                 <h5 class="mt0 mb0 white">
-                                 {{entityDetail.total_negative_gossips}}
-                            </h5> 
+                            <ion-col (click)="tapEvent(1)" text-center>
+                                <h5 class="mt0 mb0 white">
+                                    {{entityDetail.total_negative_gossips}}
+                                </h5>
                                 <img src="assets/img/hated.png" alt="">
                             </ion-col>
                         </ion-row>
@@ -52,82 +64,28 @@
         <ion-segment-button value="news">
             News
         </ion-segment-button>
-        <ion-segment-button value="hated">
-            Top Hated
-        </ion-segment-button>
         <ion-segment-button value="rated">
             Top Rated
         </ion-segment-button>
+        <ion-segment-button value="hated">
+            Top Hated
+        </ion-segment-button>
     </ion-segment>
-    <ion-list class="comments" > 
-        <!--<span  *ngFor="let entityGossip of entityGossips; let index = index">
-         <ion-card class="home-listing" *ngIf="(segment == 'hated' && entityGossip.feedback_type == 1) || (segment == 'rated' && entityGossip.feedback_type == 0)">
-            <ion-item class="border-top">
-                <ion-avatar item-left (click)="entityProfile(entityGossip.gossip_about.ID)">
-                    <img [src]="entityGossip.gossip_about.img">
-                </ion-avatar>
-                <h2>{{entityGossip.gossip_about.entity}}</h2>
-                <p>{{entityGossip.category[0].name}}</p>
-                <div class="category-icon">
-                    <img src="assets/img/hated.png" alt="neg" *ngIf="entityGossip.feedback_type == 1" class="bookmark-btn">
-                    <img src="assets/img/loved.png" alt="pos" *ngIf="entityGossip.feedback_type == 0" class="bookmark-btn">
-                </div>
-            </ion-item>
-            <ion-card-content>
-                <p>
-                    {{entityGossip.title}}
-                </p>
-                <img *ngIf="entityGossip.img" [src]="entityGossip.img" (click)="displayImage(entityGossip.img,entityGossip.title)">
-                <p text-right class="gossip-id">Gossip #{{entityGossip.id}}</p>
-            </ion-card-content>
-            <ion-grid class="post">
-                <ion-row>
-                    <ion-col class="p0">
-                        <button color="dark" [class]="entityGossip.action.up != null ? 'up-voted' : '' "  ion-button clear small (click)="vote(entityGossip, 'positive', index)"> 
-                      <ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>
-                      <span>{{entityGossip.total_upvotes}}</span> 
-                  </button>
-                    </ion-col>
-                    <ion-col class="p0">
-                        <button color="dark" [class]="entityGossip.action.down != null ? 'down-voted' : '' " ion-button clear small (click)="vote(entityGossip, 'negative', index)"> 
-                      <ion-icon ios="ios-thumbs-down" md="md-thumbs-down"></ion-icon>
-                       <span >{{entityGossip.total_downvotes}} </span>
-                  </button>
-                    </ion-col>
-                    <ion-col class="p0">
-                        <button color="dark" ion-button icon-left clear small (click)="openComments(entityGossip.id)">
-                     <ion-icon name="text"></ion-icon>
-                     <div>{{entityGossip.total_comments}}</div>
-                  </button>
-                    </ion-col>
-                    <ion-col class="p0" text-center center>
-                        <button [color]="entityGossip.action.follow != null ? 'primary' : 'dark'" class="action-btn" (click)="followGossip(entityGossip, index)" ion-button icon-left clear small>
-                     <ion-icon name="md-bookmark"></ion-icon> 
-                  </button>
-                    </ion-col>
-                    <ion-col class="p0" center text-center>
-                        <button color="dark" class="action-btn" (click)="shareVia()" ion-button icon-left clear small>
-                     <ion-icon name="share"></ion-icon> 
-                  </button>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
-        </ion-card>
-</span>-->
-<gossip-card [gossips]="entityGossips" *ngIf="segment == 'hated' || segment == 'rated'"></gossip-card> 
- 
-<span *ngIf="segment == 'news'">
+    <ion-list class="comments">
+        <gossip-card [gossips]="entityGossips" *ngIf="segment == 'hated' || segment == 'rated'"></gossip-card>
+        <span *ngIf="segment == 'news'">
 <ion-card *ngFor="let news of entityNews"> 
   <ion-card-content>
     {{news.title}}
   </ion-card-content>
     <ion-col class="p0">
                         <button color="dark" class="add-gossip"   ion-button icon-left clear small (click)="addGossips(news)"> 
-                      <ion-icon ios="ios-add" md="md-add"></ion-icon>
-                      <span>Gossip about it!</span> 
-                  </button>
-                    </ion-col>
-</ion-card>
-</span>
+                      <ion-icon ios="ios-add" md="md-add" class="bold"></ion-icon>
+                      <span>Gossip about this!</span>
+                      <ion-icon name="arrow-round-forward" class="ml8 news-arrow"></ion-icon>
+        </button>
+   </ion-col>
+        </ion-card>
+        </span>
     </ion-list>
 </ion-content>

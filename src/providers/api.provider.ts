@@ -200,6 +200,14 @@ export class MongerApi {
       })
       .catch(this.handleError);
   }
+  deleteGossip(id): Observable<any> {
+    let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+    return this.http.get(`${baseURL}deletePost&userId=${this.globalProvider.userId}&postId=${id}`, { headers: headers })
+      .map((response: Response) => {
+        return response.json();
+      })
+      .catch(this.handleError);
+  }
   getEntityNews(entityId): Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
     return this.http.get(`${baseURL}getEntityNews&userId=${this.globalProvider.userId}&id=${entityId}`, { headers: headers })

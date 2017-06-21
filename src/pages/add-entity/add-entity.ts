@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavController, NavParams, ViewController, ActionSheetController } from 'ionic-angular';
 import { MongerApi } from '../../providers/api.provider';
 import { SharedProvider } from '../../providers/shared.provider';
@@ -12,35 +12,24 @@ import { Observable, Observer } from "rxjs";
   templateUrl: 'add-entity.html'
 })
 export class AddEntityPage {
-  public categories: any;
-
+  @Input() categories: any = [{}];
   constructor(public actionSheetCtrl: ActionSheetController, public viewController: ViewController, private sanitizer: DomSanitizer, public navCtrl: NavController, public shared: SharedProvider, public api: MongerApi) { }
   public isCategorySelected: Boolean = false;
   public entityDetail: any = { owner: 'no', image: null };
   public selectedCat: any;
   public submitted: any = false;
   public pageTitle = 'Select Category';
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AddEntityPage');
-    this.getCategories();
+  ionViewDidLoad() { 
+    
   }
+ 
   categorySelect(data) {
     this.isCategorySelected = true;
     this.pageTitle = 'Provide Information';
     this.entityDetail.category = data.term_id;
     this.selectedCat = data.name;
   }
-  getCategories() {
-    this.shared.Loader.show();
-    this.api.getCategories().subscribe(data => {
-      this.categories = data;
-      console.log(data);
-      this.shared.Loader.hide();
-    }, err => {
-      this.shared.Loader.hide();
-      console.log(err);
-    })
-  }
+ 
   getBackground(image) {
     if (!image) {
       return this.sanitizer.bypassSecurityTrustStyle(`linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5))`);

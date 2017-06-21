@@ -17,6 +17,9 @@ page-user-profile {
         max-width: 90px;
         text-align: center;
     }
+    .users-wrapper img {
+        border-radius: 4px !important;
+    }
     form .list-md .item-block .item-inner {
         border-bottom: 1px solid #dedede !important;
     }
@@ -98,7 +101,7 @@ page-user-profile {
         font-size: 11px !important;
     }
     .entity-status {
-        text-align: right !important;
+        text-align: left !important;
     }
     .users-wrapper .entity-title {
         font-size: 18px !important;

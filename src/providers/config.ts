@@ -5,6 +5,7 @@ export class GlobalProvider {
     public playerId: any = null;
     public user: any = {};
     public userId: Number;
+    public isMuted: Boolean;
     setAuthData(data) { 
         try {
              this.user = JSON.parse(data);
@@ -15,6 +16,9 @@ export class GlobalProvider {
     }
     setPlayerId(id) {  
         this.playerId = id;
+    }
+    toggleMute (value) {
+        this.isMuted = value;
     }
     dropAuthData() {
         this.userId = null;

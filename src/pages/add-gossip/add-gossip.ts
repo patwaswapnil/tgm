@@ -19,8 +19,9 @@ export class AddGossipPage {
   public id;
   public selectedEntity: any = { category: [{ name: null }] };
   constructor(public actionSheetCtrl: ActionSheetController, public globalProvider: GlobalProvider, public modal: ModalController, public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public api: MongerApi, public shared: SharedProvider) {
-    this.type = this.navParams.get('type');
-    this.addGossip.type = this.navParams.get('type');
+    this.type = this.navParams.get('type'); 
+    this.addGossip.feedbackType = this.navParams.get('type');
+    console.log(this.addGossip);
     this.id = this.navParams.get('id');
     this.addGossip.id = this.navParams.get('id');
     if (this.navParams.get('data')) {
@@ -56,16 +57,15 @@ export class AddGossipPage {
   }
   insertGossip(gossip) {
     console.log(gossip);
-    let isAnonymous;
-    gossip.via = null;
+    let isAnonymous; 
     if (gossip.posted_as != 'anonymous') {
       gossip.isAnonymous = 0;
     } else {
       gossip.isAnonymous = 1;
       gossip.posted_as = null;
     }
-    gossip.image = this.addGossip.image;
-
+    gossip.type = gossip.feedbackType;
+    gossip.image = this.addGossip.image; 
     this.shared.Loader.show();
     this.api.insertGossip(gossip).subscribe(data => {
       this.shared.Toast.show('Gossip created successfully');

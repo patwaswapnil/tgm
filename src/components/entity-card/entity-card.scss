@@ -20,7 +20,8 @@ entity-card {
     .bookmark-btn1 {
             background: transparent;
     box-shadow: none !important;
-    font-size: 12px !important;
+    font-size: 11px !important;
+        margin: 4px 0px !important;
     }
        .users-wrapper ion-card {
         margin: 10px 8px 10px 8px !important;
@@ -103,6 +104,7 @@ entity-card {
     }
     .entity-icon {
         text-align: center !important;
+        padding: 0px !important;
     }
     .border-right {
         border-right: 1px solid #dedcde;

@@ -16,23 +16,19 @@ export class CommentsPage {
   private _id;
   public gossip:any = {gossip_about: {}, author: {}, category: [{}]};
   public comments:any;
-  public commentContent:any;
-  public showNotFound:boolean = false;
+  public commentContent:any; 
   constructor(public modal: ModalController, public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public shared: SharedProvider, public api: MongerApi,) {
     this._id = this.navParams.get('id');
   }
 
   ionViewDidLoad() {
      this.getGossip();
-     this.getGossipComment();
+     this.getGossipComment(true);
   }
     getGossip() {
-    this.shared.Loader.show();
     this.api.getGossip(this._id).subscribe(data => {
-      this.gossip = data;
-    this.shared.Loader.hide();      
-    }, err => {
-    this.shared.Loader.hide();
+      this.gossip = data;      
+    }, err => { 
       console.error(err);
     });
   }
@@ -58,14 +54,20 @@ entityProfile (id) {
     let modal = this.modal.create(UserProfilePage, { userId: id,  });
     modal.present();
   }
-    getGossipComment() { 
+    getGossipComment(loader?) { 
+      if (loader) {
+        this.shared.Loader.show(); 
+      }
     this.api.getGossipComments(this._id).subscribe(data => {
       this.comments = data;   
-       if (!this.comments.length) {
-        this.showNotFound = true;
-      }
+       if (loader) {
+      this.shared.Loader.hide();
+       } 
     }, err => { 
       console.error(err);
+       if (loader) {
+      this.shared.Loader.hide();     
+       } 
     });
   }
   dismiss() {

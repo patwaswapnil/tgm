@@ -8,6 +8,7 @@ import { HttpModule } from '@angular/http';
 import { GooglePlus } from '@ionic-native/google-plus';
 import { Facebook } from '@ionic-native/facebook';
 import { Camera } from '@ionic-native/camera';
+import { Deeplinks } from '@ionic-native/deeplinks';
 
 import { MyApp } from './app.component'; 
 import { HomePage } from '../pages/home/home';
@@ -16,7 +17,9 @@ import { AuthPage } from '../pages/auth/auth';
 import { SearchPage } from '../pages/search/search';
 import { CategoriesPage } from '../pages/categories/categories';
 import { RequestPage } from '../pages/request/request';
-import { UserProfilePage } from '../pages/user-profile/user-profile';
+import { AboutPage } from '../pages/about/about';
+import { TermsPage } from '../pages/terms/terms';
+import { UserProfilePage, MoreOptionProfile} from '../pages/user-profile/user-profile';
 import { EntityProfilePage } from '../pages/entity-profile/entity-profile';
 import { AddEntityPage } from '../pages/add-entity/add-entity';
 import { AddGossipPage } from '../pages/add-gossip/add-gossip';
@@ -61,7 +64,10 @@ import { EntityCardComponent } from '../components/entity-card/entity-card';
     AddGossipPage,
     GossipsPage,
     GossipCardComponent,
-    EntityCardComponent 
+    EntityCardComponent,
+    MoreOptionProfile,
+    AboutPage,
+    TermsPage 
   ],
   imports: [
     BrowserModule,
@@ -86,7 +92,10 @@ import { EntityCardComponent } from '../components/entity-card/entity-card';
     ReviewPage,
     AddEntityPage,
     AddGossipPage,
-    GossipsPage      
+    GossipsPage,
+    MoreOptionProfile,
+    AboutPage,
+    TermsPage         
   ],
   providers: [
     StatusBar,
@@ -104,7 +113,8 @@ import { EntityCardComponent } from '../components/entity-card/entity-card';
     MongerApi,
     OneSignal,
     GlobalProvider, 
-    Camera 
+    Camera,
+    Deeplinks 
   ]
 })
 export class AppModule {}

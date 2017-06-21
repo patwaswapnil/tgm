@@ -99,23 +99,26 @@ page-entity-profile {
         background: #616060;
     }
     .down-btn {
-       background: rgba(0, 0, 0, 0.51);
-    border-radius: 50%;
-    border: none;
-    box-shadow: none;
-    height: 40px;
-    width: 40px;
+       background: rgba(0, 0, 0, 0.51) !important;
+    border-radius: 50% !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 40px !important;
+    width: 40px !important;
     padding: 5px 1px 0px 2px !important;
-    font-size: 16px;
+    font-size: 16px !important;
     /* position: absolute; */
     /* left: 43%; */
-    bottom: -27px;
+    bottom: -27px !important;
     }
     .add-btn {
-            padding: 5px 7px;
-    height: auto !important;
-    margin-top: 15px;
-    font-size: 13px;
+            padding: 5px 7px !important;
+    height: auto !important; 
+    font-size: 13px !important;
+    }
+    .news-arrow {
+        position: absolute !important;
+        right: 8px;
     }
     .add-gossip {
         width: 100%;
@@ -127,4 +130,10 @@ page-entity-profile {
       background: rgba(174, 0, 255, 0.14)  !important;
     position: fixed !important;
     }
+    .custom-row {
+        margin-top: -8px;
+    margin-bottom: 5px;
+    }
+
+    
 }

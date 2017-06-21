@@ -74,7 +74,7 @@
                         {{comment.comment_content}}
                     </p> 
                 </ion-item>
-                <div  center text-center class="no-data" *ngIf="showNotFound">No comments found.</div>
+                <div  center text-center class="no-data" *ngIf="!comments?.length">No comments found.</div>
 
             </ion-list>
         </ion-card>

@@ -94,9 +94,15 @@ span.type-text {
 .pr8 {
     padding-right: 8px;
 }
+.ml8 {
+    margin-left: 8px;
+}
 
 .pt8 {
     padding-top: 8px;
+}
+.pt0 {
+    padding-top: 0px;
 }
 
 .pt5 {
@@ -122,7 +128,7 @@ span.type-text {
 
 .home-listing button {
     width: 100% !important;
-    margin: 0px;
+    margin: 0px !important;
     height: 100%;
         background: transparent !important;
     padding: 7px 0px 6px 0px;
@@ -191,10 +197,7 @@ p.gossip-id {
     color: gray;
     text-align: center !important;
 }
-
-.category-icon img {
-    width: 56px !important;
-}
+ 
 
 .home-listing ion-grid ion-col {
     border: 1px solid #eee !important;
@@ -249,4 +252,8 @@ p.oneLiner, oneLiner {
     text-overflow: ellipsis;
     white-space: nowrap;
         color: #222 !important;
+}
+.w40 {
+        width: 40% !important;
+        max-width: 40% !important;
 }

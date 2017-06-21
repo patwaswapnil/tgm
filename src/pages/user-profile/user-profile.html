@@ -3,23 +3,29 @@
         <button ion-button icon-only *ngIf="showBack" menuToggle="false" color="white" (click)="dismiss()">
       <ion-icon name="arrow-back"></ion-icon>
     </button>
-        <ion-buttons end *ngIf="!id">
+        <!--<ion-buttons end *ngIf="!id">
             <button ion-button item-right outline small class="mark-complete logout-btn" (click)="logOut()"> 
         <span ion-text  class="clear-selection" >Logout</span> 
             </button>
-        </ion-buttons>
+        </ion-buttons>-->
+         <ion-buttons end *ngIf="!id">
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
     </ion-toolbar>
 </ion-header>
 <ion-content>
-    <ion-toolbar no-border-top color="primary"> 
+    <ion-toolbar no-border-top color="primary">
         <div width-profile center text-center class="user-block" color="primary">
-            <img [src]="userDetail.img || 'assets/img/user.png'" (click)="displayImage(userDetail.img || 'assets/img/user.png', userDetail.display_name)" class="profile-pic" item-left />
+            <img [src]="userDetail.img || 'assets/img/user.png'" (click)="displayImage(userDetail.img || 'assets/img/user.png', userDetail.display_name)"
+                class="profile-pic" item-left />
         </div>
-        <div no-border center text-center  class="pl0 no-border-custom" color="primary">
+        <div no-border center text-center class="pl0 no-border-custom" color="primary">
             <h2 class="user-name capitalize">{{userDetail.display_name}}</h2>
         </div>
         <div no-border center text-center class="pl0 mb8" color="primary">
-            <button ion-button outline small   (click)="follow(userDetail.ID, 'userDetail')" *ngIf="id" color="whitec">{{userDetail.isFollowing ? 'Unfollow' : 'Follow'}}</button>
+            <button ion-button outline small (click)="follow(userDetail.ID, 'userDetail')" *ngIf="id" color="whitec">{{userDetail.isFollowing ? 'Unfollow' : 'Follow'}}</button>
         </div>
 
     </ion-toolbar>
@@ -27,97 +33,53 @@
 
         <ion-segment [(ngModel)]="segment" color="whitec">
             <ion-segment-button value="myGossips">
-                My Gossips ({{myGossipsCount}})
+                Gossips ({{myGossips?.length}})
+            </ion-segment-button>
+            <ion-segment-button value="myEntity" *ngIf="!id">
+                Entities ({{myEntity?.length}})
             </ion-segment-button>
             <ion-segment-button value="followers">
-                Followers ({{userDetail.follower_count}})
+                Followers ({{myFollowers?.length}})
             </ion-segment-button>
             <ion-segment-button value="following">
-                Following ({{userDetail.following_count}})
+                Following ({{myFollowees?.length}})
             </ion-segment-button>
-            <!--<ion-segment-button value="editProfile" *ngIf="!id">
-                Edit Profile
-            </ion-segment-button>-->
         </ion-segment>
     </ion-scroll>
-    <gossip-card *ngIf="segment == 'myGossips'" (dataUpdated)="getMyGossips()" [gossips]="myGossips"></gossip-card>  
-    <!--<ion-list *ngIf="segment == 'editProfile'">
-        <form #userDetailForm="ngForm" (ngSubmit)="updateUser(userDetailForm)" novalidate>
-            <ion-card class="card-items">
-                <ion-card-header color="primary">
-                    General Information
-                </ion-card-header>
-                <ion-card-content>
-                    <ion-list>
-                        <ion-item>
-                            <ion-label stacked>First Name*</ion-label>
-                            <ion-input type="text" [(ngModel)]="userDetail.fname" name="firstname" #firstName="ngModel" required></ion-input>
-                        </ion-item>
-                        <p [hidden]="firstName.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>
-                            First Name is required
-                        </p>
-                        <ion-item>
-                            <ion-label stacked>Last Name*</ion-label>
-                            <ion-input type="text" [(ngModel)]="userDetail.lname" name="lastname" #lastName="ngModel" required></ion-input>
-                        </ion-item>
-                        <p [hidden]="lastName.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>
-                            Last Name is required
-                        </p> 
-                        <ion-item>
-                            <ion-label stacked>Mobile Number*</ion-label>
-                            <ion-input type="tel" [(ngModel)]="userDetail.mobileNo" name="mobile" #mobile="ngModel" required></ion-input>
-                        </ion-item>
-                        <p [hidden]="mobile.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>
-                            Mobile Number is required
-                        </p>
-                    </ion-list>
-                    <div class="submit-btn">
-                        <button ion-button color="primary" type="submit" block>Submit</button>
-                    </div>
+    <gossip-card *ngIf="segment == 'myGossips'" (dataUpdated)="getMyGossips()" [gossips]="myGossips"></gossip-card>
+    <entity-card *ngIf="segment == 'myEntity' && !id" (dataUpdated)="getMyEntity()" [entities]="myEntity"></entity-card>
 
-                </ion-card-content>
-            </ion-card>
-          
-        </form>
-    </ion-list>-->
-    <ion-list class="users-wrapper" *ngIf="segment == 'following'">
+    <ion-list class="users-wrapper mt10" *ngIf="segment == 'following'">
         <ion-card *ngFor="let myFollowee of myFollowees">
             <ion-card-content class="p0">
                 <ion-row>
-                    <ion-col class="p0 sq-col" col-4 (click)="userProfile(myFollowee.ID)"> <img [src]="myFollowee.img" alt=""> </ion-col>
+                    <ion-col class="p0 sq-col" col-4 (click)="userProfile(myFollowee.ID)"> <img [src]="myFollowee.img" alt="" class="profile-pic"> </ion-col>
                     <ion-col col-8 padding-left class="pl5">
                         <div class="entity-title" (click)="userProfile(myFollowee.ID)">{{myFollowee.display_name}}</div>
-                        <div class="entity-status ">
-                            <button ion-button small outline (click)="follow(myFollowee.ID)">Unfollow</button>
+                        <div class="entity-status" *ngIf="myFollowee.ID != globalProvider.userId">
+                            <button ion-button small outline (click)="follow(myFollowee.ID)">{{myFollowee.isFollowing ? 'Unfollow' : 'Follow'}}</button> 
                         </div>
                     </ion-col>
                 </ion-row>
             </ion-card-content>
         </ion-card>
-                        <div  center text-center class="no-data" *ngIf="showNotFound">No data found.</div>
+        <div center text-center class="no-data" *ngIf="!myFollowees?.length">No data found.</div>
     </ion-list>
-    <ion-list class="users-wrapper" *ngIf="segment == 'followers'">
+    <ion-list class="users-wrapper mt10" *ngIf="segment == 'followers'">
         <ion-card *ngFor="let myFollower of myFollowers">
             <ion-card-content class="p0">
                 <ion-row>
-                    <ion-col class="p0 sq-col" col-4 (click)="userProfile(myFollower.ID)"> <img [src]="myFollower.img" alt=""> </ion-col>
+                    <ion-col class="p0 sq-col" col-4 (click)="userProfile(myFollower.ID)"> <img [src]="myFollower.img" alt="profile" class="profile-pic"> </ion-col>
                     <ion-col col-8 padding-left class="pl5">
                         <div class="entity-title" (click)="userProfile(myFollower.ID)">{{myFollower.display_name}}</div>
-                        <div class="entity-status ">
-                            <button ion-button small outline (click)="follow(myFollower.ID)">Follow</button>
-                            <!--<button ion-button small outline (click)="unfollow(myFollower.ID)">Unfollow</button>-->
+                        <div class="entity-status" *ngIf="myFollower.ID != globalProvider.userId">
+                            <button ion-button small outline (click)="follow(myFollower.ID)">{{myFollower.isFollowing ? 'Unfollow' : 'Follow'}}</button>
                         </div>
                     </ion-col>
                 </ion-row>
             </ion-card-content>
         </ion-card>
-        <div  center text-center class="no-data" *ngIf="showNotFound1">No data found.</div>
-        
+        <div center text-center class="no-data" *ngIf="!myFollowers?.length">No data found.</div>
+
     </ion-list>
-    <!--<ion-fab color="white" right>
-        <button ion-fab>
-      <ion-icon name="camera"></ion-icon>
-    <input type="file" accept="image/*" (change)="changeListener($event)" id="fileInput"> 
-    </button>
-    </ion-fab>-->
 </ion-content>
