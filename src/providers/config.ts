@@ -6,6 +6,7 @@ export class GlobalProvider {
     public user: any = {};
     public userId: Number;
     public isMuted: Boolean;
+    public location: String;
     setAuthData(data) { 
         try {
              this.user = JSON.parse(data);
@@ -23,5 +24,8 @@ export class GlobalProvider {
     dropAuthData() {
         this.userId = null;
         this.user = null;
+    }
+    setLocation(location) {
+        this.location = location;
     }
 }

@@ -197,18 +197,18 @@ export class MoreOptionProfile {
     public api: MongerApi,
     public shared: SharedProvider,
     public app: App,
-    public modal: ModalController) {
-
-    this.isMuted = globalProvider.isMuted;
+    public modal: ModalController,
+    public viewCtrl: ViewController) {
+      this.isMuted = globalProvider.isMuted;
   }
-
-  toggleMute() {  
+  toggleMute() {
     this.shared.LS.set('isMuted', !this.isMuted);
     this.globalProvider.toggleMute(!this.isMuted);
     this.isMuted = !this.isMuted;
     return true;
   }
   logOut() {
+    this.viewCtrl.dismiss();
     this.shared.Alert.confirm('Do you want to log out?').then(res => {
       this.api.logout().subscribe(response => {
         this.shared.LS.remove('user');
@@ -223,10 +223,12 @@ export class MoreOptionProfile {
     })
   }
   about () {
+    this.viewCtrl.dismiss();
     let modal = this.modal.create(AboutPage);
     modal.present();
   }
   terms () {
+    this.viewCtrl.dismiss();
     let modal = this.modal.create(TermsPage);
     modal.present();
   }

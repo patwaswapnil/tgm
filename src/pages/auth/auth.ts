@@ -7,6 +7,7 @@ import { MongerApi } from '../../providers/api.provider';
 import { GlobalProvider } from '../../providers/config';
 import { TabsPage } from '../../pages/tabs/tabs';
 import { OneSignal } from '@ionic-native/onesignal';
+import { Geolocation } from '@ionic-native/geolocation';
 
 @Component({
   selector: 'page-auth',
@@ -14,8 +15,8 @@ import { OneSignal } from '@ionic-native/onesignal';
   providers: [SharedProvider, MongerApi]
 })
 export class AuthPage {
-
-  constructor(public platform: Platform, private oneSignal: OneSignal, public globalProvider: GlobalProvider, public api: MongerApi, public shared: SharedProvider, public navCtrl: NavController, public navParams: NavParams, private googlePlus: GooglePlus, private fb: Facebook) {
+  private _location: String;
+  constructor(private _geolocation: Geolocation, public platform: Platform, private oneSignal: OneSignal, public globalProvider: GlobalProvider, public api: MongerApi, public shared: SharedProvider, public navCtrl: NavController, public navParams: NavParams, private googlePlus: GooglePlus, private fb: Facebook) {
     if (platform.is('cordova')) { 
         this.oneSignal.getIds().then(ids => {
           if (typeof (ids['userId']) !== 'undefined') {
@@ -25,11 +26,35 @@ export class AuthPage {
         });
         }
    }
-  ionViewDidLoad() { }
+      
+  ionViewDidLoad() { 
+      this._geolocation.getCurrentPosition().then((resp) => {
+        console.log(resp.coords);
+        this.api.getGeoAddress(resp.coords).subscribe(response => {
+          console.log(response.results);
+          if (response.results[1]) { 
+         console.log(response.results[0].formatted_address) 
+             for (var i=0; i<response.results[0].address_components.length; i++) {
+            for (var b=0;b<response.results[0].address_components[i].types.length;b++) {
+                if (response.results[0].address_components[i].types[b] == "administrative_area_level_2") { 
+                    console.log(response.results[0].address_components[i]);
+                    this.globalProvider.setLocation(response.results[0].address_components[i].long_name);
+                    this._location = response.results[0].address_components[i].long_name;
+                    break;
+                }
+            }
+        }
+          }
+        }, err => {
+          console.log(err);
+        })
+      }).catch((error) => {
+        console.log('Error getting location', error);
+      });
+  }
   googleLogin() {
     this.googlePlus.login({})
-      .then(res => {
-        console.log(res);
+      .then(res => { 
         let data = { fname: res.givenName, lname: res.familyName, email: res.email, userId: res.userId, source: 3 };
         this.api.socialLogin(data).subscribe(res => {
           this.shared.LS.set('user', res);
@@ -52,7 +77,7 @@ export class AuthPage {
     this.navCtrl.setRoot(TabsPage);
   }
   fbLogin() {
-    this.fb.login(['public_profile', 'email'])
+    this.fb.login(['public_profile', 'email', 'user_location'])
       .then((res: FacebookLoginResponse) => {
         this.api.getFbUserInfo(res.authResponse.accessToken).subscribe(response => {
           let data = { fname: response.first_name, lname: response.last_name, email: response.email, userId: res.authResponse.userID, source: 2 };

@@ -291,6 +291,14 @@ export class MongerApi {
       })
       .catch(this.handleError);
   }
+    getGeoAddress(coords): Observable<any> { 
+    let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+    return this.http.get(`http://maps.googleapis.com/maps/api/geocode/json?latlng=${coords.latitude},${coords.longitude}&sensor=true`, { headers: headers })
+      .map((response: Response) => {
+        return response.json();
+      })
+      .catch(this.handleError);
+  }
   handleError(error) {
     console.error(error);
     return Observable.throw(error || 'Server error');

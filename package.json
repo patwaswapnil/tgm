@@ -24,6 +24,7 @@
     "@ionic-native/core": "3.12.1",
     "@ionic-native/deeplinks": "3.12.1",
     "@ionic-native/facebook": "3.12.1",
+    "@ionic-native/geolocation": "^3.12.1",
     "@ionic-native/google-plus": "3.12.1",
     "@ionic-native/keyboard": "3.12.1",
     "@ionic-native/native-audio": "3.12.1",

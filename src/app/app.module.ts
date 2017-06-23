@@ -28,6 +28,7 @@ import { CommentsPage } from '../pages/comments/comments';
 import { ReviewPage } from '../pages/review/review';
 import { GossipsPage } from '../pages/gossips/gossips';
 import { OneSignal } from '@ionic-native/onesignal';
+import { Geolocation } from '@ionic-native/geolocation';
 
 import { MongerApi } from '../providers/api.provider';
 import { GlobalProvider } from '../providers/config';
@@ -114,7 +115,8 @@ import { EntityCardComponent } from '../components/entity-card/entity-card';
     OneSignal,
     GlobalProvider, 
     Camera,
-    Deeplinks 
+    Deeplinks,
+    Geolocation 
   ]
 })
 export class AppModule {}
