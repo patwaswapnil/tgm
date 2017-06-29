@@ -95,7 +95,7 @@ page-user-profile {
         width: auto !important;
     }
     ion-scroll.scroll-x .scroll-content {
-        background: #ae00ff !important;
+        background: color($colors, primary) !important;
     }
     .users-wrapper .entity-status button {
         font-size: 11px !important;
