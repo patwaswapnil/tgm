@@ -7,7 +7,7 @@ import { HttpModule } from '@angular/http';
  
 import { GooglePlus } from '@ionic-native/google-plus';
 import { Facebook } from '@ionic-native/facebook';
-import { Camera } from '@ionic-native/camera';
+import { Camera } from '@ionic-native/camera'; 
 import { Deeplinks } from '@ionic-native/deeplinks';
 
 import { MyApp } from './app.component'; 

@@ -32,10 +32,13 @@
             font-size: 18px !important;
             top: 2px;
         }
-        ion-spinner {
+        ion-spinner.filterSpinner {
             position: absolute;
             top: 14px;
             right: 10px;
+        }
+        .newsLoader {
+            position: absolute !important;            
         }
         .full-width-select {
             max-width: 100%;

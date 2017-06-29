@@ -88,7 +88,7 @@ export class GossipCardComponent {
     }, err => {
       console.log('user cancelled');
     })
-  }
+  } 
   followGossip(gossip, index) {
     let action = 'follow';
     if (this.gossips[index].action.follow != null) {

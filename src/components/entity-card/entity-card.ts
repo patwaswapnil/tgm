@@ -11,6 +11,7 @@ import { MongerApi } from '../../providers/api.provider';
 export class EntityCardComponent {
   @Input()
   entities: any = [{}];
+  @Input() showBookmark: boolean = true;
   @Output() unFollowEvent = new EventEmitter();
   @Output() dataUpdated = new EventEmitter();
   text: string;

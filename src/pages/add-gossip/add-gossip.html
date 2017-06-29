@@ -12,7 +12,7 @@
 <ion-content>
     <div class="add-gossip">
         <form #gossipForm="ngForm" novalidate>
-            <ion-card class="card-items ion-card-full"> 
+            <ion-card class="card-items ion-card-full">
                 <ion-card-content>
                     <ion-list>
                         <ion-searchbar *ngIf="!addGossip.id" (click)="searchEntity()" placeholder="Search Entities"></ion-searchbar>
@@ -23,7 +23,11 @@
                             <h2>{{selectedEntity.title}}</h2>
                             <p>{{selectedEntity.category[0].name}}</p>
                         </ion-item>
-
+                        <ion-item class="pl8 news-wrap" *ngIf="news">
+                            <div class="news-display">
+                                <span class="bold">Source - </span> {{news.title}}
+                            </div>
+                        </ion-item>
                         <ion-item style="margin-left: -17px">
                             <ion-grid>
                                 <ion-row class="emo-img">
@@ -40,8 +44,6 @@
                                 </ion-row>
                             </ion-grid>
                         </ion-item>
-
-
                         <ion-item class="pl8">
                             <ion-label stacked>Gossip as</ion-label>
                             <ion-select interface="popover" name="poastedAs" class="w40" #poastedAs="ngModel" [(ngModel)]="addGossip.posted_as">
@@ -56,18 +58,13 @@
                                 required></textarea>
                             <!--<ion-input type="text" [(ngModel)]="addGossip.gossip" name="gossip" #gossip="ngModel" required></ion-input>-->
                         </ion-item>
-                        <ion-item class="pl8 news-wrap" *ngIf="news">
-                            <div class="news-display">
-                                <span class="bold">Source - </span> {{news}}
-                            </div>
-                        </ion-item>
                         <ion-item class="pl8 img-preview" *ngIf="addGossip.image">
-                             <div>
-                                 <img [src]="addGossip.image" alt="attachment">
-                                   <button  class="action-btn" (click)="removeImage()" ion-button icon-left clear small>
+                            <div>
+                                <img [src]="addGossip.image" alt="attachment">
+                                <button class="action-btn" (click)="removeImage()" ion-button icon-left clear small>
                                         <ion-icon name="md-close"></ion-icon> 
                                     </button>
-                             </div>
+                            </div>
                         </ion-item>
 
                         <ion-item class="pl8">

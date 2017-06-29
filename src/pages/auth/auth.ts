@@ -32,14 +32,14 @@ export class AuthPage {
         console.log(resp.coords);
         this.api.getGeoAddress(resp.coords).subscribe(response => {
           console.log(response.results);
-          if (response.results[1]) { 
-         console.log(response.results[0].formatted_address) 
+          if (response.results[1]) {  
              for (var i=0; i<response.results[0].address_components.length; i++) {
             for (var b=0;b<response.results[0].address_components[i].types.length;b++) {
                 if (response.results[0].address_components[i].types[b] == "administrative_area_level_2") { 
                     console.log(response.results[0].address_components[i]);
                     this.globalProvider.setLocation(response.results[0].address_components[i].long_name);
                     this._location = response.results[0].address_components[i].long_name;
+                    this.shared.LS.set('location', this._location);
                     break;
                 }
             }
@@ -73,6 +73,7 @@ export class AuthPage {
   skip() {
     let user = { "ID": "15", "user_login": "theindianhippie", "user_nicename": "5u5hil-2", "user_email": "sushil@infiniteit.biz", "user_url": "", "user_registered": "2017-04-15 08:32:41", "user_activation_key": "", "user_status": "0", "display_name": "Sushil Sudhakaran", "first_name": "Sushil", "last_name": "Sudhakaran", "source": "", "img": "http:\/\/tgm-inf.cruxservers.in\/wp-content\/themes\/tgm\/images\/user.png", "follower_count": 1, "following_count": 2 };
     this.shared.LS.set('user', user);
+    this.shared.LS.set('isMuted', false);
     this.globalProvider.setAuthData(user);
     this.navCtrl.setRoot(TabsPage);
   }
@@ -83,6 +84,7 @@ export class AuthPage {
           let data = { fname: response.first_name, lname: response.last_name, email: response.email, userId: res.authResponse.userID, source: 2 };
           this.api.socialLogin(data).subscribe(res => {
             this.shared.LS.set('user', res);
+            this.shared.LS.set('isMuted', false); 
             this.globalProvider.setAuthData(res);
             this.fb.logout();
             this.navCtrl.setRoot(TabsPage);

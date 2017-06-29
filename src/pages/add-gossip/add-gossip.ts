@@ -13,7 +13,7 @@ import { SearchPage } from '../../pages/search/search';
 export class AddGossipPage {
   public type: any;
   public news: any;
-  public addGossip: any = { posted_as: this.globalProvider.userId, via: null };
+  public addGossip: any = { posted_as: this.globalProvider.userId, newsId: null };
   public myEntity: any[];
   public user: any = this.globalProvider.user;
   public id;
@@ -25,8 +25,15 @@ export class AddGossipPage {
     this.id = this.navParams.get('id');
     this.addGossip.id = this.navParams.get('id');
     if (this.navParams.get('data')) {
-      this.news = this.navParams.get('data').title;
-      this.addGossip.via = this.navParams.get('data').id;
+      this.news = this.navParams.get('data');
+      this.addGossip.newsId = this.navParams.get('data').id; 
+      this.addGossip.newsTitle = this.navParams.get('data').title; 
+      this.addGossip.newsUrl = this.navParams.get('data').url; 
+    }
+    if (this.navParams.get('news')) {
+      this.news = this.navParams.get('news');  
+      this.addGossip.newsTitle = this.navParams.get('news').title; 
+      this.addGossip.newsUrl = this.navParams.get('news').link; 
     }
 
   }
@@ -56,7 +63,7 @@ export class AddGossipPage {
     modal.present();
   }
   insertGossip(gossip) {
-    console.log(gossip);
+    console.log(gossip); 
     let isAnonymous; 
     if (gossip.posted_as != 'anonymous') {
       gossip.isAnonymous = 0;

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, NgZone } from '@angular/core';
 import { NavController, NavParams, ModalController, ViewController, Content } from 'ionic-angular';
 
 import { SharedProvider } from '../../providers/shared.provider';
@@ -22,6 +22,9 @@ export class EntityProfilePage {
   private _type: any;
   public entityGossips: any[];
   public entityNews: any[];
+  private opacity: number = 0;
+  public headerBackground:any = `rgba(192, 108, 228, ${this.opacity})`;
+  private _preScrollArea:any = 0;
 
   public entityDetail: any = { category: [{}] };
   @ViewChild(Content) content: Content;
@@ -34,7 +37,8 @@ export class EntityProfilePage {
     public viewCtrl: ViewController,
     public smartAudio: SmartAudio,
     private vibration: Vibration,
-    private globalProvider: GlobalProvider) {
+    private globalProvider: GlobalProvider,
+    private ngZone: NgZone) {
     if (!globalProvider.isMuted) {
       try {
         smartAudio.preload('negative', 'assets/sounds/Negative.mp3');
@@ -55,6 +59,21 @@ export class EntityProfilePage {
     this.getEntityDetail();
     this.getGossips();
     this.getEntityNews();
+  }
+   update() {  
+    this.ngZone.run(() => {
+      if (this._preScrollArea > this.content.scrollTop) { 
+         if (this.opacity > 0 && this.content.scrollTop < 250)         
+         this.opacity = this.opacity - 0.1; 
+         this.headerBackground = `rgba(192, 108, 228, ${this.opacity})`;                
+      } else if  (this._preScrollArea < this.content.scrollTop) { 
+         if (this.opacity < 1  && this.content.scrollTop < 250)
+         this.opacity = this.opacity + 0.1; 
+
+         this.headerBackground = `rgba(192, 108, 228, ${this.opacity})`;       
+      }
+    });
+    this._preScrollArea = this.content.scrollTop;
   }
   boomarkEntity(id) {
     this.entityDetail.entityFollow = !this.entityDetail.entityFollow;

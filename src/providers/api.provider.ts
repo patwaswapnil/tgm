@@ -7,7 +7,7 @@ import 'rxjs/Rx';
 @Injectable()
 export class MongerApi {
 
-  constructor(public globalProvider: GlobalProvider, public http: Http) { 
+  constructor(public globalProvider: GlobalProvider, public http: Http) {
     console.log(this.globalProvider.userId);
   }
   getCategories(): Observable<any> {
@@ -42,7 +42,7 @@ export class MongerApi {
       })
       .catch(this.handleError);
   }
-  trendingEntity(): Observable<any> {
+  trendingEntity(pageNo?): Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
     return this.http.get(`${baseURL}topGossipedEntities&userId=${this.globalProvider.userId}`, { headers: headers })
       .map((response: Response) => {
@@ -130,7 +130,7 @@ export class MongerApi {
       })
       .catch(this.handleError);
   }
-   
+
   updateProfile(fname, lname, mobile): Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
     return this.http.get(`${baseURL}insertComment&fname=${fname}&userId=${this.globalProvider.userId}&lname=${lname}&mobileNo=${mobile}`, { headers: headers })
@@ -139,13 +139,13 @@ export class MongerApi {
       })
       .catch(this.handleError);
   }
-  insertGossip(data): Observable<any> { 
+  insertGossip(data): Observable<any> {
     let headers = new Headers({ "enctype": "multipart/form-data" });
-    data.userId = this.globalProvider.userId; 
-    var form_data = new FormData(); 
-    for ( var key in data ) {
-        form_data.append(key, data[key]);
-    } 
+    data.userId = this.globalProvider.userId;
+    var form_data = new FormData();
+    for (var key in data) {
+      form_data.append(key, data[key]);
+    }
     return this.http.post(`${baseURL}insertGossip`, form_data, { headers: headers })
       .map((response: Response) => {
         return response.json();
@@ -250,12 +250,12 @@ export class MongerApi {
   }
   addEntity(data): Observable<any> {
     let headers = new Headers({ "enctype": "multipart/form-data" });
-    data.userId = this.globalProvider.userId; 
-    var form_data = new FormData(); 
-    for ( var key in data ) {
-        form_data.append(key, data[key]);
-    } 
-    return this.http.post(`${baseURL}insertEntity`,  form_data, { headers: headers })
+    data.userId = this.globalProvider.userId;
+    var form_data = new FormData();
+    for (var key in data) {
+      form_data.append(key, data[key]);
+    }
+    return this.http.post(`${baseURL}insertEntity`, form_data, { headers: headers })
       .map((response: Response) => {
         return response.json();
       })
@@ -283,7 +283,7 @@ export class MongerApi {
       })
       .catch(this.handleError);
   }
-  logout(): Observable<any> { 
+  logout(): Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
     return this.http.get(`${baseURL}appLogout&userId=${this.globalProvider.userId}`, { headers: headers })
       .map((response: Response) => {
@@ -291,16 +291,44 @@ export class MongerApi {
       })
       .catch(this.handleError);
   }
-    getGeoAddress(coords): Observable<any> { 
+  // searchNews(title): Observable<any> {
+  //   let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+  //   return this.http.get(`${baseURL}getEntitySearchNews&title=${title}`, { headers: headers })
+  //     .map((response: Response) => {
+  //       return response.json();
+  //     })
+  //     .catch(this.handleError);
+  // }
+  getGeoAddress(coords): Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
     return this.http.get(`http://maps.googleapis.com/maps/api/geocode/json?latlng=${coords.latitude},${coords.longitude}&sensor=true`, { headers: headers })
       .map((response: Response) => {
         return response.json();
       })
       .catch(this.handleError);
-  }
+  } 
+  getNews(): Observable<any> {
+    console.log(this.globalProvider.location);
+    let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });  
+    return this.http.get(`https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Fnews%2Fsection%3Fgeo%3D${this.globalProvider.location || 'mumbai'}%26output%3Drss%26num%3D40&api_key=o8aomlxn5spw5klgsqjgdlasz9kekalrp2hgptsb`, { headers: headers })
+      .map((response: Response) => { 
+         return response.json();
+      })
+      .catch(this.handleError);
+  } 
+  searchNews(query): Observable<any> {
+    if (query) {
+      query = query.replace(' ', '-');
+    }
+    let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });  
+    return this.http.get(`https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Fnews%3Fq%3D${query}%26output%3Drss%26num%3D20&api_key=o8aomlxn5spw5klgsqjgdlasz9kekalrp2hgptsb`, { headers: headers })
+      .map((response: Response) => { 
+         return response.json();
+      })
+      .catch(this.handleError);
+  } 
   handleError(error) {
     console.error(error);
     return Observable.throw(error || 'Server error');
-  } 
+  }
 } 
