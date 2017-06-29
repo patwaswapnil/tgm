@@ -1,14 +1,26 @@
 <ion-header>
     <ion-toolbar>
-        <ion-searchbar color="primary" [(ngModel)]="queryText" (ionInput)="searchEntity()" placeholder="Search " showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">
+        <ion-searchbar color="primary" *ngIf="param != 'news'" [(ngModel)]="queryText" [debounce]="250"  (ionInput)="searchEntity()" placeholder="Search.." showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">
         </ion-searchbar>
-        <ion-spinner class="filterSpinner" *ngIf="loadingData" color="primary" icon="android"></ion-spinner>
+        <ion-row  class="p0 m0"  *ngIf="param == 'news'">
+        <ion-col class="p0 m0" col-10>
+        <ion-searchbar color="primary" [(ngModel)]="newsText" placeholder="Search the web.." showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">
+        </ion-searchbar>
+        </ion-col>
+        <ion-col class="p0 m0" col-2>
+            <button (click)="searchNews(newsText)" [disabled]="!newsText" ion-button icon-only class="w100 h100 p0 m0" >
+                <ion-icon name="search" *ngIf="!loadingData"></ion-icon>
+                <ion-spinner class="newsLoader" *ngIf="loadingData"  color="whitec" icon="android"></ion-spinner>            
+            </button>
+        </ion-col>
+        </ion-row>
+        <ion-spinner class="filterSpinner" *ngIf="loadingData && param != 'news'" color="primary" icon="android"></ion-spinner>
     </ion-toolbar>
 </ion-header>
 <!--<ion-searchbar color="primary" [(ngModel)]="queryText" (ionInput)="searchUser()" placeholder="Search customer" showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true" (ionClear)="clearUsers()">
         </ion-searchbar>-->
 <ion-content class="outer-content">
-    <div class="" *ngIf="param != 'gossip'">
+    <div class="" *ngIf="param != 'gossip' && param != 'news'">
         <ion-select interface="popover" name="param" (ionChange)="selectChange()" class="full-width-select" [(ngModel)]="type">
             <!--<ion-option value="gossip">Gossip</ion-option>-->
             <ion-option value="gossip">Gossip</ion-option> 
@@ -63,6 +75,20 @@
         </ion-row>
     </div> 
 </ion-list>
+<div *ngIf="type == 'news'">
+        <ion-card *ngFor="let news of geoNews">
+            <ion-card-content>
+                {{news.title}}
+            </ion-card-content>
+            <ion-col class="p0">
+                <button color="dark" class="add-gossip" ion-button icon-left clear small (click)="addGossips(news)"> 
+                      <ion-icon ios="ios-add" md="md-add" class="bold"></ion-icon>
+                      <span>Gossip about this!</span>
+                      <ion-icon name="arrow-round-forward" class="ml8 news-arrow"></ion-icon>
+        </button>
+            </ion-col>
+        </ion-card>
+    </div>
         <div *ngIf="showNotFound" class="listing-done" text-center padding>No result found.</div>
 
     <!--<ion-list no-lines>

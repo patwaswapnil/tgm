@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { LoadingController, ToastController, AlertController } from 'ionic-angular';
+import { LoadingController, ToastController, AlertController, IonicApp } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
@@ -9,7 +9,7 @@ import { Camera, CameraOptions } from '@ionic-native/camera';
 export class SharedProvider {
   private _loading;
   private _toastMsg;
-  constructor(private camera: Camera, private _loadingCtrl: LoadingController, private _toastCtrl: ToastController, private _storage: Storage, private _alert: AlertController, private _socialSharing: SocialSharing, public _photoViewer: PhotoViewer) { }
+  constructor(private _ionicApp: IonicApp, private camera: Camera, private _loadingCtrl: LoadingController, private _toastCtrl: ToastController, private _storage: Storage, private _alert: AlertController, private _socialSharing: SocialSharing, public _photoViewer: PhotoViewer) { }
   //Loader Start 
   public Loader = {
     show: (template?) => {
@@ -26,6 +26,13 @@ export class SharedProvider {
       setTimeout(() => {
         this.Loader.hide();
       }, timer || 3000);
+    },
+    closeIfActive: () => {
+      let activePortal = this._ionicApp._loadingPortal.getActive();
+      if (activePortal) {
+        activePortal.dismiss();
+        return;
+      }
     }
   }
   public Toast = {
@@ -91,7 +98,7 @@ export class SharedProvider {
     }
   }
   public SocialSharing = {
-    shareVia: (message, subject, file?, url?) => { 
+    shareVia: (message, subject, file?, url?) => {
       this._socialSharing.share(message, subject, file || null, url || null).then(() => {
         return true;
       }).catch(() => {
@@ -100,8 +107,8 @@ export class SharedProvider {
     }
   }
   public imageViewer = {
-    show:  (url, title, share?) => {
-       this._photoViewer.show(url, title, {share: share || true}); 
+    show: (url, title, share?) => {
+      this._photoViewer.show(url, title, { share: share || true });
     }
   }
   public uploadMedia = {
@@ -109,20 +116,20 @@ export class SharedProvider {
       let sourceType
       if (source == 1) {
         sourceType = this.camera.PictureSourceType.CAMERA;
-      }  else {
+      } else {
         sourceType = this.camera.PictureSourceType.PHOTOLIBRARY;
       }
       const options: CameraOptions = {
-      quality: 20,
-      targetWidth: 600,
-      targetHeight: 600,
-      destinationType: this.camera.DestinationType.DATA_URL,
-      encodingType: this.camera.EncodingType.PNG,
-      mediaType: this.camera.MediaType.PICTURE,
-      sourceType: sourceType,
-      allowEdit: true
-    } 
-    return this.camera.getPicture(options);
+        quality: 20,
+        targetWidth: 600,
+        targetHeight: 600,
+        destinationType: this.camera.DestinationType.DATA_URL,
+        encodingType: this.camera.EncodingType.PNG,
+        mediaType: this.camera.MediaType.PICTURE,
+        sourceType: sourceType,
+        allowEdit: true
+      }
+      return this.camera.getPicture(options);
     }
   }
 

@@ -4,7 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { Keyboard } from '@ionic-native/keyboard';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { SharedProvider } from '../providers/shared.provider';
-import { GlobalProvider } from '../providers/config';
+import { GlobalProvider, statusBarColor } from '../providers/config';
 import { OneSignal } from '@ionic-native/onesignal';
 import { Deeplinks } from '@ionic-native/deeplinks';
 
@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { AuthPage } from '../pages/auth/auth';
 import { CommentsPage } from '../pages/comments/comments';
 import { UserProfilePage } from '../pages/user-profile/user-profile';
+import { SearchPage } from '../pages/search/search';
 
 declare var window;
 
@@ -35,7 +36,11 @@ export class MyApp {
       }
     });
     shared.LS.get('isMuted').then((data: any) => {
-      this.globalProvider.toggleMute(false);
+      this.globalProvider.toggleMute(data);
+    });
+    shared.LS.get('location').then((data: any) => {
+      console.log(data);
+      this.globalProvider.setLocation(data);
     });
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
@@ -43,7 +48,7 @@ export class MyApp {
       keyboard.disableScroll(true);
       keyboard.hideKeyboardAccessoryBar(false);
       statusBar.styleDefault();
-      statusBar.backgroundColorByHexString('#5e1b7e');
+      statusBar.backgroundColorByHexString(statusBarColor);
       splashScreen.hide();
 
       if (platform.is('cordova')) {

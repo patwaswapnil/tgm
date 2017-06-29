@@ -1,6 +1,6 @@
-<ion-content>
+<ion-content (ionScroll)="update()">
     <div class="subject-bg ">
-        <ion-toolbar color="primary" class="trasparent-header">
+        <ion-toolbar color="primary" class="trasparent-header" [style.background]="headerBackground">
             <button ion-button icon-left color="white" (click)="dismiss()">
       <ion-icon name="arrow-back"></ion-icon>
     <ion-title>{{entityDetail.category[0].name}}</ion-title>

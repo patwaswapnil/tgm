@@ -94,17 +94,17 @@ export class UserProfilePage {
     modal.present();
   }
   getMyGossips(loader?) {
-    if (loader) {
+    if (loader && !this.myGossips) {
       this.shared.Loader.show();
     }
     this.api.getMyGossips(this.id).subscribe(data => {
       this.myGossips = data;
       if (loader) {
-        this.shared.Loader.hide();
+        this.shared.Loader.closeIfActive();
       }
     }, err => {
       if (loader) {
-        this.shared.Loader.hide();
+        this.shared.Loader.closeIfActive();
       }
       console.error(err);
     });

@@ -16,9 +16,9 @@
                 <p>
                     {{gossip.content}}
                 </p>
-                <img *ngIf="gossip.img" [src]="gossip.img" (click)="displayImage(gossip.img,gossip.title)">
-                 <div class="news-display" *ngIf="gossip.newsDetails">
-                               <span class="bold" style="margin-left: 0px">Source - </span> {{gossip.newsDetails.title}}
+                <img *ngIf="gossip.img"  [src]="gossip.img" (click)="displayImage(gossip.img,gossip.title)">
+                 <div class="news-display" *ngIf="gossip.news_title">
+                       <span class="bold" style="margin-left: 0px">Source - </span> {{gossip.news_title}}
                  </div>
                 <p text-right class="gossip-id">Gossip #{{gossip.id}}</p>
             </ion-card-content>

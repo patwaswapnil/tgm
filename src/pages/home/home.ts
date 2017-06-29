@@ -5,6 +5,7 @@ import { NavController, Content, ModalController, ActionSheetController, AlertCo
 import { SearchPage } from '../search/search';
 import { UserProfilePage } from '../user-profile/user-profile';
 import { CommentsPage } from '../comments/comments';
+import { AddGossipPage } from '../add-gossip/add-gossip';
 
 import { SharedProvider } from '../../providers/shared.provider';
 import { MongerApi } from '../../providers/api.provider';
@@ -35,7 +36,7 @@ export class HomePage {
   public category: any = 'allCategories';
   public hatedGossips: any[];
   public lovedGossips: any[];
-  public latestGossips: any[];
+  public geoNews: any[];
   public trendingEntities: any[];
   private _isPageLoaded:any = 0;
   private _firstLoad:boolean = true;
@@ -51,69 +52,53 @@ export class HomePage {
   } else { 
     this._isPageLoaded =   this._isPageLoaded + Number(1);  
   }
-  }
+}
+getNews() {
+  this.shared.Loader.show();
+  this.api.getNews().subscribe(data => {
+    console.log(data);
+      this.geoNews = data.items;
+      this.shared.Loader.closeIfActive(); 
+  }, err => {
+    console.log(err);
+     this.shared.Loader.closeIfActive(); 
+  })
+}
   topHatedGossips() { 
-    if (this._firstLoad) {
+    if (this._firstLoad && !this.hatedGossips) {
       this.shared.Loader.show(); 
     }
     this.api.topHatedGossips().subscribe(data => {
       this.hatedGossips = data;  
-       if (this._firstLoad) {
-      this.shared.Loader.hide(); 
-    }
+      this.shared.Loader.closeIfActive(); 
     }, err => { 
       console.error(err);
-         if (this._firstLoad) {
-      this.shared.Loader.hide(); 
-    }
-    } );
-  }
-  getLatestGossips() {  
-     if (this._firstLoad) {
-      this.shared.Loader.show(); 
-    } 
-    this.api.getLatestGossips().subscribe(data => {
-      this.latestGossips = data; 
-       if (this._firstLoad) {
-      this.shared.Loader.hide(); 
-    }
-    }, err => { 
-         if (this._firstLoad) {
-      this.shared.Loader.hide(); 
-    }
-      console.error(err);
+      this.shared.Loader.closeIfActive(); 
     });
-  }
+  } 
+
   topLovedGossips() {  
-      if (this._firstLoad) {
+      if (this._firstLoad && !this.lovedGossips) {
       this.shared.Loader.show(); 
     }
     this.api.topLovedGossips().subscribe(data => {
       this.lovedGossips = data; 
-         if (this._firstLoad) {
-      this.shared.Loader.hide(); 
-    }
+      this.shared.Loader.closeIfActive(); 
     }, err => { 
       console.error(err);
-       if (this._firstLoad) {
-      this.shared.Loader.hide(); 
-    }
+      this.shared.Loader.closeIfActive(); 
     });
   }
   trendingEntity() {  
-     if (this._firstLoad) {
+     if (this._firstLoad && !this.trendingEntities) {
       this.shared.Loader.show(); 
     }
     this.api.trendingEntity().subscribe(data => {
-      this.trendingEntities = data; 
-        if (this._firstLoad) {
-      this.shared.Loader.hide(); 
-    } 
+      this.trendingEntities = data;  
+      this.shared.Loader.closeIfActive();  
     }, err => { 
       console.error(err);
-      if (this._firstLoad) {
-      this.shared.Loader.hide(); 
-    } 
+       this.shared.Loader.closeIfActive();  
     });
   }
   update() {
@@ -127,7 +112,12 @@ export class HomePage {
     this._preScrollArea = this.content.scrollTop;
   }
   search() {
-    let modal = this.modal.create(SearchPage);
+    let modal
+    if (this.segment == 'news') {
+      modal = this.modal.create(SearchPage, { news: 'news' });
+    } else {
+      modal = this.modal.create(SearchPage);
+    }
     modal.present();
   }
   tabChange(segment, loader) {
@@ -140,11 +130,17 @@ export class HomePage {
       this.topHatedGossips();
     } else if (segment == 'topRated') {
       this.topLovedGossips();
-    } else if (segment == 'latest') {
-      this.getLatestGossips();
+    } else if (segment == 'news') {
+      this.getNews();
     } else if (segment == 'trending') {
       this.trendingEntity();
     }
+  }
+  addGossips(news) {
+    let modal = this.modal.create(AddGossipPage, { type: null, id: 460, data: news })
+    modal.onDidDismiss((type) => { 
+    });
+    modal.present();
   }
 
 }

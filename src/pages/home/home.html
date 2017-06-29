@@ -10,8 +10,8 @@
             <ion-segment-button value="topRated">
                 Rated
             </ion-segment-button>
-            <ion-segment-button value="latest">
-                Latest
+            <ion-segment-button value="news">
+                News
             </ion-segment-button>
         </ion-segment>
     </ion-toolbar>
@@ -19,9 +19,21 @@
 <ion-content (ionScroll)="update()"> 
     <gossip-card *ngIf="segment == 'topHated'" (dataUpdated)="tabChange(segment, true)" [gossips]="hatedGossips"></gossip-card>
     <gossip-card *ngIf="segment == 'topRated'" (dataUpdated)="tabChange(segment, true)" [gossips]="lovedGossips"></gossip-card>
-    <gossip-card *ngIf="segment == 'latest'" (dataUpdated)="tabChange(segment, true)" [gossips]="latestGossips"></gossip-card>
-    <entity-card *ngIf="segment == 'trending'" (dataUpdated)="tabChange(segment, true)" [entities]="trendingEntities"></entity-card> 
-    
+    <entity-card *ngIf="segment == 'trending'" (dataUpdated)="tabChange(segment, true)" [showBookmark]="false" [entities]="trendingEntities"></entity-card>
+    <div *ngIf="segment == 'news'">
+        <ion-card *ngFor="let news of geoNews">
+            <ion-card-content>
+                {{news.title}}
+            </ion-card-content>
+            <ion-col class="p0">
+                <button color="dark" class="add-gossip" ion-button icon-left clear small (click)="addGossips(news)"> 
+                      <ion-icon ios="ios-add" md="md-add" class="bold"></ion-icon>
+                      <span>Gossip about this!</span>
+                      <ion-icon name="arrow-round-forward" class="ml8 news-arrow"></ion-icon>
+        </button>
+            </ion-col>
+        </ion-card>
+    </div>
     <ion-fab bottom right *ngIf="showSearch" [@myAnimation]>
         <button ion-fab color="primary" (click)="search()">
       <ion-icon name="search"></ion-icon>

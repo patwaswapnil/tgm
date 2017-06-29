@@ -90,11 +90,14 @@ entity-card {
         font-style: italic;
     }
     .entity-icon img {
-        height: 17px !important;
-        width: 17px;
+        height: 25px !important;
+        width: 24px; 
         display: inline;
         vertical-align: middle;
         margin-right: 5px !important;
+    }
+    span.gossip-count {
+        margin-top: 3px;
     }
     .entity-icon button {
         margin: 0px;
