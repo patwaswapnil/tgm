@@ -23,6 +23,7 @@ node_modules/
 tmp/
 temp/
 www/
+index.html
 hooks/
 platforms/
 plugins/
