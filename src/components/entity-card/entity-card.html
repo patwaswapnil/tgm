@@ -27,7 +27,7 @@
                              </button>
                     </ion-col>
                     <ion-col class="entity-icon" *ngIf="showBookmark">
-                        <button ion-button icon-only small color="whitec" (click)="boomarkEntity(entity.id, index)" item-right [class]="entity.entityFollow ? 'bookmark-btn1 liked' : 'bookmark-btn1'">
+                        <button ion-button icon-only small color="whitec" (click)="bookmarkEntity(entity.id, index)" item-right [class]="entity.entityFollow ? 'bookmark-btn1 liked' : 'bookmark-btn1'">
                                 <ion-icon name="bookmark"></ion-icon>
                         </button>
                     </ion-col>
@@ -35,5 +35,5 @@
             </ion-card>
         </ion-col>
     </ion-row>
-    <div center text-center class="no-data" *ngIf="entities?.length">No entity found.</div>
+    <div center text-center class="no-data" *ngIf="!entities?.length">No entity found.</div>
 </ion-list>

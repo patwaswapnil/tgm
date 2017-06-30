@@ -13,8 +13,7 @@ export class EntityCardComponent {
   entities: any = [{}];
   @Input() showBookmark: boolean = true;
   @Output() unFollowEvent = new EventEmitter();
-  @Output() dataUpdated = new EventEmitter();
-  text: string;
+  @Output() dataUpdated = new EventEmitter(); 
 
   constructor(public sanitizer: DomSanitizer, public api: MongerApi, public modal: ModalController, public shared: SharedProvider) {
 
@@ -29,7 +28,7 @@ export class EntityCardComponent {
     })
     modal.present(); 
   }
-  boomarkEntity(id, index) {
+  bookmarkEntity(id, index) {
     this.entities[index].entityFollow = !this.entities[index].entityFollow;
     this.api.followEntity(id).subscribe(data => {
       this.unFollowEvent.next();

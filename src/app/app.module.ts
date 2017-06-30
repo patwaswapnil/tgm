@@ -44,7 +44,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
 import { GossipCardComponent } from '../components/gossip-card/gossip-card';
-import { EntityCardComponent } from '../components/entity-card/entity-card'; 
+import { EntityCardComponent } from '../components/entity-card/entity-card';
+import { NewsComponent } from '../components/news/news'; 
 
 
 @NgModule({
@@ -68,7 +69,8 @@ import { EntityCardComponent } from '../components/entity-card/entity-card';
     EntityCardComponent,
     MoreOptionProfile,
     AboutPage,
-    TermsPage 
+    TermsPage,
+    NewsComponent 
   ],
   imports: [
     BrowserModule,

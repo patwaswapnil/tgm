@@ -57,7 +57,7 @@ export class EntityProfilePage {
       this.tapEvent(1);
     }
     this.getEntityDetail();
-    this.getGossips();
+    this.getGossips(true);
     this.getEntityNews();
   }
    update() {  
@@ -88,17 +88,19 @@ export class EntityProfilePage {
       console.error(err);
     })
   }
-  getGossips() {
-    this.shared.Loader.show();
+  getGossips(showLoader?) {
+    if (showLoader) {
+      this.shared.Loader.show();
+    }
     let feedbackType = 0;
     if (this.segment == 'hated') {
       feedbackType = 1;
     }
     this.api.getGossipByEntity(this._id, feedbackType).subscribe(data => {
       this.entityGossips = data;
-      this.shared.Loader.hide();
+      this.shared.Loader.closeIfActive();
     }, err => {
-      this.shared.Loader.hide();
+      this.shared.Loader.closeIfActive();
       console.log(err);
     })
   }
@@ -111,7 +113,7 @@ export class EntityProfilePage {
   }
   updateSegment(segment) {
     if (segment != 'news') {
-      this.getGossips();
+      this.getGossips(true);
     }
   }
 

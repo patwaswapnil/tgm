@@ -30,7 +30,7 @@ import { GossipCardComponent } from '../../components/gossip-card/gossip-card';
   ]
 })
 export class HomePage {
-  public segment: any = 'trending';
+  public segment: any = 'news';
   private _preScrollArea: any = 0;
   public showSearch: any = true;
   public category: any = 'allCategories';
@@ -44,7 +44,8 @@ export class HomePage {
   constructor(public navCtrl: NavController, public api: MongerApi, public ngZone: NgZone, public modal: ModalController, public shared: SharedProvider, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
   }
   ionViewDidLoad() {
-    this.trendingEntity();
+    // this.trendingEntity();
+    this.getNews();
   }
   ionViewDidEnter() {
      if (this._isPageLoaded > 0) {
@@ -54,9 +55,10 @@ export class HomePage {
   }
 }
 getNews() {
-  this.shared.Loader.show();
-  this.api.getNews().subscribe(data => {
-    console.log(data);
+   if (this._firstLoad && !this.geoNews) {
+      this.shared.Loader.show(); 
+  }
+  this.api.getNews().subscribe(data => { 
       this.geoNews = data.items;
       this.shared.Loader.closeIfActive(); 
   }, err => {

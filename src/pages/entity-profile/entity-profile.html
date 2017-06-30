@@ -73,19 +73,6 @@
     </ion-segment>
     <ion-list class="comments">
         <gossip-card [gossips]="entityGossips" *ngIf="segment == 'hated' || segment == 'rated'"></gossip-card>
-        <span *ngIf="segment == 'news'">
-<ion-card *ngFor="let news of entityNews"> 
-  <ion-card-content>
-    {{news.title}}
-  </ion-card-content>
-    <ion-col class="p0">
-                        <button color="dark" class="add-gossip"   ion-button icon-left clear small (click)="addGossips(news)"> 
-                      <ion-icon ios="ios-add" md="md-add" class="bold"></ion-icon>
-                      <span>Gossip about this!</span>
-                      <ion-icon name="arrow-round-forward" class="ml8 news-arrow"></ion-icon>
-        </button>
-   </ion-col>
-        </ion-card>
-        </span>
+        <news *ngIf="segment == 'news'" [newsList]="entityNews"></news>
     </ion-list>
 </ion-content>

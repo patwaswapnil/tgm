@@ -1,0 +1,14 @@
+<div class="mt10">
+<ion-card *ngFor="let news of newsList" class="news-card">
+  <ion-card-content class="news-content">
+    {{news?.title}}
+  </ion-card-content>
+  <ion-col class="p0">
+    <button color="dark" class="add-gossip" ion-button icon-left clear small (click)="addGossips(news)"> 
+                      <ion-icon ios="ios-add" md="md-add" class="bold"></ion-icon>
+                      <span class="mt2">Gossip about this!</span>
+                      <ion-icon name="arrow-round-forward" class="ml8 news-arrow"></ion-icon>
+    </button>
+  </ion-col>
+</ion-card>
+</div>

@@ -1,44 +1,45 @@
 <ion-header>
     <ion-toolbar>
-        <ion-searchbar color="primary" *ngIf="param != 'news'" [(ngModel)]="queryText" [debounce]="250"  (ionInput)="searchEntity()" placeholder="Search.." showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">
+        <ion-searchbar color="primary" *ngIf="param != 'news'" [(ngModel)]="queryText" [debounce]="250" (ionInput)="searchEntity()"
+            placeholder="Search.." showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">
         </ion-searchbar>
-        <ion-row  class="p0 m0"  *ngIf="param == 'news'">
-        <ion-col class="p0 m0" col-10>
-        <ion-searchbar color="primary" [(ngModel)]="newsText" placeholder="Search the web.." showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">
-        </ion-searchbar>
-        </ion-col>
-        <ion-col class="p0 m0" col-2>
-            <button (click)="searchNews(newsText)" [disabled]="!newsText" ion-button icon-only class="w100 h100 p0 m0" >
+        <form #form="ngForm" (ngSubmit)="searchNews(newsText)">
+            <ion-row class="p0 m0" *ngIf="param == 'news'">
+                <ion-col class="p0 m0" col-10>
+                    <ion-searchbar color="primary" [(ngModel)]="newsText" name="newsText" placeholder="Search the web.." showCancelButton="true"
+                        (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">
+                    </ion-searchbar>
+                </ion-col>
+                <ion-col class="p0 m0" col-2>
+                    <button type="submit" [disabled]="!newsText" ion-button icon-only class="w100 h100 p0 m0">
                 <ion-icon name="search" *ngIf="!loadingData"></ion-icon>
                 <ion-spinner class="newsLoader" *ngIf="loadingData"  color="whitec" icon="android"></ion-spinner>            
             </button>
-        </ion-col>
-        </ion-row>
+                </ion-col>
+            </ion-row>
+        </form>
         <ion-spinner class="filterSpinner" *ngIf="loadingData && param != 'news'" color="primary" icon="android"></ion-spinner>
     </ion-toolbar>
 </ion-header>
-<!--<ion-searchbar color="primary" [(ngModel)]="queryText" (ionInput)="searchUser()" placeholder="Search customer" showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true" (ionClear)="clearUsers()">
-        </ion-searchbar>-->
 <ion-content class="outer-content">
     <div class="" *ngIf="param != 'gossip' && param != 'news'">
         <ion-select interface="popover" name="param" (ionChange)="selectChange()" class="full-width-select" [(ngModel)]="type">
-            <!--<ion-option value="gossip">Gossip</ion-option>-->
-            <ion-option value="gossip">Gossip</ion-option> 
+            <ion-option value="gossip">Gossip</ion-option>
             <ion-option value="entity">Entity</ion-option>
             <ion-option value="categories">Category</ion-option>
         </ion-select>
     </div>
     <ion-list *ngIf="type == 'entity'">
-  <ion-item (click)="entitySelected(result)" *ngFor="let result of results" >
-    <ion-avatar item-left >
-      <img [src]="result.img">
-    </ion-avatar>
-    <h2>{{result.title}}</h2>
-    <p>{{result.category[0].name}}</p>
-  </ion-item>
-</ion-list>
-<ion-list *ngIf="type == 'gossip'">
-      <ion-card class="home-listing" (click)="gossipSelected(gossip.id)" *ngFor="let gossip of results">
+        <ion-item (click)="entitySelected(result)" *ngFor="let result of results">
+            <ion-avatar item-left>
+                <img [src]="result.img">
+            </ion-avatar>
+            <h2>{{result.title}}</h2>
+            <p>{{result.category[0].name}}</p>
+        </ion-item>
+    </ion-list>
+    <ion-list *ngIf="type == 'gossip'">
+        <ion-card class="home-listing" (click)="gossipSelected(gossip.id)" *ngFor="let gossip of results">
             <ion-item class="border-top">
                 <ion-avatar item-left>
                     <img [src]="gossip.gossip_about.img">
@@ -53,48 +54,34 @@
             <ion-card-content>
                 <p class="oneLiner">
                     {{gossip.content}}
-                </p> 
+                </p>
                 <p text-right class="gossip-id">Gossip #{{gossip.id}}</p>
-            </ion-card-content> 
-        </ion-card> 
-  
-</ion-list>
-<ion-list *ngIf="type == 'categories'">
-        <div class="category">
-        <ion-row>
-            <ion-col col-6 col-md-4 *ngFor="let category of results">
-                <ion-card class="m0" (click)="categorySelected(category)">
-                    <div class="category-content" [style.background-image]="getBackground(category.attachment)">
-                        <div class="card-title">{{category.name}}</div>
-                    </div>
-                    <div class="entity-count border-right">
-                        {{category.count}} {{category.count > 1 ? 'Entities' : 'Entity'}}
-                    </div>
-                </ion-card>
-            </ion-col>
-        </ion-row>
-    </div> 
-</ion-list>
-<div *ngIf="type == 'news'">
-        <ion-card *ngFor="let news of geoNews">
-            <ion-card-content>
-                {{news.title}}
             </ion-card-content>
-            <ion-col class="p0">
-                <button color="dark" class="add-gossip" ion-button icon-left clear small (click)="addGossips(news)"> 
-                      <ion-icon ios="ios-add" md="md-add" class="bold"></ion-icon>
-                      <span>Gossip about this!</span>
-                      <ion-icon name="arrow-round-forward" class="ml8 news-arrow"></ion-icon>
-        </button>
-            </ion-col>
         </ion-card>
-    </div>
-        <div *ngIf="showNotFound" class="listing-done" text-center padding>No result found.</div>
 
-    <!--<ion-list no-lines>
-        <button ion-item *ngFor="let user of users" >
-    <span class="user-name capitalize">{{user.first_name}} {{user.last_name}}</span> - <span class="user-mobile">{{user.mobile}}</span>
-    <ion-icon name="ios-person-outline" item-left></ion-icon> 
-  </button>
-    </ion-list>-->
+    </ion-list>
+    <ion-list *ngIf="type == 'categories'">
+        <div class="category">
+            <ion-row>
+                <ion-col col-6 col-md-4 *ngFor="let category of results">
+                    <ion-card class="m0" (click)="categorySelected(category)">
+                        <div class="category-content" [style.background-image]="getBackground(category.attachment)">
+                            <div class="card-title">{{category.name}}</div>
+                        </div>
+                        <div class="entity-count border-right">
+                            {{category.count}} {{category.count > 1 ? 'Entities' : 'Entity'}}
+                        </div>
+                    </ion-card>
+                </ion-col>
+            </ion-row>
+        </div>
+    </ion-list>
+    <div *ngIf="type == 'news'" text-center>
+        <news [newsList]="geoNews"></news>
+        <button ion-button icon-left outline (click)="createNewEntity(newsText)" *ngIf="!geoNews?.length && newsText" color="primary" class="mt20 add-button ">
+            <ion-icon name="add"></ion-icon>
+            Create entity for &nbsp; <span class="bold capitalize italic">{{newsText}} </span> 
+        </button>
+    </div>
+    <div *ngIf="showNotFound" class="listing-done" text-center padding>No result found.</div>
 </ion-content>

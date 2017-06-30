@@ -96,7 +96,6 @@ export class SearchPage {
     dismiss(data) {
         this.viewCtrl.dismiss(data);
     }
-
     entitySelected(data) {
         if (this._isEdding) {
             this.dismiss(data);
@@ -113,32 +112,32 @@ export class SearchPage {
         let modal = this.modal.create(GossipsPage, { data: gossip });
         modal.present();
     }
-
     selectChange() {
         this.results = [];
         this.queryText = '';
     }
-    addGossips(news) {
-        this.shared.Loader.show();
-        this.api.searchEntity(news.title, 'news').subscribe(response => {
-            this.shared.Loader.hide();
-            try {
-                if (response.length) {
-                    this.shared.Toast.show('Gossip about this news is already exist, Please add comment to this gossip', null, 'top', true);
-                    this.openGossip(response[0].id)
-                } else {
-                    this.createGossip(news);
-                }
-            } catch (exception) {
-                this.createGossip(news);
-            }
-        }, err => {
-            this.shared.Loader.hide();
-            this.createGossip(news);
-        })
+    createNewEntity(entityText) {
+        
+        // this.shared.Loader.show(); 
+        // this.api.searchEntity(news.title, 'news').subscribe(response => {
+        //     this.shared.Loader.hide();
+        //     try {
+        //         if (response.length) {
+        //             this.shared.Toast.show('Gossip about this news is already exist, Please add comment to this gossip', null, 'top', true);
+        //             this.openGossip(response[0].id)
+        //         } else {
+        //             this.createGossip(news);
+        //         }
+        //     } catch (exception) {
+        //         this.createGossip(news);
+        //     }
+        // }, err => {
+        //     this.shared.Loader.hide();
+        //     this.createGossip(news);
+        // })
 
     }
-    private openGossip(gossipId) {
+    private openEntity(gossipId) {
         let modal = this.modal.create(CommentsPage, { id: gossipId });
         modal.present();
     }
