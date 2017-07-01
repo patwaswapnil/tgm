@@ -6,10 +6,9 @@ import { MongerApi } from '../../providers/api.provider';
 
 import { ReviewPage } from '../review/review';
 import { SmartAudio } from '../../providers/smart-audio/smart-audio';
-import { Vibration } from '@ionic-native/vibration';
-import { CommentsPage } from '../comments/comments';
+import { Vibration } from '@ionic-native/vibration'; 
 import { AddGossipPage } from '../add-gossip/add-gossip';
-import { GlobalProvider } from '../../providers/config';
+import { GlobalProvider, appIntro } from '../../providers/config';
 
 @Component({
   selector: 'page-entity-profile',
@@ -25,7 +24,7 @@ export class EntityProfilePage {
   private opacity: number = 0;
   public headerBackground:any = `rgba(192, 108, 228, ${this.opacity})`;
   private _preScrollArea:any = 0;
-
+  public showIntro:string;
   public entityDetail: any = { category: [{}] };
   @ViewChild(Content) content: Content;
   constructor(
@@ -43,8 +42,8 @@ export class EntityProfilePage {
       try {
         smartAudio.preload('negative', 'assets/sounds/Negative.mp3');
         smartAudio.preload('positive', 'assets/sounds/Positive.mp3');
-      } catch (expection) {
-        console.warn(expection);
+      } catch (exception) {
+        console.warn(exception);
       }
     }
     this._id = this.navParams.get('id');
@@ -59,6 +58,9 @@ export class EntityProfilePage {
     this.getEntityDetail();
     this.getGossips(true);
     this.getEntityNews();
+    if (this.shared.checkIntro('entity')) {
+      this.showIntro = appIntro.entity;
+    };
   }
    update() {  
     this.ngZone.run(() => {

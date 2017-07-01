@@ -4,5 +4,10 @@
     <ion-tab [root]="tab3Root" tabIcon="home"></ion-tab>
     <ion-tab [root]="tab4Root" tabIcon="bookmark"></ion-tab>
     <ion-tab [root]="tab5Root" tabIcon="person"></ion-tab>
-</ion-tabs>
-<img src="assets/img/tour.png" alt="">
+</ion-tabs> 
+<div class="app-intro" *ngIf="appIntroImg" (click)="appIntroImg = false">
+    <img [src]="appIntroImg">
+    <button ion-button color="primary" class="intro-button ">
+        OK, Got it! 
+    </button>
+</div> 

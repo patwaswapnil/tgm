@@ -76,3 +76,9 @@
         <news *ngIf="segment == 'news'" [newsList]="entityNews"></news>
     </ion-list>
 </ion-content>
+<div class="app-intro" *ngIf="showIntro" (click)="showIntro = false"> 
+    <img src="http://tgm-inf.cruxservers.in/app_intro/android/entity.jpg">
+    <button ion-button color="primary" class="intro-button">
+        OK, Got it! 
+    </button>
+</div> 

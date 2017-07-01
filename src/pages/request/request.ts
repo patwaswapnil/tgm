@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
-import { NavController, NavParams, AlertController, ModalController, ActionSheetController } from 'ionic-angular';
+import { Component, NgZone } from '@angular/core';
+import { NavController, NavParams, AlertController, ModalController, ActionSheetController, ViewController } from 'ionic-angular';
 import { GlobalProvider } from '../../providers/config';
-import { DomSanitizer } from '@angular/platform-browser'; 
-import { AddGossipPage } from '../../pages/add-gossip/add-gossip';
+import { DomSanitizer } from '@angular/platform-browser';  
 import { EntityProfilePage } from '../../pages/entity-profile/entity-profile';
 
 import { SharedProvider } from '../../providers/shared.provider'
@@ -21,17 +20,22 @@ export class RequestPage {
   public icon = 'assets/img/loved.png';
   public addGossip: any = { posted_as: this.globalProvider.userId, image: null };
   public user: any = this.globalProvider.user;
-  public id;
-  private _isPageLoaded: any = 0;
+  public id; 
   public segment: any = 'entity';
   public selectedEntity: any = { category: [{ name: null }] };
   public showNotFound: boolean = false;
 
   public isCategorySelected: Boolean = false;
   public entityDetail: any = { owner: 'no', image: null };
+  public myEntities: any[];
   public selectedCat: any;
   public submitted: any = false;
-  constructor(public actionSheetCtrl: ActionSheetController, private sanitizer: DomSanitizer, public globalProvider: GlobalProvider, public modal: ModalController, public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public api: MongerApi, public shared: SharedProvider) { }
+  public isModal: boolean = false;
+  constructor(public actionSheetCtrl: ActionSheetController, private sanitizer: DomSanitizer, public globalProvider: GlobalProvider, public modal: ModalController, public navCtrl: NavController, public navParams: NavParams, public alertCtrl: AlertController, public api: MongerApi, public shared: SharedProvider, private viewCtrl: ViewController, private _ngZone: NgZone) {
+    if (this.navParams.get('type')) { 
+        this.isModal = true;  
+    }
+   }
   
   private chooseImage(source) {
     this.shared.uploadMedia.image(source)
@@ -46,6 +50,7 @@ export class RequestPage {
   }
   ionViewDidLoad() {
     this.getCategories();
+    this.getMyEntity();
   }
   selectImage() {
     let actionSheet = this.actionSheetCtrl.create({
@@ -69,7 +74,13 @@ export class RequestPage {
     });
     actionSheet.present();
   }
-
+  getMyEntity() { 
+    this.api.getMyEntity(this.globalProvider.userId, true).subscribe(data => {
+      this.myEntities = data; 
+    }, err => { 
+      console.error(err);
+    });
+  }
   searchEntity() {
     let modal = this.modal.create(SearchPage, { source: 'gossip' });
     modal.onDidDismiss(data => {
@@ -90,9 +101,9 @@ export class RequestPage {
   }
   ionViewDidEnter () {
     this.reset();
+    this.getMyEntity();
   }
-  entityProfile(id, type) {
-    console.log('EntityProfile');
+  entityProfile(id, type) { 
     let modal = this.modal.create(EntityProfilePage, { id: id, type });
     modal.present();
   } 
@@ -106,6 +117,11 @@ export class RequestPage {
     this.isCategorySelected = true; 
     this.entityDetail.category = data.term_id;
     this.selectedCat = data.name;
+    if (this.navParams.get('name')) {
+      this._ngZone.run(() => { 
+      this.entityDetail.entity = this.navParams.get('name'); 
+      });
+    }
   }
   getCategories() {
     this.api.getCategories().subscribe(data => {
@@ -137,8 +153,7 @@ export class RequestPage {
     console.log(this.entityDetail);
     return false;
   }
-  insertGossip(gossip) { 
-    let isAnonymous; 
+  insertGossip(gossip) {  
     if (gossip.posted_as != 'anonymous') {
       gossip.isAnonymous = 0;
     } else {
@@ -165,6 +180,10 @@ export class RequestPage {
   removeImage() {
     this.addGossip.image = '';
     this.entityDetail.image = '';
+  }
+
+  dismiss() { 
+    this.viewCtrl.dismiss();
   }
   
 }

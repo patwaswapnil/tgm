@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
-import { LoadingController, ToastController, AlertController, IonicApp } from 'ionic-angular';
+import { LoadingController, ToastController, AlertController, IonicApp, Events } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { appIntro } from './config';
 
 @Injectable()
 export class SharedProvider {
   private _loading;
   private _toastMsg;
-  constructor(private _ionicApp: IonicApp, private camera: Camera, private _loadingCtrl: LoadingController, private _toastCtrl: ToastController, private _storage: Storage, private _alert: AlertController, private _socialSharing: SocialSharing, public _photoViewer: PhotoViewer) { }
+  constructor(private _ionicApp: IonicApp, private camera: Camera, private _loadingCtrl: LoadingController, private _toastCtrl: ToastController, private _storage: Storage, private _alert: AlertController, private _socialSharing: SocialSharing, public _photoViewer: PhotoViewer, public event: Events) { }
   //Loader Start 
   public Loader = {
     show: (template?) => {
@@ -96,6 +97,19 @@ export class SharedProvider {
 
       alert.present();
     }
+  }
+  public async checkIntro(component) {
+    let isIntroduced = await this.LS.get('intro');
+    isIntroduced = JSON.parse(isIntroduced); 
+    if (!isIntroduced[component]) {
+      isIntroduced[component] = true;
+      this.LS.set('intro', isIntroduced);
+      if (component == 'entity') {
+          return true;
+      }
+      this.event.publish('app:intro', appIntro[component]);
+      console.log(isIntroduced);
+    } 
   }
   public SocialSharing = {
     shareVia: (message, subject, file?, url?) => {

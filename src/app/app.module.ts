@@ -20,8 +20,7 @@ import { RequestPage } from '../pages/request/request';
 import { AboutPage } from '../pages/about/about';
 import { TermsPage } from '../pages/terms/terms';
 import { UserProfilePage, MoreOptionProfile} from '../pages/user-profile/user-profile';
-import { EntityProfilePage } from '../pages/entity-profile/entity-profile';
-import { AddEntityPage } from '../pages/add-entity/add-entity';
+import { EntityProfilePage } from '../pages/entity-profile/entity-profile'; 
 import { AddGossipPage } from '../pages/add-gossip/add-gossip';
 import { BookmarkPage } from '../pages/bookmark/bookmark';
 import { CommentsPage } from '../pages/comments/comments';
@@ -62,7 +61,6 @@ import { NewsComponent } from '../components/news/news';
     EntityProfilePage,
     CommentsPage,
     ReviewPage,
-    AddEntityPage,
     AddGossipPage,
     GossipsPage,
     GossipCardComponent,
@@ -93,7 +91,6 @@ import { NewsComponent } from '../components/news/news';
     EntityProfilePage,
     CommentsPage,
     ReviewPage,
-    AddEntityPage,
     AddGossipPage,
     GossipsPage,
     MoreOptionProfile,

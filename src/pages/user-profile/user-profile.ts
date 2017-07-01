@@ -177,11 +177,7 @@ export class UserProfilePage {
     <ion-item (click)="terms()">
       <ion-icon name='md-paper' item-start></ion-icon>
         Terms & Conditions  
-    </ion-item>
-    <ion-item>
-      <ion-icon name='md-jet' item-start></ion-icon>
-        Tutorial 
-    </ion-item>
+    </ion-item> 
     <ion-item (click)="logOut()">
       <ion-icon name='log-out' item-start></ion-icon>
         Logout 

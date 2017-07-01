@@ -20,7 +20,7 @@ export class NewsComponent {
             this.shared.Loader.hide();
             try {
                 if (response.length) {
-                    this.shared.Toast.show('Gossip about this news is already exist, Please add comment to this gossip', null, 'top', true);
+                    this.shared.Toast.show('Gossip about this news already exist, Please add comment to this gossip', null, 'top', true);
                     this.openGossip(response[0].id)
                 } else {
                     this.createGossip(news);

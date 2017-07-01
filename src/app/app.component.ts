@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { Platform, NavController, Nav, Events } from 'ionic-angular';
+import { Platform, Nav, Events } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { Keyboard } from '@ionic-native/keyboard';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -11,8 +11,7 @@ import { Deeplinks } from '@ionic-native/deeplinks';
 import { TabsPage } from '../pages/tabs/tabs';
 import { AuthPage } from '../pages/auth/auth';
 import { CommentsPage } from '../pages/comments/comments';
-import { UserProfilePage } from '../pages/user-profile/user-profile';
-import { SearchPage } from '../pages/search/search';
+import { UserProfilePage } from '../pages/user-profile/user-profile'; 
 
 declare var window;
 
@@ -41,6 +40,12 @@ export class MyApp {
     shared.LS.get('location').then((data: any) => {
       console.log(data);
       this.globalProvider.setLocation(data);
+    });
+    shared.LS.get('intro').then((data: any) => {
+      console.log(data);
+      if (!data) {
+        shared.LS.set('intro', {home: false, news: false, entity: false});
+      }
     });
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.

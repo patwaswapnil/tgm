@@ -1,21 +1,18 @@
 import { Component, ViewChild, NgZone } from '@angular/core';
-import { trigger, state, style, animate, transition } from '@angular/animations';
+import { trigger, style, animate, transition } from '@angular/animations';
 import { NavController, Content, ModalController, ActionSheetController, AlertController } from 'ionic-angular';
 
-import { SearchPage } from '../search/search';
-import { UserProfilePage } from '../user-profile/user-profile';
-import { CommentsPage } from '../comments/comments';
+import { SearchPage } from '../search/search';  
 import { AddGossipPage } from '../add-gossip/add-gossip';
 
 import { SharedProvider } from '../../providers/shared.provider';
-import { MongerApi } from '../../providers/api.provider';
-import { GossipCardComponent } from '../../components/gossip-card/gossip-card';
+import { MongerApi } from '../../providers/api.provider';  
 
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [SharedProvider, MongerApi],
+  providers: [SharedProvider, MongerApi], 
   animations: [
     trigger('myAnimation', [
       transition('in => void', [
@@ -30,7 +27,7 @@ import { GossipCardComponent } from '../../components/gossip-card/gossip-card';
   ]
 })
 export class HomePage {
-  public segment: any = 'news';
+  public segment: any = 'trending';
   private _preScrollArea: any = 0;
   public showSearch: any = true;
   public category: any = 'allCategories';
@@ -44,15 +41,17 @@ export class HomePage {
   constructor(public navCtrl: NavController, public api: MongerApi, public ngZone: NgZone, public modal: ModalController, public shared: SharedProvider, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
   }
   ionViewDidLoad() {
-    // this.trendingEntity();
-    this.getNews();
+    this.trendingEntity(); 
   }
-  ionViewDidEnter() {
+  async ionViewDidEnter() {
      if (this._isPageLoaded > 0) {
        this.tabChange(this.segment, true); 
-  } else { 
-    this._isPageLoaded =   this._isPageLoaded + Number(1);  
-  }
+    } else { 
+      this._isPageLoaded =   this._isPageLoaded + Number(1);  
+      this.shared.checkIntro('home');
+    }
+    
+
 }
 getNews() {
    if (this._firstLoad && !this.geoNews) {
@@ -126,6 +125,7 @@ getNews() {
     if (loader) {
      this._firstLoad = false;
     } else {
+
      this._firstLoad = true; 
     }
     if (segment == 'topHated') {
@@ -133,7 +133,10 @@ getNews() {
     } else if (segment == 'topRated') {
       this.topLovedGossips();
     } else if (segment == 'news') {
-      this.getNews();
+      if (this._firstLoad) {
+        this.getNews();
+      }
+      this.shared.checkIntro('news');      
     } else if (segment == 'trending') {
       this.trendingEntity();
     }

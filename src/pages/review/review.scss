@@ -24,16 +24,20 @@ page-review {
     }
     ion-item,
     ion-card {
-        background: rgba(255, 255, 255, 0.19) !important;
+        background: rgba(255, 255, 255, 0.7) !important;
     }
     ion-card:first-child {
         margin-top: 0px !important;
     }
     .bg-gossip {
-            background-image: url(assets/img/positive.jpg);
-    min-height: 100%;
-    overflow: auto;
-    height: 100% !important;
-    margin-bottom: 0px;
+        background-image: url(assets/img/positive.jpg);
+        background-size: contain;
+        min-height: 100%;
+        overflow: auto;
+        height: 100% !important;
+        margin-bottom: 0px;
+    }
+    .transparent {
+        background: transparent !important;
     }
 }

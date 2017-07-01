@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ViewController, NavParams, ModalController } from 'ionic-angular';
+import { ViewController, NavParams, ModalController, NavController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SharedProvider } from '../../providers/shared.provider';
 import { MongerApi } from '../../providers/api.provider';
@@ -7,8 +7,8 @@ import { EntityProfilePage } from '../../pages/entity-profile/entity-profile';
 import { CommentsPage } from '../../pages/comments/comments';
 import { GossipsPage } from '../../pages/gossips/gossips';
 import { statusBarColor } from '../../providers/config';
-import { DomSanitizer } from '@angular/platform-browser';
-import { AddGossipPage } from '../add-gossip/add-gossip';
+import { DomSanitizer } from '@angular/platform-browser';   
+import { RequestPage } from '../request/request';
 
 @Component({
     selector: 'page-search',
@@ -29,7 +29,7 @@ export class SearchPage {
     news: boolean = false;
     private _isEdding: boolean = false;
     constructor(
-        private sanitizer: DomSanitizer, public modal: ModalController, public viewCtrl: ViewController, public shared: SharedProvider, public statusBar: StatusBar, public navParams: NavParams, public api: MongerApi
+        private sanitizer: DomSanitizer, public modal: ModalController, public viewCtrl: ViewController, public shared: SharedProvider, public statusBar: StatusBar, public navParams: NavParams, public api: MongerApi, public navCtrl: NavController
     ) {
         this.queryText = '';
         this.param = this.navParams.get('source');
@@ -116,33 +116,33 @@ export class SearchPage {
         this.results = [];
         this.queryText = '';
     }
-    createNewEntity(entityText) {
-        
-        // this.shared.Loader.show(); 
-        // this.api.searchEntity(news.title, 'news').subscribe(response => {
-        //     this.shared.Loader.hide();
-        //     try {
-        //         if (response.length) {
-        //             this.shared.Toast.show('Gossip about this news is already exist, Please add comment to this gossip', null, 'top', true);
-        //             this.openGossip(response[0].id)
-        //         } else {
-        //             this.createGossip(news);
-        //         }
-        //     } catch (exception) {
-        //         this.createGossip(news);
-        //     }
-        // }, err => {
-        //     this.shared.Loader.hide();
-        //     this.createGossip(news);
-        // })
+    createNewEntity(entityText) { 
+        this.shared.Loader.show(); 
+        this.api.searchEntityAvailability(entityText).subscribe(response => { 
+            this.shared.Loader.hide(); 
+            try {
+                if (response.length) {
+                    this.shared.Toast.show(`Entity with this name already exists, Please add gossip to this entity`, null, 'top', true);
+                    this.openEntity(response[0].id)
+                } else {
+                    this.createEntity(entityText);
+                }
+            } catch (exception) {
+                this.createEntity(entityText);
+            }
+        }, err => {
+            this.shared.Loader.hide();
+            this.createEntity(entityText);
+        })
 
     }
-    private openEntity(gossipId) {
-        let modal = this.modal.create(CommentsPage, { id: gossipId });
+    private openEntity(entityId) {
+        let modal = this.modal.create(EntityProfilePage, { id: entityId });
         modal.present();
     }
-    private createGossip(news) {
-        let modal = this.modal.create(AddGossipPage, { type: null, id: 460, news: news });
+    private createEntity(entityName) {
+        console.log(entityName); 
+    let modal = this.modal.create(RequestPage, { type: 'modal', name: entityName });
         modal.present();
     }
     getBackground(image) {

@@ -12,6 +12,7 @@ import { BookmarkPage } from '../bookmark/bookmark';
 export class TabsPage {
   // this tells the tabs component which Pages
   // should be each tab's root Page
+  appIntroImg: string;
   tab1Root: any = CategoriesPage;
   tab2Root: any = RequestPage;
   tab3Root: any = HomePage;
@@ -21,5 +22,9 @@ export class TabsPage {
   constructor(public events: Events) {  }
   ionViewDidLoad() { 
     this.events.publish('root:created', Date.now());
-  }
+    this.events.subscribe('app:intro', (data) => {
+      this.appIntroImg = data;
+    }
+  )}
+  
 }

@@ -1,10 +1,5 @@
 <ion-header>
-    <ion-navbar color="primary">
-        <ion-title>Add Entity</ion-title>
-    </ion-navbar>
-</ion-header>
-<ion-header>
-    <ion-toolbar color="primary">
+    <ion-toolbar color="primary" *ngIf="!isModal">
         <ion-segment [(ngModel)]="segment" color="whitec" (ionChange)="reset()">
             <ion-segment-button value="gossip">
                 Add Gossip
@@ -15,6 +10,14 @@
 
         </ion-segment>
     </ion-toolbar>
+    <ion-toolbar color="primary" *ngIf="isModal">
+        <button ion-button icon-only menuToggle="false" left color="white" (click)="dismiss()">
+      <ion-icon name="arrow-back"></ion-icon> 
+        </button>
+        <ion-title>
+            Add Entity
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 <ion-content>
 
@@ -22,9 +25,9 @@
 
     <div *ngIf="segment == 'entity'" class="entity">
         <div class="category select-category" *ngIf="!isCategorySelected">
-             <ion-card-header color="primary">
-                        Select category of entity (1/2)
-             </ion-card-header>
+            <ion-card-header color="primary">
+                Select category of entity (1/2)
+            </ion-card-header>
             <ion-row>
                 <ion-col col-6 col-md-4 *ngFor="let category of categories">
                     <ion-card class="m0" (click)="categorySelect(category)">
@@ -37,7 +40,7 @@
             </ion-row>
         </div>
         <div class="" *ngIf="isCategorySelected">
-        
+
             <div class="entity-fields">
                 <div class="profile-wrapper">
                     <div class="profile-data">
@@ -76,7 +79,7 @@
                             <ion-item class="pl8">
                                 <ion-label stacked>Contact Number</ion-label>
                                 <ion-input type="number" [(ngModel)]="entityDetail.contact_number" name="contact" #contact="ngModel"></ion-input>
-                            </ion-item> 
+                            </ion-item>
                             <ion-item class="pl8">
                                 <ion-label stacked>Own this entity?</ion-label>
                                 <ion-select class="w40" interface="popover" name="owner" #owner="ngModel" [(ngModel)]="entityDetail.owner">
@@ -140,10 +143,10 @@
 
                         <ion-item class="pl8">
                             <ion-label stacked>Gossip as</ion-label>
-                            <ion-select  class="w40" interface="popover" name="poastedAs" #poastedAs="ngModel" [(ngModel)]="addGossip.posted_as">
+                            <ion-select class="w40" interface="popover" name="poastedAs" #poastedAs="ngModel" [(ngModel)]="addGossip.posted_as">
                                 <ion-option value="anonymous">Anonymous</ion-option>
                                 <ion-option [value]="user.ID">{{user.display_name}}</ion-option>
-                                <ion-option [value]="item.id" *ngFor="let item of myEntity">{{item.title}}</ion-option>
+                                <ion-option [value]="item.id" *ngFor="let item of myEntities">{{item.title}}</ion-option>
                             </ion-select>
                         </ion-item>
                         <ion-item class="pl8">

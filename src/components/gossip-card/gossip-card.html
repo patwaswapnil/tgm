@@ -1,7 +1,7 @@
  <ion-list class="mt10">
    <span *ngFor="let gossip of gossips; let index = index"> 
       <ion-card class="home-listing">
-            <ion-item class="border-top">
+            <ion-item class="border-top transparent">
                 <ion-avatar item-left (click)="entityProfile(gossip.gossip_about.ID)">
                     <img [src]="gossip.gossip_about.img">
                 </ion-avatar>

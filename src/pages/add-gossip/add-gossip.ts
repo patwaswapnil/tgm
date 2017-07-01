@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, ModalController, NavParams, ViewController, ActionSheetController } from 'ionic-angular';
+import { NavController, ModalController, NavParams, ViewController, ActionSheetController } from 'ionic-angular';
 import { GlobalProvider } from '../../providers/config';
 import { MongerApi } from '../../providers/api.provider';
 
@@ -64,7 +64,6 @@ export class AddGossipPage {
   }
   insertGossip(gossip) {
     console.log(gossip); 
-    let isAnonymous; 
     if (gossip.posted_as != 'anonymous') {
       gossip.isAnonymous = 0;
     } else {

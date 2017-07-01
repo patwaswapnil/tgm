@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response, Headers, RequestOptions } from '@angular/http';
+import { Http, Response, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import { baseURL, GlobalProvider } from '../providers/config';
 
@@ -224,9 +224,9 @@ export class MongerApi {
       })
       .catch(this.handleError);
   }
-  getMyEntity(id): Observable<any> {
+  getMyEntity(id, owned?): Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-    return this.http.get(`${baseURL}getMyEntities&userId=${id}`, { headers: headers })
+    return this.http.get(`${baseURL}getMyEntities&userId=${id}&owner=${owned ? 'yes' : ''}`, { headers: headers })
       .map((response: Response) => {
         return response.json();
       })
@@ -235,6 +235,14 @@ export class MongerApi {
   searchEntity(title, type): Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
     return this.http.get(`${baseURL}searchApi&title=${title}&type=${type}`, { headers: headers })
+      .map((response: Response) => {
+        return response.json();
+      })
+      .catch(this.handleError);
+  }
+  searchEntityAvailability(title): Observable<any> {
+    let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+    return this.http.get(`${baseURL}exactMatchTitleEntities&title=${title}`, { headers: headers })
       .map((response: Response) => {
         return response.json();
       })
