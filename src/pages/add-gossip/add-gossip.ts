@@ -20,8 +20,7 @@ export class AddGossipPage {
   public selectedEntity: any = { category: [{ name: null }] };
   constructor(public actionSheetCtrl: ActionSheetController, public globalProvider: GlobalProvider, public modal: ModalController, public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public api: MongerApi, public shared: SharedProvider) {
     this.type = this.navParams.get('type'); 
-    this.addGossip.feedbackType = this.navParams.get('type');
-    console.log(this.addGossip);
+    this.addGossip.feedbackType = this.navParams.get('type'); 
     this.id = this.navParams.get('id');
     this.addGossip.id = this.navParams.get('id');
     if (this.navParams.get('data')) {
@@ -40,8 +39,7 @@ export class AddGossipPage {
   getMyEntity() {
     this.shared.Loader.show();
     this.api.getMyEntity(this.globalProvider.userId).subscribe(data => {
-      this.myEntity = data;
-      console.log(data);
+      this.myEntity = data; 
       this.shared.Loader.hide();
     }, err => {
       this.shared.Loader.hide();
@@ -50,8 +48,7 @@ export class AddGossipPage {
   }
   searchEntity() {
     let modal = this.modal.create(SearchPage, { source: 'gossip' });
-    modal.onDidDismiss(data => {
-      console.log(data);
+    modal.onDidDismiss(data => { 
       if (data) {
         this.id = data.id;
         this.addGossip.id = data.id;
@@ -62,8 +59,7 @@ export class AddGossipPage {
     });
     modal.present();
   }
-  insertGossip(gossip) {
-    console.log(gossip); 
+  insertGossip(gossip) { 
     if (gossip.posted_as != 'anonymous') {
       gossip.isAnonymous = 0;
     } else {
@@ -75,8 +71,7 @@ export class AddGossipPage {
     this.shared.Loader.show();
     this.api.insertGossip(gossip).subscribe(data => {
       this.shared.Toast.show('Gossip created successfully');
-      this.viewCtrl.dismiss();
-      console.log(data);
+      this.viewCtrl.dismiss(); 
       this.shared.Loader.hide();
     }, err => {
       this.shared.Loader.hide();

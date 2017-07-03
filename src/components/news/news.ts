@@ -13,6 +13,7 @@ import { Observable } from 'rxjs';
 })
 export class NewsComponent {
   @Input() newsList: Observable<Array<any>>;
+  @Input() entityId: number;
   constructor(public shared: SharedProvider, private api: MongerApi, public modal: ModalController) {}
    addGossips(news) {
         this.shared.Loader.show();
@@ -39,7 +40,7 @@ export class NewsComponent {
         modal.present();
     }
     private createGossip(news) {
-        let modal = this.modal.create(AddGossipPage, { type: null, id: 460, news: news });
+        let modal = this.modal.create(AddGossipPage, { type: null, id: this.entityId ? this.entityId : 460, news: news });
         modal.present();
     }
 }

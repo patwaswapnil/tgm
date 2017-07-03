@@ -49,7 +49,7 @@ export class EntityProfilePage {
     this._id = this.navParams.get('id');
     this._type = this.navParams.get('type');
   }
-  ionViewDidLoad() {
+  async ionViewDidLoad() {
     if (this._type == 1) {
       this.tapEvent(2);
     } else if (this._type == 2) {
@@ -58,19 +58,19 @@ export class EntityProfilePage {
     this.getEntityDetail();
     this.getGossips(true);
     this.getEntityNews();
-    if (this.shared.checkIntro('entity')) {
+    if (await this.shared.checkIntro('entity')) {
       this.showIntro = appIntro.entity;
     };
   }
    update() {  
     this.ngZone.run(() => {
       if (this._preScrollArea > this.content.scrollTop) { 
-         if (this.opacity > 0 && this.content.scrollTop < 250)         
-         this.opacity = this.opacity - 0.1; 
+         if (this.opacity > 0 && this.content.scrollTop < 500)         
+         this.opacity = this.opacity - 0.9; 
          this.headerBackground = `rgba(192, 108, 228, ${this.opacity})`;                
       } else if  (this._preScrollArea < this.content.scrollTop) { 
-         if (this.opacity < 1  && this.content.scrollTop < 250)
-         this.opacity = this.opacity + 0.1; 
+         if (this.opacity < 1  && this.content.scrollTop < 500)
+         this.opacity = this.opacity + 0.9; 
 
          this.headerBackground = `rgba(192, 108, 228, ${this.opacity})`;       
       }
@@ -84,8 +84,7 @@ export class EntityProfilePage {
         this.shared.Toast.show('Started following ' + this.entityDetail.title, null, 'bottom');
       } else {
         this.shared.Toast.show('Unfollowed ' + this.entityDetail.title, null, 'bottom');
-      }
-      console.log(data);
+      } 
     }, err => {
       console.error(err);
     })
@@ -103,14 +102,14 @@ export class EntityProfilePage {
       this.shared.Loader.closeIfActive();
     }, err => {
       this.shared.Loader.closeIfActive();
-      console.log(err);
+      console.error(err);
     })
   }
   getEntityNews() {
     this.api.getEntityNews(this._id).subscribe(data => {
       this.entityNews = data;
     }, err => {
-      console.log(err);
+      console.error(err);
     })
   }
   updateSegment(segment) {
@@ -126,8 +125,7 @@ export class EntityProfilePage {
       console.error(err);
     })
   }
-  tapEvent(ev) {
-    console.log(ev);
+  tapEvent(ev) { 
     let modal: any;
     if (ev.direction == 2 || ev == 2) {
       modal = this.modal.create(ReviewPage, { type: 0, id: this._id });
@@ -154,8 +152,7 @@ export class EntityProfilePage {
   dismiss() {
     this.viewCtrl.dismiss();
   }
-  scroll() {
-    console.log(this.content.contentHeight);
+  scroll() { 
     this.content.scrollTo(0, this.content.contentHeight, 300);
   }
   addGossips(news?) {

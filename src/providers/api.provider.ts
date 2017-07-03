@@ -7,9 +7,7 @@ import 'rxjs/Rx';
 @Injectable()
 export class MongerApi {
 
-  constructor(public globalProvider: GlobalProvider, public http: Http) {
-    console.log(this.globalProvider.userId);
-  }
+  constructor(public globalProvider: GlobalProvider, public http: Http) {}
   getCategories(): Observable<any> {
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
     return this.http.get(`${baseURL}getEntityCategories&userId=${this.globalProvider.userId}`, { headers: headers })
@@ -315,8 +313,7 @@ export class MongerApi {
       })
       .catch(this.handleError);
   } 
-  getNews(): Observable<any> {
-    console.log(this.globalProvider.location);
+  getNews(): Observable<any> { 
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });  
     return this.http.get(`https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Fnews%2Fsection%3Fgeo%3D${this.globalProvider.location || 'mumbai'}%26output%3Drss%26num%3D40&api_key=o8aomlxn5spw5klgsqjgdlasz9kekalrp2hgptsb`, { headers: headers })
       .map((response: Response) => { 
@@ -327,7 +324,7 @@ export class MongerApi {
   searchNews(query): Observable<any> {
     if (query) {
       query = query.replace(' ', '-');
-    }
+    } 
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });  
     return this.http.get(`https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Fnews%3Fq%3D${query}%26output%3Drss%26num%3D20&api_key=o8aomlxn5spw5klgsqjgdlasz9kekalrp2hgptsb`, { headers: headers })
       .map((response: Response) => { 

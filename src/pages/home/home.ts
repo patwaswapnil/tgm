@@ -42,8 +42,9 @@ export class HomePage {
   }
   ionViewDidLoad() {
     this.trendingEntity(); 
+    this.getNews();
   }
-  async ionViewDidEnter() {
+  ionViewDidEnter() {
      if (this._isPageLoaded > 0) {
        this.tabChange(this.segment, true); 
     } else { 
@@ -54,15 +55,10 @@ export class HomePage {
 
 }
 getNews() {
-   if (this._firstLoad && !this.geoNews) {
-      this.shared.Loader.show(); 
-  }
   this.api.getNews().subscribe(data => { 
-      this.geoNews = data.items;
-      this.shared.Loader.closeIfActive(); 
+      this.geoNews = data.items; 
   }, err => {
-    console.log(err);
-     this.shared.Loader.closeIfActive(); 
+    console.error(err); 
   })
 }
   topHatedGossips() { 
@@ -124,18 +120,14 @@ getNews() {
   tabChange(segment, loader) {
     if (loader) {
      this._firstLoad = false;
-    } else {
-
+    } else { 
      this._firstLoad = true; 
     }
     if (segment == 'topHated') {
       this.topHatedGossips();
     } else if (segment == 'topRated') {
       this.topLovedGossips();
-    } else if (segment == 'news') {
-      if (this._firstLoad) {
-        this.getNews();
-      }
+    } else if (segment == 'news') { 
       this.shared.checkIntro('news');      
     } else if (segment == 'trending') {
       this.trendingEntity();

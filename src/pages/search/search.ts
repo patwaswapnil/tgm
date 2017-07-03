@@ -89,7 +89,7 @@ export class SearchPage {
 
             this.loadingData = false;
         }, err => {
-            console.log(err);
+            console.error(err);
             this.loadingData = false;
         });
     }
@@ -140,8 +140,7 @@ export class SearchPage {
         let modal = this.modal.create(EntityProfilePage, { id: entityId });
         modal.present();
     }
-    private createEntity(entityName) {
-        console.log(entityName); 
+    private createEntity(entityName) { 
     let modal = this.modal.create(RequestPage, { type: 'modal', name: entityName });
         modal.present();
     }

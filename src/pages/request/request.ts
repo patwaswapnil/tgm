@@ -83,8 +83,7 @@ export class RequestPage {
   }
   searchEntity() {
     let modal = this.modal.create(SearchPage, { source: 'gossip' });
-    modal.onDidDismiss(data => {
-      console.log(data);
+    modal.onDidDismiss(data => { 
       if (data) {
         this.id = data.id;
         this.addGossip.id = data.id;
@@ -146,11 +145,8 @@ export class RequestPage {
         this.shared.Toast.show('Error: ' + err);
       })
     } else {
-
       this.shared.Toast.show('Please fill all mandatory fields.');
-
-    }
-    console.log(this.entityDetail);
+    } 
     return false;
   }
   insertGossip(gossip) {  
@@ -169,8 +165,7 @@ export class RequestPage {
       this.selectedEntity = { category: [{ name: null }] };
 
       let modal = this.modal.create(EntityProfilePage, { id: gossip.id, type: gossip.feedbackType });
-      modal.present();
-      console.log(data);
+      modal.present(); 
       this.shared.Loader.hide();
     }, err => {
       this.shared.Loader.hide();

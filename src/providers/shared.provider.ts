@@ -107,8 +107,7 @@ export class SharedProvider {
       if (component == 'entity') {
           return true;
       }
-      this.event.publish('app:intro', appIntro[component]);
-      console.log(isIntroduced);
+      this.event.publish('app:intro', appIntro[component]); 
     } 
   }
   public SocialSharing = {

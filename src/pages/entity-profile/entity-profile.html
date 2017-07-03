@@ -73,7 +73,7 @@
     </ion-segment>
     <ion-list class="comments">
         <gossip-card [gossips]="entityGossips" *ngIf="segment == 'hated' || segment == 'rated'"></gossip-card>
-        <news *ngIf="segment == 'news'" [newsList]="entityNews"></news>
+        <news *ngIf="segment == 'news'" [entityId]="entityDetail.id" [newsList]="entityNews"></news>
     </ion-list>
 </ion-content>
 <div class="app-intro" *ngIf="showIntro" (click)="showIntro = false"> 

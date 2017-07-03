@@ -37,12 +37,10 @@ export class MyApp {
     shared.LS.get('isMuted').then((data: any) => {
       this.globalProvider.toggleMute(data);
     });
-    shared.LS.get('location').then((data: any) => {
-      console.log(data);
+    shared.LS.get('location').then((data: any) => { 
       this.globalProvider.setLocation(data);
     });
-    shared.LS.get('intro').then((data: any) => {
-      console.log(data);
+    shared.LS.get('intro').then((data: any) => {   
       if (!data) {
         shared.LS.set('intro', {home: false, news: false, entity: false});
       }
@@ -59,11 +57,9 @@ export class MyApp {
       if (platform.is('cordova')) {
         this.oneSignal.startInit('4cf261ef-295d-4258-b259-788d122d8e0b', 'Y2MwMTZjZmEtMThlZS00NmE5LWIyMGEtODUyYzVhY2QyMjc3');
         this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.Notification);
-        this.oneSignal.handleNotificationReceived().subscribe((data) => {
-          console.log(data);
+        this.oneSignal.handleNotificationReceived().subscribe((data) => { 
         });
-        this.oneSignal.handleNotificationOpened().subscribe((data) => {
-          console.log(data);
+        this.oneSignal.handleNotificationOpened().subscribe((data) => { 
           let payload = data;
           if (this._isColdStart) {
             events.subscribe('root:created', (data) => {
@@ -79,14 +75,13 @@ export class MyApp {
       this.deeplinks.routeWithNavController(this.navController, {
         '/gossip/:id': CommentsPage
       }).subscribe((match) => {
-        console.log('Successfully matched route', match);
+        console.info('Successfully matched route', match);
       }, (nomatch) => {
         console.error('Got a deeplink that didn\'t match', nomatch);
       });
     });
   }
-  redirectToPage(data) {
-    console.log(data);
+  redirectToPage(data) { 
     let type
     try {
       type = data.notification.payload.additionalData.type;
