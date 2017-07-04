@@ -1,5 +1,5 @@
 import { Component, ViewChild, NgZone } from '@angular/core';
-import { NavController, NavParams, ModalController, ViewController, Content } from 'ionic-angular';
+import { NavController, NavParams, ModalController, ViewController, Content, Platform } from 'ionic-angular';
 
 import { SharedProvider } from '../../providers/shared.provider';
 import { MongerApi } from '../../providers/api.provider';
@@ -37,7 +37,8 @@ export class EntityProfilePage {
     public smartAudio: SmartAudio,
     private vibration: Vibration,
     private globalProvider: GlobalProvider,
-    private ngZone: NgZone) {
+    private ngZone: NgZone,
+    private platform: Platform) {
     if (!globalProvider.isMuted) {
       try {
         smartAudio.preload('negative', 'assets/sounds/Negative.mp3');
@@ -59,7 +60,11 @@ export class EntityProfilePage {
     this.getGossips(true);
     this.getEntityNews();
     if (await this.shared.checkIntro('entity')) {
-      this.showIntro = appIntro.entity;
+      if (this.platform.is('ios')) {
+        this.showIntro = appIntro.ios.entity;
+      } else {
+        this.showIntro = appIntro.android.entity;
+      }
     };
   }
    update() {  

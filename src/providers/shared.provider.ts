@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { LoadingController, ToastController, AlertController, IonicApp, Events } from 'ionic-angular';
+import { LoadingController, ToastController, AlertController, IonicApp, Events, Platform } from 'ionic-angular';
 import { Storage } from '@ionic/storage';
 import { SocialSharing } from '@ionic-native/social-sharing';
 import { PhotoViewer } from '@ionic-native/photo-viewer';
@@ -10,7 +10,7 @@ import { appIntro } from './config';
 export class SharedProvider {
   private _loading;
   private _toastMsg;
-  constructor(private _ionicApp: IonicApp, private camera: Camera, private _loadingCtrl: LoadingController, private _toastCtrl: ToastController, private _storage: Storage, private _alert: AlertController, private _socialSharing: SocialSharing, public _photoViewer: PhotoViewer, public event: Events) { }
+  constructor(private platform: Platform,private _ionicApp: IonicApp, private camera: Camera, private _loadingCtrl: LoadingController, private _toastCtrl: ToastController, private _storage: Storage, private _alert: AlertController, private _socialSharing: SocialSharing, public _photoViewer: PhotoViewer, public event: Events) { }
   //Loader Start 
   public Loader = {
     show: (template?) => {
@@ -107,7 +107,11 @@ export class SharedProvider {
       if (component == 'entity') {
           return true;
       }
-      this.event.publish('app:intro', appIntro[component]); 
+      if (this.platform.is('ios')) {
+        this.event.publish('app:intro', appIntro.ios[component]); 
+      } else {
+        this.event.publish('app:intro', appIntro.android[component]); 
+      }
     } 
   }
   public SocialSharing = {
