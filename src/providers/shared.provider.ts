@@ -21,6 +21,7 @@ export class SharedProvider {
     },
     hide: () => {
       this._loading.dismiss();
+      this._loading = null;
     },
     prompt: (template?, timer?) => {
       this.Loader.show(template);
