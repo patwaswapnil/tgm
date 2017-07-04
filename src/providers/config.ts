@@ -1,7 +1,7 @@
-export const baseURL = 'http://tgm-inf.cruxservers.in/api/?method=';
+export const baseURL = 'http://thegossipmonger.com/api/?method=';
 import { Injectable } from '@angular/core';
 export const statusBarColor: string = '#ac61cd';
-export const appIntro = {home: 'http://tgm-inf.cruxservers.in/app_intro/android/home.jpg', entity: 'http://tgm-inf.cruxservers.in/app_intro/android/entity.jpg', news: 'http://tgm-inf.cruxservers.in/app_intro/android/news.jpg'};
+export const appIntro = {home: 'http://thegossipmonger.com/app_intro/android/home.jpg', entity: 'http://thegossipmonger.com/app_intro/android/entity.jpg', news: 'http://thegossipmonger.com/app_intro/android/news.jpg'};
 @Injectable()
 export class GlobalProvider {
     public playerId: any = null;
