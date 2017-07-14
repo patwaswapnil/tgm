@@ -28,8 +28,7 @@ export class AuthPage {
    }
       
   ionViewDidLoad() { 
-      this._geolocation.getCurrentPosition().then((resp) => {
-        console.log(resp.coords);
+      this._geolocation.getCurrentPosition().then((resp) => { 
         this.api.getGeoAddress(resp.coords).subscribe(response => {
           console.log(response.results);
           if (response.results[1]) {  
@@ -55,6 +54,7 @@ export class AuthPage {
   googleLogin() {
     this.googlePlus.login({})
       .then(res => { 
+        this.shared.Loader.show(null, false);
         let data = { fname: res.givenName, lname: res.familyName, email: res.email, userId: res.userId, source: 3 };
         this.api.socialLogin(data).subscribe(res => {
           this.shared.LS.set('user', res);
@@ -62,12 +62,15 @@ export class AuthPage {
           this.globalProvider.setAuthData(res);
           this.googlePlus.logout();
           this.navCtrl.setRoot(TabsPage);
+          this.shared.Loader.closeIfActive();
         }, err => {
           this.shared.Toast.show(err);
+          this.shared.Loader.closeIfActive();          
         });
       })
       .catch(err => {
         console.error(err);
+        this.shared.Loader.closeIfActive();        
       });
   }
   skip() {
@@ -80,6 +83,7 @@ export class AuthPage {
   fbLogin() {
     this.fb.login(['public_profile', 'email', 'user_location'])
       .then((res: FacebookLoginResponse) => {
+        this.shared.Loader.show(null, false);
         this.api.getFbUserInfo(res.authResponse.accessToken).subscribe(response => {
           let data = { fname: response.first_name, lname: response.last_name, email: response.email, userId: res.authResponse.userID, source: 2 };
           this.api.socialLogin(data).subscribe(res => {
@@ -87,17 +91,19 @@ export class AuthPage {
             this.shared.LS.set('isMuted', false); 
             this.globalProvider.setAuthData(res);
             this.fb.logout();
-            this.navCtrl.setRoot(TabsPage);
+            this.shared.Loader.closeIfActive();            
+            this.navCtrl.setRoot(TabsPage);             
           }, err => {
             this.shared.Toast.show(err);
-          });
-          this.navCtrl.setRoot(TabsPage);
+            this.shared.Loader.closeIfActive();            
+          }); 
         })
       }, err => {
         this.shared.Toast.show(err);
       })
       .catch(e => {
         console.log('Error logging into Facebook', e)
+        this.shared.Loader.closeIfActive(); 
       });
   }
 }

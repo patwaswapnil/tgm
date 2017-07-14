@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.gossipmonger.infini" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.gossipmonger.infini" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Gossip Monger</name>
     <description>Gossip App</description>
     <author email="swapnil@infiniteit.biz" href="http://infinisystem.com/">Swapnil Patwa</author>
@@ -8,10 +8,17 @@
     <allow-navigation href="http://ionic.local/*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+    <allow-intent href="*" />
+    <allow-intent href="gossipmonger/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-navigation href="http://localhost:8080/*" />
+    <feature name="CDVWKWebViewEngine">
+        <param name="ios-package" value="CDVWKWebViewEngine" />
+    </feature>
+    <preference name="CordovaWebViewEngine" value="CDVWKWebViewEngine" />
     <platform name="android">
         <allow-intent href="market:*" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
@@ -54,16 +61,6 @@
         <icon height="29" src="resources\ios\icon\icon-small.png" width="29" />
         <icon height="58" src="resources\ios\icon\icon-small@2x.png" width="58" />
         <icon height="87" src="resources\ios\icon\icon-small@3x.png" width="87" />
-        <!--<splash height="1136" src="resources\ios\splash\Default-568h@2x~iphone.png" width="640" />
-        <splash height="1334" src="resources\ios\splash\Default-667h.png" width="750" />
-        <splash height="2208" src="resources\ios\splash\Default-736h.png" width="1242" />
-        <splash height="1242" src="resources\ios\splash\Default-Landscape-736h.png" width="2208" />
-        <splash height="1536" src="resources\ios\splash\Default-Landscape@2x~ipad.png" width="2048" />
-        <splash height="768" src="resources\ios\splash\Default-Landscape~ipad.png" width="1024" />
-        <splash height="2048" src="resources\ios\splash\Default-Portrait@2x~ipad.png" width="1536" />
-        <splash height="1024" src="resources\ios\splash\Default-Portrait~ipad.png" width="768" />
-        <splash height="960" src="resources\ios\splash\Default@2x~iphone.png" width="640" />
-        <splash height="480" src="resources\ios\splash\Default~iphone.png" width="320" />-->
     </platform>
     <preference name="webviewbounce" value="false" />
     <preference name="UIWebViewBounce" value="false" />
@@ -88,7 +85,7 @@
         <variable name="APP_NAME" value="TheGossipMonger" />
     </plugin>
     <plugin name="cordova-plugin-googleplus" spec="~5.1.1">
-        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.967272422526-5otkhqnmi6lskirc1clukr6i5qgofbgu" />
+        <variable name="REVERSED_CLIENT_ID" value="com.googleusercontent.apps.967272422526-vu37jlptokv45glo2kciu9o2rddm7gte" />
     </plugin>
     <plugin name="cordova-plugin-x-socialsharing" spec="~5.1.7" />
     <plugin name="cordova-plugin-nativeaudio" spec="~3.0.9" />
@@ -96,7 +93,6 @@
     <plugin name="com-sarriaroman-photoviewer" spec="~1.1.10" />
     <plugin name="onesignal-cordova-plugin" spec="~2.1.1" />
     <plugin name="cordova-plugin-camera" spec="~2.4.1" />
-    <icon src="resources\android\icon\drawable-xhdpi-icon.png" />
     <plugin name="ionic-plugin-deeplinks" spec="~1.0.15">
         <variable name="URL_SCHEME" value="gossipmonger" />
         <variable name="DEEPLINK_SCHEME" value="http" />
@@ -116,4 +112,7 @@
         <variable name="DEEPLINK_5_HOST" value=" " />
     </plugin>
     <plugin name="cordova-plugin-geolocation" spec="~2.4.3" />
+    <icon src="resources\android\icon\drawable-xhdpi-icon.png" />
+    <plugin name="cordova-plugin-wkwebview-engine" spec="https://github.com/ionic-team/cordova-plugin-wkwebview-engine.git" />
+    <engine name="android" spec="~6.2.3" />
 </widget>

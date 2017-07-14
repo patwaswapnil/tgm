@@ -78,7 +78,7 @@ export class GossipCardComponent {
       this.api.deleteGossip(gossip.id).subscribe(data => {
         this.shared.Loader.hide();
         if (data.errorType == 'success') {
-          this.shared.Toast.show('Gossip deleted sucessfully.');
+          this.shared.Toast.show('Gossip deleted successfully.');
           this.gossips.splice(index, 1);
         }
       }, err => {

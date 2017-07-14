@@ -68,6 +68,7 @@ export class EntityProfilePage {
     };
   }
    update() {  
+     if (!(this.platform.is('ios'))) {
     this.ngZone.run(() => {
       if (this._preScrollArea > this.content.scrollTop) { 
          if (this.opacity > 0 && this.content.scrollTop < 500)         
@@ -81,6 +82,7 @@ export class EntityProfilePage {
       }
     });
     this._preScrollArea = this.content.scrollTop;
+  }
   }
   boomarkEntity(id) {
     this.entityDetail.entityFollow = !this.entityDetail.entityFollow;

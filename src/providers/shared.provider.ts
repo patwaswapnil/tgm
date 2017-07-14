@@ -13,9 +13,12 @@ export class SharedProvider {
   constructor(private platform: Platform,private _ionicApp: IonicApp, private camera: Camera, private _loadingCtrl: LoadingController, private _toastCtrl: ToastController, private _storage: Storage, private _alert: AlertController, private _socialSharing: SocialSharing, public _photoViewer: PhotoViewer, public event: Events) { }
   //Loader Start 
   public Loader = {
-    show: (template?) => {
+    show: (template?, showBackdrop?) => {
       this._loading = this._loadingCtrl.create({
-        content: template || 'Please wait...'
+        content: template || 'Please wait...',
+        dismissOnPageChange: true,
+        duration: 3500,
+        showBackdrop: showBackdrop || true
       });
       this._loading.present();
     },

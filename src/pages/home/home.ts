@@ -1,18 +1,18 @@
 import { Component, ViewChild, NgZone } from '@angular/core';
 import { trigger, style, animate, transition } from '@angular/animations';
-import { NavController, Content, ModalController, ActionSheetController, AlertController } from 'ionic-angular';
+import { NavController, Content, ModalController, ActionSheetController, AlertController, Platform } from 'ionic-angular';
 
-import { SearchPage } from '../search/search';  
+import { SearchPage } from '../search/search';
 import { AddGossipPage } from '../add-gossip/add-gossip';
 
 import { SharedProvider } from '../../providers/shared.provider';
-import { MongerApi } from '../../providers/api.provider';  
+import { MongerApi } from '../../providers/api.provider';
 
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html',
-  providers: [SharedProvider, MongerApi], 
+  providers: [SharedProvider, MongerApi],
   animations: [
     trigger('myAnimation', [
       transition('in => void', [
@@ -35,78 +35,78 @@ export class HomePage {
   public lovedGossips: any[];
   public geoNews: any[];
   public trendingEntities: any[];
-  private _isPageLoaded:any = 0;
-  private _firstLoad:boolean = true;
+  private _isPageLoaded: any = 0;
+  private _firstLoad: boolean = true;
   @ViewChild(Content) content: Content;
-  constructor(public navCtrl: NavController, public api: MongerApi, public ngZone: NgZone, public modal: ModalController, public shared: SharedProvider, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
+  constructor(private platform: Platform, public navCtrl: NavController, public api: MongerApi, public ngZone: NgZone, public modal: ModalController, public shared: SharedProvider, public actionSheetCtrl: ActionSheetController, public alertCtrl: AlertController) {
   }
   ionViewDidLoad() {
-    this.trendingEntity(); 
+    this.trendingEntity();
     this.getNews();
   }
   ionViewDidEnter() {
-     if (this._isPageLoaded > 0) {
-       this.tabChange(this.segment, true); 
-    } else { 
-      this._isPageLoaded =   this._isPageLoaded + Number(1);  
+    if (this._isPageLoaded > 0) {
+      this.tabChange(this.segment, true);
+    } else {
+      this._isPageLoaded = this._isPageLoaded + Number(1);
       this.shared.checkIntro('home');
     }
-    
-
-}
-getNews() {
-  this.api.getNews().subscribe(data => { 
-      this.geoNews = data.items; 
-  }, err => {
-    console.error(err); 
-  })
-}
-  topHatedGossips() { 
+  }
+  getNews() {
+    this.api.getNews().subscribe(data => {
+      this.geoNews = data.items;
+    }, err => {
+      console.error(err);
+    })
+  }
+  topHatedGossips() {
     if (this._firstLoad && !this.hatedGossips) {
-      this.shared.Loader.show(); 
+      this.shared.Loader.show();
     }
     this.api.topHatedGossips().subscribe(data => {
-      this.hatedGossips = data;  
-      this.shared.Loader.closeIfActive(); 
-    }, err => { 
+      this.hatedGossips = data;
+      this.shared.Loader.closeIfActive();
+    }, err => {
       console.error(err);
-      this.shared.Loader.closeIfActive(); 
-    });
-  } 
-
-  topLovedGossips() {  
-      if (this._firstLoad && !this.lovedGossips) {
-      this.shared.Loader.show(); 
-    }
-    this.api.topLovedGossips().subscribe(data => {
-      this.lovedGossips = data; 
-      this.shared.Loader.closeIfActive(); 
-    }, err => { 
-      console.error(err);
-      this.shared.Loader.closeIfActive(); 
+      this.shared.Loader.closeIfActive();
     });
   }
-  trendingEntity() {  
-     if (this._firstLoad && !this.trendingEntities) {
-      this.shared.Loader.show(); 
+
+  topLovedGossips() {
+    if (this._firstLoad && !this.lovedGossips) {
+      this.shared.Loader.show();
+    }
+    this.api.topLovedGossips().subscribe(data => {
+      this.lovedGossips = data;
+      this.shared.Loader.closeIfActive();
+    }, err => {
+      console.error(err);
+      this.shared.Loader.closeIfActive();
+    });
+  }
+  trendingEntity() {
+    if (this._firstLoad && !this.trendingEntities) {
+      this.shared.Loader.show();
     }
     this.api.trendingEntity().subscribe(data => {
-      this.trendingEntities = data;  
-      this.shared.Loader.closeIfActive();  
-    }, err => { 
+      this.trendingEntities = data;
+      this.shared.Loader.closeIfActive();
+    }, err => {
       console.error(err);
-       this.shared.Loader.closeIfActive();  
+      this.shared.Loader.closeIfActive();
     });
   }
   update() {
-    this.ngZone.run(() => {
-      if (this._preScrollArea > this.content.scrollTop) {
-        this.showSearch = true;
-      } else {
-        this.showSearch = false;
-      }
-    });
-    this._preScrollArea = this.content.scrollTop;
+    if (!(this.platform.is('ios'))) {
+      this.ngZone.run(() => {
+        if (this._preScrollArea > this.content.scrollTop) {
+          this.showSearch = true;
+        } else {
+          this.showSearch = false;
+        }
+      });
+      this._preScrollArea = this.content.scrollTop;
+    }
   }
   search() {
     let modal
@@ -119,23 +119,23 @@ getNews() {
   }
   tabChange(segment, loader) {
     if (loader) {
-     this._firstLoad = false;
-    } else { 
-     this._firstLoad = true; 
+      this._firstLoad = false;
+    } else {
+      this._firstLoad = true;
     }
     if (segment == 'topHated') {
       this.topHatedGossips();
     } else if (segment == 'topRated') {
       this.topLovedGossips();
-    } else if (segment == 'news') { 
-      this.shared.checkIntro('news');      
+    } else if (segment == 'news') {
+      this.shared.checkIntro('news');
     } else if (segment == 'trending') {
       this.trendingEntity();
     }
   }
   addGossips(news) {
     let modal = this.modal.create(AddGossipPage, { type: null, id: 460, data: news })
-    modal.onDidDismiss((type) => { 
+    modal.onDidDismiss((type) => {
     });
     modal.present();
   }
