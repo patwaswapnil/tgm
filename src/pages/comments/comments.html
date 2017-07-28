@@ -16,7 +16,7 @@
                     <img [src]="gossip.author.img">
                 </ion-avatar>
                 <h2  (click)="userProfile(gossip.author.ID)">{{gossip.author.display_name}}</h2>
-                <p> {{gossip.created_at}} </p> 
+                <p> {{gossip.comment_date}} </p> 
             </ion-item> 
               <ion-item class="user-block" *ngIf="gossip.is_anonymous == '1'">
                 <ion-avatar item-left>
