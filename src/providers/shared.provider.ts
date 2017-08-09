@@ -36,6 +36,7 @@ export class SharedProvider {
       let activePortal = this._ionicApp._loadingPortal.getActive();
       if (activePortal) {
         activePortal.dismiss();
+        this._loading = null;
         return;
       }
     }

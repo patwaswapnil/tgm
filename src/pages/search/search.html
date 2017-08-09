@@ -77,7 +77,7 @@
         </div>
     </ion-list>
     <div *ngIf="type == 'news'" text-center>
-        <news [newsList]="geoNews"></news>
+        <news [newsList]="geoNews" [newsText]="newsText"></news>
         <button ion-button icon-left outline (click)="createNewEntity(newsText)" *ngIf="!geoNews?.length && newsText" color="primary" class="mt20 add-button ">
             <ion-icon name="add"></ion-icon>
             Create entity for &nbsp; <span class="bold capitalize italic">{{newsText}} </span> 

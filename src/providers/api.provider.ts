@@ -323,7 +323,8 @@ export class MongerApi {
   } 
   searchNews(query): Observable<any> {
     if (query) {
-      query = query.replace(' ', '-');
+      console.log(query);
+      query = query.replace(/ /g, "-"); 
     } 
     let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });  
     return this.http.get(`https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Fnews%3Fq%3D${query}%26output%3Drss%26num%3D20&api_key=o8aomlxn5spw5klgsqjgdlasz9kekalrp2hgptsb`, { headers: headers })

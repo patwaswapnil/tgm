@@ -69,7 +69,7 @@
                         <img [src]="comment.author.img" class="user-radius">
                     </ion-avatar>
                     <h2 (click)="userProfile(comment.author.ID)">{{comment.author.display_name}}</h2>
-                    <h4 class="comment-date">{{comment.comment_date_gmt | date:'medium'}}</h4> 
+                    <h4 class="comment-date">{{comment.comment_date | date:'medium'}}</h4> 
                     <p class="comment"> 
                         {{comment.comment_content}}
                     </p> 

@@ -133,8 +133,7 @@ export class SearchPage {
         }, err => {
             this.shared.Loader.hide();
             this.createEntity(entityText);
-        })
-
+        });
     }
     private openEntity(entityId) {
         let modal = this.modal.create(EntityProfilePage, { id: entityId });
