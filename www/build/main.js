@@ -1,1 +1,3483 @@
-webpackJsonp([0],{173:function(l,n){function t(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}t.keys=function(){return[]},t.resolve=t,l.exports=t,t.id=173},187:function(l,n){function t(l){return Promise.resolve().then(function(){throw new Error("Cannot find module '"+l+"'.")})}t.keys=function(){return[]},t.resolve=t,l.exports=t,t.id=187},225:function(l,n,t){"use strict";function u(l){return Kl._29(0,[Kl._25(402653184,1,{navController:0}),(l()(),Kl._6(0,null,null,2,"ion-nav",[],null,null,null,nu.b,nu.a)),Kl._5(4374528,[[1,4]],0,tu.a,[[2,uu.a],[2,eu.a],Dt.a,ou.a,iu.a,Kl.l,Kl.A,Kl.G,Kl.k,Tt.g,qt.a,[2,au.a],St.a,Kl.m],{root:[0,"root"]},null),Kl._24(6144,null,su.a,null,[tu.a]),(l()(),Kl._27(null,["\n"]))],function(l,n){l(n,2,0,n.component.rootPage)},null)}function e(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,8,"div",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"button",[["class","login-btn skip-login"],["full",""],["ion-button",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.skip()&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{full:[0,"full"]},null),(l()(),Kl._27(0,[" \n        Skip (Developement only);\n      "])),(l()(),Kl._27(null,["\n      "])),(l()(),Kl._6(0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Kl._6(0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "]))],function(l,n){l(n,3,0,"")},null)}function o(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,24,"ion-content",[["class","auth-bg"]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,20,"div",[["class","btn-wrapper"],["padding",""]],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["class","logo"],["src","assets/img/logo.png"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,e)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,5,"div",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"button",[["class","login-btn google-login"],["full",""],["ion-button",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.googleLogin()&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{full:[0,"full"]},null),(l()(),Kl._27(0,[" \n        Login with Google\n      "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,5,"div",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"button",[["class","login-btn fb-login mt12"],["full",""],["ion-button",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.fbLogin()&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{full:[0,"full"]},null),(l()(),Kl._27(0,[" \n        Login with Facebook\n      "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(1,["\n"]))],function(l,n){l(n,8,0,!n.component.platform.is("cordova"));l(n,13,0,"");l(n,20,0,"")},function(l,n){l(n,0,0,Kl._19(n,1).statusbarPadding,Kl._19(n,1)._hasRefresher)})}function i(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,0,"img",[["alt","neg"],["class","bookmark-btn"],["src","assets/img/hated.png"]],null,null,null,null,null))],null,null)}function a(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,0,"img",[["alt","pos"],["class","bookmark-btn"],["src","assets/img/loved.png"]],null,null,null,null,null))],null,null)}function s(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.displayImage(l.parent.context.$implicit.img,l.parent.context.$implicit.title)&&u),u},null,null))],null,function(l,n){l(n,0,0,n.parent.context.$implicit.img)})}function r(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,4,"div",[["class","news-display"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                       "])),(l()(),Kl._6(0,null,null,1,"span",[["class","bold"],["style","margin-left: 0px"]],null,null,null,null,null)),(l()(),Kl._27(null,["Source - "])),(l()(),Kl._27(null,[" ","\n                 "]))],null,function(l,n){l(n,4,0,n.parent.context.$implicit.news_title)})}function _(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,5,"button",[["class","action-btn"],["clear",""],["icon-left",""],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.followGossip(l.parent.context.$implicit,l.parent.context.index)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Kl._27(0,["\n                     "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","md-bookmark"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,[" \n                  "]))],function(l,n){l(n,1,0,null!=n.parent.context.$implicit.action.follow?"primary":"dark","","");l(n,4,0,"md-bookmark")},function(l,n){l(n,3,0,Kl._19(n,4)._hidden)})}function c(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,5,"button",[["class","action-btn"],["clear",""],["color","danger"],["icon-left",""],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.deleteGossip(l.parent.context.$implicit,l.parent.context.index)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Kl._27(0,["\n                     "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","md-trash"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,[" \n                  "]))],function(l,n){l(n,1,0,"danger","","");l(n,4,0,"md-trash")},function(l,n){l(n,3,0,Kl._19(n,4)._hidden)})}function d(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,121,"span",[],null,null,null,null,null)),(l()(),Kl._27(null,[" \n      "])),(l()(),Kl._6(0,null,null,118,"ion-card",[["class","home-listing"]],null,null,null,null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,27,"ion-item",[["class","border-top transparent item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,1,{contentLabel:0}),Kl._25(603979776,2,{_buttons:1}),Kl._25(603979776,3,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,0,4,"ion-avatar",[["item-left",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.entityProfile(l.context.$implicit.gossip_about.ID)&&u),u},null,null)),Kl._5(16384,null,0,Su.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"h2",[],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.entityProfile(l.context.$implicit.gossip_about.ID)&&u),u},null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"p",[],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.entityProfile(l.context.$implicit.gossip_about.ID)&&u),u},null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,7,"div",[["class","category-icon"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._2(16777216,null,null,1,null,i)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._2(16777216,null,null,1,null,a)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(2,["\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,14,"ion-card-content",[],null,null,null,null,null)),Kl._5(16384,null,0,Au.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,1,"p",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    ","\n                "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._2(16777216,null,null,1,null,s)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                 "])),(l()(),Kl._2(16777216,null,null,1,null,r)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,1,"p",[["class","gossip-id"],["text-right",""]],null,null,null,null,null)),(l()(),Kl._27(null,["Gossip #",""])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,69,"ion-grid",[["class","post grid"]],null,null,null,null,null)),Kl._5(16384,null,0,Du.a,[],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,65,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,12,"ion-col",[["class","p0 col"]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,8,"button",[["clear",""],["color","dark"],["ion-button",""],["small",""]],[[8,"className",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.vote(l.context.$implicit,"positive",l.context.index)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Kl._27(0,[" \n                      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["ios","ios-thumbs-up"],["md","md-thumbs-up"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Kl._27(0,["\n                      "])),(l()(),Kl._6(0,null,0,1,"span",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(0,[" \n                  "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,12,"ion-col",[["class","p0 col"]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,8,"button",[["clear",""],["color","dark"],["ion-button",""],["small",""]],[[8,"className",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.vote(l.context.$implicit,"negative",l.context.index)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Kl._27(0,[" \n                      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["ios","ios-thumbs-down"],["md","md-thumbs-down"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Kl._27(0,["\n                       "])),(l()(),Kl._6(0,null,0,1,"span",[],null,null,null,null,null)),(l()(),Kl._27(null,[""," "])),(l()(),Kl._27(0,["\n                  "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,12,"ion-col",[["class","p0 col"]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,8,"button",[["clear",""],["color","dark"],["icon-left",""],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.openComments(l.context.$implicit.id)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Kl._27(0,["\n                     "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","text"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n                     "])),(l()(),Kl._6(0,null,0,1,"div",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(0,["\n                  "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,8,"ion-col",[["center",""],["class","p0 col"],["text-center",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        \n                        "])),(l()(),Kl._2(16777216,null,null,1,null,_)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._2(16777216,null,null,1,null,c)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,9,"ion-col",[["center",""],["class","p0 col"],["text-center",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,5,"button",[["class","action-btn"],["clear",""],["color","dark"],["icon-left",""],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.shareVia(l.context.$implicit)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Kl._27(0,["\n                     "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","share"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,[" \n                  "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(null,[" \n        "]))],function(l,n){var t=n.component;l(n,27,0,1==n.context.$implicit.feedback_type),l(n,30,0,0==n.context.$implicit.feedback_type),l(n,41,0,n.context.$implicit.img),l(n,44,0,n.context.$implicit.news_title);l(n,60,0,"dark","","");l(n,63,0,"ios-thumbs-up","md-thumbs-up");l(n,74,0,"dark","","");l(n,77,0,"ios-thumbs-down","md-thumbs-down");l(n,88,0,"dark","","");l(n,91,0,"text"),l(n,102,0,t.userId!=n.context.$implicit.author.ID),l(n,105,0,t.userId==n.context.$implicit.author.ID);l(n,112,0,"dark","","");l(n,115,0,"share")},function(l,n){l(n,15,0,n.context.$implicit.gossip_about.img),l(n,19,0,n.context.$implicit.gossip_about.entity),l(n,22,0,n.context.$implicit.category[0].name),l(n,38,0,n.context.$implicit.content),l(n,47,0,n.context.$implicit.id),l(n,59,0,null!=n.context.$implicit.action.up?"up-voted":""),l(n,62,0,Kl._19(n,63)._hidden),l(n,66,0,n.context.$implicit.total_upvotes),l(n,73,0,null!=n.context.$implicit.action.down?"down-voted":""),l(n,76,0,Kl._19(n,77)._hidden),l(n,80,0,n.context.$implicit.total_downvotes),l(n,90,0,Kl._19(n,91)._hidden),l(n,94,0,n.context.$implicit.total_comments),l(n,114,0,Kl._19(n,115)._hidden)})}function p(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"div",[["center",""],["class","no-data"],["text-center",""]],null,null,null,null,null)),(l()(),Kl._27(null,["No gossip found."]))],null,null)}function h(l){return Kl._29(0,[(l()(),Kl._27(null,[" "])),(l()(),Kl._6(0,null,null,8,"ion-list",[["class","mt10"]],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n   "])),(l()(),Kl._2(16777216,null,null,1,null,d)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,p)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n    "]))],function(l,n){var t=n.component;l(n,5,0,t.gossips),l(n,8,0,!(null==t.gossips?null:t.gossips.length))},null)}function g(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,9,"ion-col",[["class","entity-icon col"]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,5,"button",[["color","whitec"],["icon-only",""],["ion-button",""],["item-right",""],["small",""]],[[8,"className",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.bookmarkEntity(l.parent.context.$implicit.id,l.parent.context.index)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"]},null),(l()(),Kl._27(0,["\n                                "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","bookmark"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n                        "])),(l()(),Kl._27(null,["\n                    "]))],function(l,n){l(n,4,0,"whitec","");l(n,7,0,"bookmark")},function(l,n){l(n,3,0,n.parent.context.$implicit.entityFollow?"bookmark-btn1 liked":"bookmark-btn1"),l(n,6,0,Kl._19(n,7)._hidden)})}function m(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,51,"ion-col",[["class","col"],["col-6",""],["col-md-4",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,47,"ion-card",[],null,null,null,null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,10,"div",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,7,"div",[["class","tending-content"]],[[4,"background-image",null]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.entityProfile(l.context.$implicit.id)&&u),u},null,null)),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,1,"div",[["class","card-title oneLiner"]],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,1,"div",[["class","card-subtitle"]],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n\n                "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,31,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,11,"ion-col",[["class","entity-icon border-right col"]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,7,"button",[["clear",""],["color","dark"],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.entityProfile(l.context.$implicit.id,1)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Kl._27(0,[" \n                            "])),(l()(),Kl._6(0,null,0,0,"img",[["alt",""],["src","assets/img/loved.png"]],null,null,null,null,null)),(l()(),Kl._27(0,[" \n                            "])),(l()(),Kl._6(0,null,0,1,"span",[["class","gossip-count"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                                ","\n                            "])),(l()(),Kl._27(0,["\n                             "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,11,"ion-col",[["class","col"]],[[8,"className",0]],null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,7,"button",[["clear",""],["color","dark"],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.entityProfile(l.context.$implicit.id,2)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Kl._27(0,["  \n                            "])),(l()(),Kl._6(0,null,0,0,"img",[["alt",""],["src","assets/img/hated.png"]],null,null,null,null,null)),(l()(),Kl._27(0,["\n                                "])),(l()(),Kl._6(0,null,0,1,"span",[["class","gossip-count"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                                 ","\n                                "])),(l()(),Kl._27(0,["\n                             "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._2(16777216,null,null,1,null,g)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n        "]))],function(l,n){var t=n.component;l(n,25,0,"dark","","");l(n,38,0,"dark","",""),l(n,48,0,t.showBookmark)},function(l,n){var t=n.component;l(n,8,0,t.getBackground(n.context.$implicit.img)),l(n,11,0,n.context.$implicit.title),l(n,14,0,n.context.$implicit.category[0].name),l(n,30,0,n.context.$implicit.total_positive_gossips),l(n,34,0,t.showBookmark?"entity-icon border-right col":"entity-icon col"),l(n,43,0,n.context.$implicit.total_negative_gossips)})}function f(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"div",[["center",""],["class","no-data"],["text-center",""]],null,null,null,null,null)),(l()(),Kl._27(null,["No entity found."]))],null,null)}function b(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,12,"ion-list",[["class","trending-card"]],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,5,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,m)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._2(16777216,null,null,1,null,f)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n"]))],function(l,n){var t=n.component;l(n,7,0,t.entities),l(n,11,0,!(null==t.entities?null:t.entities.length))},null)}function y(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,23,"ion-card",[["class","news-card"]],null,null,null,null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,2,"ion-card-content",[["class","news-content"]],null,null,null,null,null)),Kl._5(16384,null,0,Au.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n      ","\n    "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,15,"ion-col",[["class","p0 col"]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n      "])),(l()(),Kl._6(0,null,null,11,"button",[["class","add-gossip"],["clear",""],["color","dark"],["icon-left",""],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.addGossips(l.context.$implicit)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],clear:[2,"clear"]},null),(l()(),Kl._27(0,[" \n                      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["class","bold"],["ios","ios-add"],["md","md-add"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{ios:[0,"ios"],md:[1,"md"]},null),(l()(),Kl._27(0,["\n                      "])),(l()(),Kl._6(0,null,0,1,"span",[["class","mt2"]],null,null,null,null,null)),(l()(),Kl._27(null,["Gossip about this!"])),(l()(),Kl._27(0,["\n                      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["class","ml8 news-arrow"],["name","arrow-round-forward"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(null,["\n  "]))],function(l,n){l(n,11,0,"dark","","");l(n,14,0,"ios-add","md-add");l(n,20,0,"arrow-round-forward")},function(l,n){l(n,5,0,null==n.context.$implicit?null:n.context.$implicit.title),l(n,13,0,Kl._19(n,14)._hidden),l(n,19,0,Kl._19(n,20)._hidden)})}function v(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,4,"div",[["class","mt10"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n  "])),(l()(),Kl._2(16777216,null,null,1,null,y)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n"]))],function(l,n){l(n,3,0,n.component.newsList)},null)}function w(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"gossip-card",[],null,[[null,"dataUpdated"]],function(l,n,t){var u=!0,e=l.component;return"dataUpdated"===n&&(u=!1!==e.tabChange(e.segment,!0)&&u),u},h,Nu)),Kl._5(49152,null,0,Ct,[pn,xn,Vt.a,bn],{gossips:[0,"gossips"]},{dataUpdated:"dataUpdated"})],function(l,n){l(n,1,0,n.component.hatedGossips)},null)}function C(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"gossip-card",[],null,[[null,"dataUpdated"]],function(l,n,t){var u=!0,e=l.component;return"dataUpdated"===n&&(u=!1!==e.tabChange(e.segment,!0)&&u),u},h,Nu)),Kl._5(49152,null,0,Ct,[pn,xn,Vt.a,bn],{gossips:[0,"gossips"]},{dataUpdated:"dataUpdated"})],function(l,n){l(n,1,0,n.component.lovedGossips)},null)}function k(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"entity-card",[],null,[[null,"dataUpdated"]],function(l,n,t){var u=!0,e=l.component;return"dataUpdated"===n&&(u=!1!==e.tabChange(e.segment,!0)&&u),u},b,Fu)),Kl._5(49152,null,0,kt,[Xl.c,xn,Vt.a,bn],{entities:[0,"entities"],showBookmark:[1,"showBookmark"]},{dataUpdated:"dataUpdated"})],function(l,n){l(n,1,0,n.component.trendingEntities,!1)},null)}function G(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,2,"news",[],null,null,null,v,Ru)),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,Gt,[bn,xn,Vt.a],{newsList:[0,"newsList"]},null)],function(l,n){l(n,2,0,n.component.geoNews)},null)}function I(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,11,"ion-fab",[["bottom",""],["right",""]],[[24,"@myAnimation",0]],null,null,Uu.b,Uu.a)),Kl._5(1228800,null,2,$u.a,[iu.a],null,null),Kl._25(335544320,3,{_mainButton:0}),Kl._25(603979776,4,{_fabLists:1}),(l()(),Kl._27(0,["\n        "])),(l()(),Kl._6(0,null,0,5,"button",[["color","primary"],["ion-fab",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.search()&&u),u},Vu.b,Vu.a)),Kl._5(49152,[[3,4]],0,Bu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","search"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n   "])),(l()(),Kl._27(0,["\n    "]))],function(l,n){l(n,6,0,"primary");l(n,9,0,"search")},function(l,n){l(n,0,0,null),l(n,8,0,Kl._19(n,9)._hidden)})}function P(l){return Kl._29(0,[Kl._25(402653184,1,{content:0}),(l()(),Kl._6(0,null,null,30,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,26,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,22,"ion-segment",[["color","whitec"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"segment-disabled",null]],[[null,"ngModelChange"],[null,"ionChange"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.segment=t)&&u),"ionChange"===n&&(u=!1!==e.tabChange(e.segment,!1)&&u),u},null,null)),Kl._5(671744,null,0,xt.l,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(1196032,null,1,zu.a,[ou.a,Kl.l,Kl.G,[2,xt.h]],{color:[0,"color"]},{ionChange:"ionChange"}),Kl._25(603979776,2,{_buttons:1}),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","trending"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,15).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[2,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Trending\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","topHated"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,19).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[2,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Hated\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","topRated"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,23).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[2,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Rated\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","news"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,27).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[2,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                News\n            "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(3,["\n    "])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._6(0,null,null,17,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],[[null,"ionScroll"]],function(l,n,t){var u=!0,e=l.component;return"ionScroll"===n&&(u=!1!==e.update()&&u),u},mu.b,mu.a)),Kl._5(4374528,[[1,4]],0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,{ionScroll:"ionScroll"}),(l()(),Kl._27(1,[" \n    "])),(l()(),Kl._2(16777216,null,1,1,null,w)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,C)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,k)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,G)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,0,1,null,I)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,5,0,"primary"),l(n,8,0,t.segment);l(n,11,0,"whitec");l(n,15,0,"trending");l(n,19,0,"topHated");l(n,23,0,"topRated");l(n,27,0,"news"),l(n,37,0,"topHated"==t.segment),l(n,40,0,"topRated"==t.segment),l(n,43,0,"trending"==t.segment),l(n,46,0,"news"==t.segment),l(n,49,0,t.showSearch)},function(l,n){l(n,4,0,Kl._19(n,5)._sbPadding),l(n,7,0,Kl._19(n,10).ngClassUntouched,Kl._19(n,10).ngClassTouched,Kl._19(n,10).ngClassPristine,Kl._19(n,10).ngClassDirty,Kl._19(n,10).ngClassValid,Kl._19(n,10).ngClassInvalid,Kl._19(n,10).ngClassPending,Kl._19(n,11)._disabled),l(n,14,0,Kl._19(n,15)._disabled,Kl._19(n,15).isActive,Kl._19(n,15).isActive),l(n,18,0,Kl._19(n,19)._disabled,Kl._19(n,19).isActive,Kl._19(n,19).isActive),l(n,22,0,Kl._19(n,23)._disabled,Kl._19(n,23).isActive,Kl._19(n,23).isActive),l(n,26,0,Kl._19(n,27)._disabled,Kl._19(n,27).isActive,Kl._19(n,27).isActive),l(n,33,0,Kl._19(n,34).statusbarPadding,Kl._19(n,34)._hasRefresher)})}function E(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,7,"div",[["class","app-intro"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!=(e.appIntroImg=!1)&&u),u},null,null)),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,2,"button",[["class","intro-button "],["color","primary"],["ion-button",""]],null,null,null,hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(0,["\n        OK, Got it! \n    "])),(l()(),Kl._27(null,["\n"]))],function(l,n){l(n,5,0,"primary")},function(l,n){l(n,2,0,n.component.appIntroImg)})}function S(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,18,"ion-tabs",[["selectedIndex","2"]],null,null,null,Yu.b,Yu.a)),Kl._5(4374528,null,0,le.a,[[2,eu.a],[2,uu.a],Dt.a,ou.a,Kl.l,iu.a,Kl.G,au.a,Ut.a],{selectedIndex:[0,"selectedIndex"]},null),Kl._24(6144,null,su.a,null,[le.a]),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._6(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","list"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,ne.b,ne.a)),Kl._5(245760,null,0,te.a,[le.a,Dt.a,ou.a,iu.a,Kl.l,Kl.A,Kl.G,Kl.k,Kl.h,Tt.g,qt.a,[2,au.a],St.a,Kl.m],{root:[0,"root"],tabIcon:[1,"tabIcon"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._6(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","add-circle"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,ne.b,ne.a)),Kl._5(245760,null,0,te.a,[le.a,Dt.a,ou.a,iu.a,Kl.l,Kl.A,Kl.G,Kl.k,Kl.h,Tt.g,qt.a,[2,au.a],St.a,Kl.m],{root:[0,"root"],tabIcon:[1,"tabIcon"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._6(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","home"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,ne.b,ne.a)),Kl._5(245760,null,0,te.a,[le.a,Dt.a,ou.a,iu.a,Kl.l,Kl.A,Kl.G,Kl.k,Kl.h,Tt.g,qt.a,[2,au.a],St.a,Kl.m],{root:[0,"root"],tabIcon:[1,"tabIcon"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._6(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","bookmark"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,ne.b,ne.a)),Kl._5(245760,null,0,te.a,[le.a,Dt.a,ou.a,iu.a,Kl.l,Kl.A,Kl.G,Kl.k,Kl.h,Tt.g,qt.a,[2,au.a],St.a,Kl.m],{root:[0,"root"],tabIcon:[1,"tabIcon"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._6(0,null,0,1,"ion-tab",[["role","tabpanel"],["tabIcon","person"]],[[1,"id",0],[1,"aria-labelledby",0]],null,null,ne.b,ne.a)),Kl._5(245760,null,0,te.a,[le.a,Dt.a,ou.a,iu.a,Kl.l,Kl.A,Kl.G,Kl.k,Kl.h,Tt.g,qt.a,[2,au.a],St.a,Kl.m],{root:[0,"root"],tabIcon:[1,"tabIcon"]},null),(l()(),Kl._27(0,["\n"])),(l()(),Kl._27(null,[" \n"])),(l()(),Kl._2(16777216,null,null,1,null,E)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,[" "]))],function(l,n){var t=n.component;l(n,1,0,"2");l(n,5,0,t.tab1Root,"list");l(n,8,0,t.tab2Root,"add-circle");l(n,11,0,t.tab3Root,"home");l(n,14,0,t.tab4Root,"bookmark");l(n,17,0,t.tab5Root,"person"),l(n,21,0,t.appIntroImg)},function(l,n){l(n,4,0,Kl._19(n,5)._tabId,Kl._19(n,5)._btnId),l(n,7,0,Kl._19(n,8)._tabId,Kl._19(n,8)._btnId),l(n,10,0,Kl._19(n,11)._tabId,Kl._19(n,11)._btnId),l(n,13,0,Kl._19(n,14)._tabId,Kl._19(n,14)._btnId),l(n,16,0,Kl._19(n,17)._tabId,Kl._19(n,17)._btnId)})}function A(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,18,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,14,"ion-segment",[["color","whitec"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"segment-disabled",null]],[[null,"ngModelChange"],[null,"ionChange"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.segment=t)&&u),"ionChange"===n&&(u=!1!==e.reset()&&u),u},null,null)),Kl._5(671744,null,0,xt.l,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(1196032,null,1,zu.a,[ou.a,Kl.l,Kl.G,[2,xt.h]],{color:[0,"color"]},{ionChange:"ionChange"}),Kl._25(603979776,1,{_buttons:1}),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","gossip"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,11).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[1,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Add Gossip\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","entity"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,15).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[1,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Add Entity\n            "])),(l()(),Kl._27(null,["\n\n        "])),(l()(),Kl._27(3,["\n    "]))],function(l,n){var t=n.component;l(n,1,0,"primary"),l(n,4,0,t.segment);l(n,7,0,"whitec");l(n,11,0,"gossip");l(n,15,0,"entity")},function(l,n){l(n,0,0,Kl._19(n,1)._sbPadding),l(n,3,0,Kl._19(n,6).ngClassUntouched,Kl._19(n,6).ngClassTouched,Kl._19(n,6).ngClassPristine,Kl._19(n,6).ngClassDirty,Kl._19(n,6).ngClassValid,Kl._19(n,6).ngClassInvalid,Kl._19(n,6).ngClassPending,Kl._19(n,7)._disabled),l(n,10,0,Kl._19(n,11)._disabled,Kl._19(n,11).isActive,Kl._19(n,11).isActive),l(n,14,0,Kl._19(n,15)._disabled,Kl._19(n,15).isActive,Kl._19(n,15).isActive)})}function D(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,0,8,"button",[["color","white"],["icon-only",""],["ion-button",""],["left",""],["menuToggle","false"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,5).toggle()&&u),"click"===n&&(u=!1!==e.dismiss()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[2,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),Kl._5(1064960,null,0,ie.a,[At.a,[2,uu.a],[2,gu.a],[2,ae.a]],{menuToggle:[0,"menuToggle"]},null),Kl._5(16384,null,1,se.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],{color:[0,"color"]},null),Kl._25(603979776,2,{_buttons:1}),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,[" \n        "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,2,"ion-title",[],null,null,null,re.b,re.a)),Kl._5(49152,null,0,_e.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),(l()(),Kl._27(0,["\n            Add Entity\n        "])),(l()(),Kl._27(3,["\n    "]))],function(l,n){l(n,1,0,"primary");l(n,4,0,"white");l(n,5,0,"false");l(n,6,0,"white");l(n,10,0,"arrow-back")},function(l,n){l(n,0,0,Kl._19(n,1)._sbPadding),l(n,3,0,Kl._19(n,5).isHidden),l(n,9,0,Kl._19(n,10)._hidden)})}function T(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,12,"ion-col",[["class","col"],["col-6",""],["col-md-4",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,8,"ion-card",[["class","m0"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.categorySelect(l.context.$implicit)&&u),u},null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,4,"div",[["class","category-content"]],[[4,"background-image",null]],null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,1,"div",[["class","card-title"]],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                "]))],null,function(l,n){l(n,6,0,n.component.getEntityBackground(n.context.$implicit.attachment)),l(n,9,0,n.context.$implicit.name)})}function L(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,12,"div",[["class","category select-category"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-card-header",[["color","primary"]],null,null,null,null,null)),Kl._5(16384,null,0,ce.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(null,["\n                Select category of entity (1/2)\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,5,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._2(16777216,null,null,1,null,T)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n\n            "])),(l()(),Kl._27(null,["\n        "]))],function(l,n){var t=n.component;l(n,3,0,"primary"),l(n,10,0,t.categories)},null)}function x(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,163,"div",[["class",""]],null,null,null,null,null)),(l()(),Kl._27(null,["\n\n            "])),(l()(),Kl._6(0,null,null,17,"div",[["class","entity-fields"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,14,"div",[["class","profile-wrapper"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,9,"div",[["class","profile-data"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,2,"h1",[["color","whitec"],["ion-text",""]],null,null,null,null,null)),Kl._5(16384,null,0,de.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,2,"h4",[["class","mt0"],["color","whitec"],["ion-text",""]],null,null,null,null,null)),Kl._5(16384,null,0,de.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(null,[""," (",")"])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["class","profile-img"]],[[8,"src",4]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.selectImage()&&u),u},null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,141,"form",[["action","#"],["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngSubmit"],[null,"submit"],[null,"reset"]],function(l,n,t){var u=!0,e=l.component;return"submit"===n&&(u=!1!==Kl._19(l,23).onSubmit(t)&&u),"reset"===n&&(u=!1!==Kl._19(l,23).onReset()&&u),"ngSubmit"===n&&(u=!1!==e.addEntity(Kl._19(l,23))&&u),u},null,null)),Kl._5(16384,null,0,xt.q,[],null,null),Kl._5(16384,[["entityDetailForm",4]],0,xt.k,[[8,null],[8,null]],null,{ngSubmit:"ngSubmit"}),Kl._24(2048,null,xt.b,null,[xt.k]),Kl._5(16384,null,0,xt.j,[xt.b],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,134,"ion-card",[["class","card-items ion-card-full"]],null,null,null,null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,2,"ion-card-header",[["color","primary"]],null,null,null,null,null)),Kl._5(16384,null,0,ce.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(null,["\n                        Information about entity (2/2)\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,126,"ion-card-content",[],null,null,null,null,null)),Kl._5(16384,null,0,Au.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,113,"ion-list",[],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,18,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,3,{contentLabel:0}),Kl._25(603979776,4,{_buttons:1}),Kl._25(603979776,5,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                                "])),(l()(),Kl._6(0,null,1,2,"ion-label",[["stacked",""]],null,null,null,null,null)),Kl._5(16384,[[3,4]],0,pe.a,[ou.a,Kl.l,Kl.G,[8,null],[8,""],[8,null],[8,null]],null,null),(l()(),Kl._27(null,["Name*"])),(l()(),Kl._27(2,["\n                                "])),(l()(),Kl._6(0,null,3,6,"ion-input",[["name","firstname"],["required",""],["type","text"]],[[1,"required",0],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.entityDetail.entity=t)&&u),u},he.b,he.a)),Kl._5(16384,null,0,xt.o,[],{required:[0,"required"]},null),Kl._24(1024,null,xt.f,function(l){return[l]},[xt.o]),Kl._5(671744,[["firstName",4]],0,xt.l,[[2,xt.b],[2,xt.f],[8,null],[8,null]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(5423104,null,0,ge.a,[ou.a,iu.a,jt.a,Dt.a,Kl.l,Kl.G,[2,fu.a],[2,Iu.a],[2,xt.h],St.a],{type:[0,"type"]},null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,2,"p",[["class","validationErr"],["color","danger"],["ion-text",""],["padding-left",""]],[[8,"hidden",0]],null,null,null,null)),Kl._5(16384,null,0,de.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(null,["\n                                Name is required\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,18,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,6,{contentLabel:0}),Kl._25(603979776,7,{_buttons:1}),Kl._25(603979776,8,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                                "])),(l()(),Kl._6(0,null,1,2,"ion-label",[["stacked",""]],null,null,null,null,null)),Kl._5(16384,[[6,4]],0,pe.a,[ou.a,Kl.l,Kl.G,[8,null],[8,""],[8,null],[8,null]],null,null),(l()(),Kl._27(null,["Tagline*"])),(l()(),Kl._27(2,["\n                                "])),(l()(),Kl._6(0,null,3,6,"ion-input",[["name","lastname"],["required",""],["type","text"]],[[1,"required",0],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.entityDetail.subtitle=t)&&u),u},he.b,he.a)),Kl._5(16384,null,0,xt.o,[],{required:[0,"required"]},null),Kl._24(1024,null,xt.f,function(l){return[l]},[xt.o]),Kl._5(671744,[["lastName",4]],0,xt.l,[[2,xt.b],[2,xt.f],[8,null],[8,null]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(5423104,null,0,ge.a,[ou.a,iu.a,jt.a,Dt.a,Kl.l,Kl.G,[2,fu.a],[2,Iu.a],[2,xt.h],St.a],{type:[0,"type"]},null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,2,"p",[["class","validationErr"],["color","danger"],["ion-text",""],["padding-left",""]],[[8,"hidden",0]],null,null,null,null)),Kl._5(16384,null,0,de.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(null,["\n                                Tagline is required\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,16,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,9,{contentLabel:0}),Kl._25(603979776,10,{_buttons:1}),Kl._25(603979776,11,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                                "])),(l()(),Kl._6(0,null,1,2,"ion-label",[["stacked",""]],null,null,null,null,null)),Kl._5(16384,[[9,4]],0,pe.a,[ou.a,Kl.l,Kl.G,[8,null],[8,""],[8,null],[8,null]],null,null),(l()(),Kl._27(null,["Contact Number"])),(l()(),Kl._27(2,["\n                                "])),(l()(),Kl._6(0,null,3,4,"ion-input",[["name","contact"],["type","number"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.entityDetail.contact_number=t)&&u),u},he.b,he.a)),Kl._5(671744,[["contact",4]],0,xt.l,[[2,xt.b],[8,null],[8,null],[8,null]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(5423104,null,0,ge.a,[ou.a,iu.a,jt.a,Dt.a,Kl.l,Kl.G,[2,fu.a],[2,Iu.a],[2,xt.h],St.a],{type:[0,"type"]},null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,27,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,12,{contentLabel:0}),Kl._25(603979776,13,{_buttons:1}),Kl._25(603979776,14,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                                "])),(l()(),Kl._6(0,null,1,2,"ion-label",[["stacked",""]],null,null,null,null,null)),Kl._5(16384,[[12,4]],0,pe.a,[ou.a,Kl.l,Kl.G,[8,null],[8,""],[8,null],[8,null]],null,null),(l()(),Kl._27(null,["Own this entity?"])),(l()(),Kl._27(2,["\n                                "])),(l()(),Kl._6(0,null,3,15,"ion-select",[["class","w40"],["interface","popover"],["name","owner"]],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,119)._click(t)&&u),"keyup.space"===n&&(u=!1!==Kl._19(l,119)._keyup()&&u),"ngModelChange"===n&&(u=!1!==(e.entityDetail.owner=t)&&u),u},me.b,me.a)),Kl._5(1228800,null,1,fe.a,[Dt.a,jt.a,ou.a,Kl.l,Kl.G,[2,Iu.a],au.a],{interface:[0,"interface"]},null),Kl._25(603979776,15,{options:1}),Kl._24(1024,null,xt.g,function(l){return[l]},[fe.a]),Kl._5(671744,[["owner",4]],0,xt.l,[[2,xt.b],[8,null],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._6(0,null,null,2,"ion-option",[["value","yes"]],null,null,null,null,null)),Kl._5(16384,[[15,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["Yes"])),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._6(0,null,null,2,"ion-option",[["value","no"]],null,null,null,null,null)),Kl._5(16384,[[15,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["No"])),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,13,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,16,{contentLabel:0}),Kl._25(603979776,17,{_buttons:1}),Kl._25(603979776,18,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                                "])),(l()(),Kl._6(0,null,2,5,"button",[["block",""],["class","h35"],["icon-left",""],["ion-button",""],["outline",""],["type","button"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.selectImage()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[17,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{outline:[0,"outline"],block:[1,"block"]},null),(l()(),Kl._27(0,["\n  "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","attach"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n ","  image\n"])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,7,"div",[["class","submit-btn"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,2,"button",[["block",""],["color","primary"],["ion-button",""],["type","submit"]],null,null,null,hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],block:[1,"block"]},null),(l()(),Kl._27(0,["Submit Request"])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._27(null,["\n\n                    "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n\n            "])),(l()(),Kl._27(null,["\n        "]))],function(l,n){var t=n.component;l(n,9,0,"whitec");l(n,13,0,"whitec");l(n,31,0,"primary");l(n,52,0,"");l(n,54,0,"firstname",t.entityDetail.entity);l(n,57,0,"text");l(n,61,0,"danger");l(n,76,0,"");l(n,78,0,"lastname",t.entityDetail.subtitle);l(n,81,0,"text");l(n,85,0,"danger");l(n,101,0,"contact",t.entityDetail.contact_number);l(n,104,0,"number");l(n,119,0,"popover");l(n,122,0,"owner",t.entityDetail.owner);l(n,127,0,"yes");l(n,131,0,"no");l(n,144,0,"","");l(n,147,0,"attach");l(n,157,0,"primary","")},function(l,n){var t=n.component;l(n,10,0,t.entityDetail.entity||"Name Here"),l(n,14,0,t.entityDetail.subtitle||"Tagline Here",t.selectedCat),l(n,17,0,Kl._10(1,"",t.entityDetail.image||"assets/img/image.png","")),l(n,21,0,Kl._19(n,25).ngClassUntouched,Kl._19(n,25).ngClassTouched,Kl._19(n,25).ngClassPristine,Kl._19(n,25).ngClassDirty,Kl._19(n,25).ngClassValid,Kl._19(n,25).ngClassInvalid,Kl._19(n,25).ngClassPending),l(n,51,0,Kl._19(n,52).required?"":null,Kl._19(n,56).ngClassUntouched,Kl._19(n,56).ngClassTouched,Kl._19(n,56).ngClassPristine,Kl._19(n,56).ngClassDirty,Kl._19(n,56).ngClassValid,Kl._19(n,56).ngClassInvalid,Kl._19(n,56).ngClassPending),l(n,60,0,Kl._19(n,54).valid||0==t.submitted),l(n,75,0,Kl._19(n,76).required?"":null,Kl._19(n,80).ngClassUntouched,Kl._19(n,80).ngClassTouched,Kl._19(n,80).ngClassPristine,Kl._19(n,80).ngClassDirty,Kl._19(n,80).ngClassValid,Kl._19(n,80).ngClassInvalid,Kl._19(n,80).ngClassPending),l(n,84,0,Kl._19(n,78).valid||0==t.submitted),l(n,100,0,Kl._19(n,103).ngClassUntouched,Kl._19(n,103).ngClassTouched,Kl._19(n,103).ngClassPristine,Kl._19(n,103).ngClassDirty,Kl._19(n,103).ngClassValid,Kl._19(n,103).ngClassInvalid,Kl._19(n,103).ngClassPending),l(n,118,0,Kl._19(n,119)._disabled,Kl._19(n,124).ngClassUntouched,Kl._19(n,124).ngClassTouched,Kl._19(n,124).ngClassPristine,Kl._19(n,124).ngClassDirty,Kl._19(n,124).ngClassValid,Kl._19(n,124).ngClassInvalid,Kl._19(n,124).ngClassPending),l(n,146,0,Kl._19(n,147)._hidden),l(n,148,0,t.entityDetail.image?"Change":"Attach")})}function M(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,7,"div",[["class","entity"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,L)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,x)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n    "]))],function(l,n){var t=n.component;l(n,3,0,!t.isCategorySelected),l(n,6,0,t.isCategorySelected)},null)}function N(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,18,"ion-item",[["class","item item-block"],["style","margin-left: -6px"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,19,{contentLabel:0}),Kl._25(603979776,20,{_buttons:1}),Kl._25(603979776,21,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,0,4,"ion-avatar",[["item-left",""]],null,null,null,null,null)),Kl._5(16384,null,0,Su.a,[],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                        "]))],null,function(l,n){var t=n.component;l(n,10,0,t.selectedEntity.img),l(n,14,0,t.selectedEntity.title),l(n,17,0,t.selectedEntity.category[0].name)})}function O(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,2,"ion-option",[],null,null,null,null,null)),Kl._5(16384,[[28,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["",""]))],function(l,n){l(n,1,0,n.context.$implicit.id)},function(l,n){l(n,2,0,n.context.$implicit.title)})}function F(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,18,"ion-item",[["class","pl8 img-preview item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,32,{contentLabel:0}),Kl._25(603979776,33,{_buttons:1}),Kl._25(603979776,34,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,10,"div",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,0,"img",[["alt","attachment"]],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,5,"button",[["class","action-btn"],["clear",""],["icon-left",""],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.removeImage()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[33,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{small:[0,"small"],clear:[1,"clear"]},null),(l()(),Kl._27(0,["\n                                        "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","md-close"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,[" \n                                    "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(2,["\n                        "]))],function(l,n){l(n,12,0,"","");l(n,15,0,"md-close")},function(l,n){l(n,9,0,n.component.addGossip.image),l(n,14,0,Kl._19(n,15)._hidden)})}function j(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,160,"div",[["class","gossip"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,157,"form",[["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"submit"],[null,"reset"]],function(l,n,t){var u=!0;return"submit"===n&&(u=!1!==Kl._19(l,4).onSubmit(t)&&u),"reset"===n&&(u=!1!==Kl._19(l,4).onReset()&&u),u},null,null)),Kl._5(16384,null,0,xt.q,[],null,null),Kl._5(16384,[["gossipForm",4]],0,xt.k,[[8,null],[8,null]],null,null),Kl._24(2048,null,xt.b,null,[xt.k]),Kl._5(16384,null,0,xt.j,[xt.b],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,150,"ion-card",[["class","card-items ion-card-full"]],null,null,null,null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,145,"ion-card-content",[],null,null,null,null,null)),Kl._5(16384,null,0,Au.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,132,"ion-list",[],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,1,"ion-searchbar",[["placeholder","Search Entities"]],[[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.searchEntity()&&u),u},ye.b,ye.a)),Kl._5(1294336,null,0,ve.a,[ou.a,iu.a,Kl.l,Kl.G,[2,xt.h]],{placeholder:[0,"placeholder"]},null),(l()(),Kl._27(null,["\n\n                        "])),(l()(),Kl._2(16777216,null,null,1,null,N)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n\n                        "])),(l()(),Kl._6(0,null,null,53,"ion-item",[["class","item item-block"],["style","margin-left: -17px"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,22,{contentLabel:0}),Kl._25(603979776,23,{_buttons:1}),Kl._25(603979776,24,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,45,"ion-grid",[["class","grid"]],null,null,null,null,null)),Kl._5(16384,null,0,Du.a,[],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,41,"ion-row",[["class","emo-img row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._6(0,null,null,17,"ion-col",[["class","col"],["text-center",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                                        "])),(l()(),Kl._6(0,null,null,6,"input",[["id","pos"],["name","type"],["type","radio"],["value","0"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"input"],[null,"blur"],[null,"compositionstart"],[null,"compositionend"],[null,"change"]],function(l,n,t){var u=!0,e=l.component;return"input"===n&&(u=!1!==Kl._19(l,41)._handleInput(t.target.value)&&u),"blur"===n&&(u=!1!==Kl._19(l,41).onTouched()&&u),"compositionstart"===n&&(u=!1!==Kl._19(l,41)._compositionStart()&&u),"compositionend"===n&&(u=!1!==Kl._19(l,41)._compositionEnd(t.target.value)&&u),"change"===n&&(u=!1!==Kl._19(l,42).onChange()&&u),"blur"===n&&(u=!1!==Kl._19(l,42).onTouched()&&u),"ngModelChange"===n&&(u=!1!==(e.addGossip.feedbackType=t)&&u),u},null,null)),Kl._5(16384,null,0,xt.c,[Kl.G,Kl.l,[2,xt.a]],null,null),Kl._5(212992,null,0,xt.m,[Kl.G,Kl.l,xt.r,Kl.s],{name:[0,"name"],value:[1,"value"]},null),Kl._24(1024,null,xt.g,function(l,n){return[l,n]},[xt.c,xt.m]),Kl._5(671744,null,0,xt.l,[[2,xt.b],[8,null],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(null,["\n                                        "])),(l()(),Kl._6(0,null,null,5,"label",[["for","pos"]],null,null,null,null,null)),(l()(),Kl._27(null,[" "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["src","assets/img/loved.png"]],null,null,null,null,null)),(l()(),Kl._27(null,[" "])),(l()(),Kl._6(0,null,null,1,"div",[["class","type-text"]],null,null,null,null,null)),(l()(),Kl._27(null,["Positive Gossip"])),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._6(0,null,null,18,"ion-col",[["class","col"],["text-center",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                                        "])),(l()(),Kl._6(0,null,null,6,"input",[["id","neg"],["name","type"],["type","radio"],["value","1"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"input"],[null,"blur"],[null,"compositionstart"],[null,"compositionend"],[null,"change"]],function(l,n,t){var u=!0,e=l.component;return"input"===n&&(u=!1!==Kl._19(l,60)._handleInput(t.target.value)&&u),"blur"===n&&(u=!1!==Kl._19(l,60).onTouched()&&u),"compositionstart"===n&&(u=!1!==Kl._19(l,60)._compositionStart()&&u),"compositionend"===n&&(u=!1!==Kl._19(l,60)._compositionEnd(t.target.value)&&u),"change"===n&&(u=!1!==Kl._19(l,61).onChange()&&u),"blur"===n&&(u=!1!==Kl._19(l,61).onTouched()&&u),"ngModelChange"===n&&(u=!1!==(e.addGossip.feedbackType=t)&&u),u},null,null)),Kl._5(16384,null,0,xt.c,[Kl.G,Kl.l,[2,xt.a]],null,null),Kl._5(212992,null,0,xt.m,[Kl.G,Kl.l,xt.r,Kl.s],{name:[0,"name"],value:[1,"value"]},null),Kl._24(1024,null,xt.g,function(l,n){return[l,n]},[xt.c,xt.m]),Kl._5(671744,null,0,xt.l,[[2,xt.b],[8,null],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(null,["\n                                        "])),(l()(),Kl._6(0,null,null,6,"label",[["for","neg"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["src","assets/img/hated.png"]],null,null,null,null,null)),(l()(),Kl._27(null,[" "])),(l()(),Kl._6(0,null,null,1,"div",[["class","type-text"]],null,null,null,null,null)),(l()(),Kl._27(null,["Negative Gossip"])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(2,["\n                        "])),(l()(),Kl._27(null,["\n\n\n                        "])),(l()(),Kl._6(0,null,null,30,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,25,{contentLabel:0}),Kl._25(603979776,26,{_buttons:1}),Kl._25(603979776,27,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,1,2,"ion-label",[["stacked",""]],null,null,null,null,null)),Kl._5(16384,[[25,4]],0,pe.a,[ou.a,Kl.l,Kl.G,[8,null],[8,""],[8,null],[8,null]],null,null),(l()(),Kl._27(null,["Gossip as"])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,3,18,"ion-select",[["class","w40"],["interface","popover"],["name","poastedAs"]],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,91)._click(t)&&u),"keyup.space"===n&&(u=!1!==Kl._19(l,91)._keyup()&&u),"ngModelChange"===n&&(u=!1!==(e.addGossip.posted_as=t)&&u),u},me.b,me.a)),Kl._5(1228800,null,1,fe.a,[Dt.a,jt.a,ou.a,Kl.l,Kl.G,[2,Iu.a],au.a],{interface:[0,"interface"]},null),Kl._25(603979776,28,{options:1}),Kl._24(1024,null,xt.g,function(l){return[l]},[fe.a]),Kl._5(671744,[["poastedAs",4]],0,xt.l,[[2,xt.b],[8,null],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,2,"ion-option",[["value","anonymous"]],null,null,null,null,null)),Kl._5(16384,[[28,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["Anonymous"])),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,2,"ion-option",[],null,null,null,null,null)),Kl._5(16384,[[28,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._2(16777216,null,null,1,null,O)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(2,["\n                        "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,17,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,29,{contentLabel:0}),Kl._25(603979776,30,{_buttons:1}),Kl._25(603979776,31,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,7,"textarea",[["class","text-area"],["cols",""],["name","gossip"],["placeholder","Gossip Content"],["required",""],["rows","6"]],[[1,"required",0],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"input"],[null,"blur"],[null,"compositionstart"],[null,"compositionend"]],function(l,n,t){var u=!0,e=l.component;return"input"===n&&(u=!1!==Kl._19(l,120)._handleInput(t.target.value)&&u),"blur"===n&&(u=!1!==Kl._19(l,120).onTouched()&&u),"compositionstart"===n&&(u=!1!==Kl._19(l,120)._compositionStart()&&u),"compositionend"===n&&(u=!1!==Kl._19(l,120)._compositionEnd(t.target.value)&&u),"ngModelChange"===n&&(u=!1!==(e.addGossip.gossip=t)&&u),u},null,null)),Kl._5(16384,null,0,xt.c,[Kl.G,Kl.l,[2,xt.a]],null,null),Kl._5(16384,null,0,xt.o,[],{required:[0,"required"]},null),Kl._24(1024,null,xt.f,function(l){return[l]},[xt.o]),Kl._24(1024,null,xt.g,function(l){return[l]},[xt.c]),Kl._5(671744,[["gossip",4]],0,xt.l,[[2,xt.b],[2,xt.f],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._27(2,["\n                        "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._2(16777216,null,null,1,null,F)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,13,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,35,{contentLabel:0}),Kl._25(603979776,36,{_buttons:1}),Kl._25(603979776,37,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,5,"button",[["block",""],["class","h35"],["icon-left",""],["ion-button",""],["outline",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.selectImage()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[36,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{outline:[0,"outline"],block:[1,"block"]},null),(l()(),Kl._27(0,["\n  "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","attach"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n ","  image\n"])),(l()(),Kl._27(2,["\n                        "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,7,"div",[["class","submit-btn"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,2,"button",[["block",""],["color","primary"],["ion-button",""],["type","submit"]],[[8,"disabled",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.insertGossip(e.addGossip)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],block:[1,"block"]},null),(l()(),Kl._27(0,["Post"])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n\n                "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n\n        "])),(l()(),Kl._27(null,["\n    "]))],function(l,n){var t=n.component;l(n,19,0,"Search Entities"),l(n,22,0,t.selectedEntity.id);l(n,42,0,"type","0");l(n,44,0,"type",t.addGossip.feedbackType);l(n,61,0,"type","1");l(n,63,0,"type",t.addGossip.feedbackType);l(n,91,0,"popover");l(n,94,0,"poastedAs",t.addGossip.posted_as);l(n,99,0,"anonymous"),l(n,103,0,t.user.ID),l(n,107,0,t.myEntities);l(n,121,0,"");l(n,124,0,"gossip",t.addGossip.gossip),l(n,131,0,t.addGossip.image);l(n,141,0,"","");l(n,144,0,"attach");l(n,154,0,"primary","")},function(l,n){var t=n.component;l(n,2,0,Kl._19(n,6).ngClassUntouched,Kl._19(n,6).ngClassTouched,Kl._19(n,6).ngClassPristine,Kl._19(n,6).ngClassDirty,Kl._19(n,6).ngClassValid,Kl._19(n,6).ngClassInvalid,Kl._19(n,6).ngClassPending),l(n,18,0,Kl._19(n,19)._animated,Kl._19(n,19)._value,Kl._19(n,19)._isActive,Kl._19(n,19)._showCancelButton,Kl._19(n,19)._shouldAlignLeft,Kl._19(n,19)._isFocus),l(n,40,0,Kl._19(n,46).ngClassUntouched,Kl._19(n,46).ngClassTouched,Kl._19(n,46).ngClassPristine,Kl._19(n,46).ngClassDirty,Kl._19(n,46).ngClassValid,Kl._19(n,46).ngClassInvalid,Kl._19(n,46).ngClassPending),l(n,59,0,Kl._19(n,65).ngClassUntouched,Kl._19(n,65).ngClassTouched,Kl._19(n,65).ngClassPristine,Kl._19(n,65).ngClassDirty,Kl._19(n,65).ngClassValid,Kl._19(n,65).ngClassInvalid,Kl._19(n,65).ngClassPending),l(n,90,0,Kl._19(n,91)._disabled,Kl._19(n,96).ngClassUntouched,Kl._19(n,96).ngClassTouched,Kl._19(n,96).ngClassPristine,Kl._19(n,96).ngClassDirty,Kl._19(n,96).ngClassValid,Kl._19(n,96).ngClassInvalid,Kl._19(n,96).ngClassPending),l(n,104,0,t.user.display_name),l(n,119,0,Kl._19(n,121).required?"":null,Kl._19(n,126).ngClassUntouched,Kl._19(n,126).ngClassTouched,Kl._19(n,126).ngClassPristine,Kl._19(n,126).ngClassDirty,Kl._19(n,126).ngClassValid,Kl._19(n,126).ngClassInvalid,Kl._19(n,126).ngClassPending),l(n,143,0,Kl._19(n,144)._hidden),l(n,145,0,t.addGossip.image?"Change":"Attach"),l(n,153,0,!(t.addGossip.feedbackType&&t.addGossip.gossip&&t.addGossip.id))})}function R(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,8,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._2(16777216,null,null,1,null,A)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._2(16777216,null,null,1,null,D)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._6(0,null,null,10,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n\n    "])),(l()(),Kl._27(1,["\n\n    "])),(l()(),Kl._2(16777216,null,1,1,null,M)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,j)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,4,0,!t.isModal),l(n,7,0,t.isModal),l(n,15,0,"entity"==t.segment),l(n,18,0,"gossip"==t.segment)},function(l,n){l(n,10,0,Kl._19(n,11).statusbarPadding,Kl._19(n,11)._hasRefresher)})}function U(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,15,"ion-col",[["class","col"],["col-6",""],["col-md-4",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,11,"ion-card",[["class","m0"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.gossips(l.context.$implicit)&&u),u},null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,4,"div",[["class","category-content"]],[[4,"background-image",null]],null,null,null,null)),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,1,"div",[["class","card-title"]],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,1,"div",[["class","entity-count border-right"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                        "," ","\n                    "])),(l()(),Kl._27(null,["\n\n                "])),(l()(),Kl._27(null,["\n            "]))],null,function(l,n){l(n,6,0,n.component.getBackground(n.context.$implicit.attachment)),l(n,9,0,n.context.$implicit.name),l(n,13,0,n.context.$implicit.count,n.context.$implicit.count>1?"Gossips":"Gossip")})}function $(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,10,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,6,"ion-navbar",[["class","toolbar"],["color","primary"]],[[8,"hidden",0],[2,"statusbar-padding",null]],null,null,Ge.b,Ge.a)),Kl._5(49152,null,0,ae.a,[Dt.a,[2,uu.a],[2,eu.a],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,2,"ion-title",[],null,null,null,re.b,re.a)),Kl._5(49152,null,0,_e.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),(l()(),Kl._27(0,["Categories"])),(l()(),Kl._27(3,["\n    "])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._6(0,null,null,12,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,8,"div",[["class","category"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,5,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._2(16777216,null,null,1,null,U)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,4,0,"primary"),l(n,21,0,t.categories)},function(l,n){l(n,3,0,Kl._19(n,4)._hidden,Kl._19(n,4)._sbPadding),l(n,12,0,Kl._19(n,13).statusbarPadding,Kl._19(n,13)._hasRefresher)})}function V(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,8,"button",[["color","white"],["icon-only",""],["ion-button",""],["menuToggle","false"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,2).toggle()&&u),"click"===n&&(u=!1!==e.dismiss()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[1,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),Kl._5(1064960,null,0,ie.a,[At.a,[2,uu.a],[2,gu.a],[2,ae.a]],{menuToggle:[0,"menuToggle"]},null),Kl._5(16384,null,1,se.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],{color:[0,"color"]},null),Kl._25(603979776,1,{_buttons:1}),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n    "]))],function(l,n){l(n,1,0,"white");l(n,2,0,"false");l(n,3,0,"white");l(n,7,0,"arrow-back")},function(l,n){l(n,0,0,Kl._19(n,2).isHidden),l(n,6,0,Kl._19(n,7)._hidden)})}function B(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,10,"ion-buttons",[["end",""]],null,null,null,null,null)),Kl._5(16384,null,1,se.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),Kl._25(603979776,2,{_buttons:1}),(l()(),Kl._27(null,["\n      "])),(l()(),Kl._6(0,null,null,5,"button",[["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.presentPopover(t)&&u),u},hu.b,hu.a)),Kl._5(1097728,[[2,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(0,["\n        "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","more"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._27(null,["\n    "]))],function(l,n){l(n,8,0,"more")},function(l,n){l(n,7,0,Kl._19(n,8)._hidden)})}function Q(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,2,"button",[["color","whitec"],["ion-button",""],["outline",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.follow(e.userDetail.ID,"userDetail")&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],small:[1,"small"],outline:[2,"outline"]},null),(l()(),Kl._27(0,["",""]))],function(l,n){l(n,1,0,"whitec","","")},function(l,n){l(n,2,0,n.component.userDetail.isFollowing?"Unfollow":"Follow")})}function H(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","myEntity"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,1).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[3,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Entities (",")\n            "]))],function(l,n){l(n,1,0,"myEntity")},function(l,n){var t=n.component;l(n,0,0,Kl._19(n,1)._disabled,Kl._19(n,1).isActive,Kl._19(n,1).isActive),l(n,2,0,null==t.myEntity?null:t.myEntity.length)})}function q(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"gossip-card",[],null,[[null,"dataUpdated"]],function(l,n,t){var u=!0,e=l.component;return"dataUpdated"===n&&(u=!1!==e.getMyGossips()&&u),u},h,Nu)),Kl._5(49152,null,0,Ct,[pn,xn,Vt.a,bn],{gossips:[0,"gossips"]},{dataUpdated:"dataUpdated"})],function(l,n){l(n,1,0,n.component.myGossips)},null)}function z(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"entity-card",[],null,[[null,"dataUpdated"]],function(l,n,t){var u=!0,e=l.component;return"dataUpdated"===n&&(u=!1!==e.getMyEntity()&&u),u},b,Fu)),Kl._5(49152,null,0,kt,[Xl.c,xn,Vt.a,bn],{entities:[0,"entities"]},{dataUpdated:"dataUpdated"})],function(l,n){l(n,1,0,n.component.myEntity)},null)}function X(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,5,"div",[["class","entity-status"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,2,"button",[["ion-button",""],["outline",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.follow(l.parent.context.$implicit.ID)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{small:[0,"small"],outline:[1,"outline"]},null),(l()(),Kl._27(0,["",""])),(l()(),Kl._27(null,[" \n                        "]))],function(l,n){l(n,3,0,"","")},function(l,n){l(n,4,0,n.parent.context.$implicit.isFollowing?"Unfollow":"Follow")})}function K(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,26,"ion-card",[],null,null,null,null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,22,"ion-card-content",[["class","p0"]],null,null,null,null,null)),Kl._5(16384,null,0,Au.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,18,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,4,"ion-col",[["class","p0 sq-col col"],["col-4",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.userProfile(l.context.$implicit.ID)&&u),u},null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,[" "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["class","profile-pic"]],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,[" "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,8,"ion-col",[["class","pl5 col"],["col-8",""],["padding-left",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,1,"div",[["class","entity-title"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.userProfile(l.context.$implicit.ID)&&u),u},null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._2(16777216,null,null,1,null,X)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n        "]))],function(l,n){var t=n.component;l(n,22,0,n.context.$implicit.ID!=t.globalProvider.userId)},function(l,n){l(n,12,0,n.context.$implicit.img),l(n,19,0,n.context.$implicit.display_name)})}function Z(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"div",[["center",""],["class","no-data"],["text-center",""]],null,null,null,null,null)),(l()(),Kl._27(null,["No data found."]))],null,null)}function J(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,8,"ion-list",[["class","users-wrapper mt10"]],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,K)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,Z)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n    "]))],function(l,n){var t=n.component;l(n,4,0,t.myFollowees),l(n,7,0,!(null==t.myFollowees?null:t.myFollowees.length))},null)}function W(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,5,"div",[["class","entity-status"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,2,"button",[["ion-button",""],["outline",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.follow(l.parent.context.$implicit.ID)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{small:[0,"small"],outline:[1,"outline"]},null),(l()(),Kl._27(0,["",""])),(l()(),Kl._27(null,["\n                        "]))],function(l,n){l(n,3,0,"","")},function(l,n){l(n,4,0,n.parent.context.$implicit.isFollowing?"Unfollow":"Follow")})}function Y(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,26,"ion-card",[],null,null,null,null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,22,"ion-card-content",[["class","p0"]],null,null,null,null,null)),Kl._5(16384,null,0,Au.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,18,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,4,"ion-col",[["class","p0 sq-col col"],["col-4",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.userProfile(l.context.$implicit.ID)&&u),u},null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,[" "])),(l()(),Kl._6(0,null,null,0,"img",[["alt","profile"],["class","profile-pic"]],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,[" "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,8,"ion-col",[["class","pl5 col"],["col-8",""],["padding-left",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,1,"div",[["class","entity-title"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.userProfile(l.context.$implicit.ID)&&u),u},null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._2(16777216,null,null,1,null,W)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n        "]))],function(l,n){var t=n.component;l(n,22,0,n.context.$implicit.ID!=t.globalProvider.userId)},function(l,n){l(n,12,0,n.context.$implicit.img),l(n,19,0,n.context.$implicit.display_name)})}function ll(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"div",[["center",""],["class","no-data"],["text-center",""]],null,null,null,null,null)),(l()(),Kl._27(null,["No data found."]))],null,null)}function nl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,8,"ion-list",[["class","users-wrapper mt10"]],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,Y)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,ll)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n\n    "]))],function(l,n){var t=n.component;l(n,4,0,t.myFollowers),l(n,7,0,!(null==t.myFollowers?null:t.myFollowers.length))},null)}function tl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,13,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,9,"ion-toolbar",[["class","toolbar"],["color","primary"],["no-border-bottom",""]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._2(16777216,null,0,1,null,V)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._27(3,["\n         "])),(l()(),Kl._2(16777216,null,2,1,null,B)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(3,["\n    "])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._6(0,null,null,62,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,19,"ion-toolbar",[["class","toolbar"],["color","primary"],["no-border-top",""]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,3,"div",[["center",""],["class","user-block"],["color","primary"],["text-center",""],["width-profile",""]],null,null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,0,"img",[["class","profile-pic"],["item-left",""]],[[8,"src",4]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.displayImage(e.userDetail.img||"assets/img/user.png",e.userDetail.display_name)&&u),u},null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,4,"div",[["center",""],["class","pl0 no-border-custom"],["color","primary"],["no-border",""],["text-center",""]],null,null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,1,"h2",[["class","user-name capitalize"]],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,4,"div",[["center",""],["class","pl0 mb8"],["color","primary"],["no-border",""],["text-center",""]],null,null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._2(16777216,null,null,1,null,Q)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(3,["\n\n    "])),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,25,"ion-scroll",[["scrollX","true"],["style","height: 42px"]],[[2,"scroll-x",null],[2,"scroll-y",null]],null,null,Se.b,Se.a)),Kl._5(49152,null,0,Ae.a,[],{scrollX:[0,"scrollX"]},null),(l()(),Kl._27(0,["\n\n        "])),(l()(),Kl._6(0,null,0,21,"ion-segment",[["color","whitec"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"segment-disabled",null]],[[null,"ngModelChange"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.segment=t)&&u),u},null,null)),Kl._5(671744,null,0,xt.l,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(1196032,null,1,zu.a,[ou.a,Kl.l,Kl.G,[2,xt.h]],{color:[0,"color"]},null),Kl._25(603979776,3,{_buttons:1}),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","myGossips"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,50).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[3,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Gossips (",")\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._2(16777216,null,null,1,null,H)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","followers"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,57).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[3,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Followers (",")\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","following"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,61).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[3,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Following (",")\n            "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,q)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,z)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n\n    "])),(l()(),Kl._2(16777216,null,1,1,null,J)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,nl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,4,0,"primary"),l(n,7,0,t.showBack),l(n,11,0,!t.id);l(n,19,0,"primary"),l(n,35,0,t.id);l(n,40,0,"true"),l(n,43,0,t.segment);l(n,46,0,"whitec");l(n,50,0,"myGossips"),l(n,54,0,!t.id);l(n,57,0,"followers");l(n,61,0,"following"),l(n,67,0,"myGossips"==t.segment),l(n,70,0,"myEntity"==t.segment&&!t.id),l(n,73,0,"following"==t.segment),l(n,76,0,"followers"==t.segment)},function(l,n){var t=n.component;l(n,3,0,Kl._19(n,4)._sbPadding),l(n,15,0,Kl._19(n,16).statusbarPadding,Kl._19(n,16)._hasRefresher),l(n,18,0,Kl._19(n,19)._sbPadding),l(n,23,0,t.userDetail.img||"assets/img/user.png"),l(n,29,0,t.userDetail.display_name),l(n,39,0,Kl._19(n,40).scrollX,Kl._19(n,40).scrollY),l(n,42,0,Kl._19(n,45).ngClassUntouched,Kl._19(n,45).ngClassTouched,Kl._19(n,45).ngClassPristine,Kl._19(n,45).ngClassDirty,Kl._19(n,45).ngClassValid,Kl._19(n,45).ngClassInvalid,Kl._19(n,45).ngClassPending,Kl._19(n,46)._disabled),l(n,49,0,Kl._19(n,50)._disabled,Kl._19(n,50).isActive,Kl._19(n,50).isActive),l(n,51,0,null==t.myGossips?null:t.myGossips.length),l(n,56,0,Kl._19(n,57)._disabled,Kl._19(n,57).isActive,Kl._19(n,57).isActive),l(n,58,0,null==t.myFollowers?null:t.myFollowers.length),l(n,60,0,Kl._19(n,61)._disabled,Kl._19(n,61).isActive,Kl._19(n,61).isActive),l(n,62,0,null==t.myFollowees?null:t.myFollowees.length)})}function ul(l){return Kl._29(0,[(l()(),Kl._27(null,["\n  "])),(l()(),Kl._6(0,null,null,58,"ion-list",[["no-border",""]],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,6,"ion-list-header",[["class","item"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,1,{contentLabel:0}),Kl._25(603979776,2,{_buttons:1}),Kl._25(603979776,3,{_icons:1}),Kl._5(16384,null,0,De.a,[ou.a,Kl.G,Kl.l,[8,null]],null,null),(l()(),Kl._27(2,["\n      Action\n    "])),(l()(),Kl._27(null,[" \n    "])),(l()(),Kl._6(0,null,null,13,"ion-item",[["class","item item-block"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.toggleMute()&&u),u},Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,4,{contentLabel:0}),Kl._25(603979776,5,{_buttons:1}),Kl._25(603979776,6,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,[" \n      "])),(l()(),Kl._6(0,null,1,2,"ion-label",[],null,null,null,null,null)),Kl._5(16384,[[4,4]],0,pe.a,[ou.a,Kl.l,Kl.G,[8,null],[8,null],[8,null],[8,null]],null,null),(l()(),Kl._27(null,["\n         "," Sound\n      "])),(l()(),Kl._27(2,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["item-start",""],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,[[6,4]],0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(2,["\n    "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,9,"ion-item",[["class","item item-block"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.about()&&u),u},Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,7,{contentLabel:0}),Kl._25(603979776,8,{_buttons:1}),Kl._25(603979776,9,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["item-start",""],["name","md-information-circle"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,[[9,4]],0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(2,["\n      About Gossip Monger \n    "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,9,"ion-item",[["class","item item-block"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.terms()&&u),u},Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,10,{contentLabel:0}),Kl._25(603979776,11,{_buttons:1}),Kl._25(603979776,12,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["item-start",""],["name","md-paper"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,[[12,4]],0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(2,["\n        Terms & Conditions  \n    "])),(l()(),Kl._27(null,[" \n    "])),(l()(),Kl._6(0,null,null,9,"ion-item",[["class","item item-block"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.logOut()&&u),u},Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,13,{contentLabel:0}),Kl._25(603979776,14,{_buttons:1}),Kl._25(603979776,15,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["item-start",""],["name","log-out"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,[[15,4]],0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(2,["\n        Logout \n    "])),(l()(),Kl._27(null,["\n  "])),(l()(),Kl._27(null,["\n"]))],function(l,n){l(n,24,0,n.component.isMuted?"md-notifications-off":"md-notifications");l(n,35,0,"md-information-circle");l(n,46,0,"md-paper");l(n,57,0,"log-out")},function(l,n){l(n,21,0,n.component.isMuted?"Unmute":"Mute"),l(n,23,0,Kl._19(n,24)._hidden),l(n,34,0,Kl._19(n,35)._hidden),l(n,45,0,Kl._19(n,46)._hidden),l(n,56,0,Kl._19(n,57)._hidden)})}function el(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"gossip-card",[],null,[[null,"dataUpdated"],[null,"unFollowEvent"]],function(l,n,t){var u=!0,e=l.component;return"dataUpdated"===n&&(u=!1!==e.getFollowedGossips()&&u),"unFollowEvent"===n&&(u=!1!==e.getFollowedGossips()&&u),u},h,Nu)),Kl._5(49152,null,0,Ct,[pn,xn,Vt.a,bn],{gossips:[0,"gossips"]},{unFollowEvent:"unFollowEvent",dataUpdated:"dataUpdated"})],function(l,n){l(n,1,0,n.component.followedGossips)},null)}function ol(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"entity-card",[],null,[[null,"dataUpdated"],[null,"unFollowEvent"]],function(l,n,t){var u=!0,e=l.component;return"dataUpdated"===n&&(u=!1!==e.getFollowedEntities()&&u),"unFollowEvent"===n&&(u=!1!==e.getFollowedEntities()&&u),u},b,Fu)),Kl._5(49152,null,0,kt,[Xl.c,xn,Vt.a,bn],{entities:[0,"entities"]},{unFollowEvent:"unFollowEvent",dataUpdated:"dataUpdated"})],function(l,n){l(n,1,0,n.component.followedEntities)},null)}function il(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,22,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,18,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,14,"ion-segment",[["color","whitec"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"segment-disabled",null]],[[null,"ngModelChange"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.segment=t)&&u),u},null,null)),Kl._5(671744,null,0,xt.l,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(1196032,null,1,zu.a,[ou.a,Kl.l,Kl.G,[2,xt.h]],{color:[0,"color"]},null),Kl._25(603979776,1,{_buttons:1}),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","gossips"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,14).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[1,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Gossips\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","entity"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,18).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[1,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n                Entities\n            "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(3,["\n    "])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._6(0,null,null,8,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,el)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,[" \n    "])),(l()(),Kl._2(16777216,null,1,1,null,ol)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,4,0,"primary"),l(n,7,0,t.segment);l(n,10,0,"whitec");l(n,14,0,"gossips");l(n,18,0,"entity"),l(n,28,0,"gossips"==t.segment),l(n,31,0,"entity"==t.segment)},function(l,n){l(n,3,0,Kl._19(n,4)._sbPadding),l(n,6,0,Kl._19(n,9).ngClassUntouched,Kl._19(n,9).ngClassTouched,Kl._19(n,9).ngClassPristine,Kl._19(n,9).ngClassDirty,Kl._19(n,9).ngClassValid,Kl._19(n,9).ngClassInvalid,Kl._19(n,9).ngClassPending,Kl._19(n,10)._disabled),l(n,13,0,Kl._19(n,14)._disabled,Kl._19(n,14).isActive,Kl._19(n,14).isActive),l(n,17,0,Kl._19(n,18)._disabled,Kl._19(n,18).isActive,Kl._19(n,18).isActive),l(n,24,0,Kl._19(n,25).statusbarPadding,Kl._19(n,25)._hasRefresher)})}function al(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,5,"ion-searchbar",[["animated","true"],["autocomplete","off"],["autocorrect","off"],["color","primary"],["placeholder","Search.."],["showCancelButton","true"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null]],[[null,"ngModelChange"],[null,"ionInput"],[null,"ionCancel"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.queryText=t)&&u),"ionInput"===n&&(u=!1!==e.searchEntity()&&u),"ionCancel"===n&&(u=!1!==e.dismiss()&&u),u},ye.b,ye.a)),Kl._5(671744,null,0,xt.l,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(1294336,null,0,ve.a,[ou.a,iu.a,Kl.l,Kl.G,[2,xt.h]],{color:[0,"color"],showCancelButton:[1,"showCancelButton"],debounce:[2,"debounce"],placeholder:[3,"placeholder"],autocomplete:[4,"autocomplete"],autocorrect:[5,"autocorrect"],animated:[6,"animated"]},{ionInput:"ionInput",ionCancel:"ionCancel"}),(l()(),Kl._27(null,["\n        "]))],function(l,n){l(n,1,0,n.component.queryText);l(n,4,0,"primary","true",250,"Search..","off","off","true")},function(l,n){l(n,0,1,[Kl._19(n,3).ngClassUntouched,Kl._19(n,3).ngClassTouched,Kl._19(n,3).ngClassPristine,Kl._19(n,3).ngClassDirty,Kl._19(n,3).ngClassValid,Kl._19(n,3).ngClassInvalid,Kl._19(n,3).ngClassPending,Kl._19(n,4)._animated,Kl._19(n,4)._value,Kl._19(n,4)._isActive,Kl._19(n,4)._showCancelButton,Kl._19(n,4)._shouldAlignLeft,Kl._19(n,4)._isFocus])})}function sl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"ion-icon",[["name","search"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null)],function(l,n){l(n,1,0,"search")},function(l,n){l(n,0,0,Kl._19(n,1)._hidden)})}function rl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"ion-spinner",[["class","newsLoader"],["color","whitec"],["icon","android"]],[[2,"spinner-paused",null]],null,null,Ue.b,Ue.a)),Kl._5(114688,null,0,$e.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null)],function(l,n){l(n,1,0,"whitec")},function(l,n){l(n,0,0,Kl._19(n,1)._paused)})}function _l(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,27,"ion-row",[["class","p0 m0 row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,9,"ion-col",[["class","p0 m0 col"],["col-10",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,5,"ion-searchbar",[["animated","true"],["autocomplete","off"],["autocorrect","off"],["color","primary"],["name","newsText"],["placeholder","Search the web.."],["showCancelButton","true"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null]],[[null,"ngModelChange"],[null,"ionCancel"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.newsText=t)&&u),"ionCancel"===n&&(u=!1!==e.dismiss()&&u),u},ye.b,ye.a)),Kl._5(671744,null,0,xt.l,[[2,xt.b],[8,null],[8,null],[8,null]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(1294336,null,0,ve.a,[ou.a,iu.a,Kl.l,Kl.G,[2,xt.h]],{color:[0,"color"],showCancelButton:[1,"showCancelButton"],placeholder:[2,"placeholder"],autocomplete:[3,"autocomplete"],autocorrect:[4,"autocorrect"],animated:[5,"animated"]},{ionCancel:"ionCancel"}),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,12,"ion-col",[["class","p0 m0 col"],["col-2",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,8,"button",[["class","w100 h100 p0 m0"],["icon-only",""],["ion-button",""],["type","submit"]],[[8,"disabled",0]],null,null,hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(0,["\n                "])),(l()(),Kl._2(16777216,null,0,1,null,sl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(0,["\n                "])),(l()(),Kl._2(16777216,null,0,1,null,rl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(0,["            \n            "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n            "]))],function(l,n){var t=n.component;l(n,7,0,"newsText",t.newsText);l(n,10,0,"primary","true","Search the web..","off","off","true"),l(n,21,0,!t.loadingData),l(n,24,0,t.loadingData)},function(l,n){var t=n.component;l(n,6,1,[Kl._19(n,9).ngClassUntouched,Kl._19(n,9).ngClassTouched,Kl._19(n,9).ngClassPristine,Kl._19(n,9).ngClassDirty,Kl._19(n,9).ngClassValid,Kl._19(n,9).ngClassInvalid,Kl._19(n,9).ngClassPending,Kl._19(n,10)._animated,Kl._19(n,10)._value,Kl._19(n,10)._isActive,Kl._19(n,10)._showCancelButton,Kl._19(n,10)._shouldAlignLeft,Kl._19(n,10)._isFocus]),l(n,17,0,!t.newsText)})}function cl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"ion-spinner",[["class","filterSpinner"],["color","primary"],["icon","android"]],[[2,"spinner-paused",null]],null,null,Ue.b,Ue.a)),Kl._5(114688,null,0,$e.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null)],function(l,n){l(n,1,0,"primary")},function(l,n){l(n,0,0,Kl._19(n,1)._paused)})}function dl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,22,"div",[["class",""]],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,19,"ion-select",[["class","full-width-select"],["interface","popover"],["name","param"]],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ionChange"],[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,3)._click(t)&&u),"keyup.space"===n&&(u=!1!==Kl._19(l,3)._keyup()&&u),"ionChange"===n&&(u=!1!==e.selectChange()&&u),"ngModelChange"===n&&(u=!1!==(e.type=t)&&u),u},me.b,me.a)),Kl._5(1228800,null,1,fe.a,[Dt.a,jt.a,ou.a,Kl.l,Kl.G,[2,Iu.a],au.a],{interface:[0,"interface"]},{ionChange:"ionChange"}),Kl._25(603979776,1,{options:1}),Kl._24(1024,null,xt.g,function(l){return[l]},[fe.a]),Kl._5(671744,null,0,xt.l,[[8,null],[8,null],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-option",[["value","gossip"]],null,null,null,null,null)),Kl._5(16384,[[1,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["Gossip"])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-option",[["value","entity"]],null,null,null,null,null)),Kl._5(16384,[[1,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["Entity"])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,2,"ion-option",[["value","categories"]],null,null,null,null,null)),Kl._5(16384,[[1,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["Category"])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(null,["\n    "]))],function(l,n){var t=n.component;l(n,3,0,"popover");l(n,6,0,"param",t.type);l(n,11,0,"gossip");l(n,15,0,"entity");l(n,19,0,"categories")},function(l,n){l(n,2,0,Kl._19(n,3)._disabled,Kl._19(n,8).ngClassUntouched,Kl._19(n,8).ngClassTouched,Kl._19(n,8).ngClassPristine,Kl._19(n,8).ngClassDirty,Kl._19(n,8).ngClassValid,Kl._19(n,8).ngClassInvalid,Kl._19(n,8).ngClassPending)})}function pl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,18,"ion-item",[["class","item item-block"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.entitySelected(l.context.$implicit)&&u),u},Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,2,{contentLabel:0}),Kl._25(603979776,3,{_buttons:1}),Kl._25(603979776,4,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n            "])),(l()(),Kl._6(0,null,0,4,"ion-avatar",[["item-left",""]],null,null,null,null,null)),Kl._5(16384,null,0,Su.a,[],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(2,["\n            "])),(l()(),Kl._6(0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n            "])),(l()(),Kl._6(0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n        "]))],null,function(l,n){l(n,10,0,n.context.$implicit.img),l(n,14,0,n.context.$implicit.title),l(n,17,0,n.context.$implicit.category[0].name)})}function hl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,5,"ion-list",[],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,pl)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n    "]))],function(l,n){l(n,4,0,n.component.results)},null)}function gl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,0,"img",[["alt","neg"],["class","bookmark-btn"],["src","assets/img/hated.png"]],null,null,null,null,null))],null,null)}function ml(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,0,"img",[["alt","pos"],["class","bookmark-btn"],["src","assets/img/loved.png"]],null,null,null,null,null))],null,null)}function fl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,41,"ion-card",[["class","home-listing"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.gossipSelected(l.context.$implicit.id)&&u),u},null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,27,"ion-item",[["class","border-top item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,5,{contentLabel:0}),Kl._25(603979776,6,{_buttons:1}),Kl._25(603979776,7,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,0,4,"ion-avatar",[["item-left",""]],null,null,null,null,null)),Kl._5(16384,null,0,Su.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,7,"div",[["class","category-icon"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._2(16777216,null,null,1,null,gl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._2(16777216,null,null,1,null,ml)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(2,["\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,8,"ion-card-content",[],null,null,null,null,null)),Kl._5(16384,null,0,Au.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,1,"p",[["class","oneLiner"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    ","\n                "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,1,"p",[["class","gossip-id"],["text-right",""]],null,null,null,null,null)),(l()(),Kl._27(null,["Gossip #",""])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n        "]))],function(l,n){l(n,25,0,1==n.context.$implicit.feedback_type),l(n,28,0,0==n.context.$implicit.feedback_type)},function(l,n){l(n,13,0,n.context.$implicit.gossip_about.img),l(n,17,0,n.context.$implicit.gossip_about.entity),l(n,20,0,n.context.$implicit.category[0].name),l(n,36,0,n.context.$implicit.content),l(n,39,0,n.context.$implicit.id)})}function bl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,5,"ion-list",[],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,fl)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n\n    "]))],function(l,n){l(n,4,0,n.component.results)},null)}function yl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,15,"ion-col",[["class","col"],["col-6",""],["col-md-4",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,11,"ion-card",[["class","m0"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.categorySelected(l.context.$implicit)&&u),u},null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,4,"div",[["class","category-content"]],[[4,"background-image",null]],null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,1,"div",[["class","card-title"]],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,1,"div",[["class","entity-count border-right"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                            "," ","\n                        "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                "]))],null,function(l,n){l(n,6,0,n.component.getBackground(n.context.$implicit.attachment)),l(n,9,0,n.context.$implicit.name),l(n,13,0,n.context.$implicit.count,n.context.$implicit.count>1?"Entities":"Entity")})}function vl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,12,"ion-list",[],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,8,"div",[["class","category"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,5,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._2(16777216,null,null,1,null,yl)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(null,["\n    "]))],function(l,n){l(n,9,0,n.component.results)},null)}function wl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,8,"button",[["class","mt20 add-button "],["color","primary"],["icon-left",""],["ion-button",""],["outline",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.createNewEntity(e.newsText)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],outline:[1,"outline"]},null),(l()(),Kl._27(0,["\n            "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","add"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n            Create entity for   "])),(l()(),Kl._6(0,null,0,1,"span",[["class","bold capitalize italic"]],null,null,null,null,null)),(l()(),Kl._27(null,[""," "])),(l()(),Kl._27(0,[" \n        "]))],function(l,n){l(n,1,0,"primary","");l(n,4,0,"add")},function(l,n){var t=n.component;l(n,3,0,Kl._19(n,4)._hidden),l(n,7,0,t.newsText)})}function Cl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,8,"div",[["text-center",""]],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,2,"news",[],null,null,null,v,Ru)),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,Gt,[bn,xn,Vt.a],{newsList:[0,"newsList"],newsText:[1,"newsText"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,wl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n    "]))],function(l,n){var t=n.component;l(n,4,0,t.geoNews,t.newsText),l(n,7,0,!(null==t.geoNews?null:t.geoNews.length)&&t.newsText)},null)}function kl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"div",[["class","listing-done"],["padding",""],["text-center",""]],null,null,null,null,null)),(l()(),Kl._27(null,["No result found."]))],null,null)}function Gl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,22,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,18,"ion-toolbar",[["class","toolbar"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._2(16777216,null,3,1,null,al)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,8,"form",[["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngSubmit"],[null,"submit"],[null,"reset"]],function(l,n,t){var u=!0,e=l.component;return"submit"===n&&(u=!1!==Kl._19(l,11).onSubmit(t)&&u),"reset"===n&&(u=!1!==Kl._19(l,11).onReset()&&u),"ngSubmit"===n&&(u=!1!==e.searchNews(e.newsText)&&u),u},null,null)),Kl._5(16384,null,0,xt.q,[],null,null),Kl._5(16384,[["form",4]],0,xt.k,[[8,null],[8,null]],null,{ngSubmit:"ngSubmit"}),Kl._24(2048,null,xt.b,null,[xt.k]),Kl._5(16384,null,0,xt.j,[xt.b],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._2(16777216,null,null,1,null,_l)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._2(16777216,null,3,1,null,cl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(3,["\n    "])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._6(0,null,null,20,"ion-content",[["class","outer-content"]],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,dl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,hl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,bl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,vl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,Cl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._2(16777216,null,1,1,null,kl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,7,0,"news"!=t.param),l(n,16,0,"news"==t.param),l(n,20,0,t.loadingData&&"news"!=t.param),l(n,28,0,"gossip"!=t.param&&"news"!=t.param),l(n,31,0,"entity"==t.type),l(n,34,0,"gossip"==t.type),l(n,37,0,"categories"==t.type),l(n,40,0,"news"==t.type),l(n,43,0,t.showNotFound)},function(l,n){l(n,3,0,Kl._19(n,4)._sbPadding),l(n,9,0,Kl._19(n,13).ngClassUntouched,Kl._19(n,13).ngClassTouched,Kl._19(n,13).ngClassPristine,Kl._19(n,13).ngClassDirty,Kl._19(n,13).ngClassValid,Kl._19(n,13).ngClassInvalid,Kl._19(n,13).ngClassPending),l(n,24,0,Kl._19(n,25).statusbarPadding,Kl._19(n,25)._hasRefresher)})}function Il(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"gossip-card",[],null,null,null,h,Nu)),Kl._5(49152,null,0,Ct,[pn,xn,Vt.a,bn],{gossips:[0,"gossips"]},null)],function(l,n){l(n,1,0,n.component.entityGossips)},null)}function Pl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,2,"news",[],null,null,null,v,Ru)),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,Gt,[bn,xn,Vt.a],{newsList:[0,"newsList"],entityId:[1,"entityId"]},null)],function(l,n){var t=n.component;l(n,2,0,t.entityNews,t.entityDetail.id)},null)}function El(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,7,"div",[["class","app-intro"]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!=(e.showIntro=!1)&&u),u},null,null)),(l()(),Kl._27(null,[" \n    "])),(l()(),Kl._6(0,null,null,0,"img",[["src","http://tgm-inf.cruxservers.in/app_intro/android/entity.jpg"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,2,"button",[["class","intro-button"],["color","primary"],["ion-button",""]],null,null,null,hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(0,["\n        OK, Got it! \n    "])),(l()(),Kl._27(null,["\n"]))],function(l,n){l(n,5,0,"primary")},null)}function Sl(l){return Kl._29(0,[Kl._25(402653184,1,{content:0}),(l()(),Kl._6(0,null,null,148,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],[[null,"ionScroll"]],function(l,n,t){var u=!0,e=l.component;return"ionScroll"===n&&(u=!1!==e.update()&&u),u},mu.b,mu.a)),Kl._5(4374528,[[1,4]],0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,{ionScroll:"ionScroll"}),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,114,"div",[["class","subject-bg "]],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,20,"ion-toolbar",[["class","trasparent-header toolbar"],["color","primary"]],[[4,"background",null],[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n            "])),(l()(),Kl._6(0,null,3,9,"button",[["color","white"],["icon-left",""],["ion-button",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.dismiss()&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._6(0,null,0,2,"ion-title",[],null,null,null,re.b,re.a)),Kl._5(49152,null,0,_e.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),(l()(),Kl._27(0,["",""])),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._27(3,["\n            "])),(l()(),Kl._6(0,null,3,5,"button",[["color","whitec"],["icon-only",""],["ion-button",""],["item-right",""]],[[8,"className",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.boomarkEntity(e.entityDetail.id)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","bookmark"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._27(3,["\n\n        "])),(l()(),Kl._27(null,["\n\n        "])),(l()(),Kl._6(0,null,null,89,"div",[["class","profile-wrapper"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,9,"div",[["class","profile-data"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,2,"h1",[["color","whitec"],["ion-text",""]],null,null,null,null,null)),Kl._5(16384,null,0,de.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,2,"h4",[["class","mt0"],["color","whitec"],["ion-text",""]],null,null,null,null,null)),Kl._5(16384,null,0,de.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["class","profile-img"]],[[8,"src",4]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.shared.imageViewer.show(e.entityDetail.img||"assets/img/image.png",e.entityDetail.title)&&u),u},null,null)),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,31,"div",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,18,"ion-row",[["class","custom-row row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,6,"ion-col",[["class","pt0 col"]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,2,"button",[["class","add-btn"],["color","whitec"],["ion-button",""],["outline",""],["text-right",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.jubToSegment("rated")&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],outline:[1,"outline"]},null),(l()(),Kl._27(0,[" Top Rated "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,6,"ion-col",[["class","pt0 col"]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,2,"button",[["class","add-btn"],["color","whitec"],["ion-button",""],["outline",""],["text-right",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.jubToSegment("hated")&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],outline:[1,"outline"]},null),(l()(),Kl._27(0,["   Top Hated "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._27(null,["  \n\n                "])),(l()(),Kl._6(0,null,null,2,"button",[["class","add-btn"],["color","whitec"],["ion-button",""],["outline",""],["text-right",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.jubToSegment("news")&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],outline:[1,"outline"]},null),(l()(),Kl._27(0,[" Word out there! "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,2,"button",[["class","add-btn mt10"],["color","whitec"],["ion-button",""],["outline",""],["text-right",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.addGossips()&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],outline:[1,"outline"]},null),(l()(),Kl._27(0,[" Add Gossip "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,40,"div",[["class","drag-section-wrap"],["padding-left",""],["padding-right",""]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,37,"div",[["class","drag-section"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,34,"div",[["class","slider-wrap"]],null,[[null,"swipe"]],function(l,n,t){var u=!0,e=l.component;return"swipe"===n&&(u=!1!==e.tapEvent(t)&&u),u},null,null)),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,31,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n\n                            "])),(l()(),Kl._6(0,null,null,7,"ion-col",[["class","col"],["text-center",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.tapEvent(2)&&u),u},null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,1,"h5",[["class","mt0 mb0 white"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                                    ","\n                                "])),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["src","assets/img/loved.png"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,9,"ion-col",[["class","slide-img-wrap col"],["text-center",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,5,"button",[["class","down-btn mt10"],["icon-only",""],["ion-button",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.scroll()&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(0,["\n  "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","ios-arrow-down-outline"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n"])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,7,"ion-col",[["class","col"],["text-center",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.tapEvent(1)&&u),u},null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,1,"h5",[["class","mt0 mb0 white"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                                    ","\n                                "])),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["src","assets/img/hated.png"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,18,"ion-segment",[["color","whitec"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null],[2,"segment-disabled",null]],[[null,"ngModelChange"],[null,"ionChange"]],function(l,n,t){var u=!0,e=l.component;return"ngModelChange"===n&&(u=!1!==(e.segment=t)&&u),"ionChange"===n&&(u=!1!==e.updateSegment(e.segment)&&u),u},null,null)),Kl._5(671744,null,0,xt.l,[[8,null],[8,null],[8,null],[8,null]],{model:[0,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),Kl._5(1196032,null,1,zu.a,[ou.a,Kl.l,Kl.G,[2,xt.h]],{color:[0,"color"]},{ionChange:"ionChange"}),Kl._25(603979776,2,{_buttons:1}),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","news"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,128).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[2,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n            News\n        "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","rated"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,132).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[2,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n            Top Rated\n        "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,2,"ion-segment-button",[["class","segment-button"],["role","button"],["tappable",""],["value","hated"]],[[2,"segment-button-disabled",null],[2,"segment-activated",null],[1,"aria-pressed",0]],[[null,"click"]],function(l,n,t){var u=!0;return"click"===n&&(u=!1!==Kl._19(l,136).onClick()&&u),u},Xu.b,Xu.a)),Kl._5(114688,[[2,4]],0,Ku.a,[],{value:[0,"value"]},null),(l()(),Kl._27(0,["\n            Top Hated\n        "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,8,"ion-list",[["class","comments"]],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,Il)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._2(16777216,null,null,1,null,Pl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(1,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._2(16777216,null,null,1,null,El)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,[" "]))],function(l,n){var t=n.component;l(n,7,0,"primary");l(n,10,0,"white");l(n,13,0,"arrow-back");l(n,21,0,"whitec");l(n,24,0,"bookmark");l(n,33,0,"whitec");l(n,37,0,"whitec");l(n,52,0,"whitec","");l(n,60,0,"whitec","");l(n,66,0,"whitec","");l(n,72,0,"whitec","");l(n,101,0,"ios-arrow-down-outline"),l(n,121,0,t.segment);l(n,124,0,"whitec");l(n,128,0,"news");l(n,132,0,"rated");l(n,136,0,"hated"),l(n,144,0,"hated"==t.segment||"rated"==t.segment),l(n,147,0,"news"==t.segment),l(n,152,0,t.showIntro)},function(l,n){var t=n.component;l(n,1,0,Kl._19(n,2).statusbarPadding,Kl._19(n,2)._hasRefresher),l(n,6,0,t.headerBackground,Kl._19(n,7)._sbPadding),l(n,12,0,Kl._19(n,13)._hidden),l(n,17,0,t.entityDetail.category[0].name),l(n,20,0,t.entityDetail.entityFollow?"bookmark-btn1 liked":"bookmark-btn1"),l(n,23,0,Kl._19(n,24)._hidden),l(n,34,0,t.entityDetail.title),l(n,38,0,t.entityDetail.subtitle||t.entityDetail.category[0].name),l(n,41,0,t.entityDetail.img||"assets/img/image.png"),l(n,89,0,t.entityDetail.total_positive_gossips),l(n,100,0,Kl._19(n,101)._hidden),l(n,109,0,t.entityDetail.total_negative_gossips),l(n,120,0,Kl._19(n,123).ngClassUntouched,Kl._19(n,123).ngClassTouched,Kl._19(n,123).ngClassPristine,Kl._19(n,123).ngClassDirty,Kl._19(n,123).ngClassValid,Kl._19(n,123).ngClassInvalid,Kl._19(n,123).ngClassPending,Kl._19(n,124)._disabled),l(n,127,0,Kl._19(n,128)._disabled,Kl._19(n,128).isActive,Kl._19(n,128).isActive),l(n,131,0,Kl._19(n,132)._disabled,Kl._19(n,132).isActive,Kl._19(n,132).isActive),l(n,135,0,Kl._19(n,136)._disabled,Kl._19(n,136).isActive,Kl._19(n,136).isActive)})}function Al(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,18,"ion-item",[["class","user-block item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,2,{contentLabel:0}),Kl._25(603979776,3,{_buttons:1}),Kl._25(603979776,4,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,0,4,"ion-avatar",[["item-left",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.userProfile(e.gossip.author.ID)&&u),u},null,null)),Kl._5(16384,null,0,Su.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"h2",[],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.userProfile(e.gossip.author.ID)&&u),u},null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Kl._27(null,[" "," "])),(l()(),Kl._27(2,[" \n            "]))],null,function(l,n){var t=n.component;l(n,10,0,t.gossip.author.img),l(n,14,0,t.gossip.author.display_name),l(n,17,0,t.gossip.comment_date)})}function Dl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,18,"ion-item",[["class","user-block item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,5,{contentLabel:0}),Kl._25(603979776,6,{_buttons:1}),Kl._25(603979776,7,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,0,4,"ion-avatar",[["item-left",""]],null,null,null,null,null)),Kl._5(16384,null,0,Su.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,0,"img",[["src","assets/img/anonymous.jpg"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Kl._27(null,["Anonymous"])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Kl._27(null,[" "," "])),(l()(),Kl._27(2,[" \n            "]))],null,function(l,n){l(n,17,0,n.component.gossip.created_at)})}function Tl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["class","bookmark-btn"],["src","assets/img/hated.png"]],null,null,null,null,null))],null,null)}function Ll(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["class","bookmark-btn"],["src","assets/img/loved.png"]],null,null,null,null,null))],null,null)}function xl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.displayImage(e.gossip.img,e.gossip.title)&&u),u},null,null))],null,function(l,n){l(n,0,0,n.component.gossip.img)})}function Ml(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,4,"div",[["class","news-display"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                       "])),(l()(),Kl._6(0,null,null,1,"span",[["class","bold"],["style","margin-left: 0px"]],null,null,null,null,null)),(l()(),Kl._27(null,["Source - "])),(l()(),Kl._27(null,[" ","\n                "]))],null,function(l,n){l(n,4,0,n.component.gossip.news_title)})}function Nl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,22,"ion-item",[["class","item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,17,{contentLabel:0}),Kl._25(603979776,18,{_buttons:1}),Kl._25(603979776,19,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                    "])),(l()(),Kl._6(0,null,0,4,"ion-avatar",[["item-left",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.userProfile(l.context.$implicit.author.ID)&&u),u},null,null)),Kl._5(16384,null,0,Su.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,0,"img",[["class","user-radius"]],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(2,["\n                    "])),(l()(),Kl._6(0,null,2,1,"h2",[],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.userProfile(l.context.$implicit.author.ID)&&u),u},null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                    "])),(l()(),Kl._6(0,null,2,2,"h4",[["class","comment-date"]],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),Kl._23(2),(l()(),Kl._27(2,[" \n                    "])),(l()(),Kl._6(0,null,2,1,"p",[["class","comment"]],null,null,null,null,null)),(l()(),Kl._27(null,[" \n                        ","\n                    "])),(l()(),Kl._27(2,[" \n                "]))],null,function(l,n){l(n,10,0,n.context.$implicit.author.img),l(n,14,0,n.context.$implicit.author.display_name),l(n,17,0,Kl._28(n,17,0,l(n,18,0,Kl._19(n.parent,0),n.context.$implicit.comment_date,"medium"))),l(n,21,0,n.context.$implicit.comment_content)})}function Ol(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"div",[["center",""],["class","no-data"],["text-center",""]],null,null,null,null,null)),(l()(),Kl._27(null,["No comments found."]))],null,null)}function Fl(l){return Kl._29(0,[Kl._21(0,Pt.c,[Kl.v]),(l()(),Kl._6(0,null,null,20,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,0,8,"button",[["color","white"],["icon-only",""],["ion-button",""],["menuToggle","false"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,9).toggle()&&u),"click"===n&&(u=!1!==e.dismiss()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[1,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),Kl._5(1064960,null,0,ie.a,[At.a,[2,uu.a],[2,gu.a],[2,ae.a]],{menuToggle:[0,"menuToggle"]},null),Kl._5(16384,null,1,se.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],{color:[0,"color"]},null),Kl._25(603979776,1,{_buttons:1}),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,2,"ion-title",[],null,null,null,re.b,re.a)),Kl._5(49152,null,0,_e.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),(l()(),Kl._27(0,["\n            Comments\n        "])),(l()(),Kl._27(3,["\n    "])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._6(0,null,null,116,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,112,"ion-list",[],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,108,"ion-card",[["class","home-listing"]],null,null,null,null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,[" \n              "])),(l()(),Kl._2(16777216,null,null,1,null,Al)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,[" \n              "])),(l()(),Kl._2(16777216,null,null,1,null,Dl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,[" \n           "])),(l()(),Kl._6(0,null,null,27,"ion-item",[["class","border-top item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,8,{contentLabel:0}),Kl._25(603979776,9,{_buttons:1}),Kl._25(603979776,10,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,0,4,"ion-avatar",[["item-left",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.entityProfile(e.gossip.gossip_about.ID)&&u),u},null,null)),Kl._5(16384,null,0,Su.a,[],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._6(0,null,2,7,"div",[["class","category-icon"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._2(16777216,null,null,1,null,Tl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._2(16777216,null,null,1,null,Ll)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._27(2,["\n            "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,14,"ion-card-content",[],null,null,null,null,null)),Kl._5(16384,null,0,Au.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,1,"p",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    ","\n                "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._2(16777216,null,null,1,null,xl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._2(16777216,null,null,1,null,Ml)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,1,"p",[["class","gossip-id"],["text-right",""]],null,null,null,null,null)),(l()(),Kl._27(null,["Gossip #",""])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,[" \n            "])),(l()(),Kl._6(0,null,null,53,"ion-list",[["class","comments"]],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,35,"ion-item",[["class","border-top item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,11,{contentLabel:0}),Kl._25(603979776,12,{_buttons:1}),Kl._25(603979776,13,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                    "])),(l()(),Kl._6(0,null,2,27,"ion-row",[["class","row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,9,"ion-col",[["class","p0 col"],["col-10",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,5,"textarea",[["class","w100 textarea"],["placeholder","Write comment"],["rows","2"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"input"],[null,"blur"],[null,"compositionstart"],[null,"compositionend"]],function(l,n,t){var u=!0,e=l.component;return"input"===n&&(u=!1!==Kl._19(l,100)._handleInput(t.target.value)&&u),"blur"===n&&(u=!1!==Kl._19(l,100).onTouched()&&u),"compositionstart"===n&&(u=!1!==Kl._19(l,100)._compositionStart()&&u),"compositionend"===n&&(u=!1!==Kl._19(l,100)._compositionEnd(t.target.value)&&u),"ngModelChange"===n&&(u=!1!==(e.commentContent=t)&&u),u},null,null)),Kl._5(16384,null,0,xt.c,[Kl.G,Kl.l,[2,xt.a]],null,null),Kl._24(1024,null,xt.g,function(l){return[l]},[xt.c]),Kl._5(671744,null,0,xt.l,[[8,null],[8,null],[8,null],[2,xt.g]],{model:[0,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,12,"ion-col",[["class","send-btn-wrap col"],["col-2",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._6(0,null,null,8,"div",[],null,null,null,null,null)),(l()(),Kl._27(null,[" \n                                "])),(l()(),Kl._6(0,null,null,5,"button",[["class","send-btn"],["color","primary"],["icon-only",""],["ion-button",""],["style","background-color: #ae00ff !important;"]],[[8,"disabled",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.insertComment(e.commentContent)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(0,["\n                             "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","send"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n                         "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(2,["\n                "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,6,"ion-list-header",[["class","mb0 pl8 item"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,14,{contentLabel:0}),Kl._25(603979776,15,{_buttons:1}),Kl._25(603979776,16,{_icons:1}),Kl._5(16384,null,0,De.a,[ou.a,Kl.G,Kl.l,[8,null]],null,null),(l()(),Kl._27(2,["\n                    Recent Comments\n                "])),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._2(16777216,null,null,1,null,Nl)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._2(16777216,null,null,1,null,Ol)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n\n            "])),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,5,0,"primary");l(n,8,0,"white");l(n,9,0,"false");l(n,10,0,"white");l(n,14,0,"arrow-back"),l(n,33,0,"1"!=t.gossip.is_anonymous),l(n,36,0,"1"==t.gossip.is_anonymous),l(n,60,0,1==t.gossip.feedback_type),l(n,63,0,0==t.gossip.feedback_type),l(n,74,0,t.gossip.img),l(n,77,0,t.gossip.news_title),l(n,102,0,t.commentContent);l(n,113,0,"primary");l(n,116,0,"send"),l(n,132,0,t.comments),l(n,135,0,!(null==t.comments?null:t.comments.length))},function(l,n){var t=n.component;l(n,4,0,Kl._19(n,5)._sbPadding),l(n,7,0,Kl._19(n,9).isHidden),l(n,13,0,Kl._19(n,14)._hidden),l(n,23,0,Kl._19(n,24).statusbarPadding,Kl._19(n,24)._hasRefresher),l(n,48,0,t.gossip.gossip_about.img),l(n,52,0,t.gossip.gossip_about.entity),l(n,55,0,t.gossip.category[0].name),l(n,71,0,t.gossip.content),l(n,80,0,t.gossip.id),l(n,99,0,Kl._19(n,104).ngClassUntouched,Kl._19(n,104).ngClassTouched,Kl._19(n,104).ngClassPristine,Kl._19(n,104).ngClassDirty,Kl._19(n,104).ngClassValid,Kl._19(n,104).ngClassInvalid,Kl._19(n,104).ngClassPending),l(n,112,0,!t.commentContent),l(n,115,0,Kl._19(n,116)._hidden)})}function jl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,20,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n\n    "])),(l()(),Kl._6(0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,0,8,"button",[["color","white"],["icon-only",""],["ion-button",""],["left",""],["menuToggle","false"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,8).toggle()&&u),"click"===n&&(u=!1!==e.dismiss()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[1,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),Kl._5(1064960,null,0,ie.a,[At.a,[2,uu.a],[2,gu.a],[2,ae.a]],{menuToggle:[0,"menuToggle"]},null),Kl._5(16384,null,1,se.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],{color:[0,"color"]},null),Kl._25(603979776,1,{_buttons:1}),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,[" \n        "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,2,"ion-title",[],null,null,null,re.b,re.a)),Kl._5(49152,null,0,_e.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),(l()(),Kl._27(0,["\n            Gossips \n        "])),(l()(),Kl._27(3,["\n\n    "])),(l()(),Kl._27(null,["\n\n"])),(l()(),Kl._27(null,["\n\n"])),(l()(),Kl._6(0,null,null,22,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,5,"ion-list",[["class","comments bg-gossip"]],[[4,"backgroundImage",null]],null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["  \n "])),(l()(),Kl._6(0,null,null,1,"gossip-card",[],null,null,null,h,Nu)),Kl._5(49152,null,0,Ct,[pn,xn,Vt.a,bn],{gossips:[0,"gossips"]},null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,0,11,"ion-fab",[["bottom",""],["right",""]],null,null,null,Uu.b,Uu.a)),Kl._5(1228800,null,2,$u.a,[iu.a],null,null),Kl._25(335544320,2,{_mainButton:0}),Kl._25(603979776,3,{_fabLists:1}),(l()(),Kl._27(0,["\n        "])),(l()(),Kl._6(0,null,0,5,"button",[["color","primary"],["ion-fab",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.addGossips()&&u),u},Vu.b,Vu.a)),Kl._5(49152,[[2,4]],0,Bu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","add"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n   "])),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,4,0,"primary");l(n,7,0,"white");l(n,8,0,"false");l(n,9,0,"white");l(n,13,0,"arrow-back"),l(n,29,0,t.entityGossips);l(n,38,0,"primary");l(n,41,0,"add")},function(l,n){var t=n.component;l(n,3,0,Kl._19(n,4)._sbPadding),l(n,6,0,Kl._19(n,8).isHidden),l(n,12,0,Kl._19(n,13)._hidden),l(n,22,0,Kl._19(n,23).statusbarPadding,Kl._19(n,23)._hasRefresher),l(n,25,0,"url("+t.bgImage+")"),l(n,40,0,Kl._19(n,41)._hidden)})}function Rl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"ion-searchbar",[["placeholder","Search Entities"]],[[2,"searchbar-animated",null],[2,"searchbar-has-value",null],[2,"searchbar-active",null],[2,"searchbar-show-cancel",null],[2,"searchbar-left-aligned",null],[2,"searchbar-has-focus",null]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.searchEntity()&&u),u},ye.b,ye.a)),Kl._5(1294336,null,0,ve.a,[ou.a,iu.a,Kl.l,Kl.G,[2,xt.h]],{placeholder:[0,"placeholder"]},null)],function(l,n){l(n,1,0,"Search Entities")},function(l,n){l(n,0,0,Kl._19(n,1)._animated,Kl._19(n,1)._value,Kl._19(n,1)._isActive,Kl._19(n,1)._showCancelButton,Kl._19(n,1)._shouldAlignLeft,Kl._19(n,1)._isFocus)})}function Ul(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,18,"ion-item",[["class","item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,2,{contentLabel:0}),Kl._25(603979776,3,{_buttons:1}),Kl._25(603979776,4,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,0,4,"ion-avatar",[["item-left",""]],null,null,null,null,null)),Kl._5(16384,null,0,Su.a,[],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,0,"img",[],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,1,"h2",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,1,"p",[],null,null,null,null,null)),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(2,["\n                        "]))],null,function(l,n){var t=n.component;l(n,10,0,t.selectedEntity.img),l(n,14,0,t.selectedEntity.title),l(n,17,0,t.selectedEntity.category[0].name)})}function $l(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,12,"ion-item",[["class","pl8 news-wrap item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,5,{contentLabel:0}),Kl._25(603979776,6,{_buttons:1}),Kl._25(603979776,7,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,4,"div",[["class","news-display"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,1,"span",[["class","bold"]],null,null,null,null,null)),(l()(),Kl._27(null,["Source - "])),(l()(),Kl._27(null,[" ","\n                            "])),(l()(),Kl._27(2,["\n                        "]))],null,function(l,n){l(n,11,0,n.component.news.title)})}function Vl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,2,"ion-option",[],null,null,null,null,null)),Kl._5(16384,[[14,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["",""]))],function(l,n){l(n,1,0,n.context.$implicit.id)},function(l,n){l(n,2,0,n.context.$implicit.title)})}function Bl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,18,"ion-item",[["class","pl8 img-preview item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,18,{contentLabel:0}),Kl._25(603979776,19,{_buttons:1}),Kl._25(603979776,20,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,10,"div",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,0,"img",[["alt","attachment"]],[[8,"src",4]],null,null,null,null)),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,5,"button",[["class","action-btn"],["clear",""],["icon-left",""],["ion-button",""],["small",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.removeImage()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[19,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{small:[0,"small"],clear:[1,"clear"]},null),(l()(),Kl._27(0,["\n                                        "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","md-close"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,[" \n                                    "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(2,["\n                        "]))],function(l,n){l(n,12,0,"","");l(n,15,0,"md-close")},function(l,n){l(n,9,0,n.component.addGossip.image),l(n,14,0,Kl._19(n,15)._hidden)})}function Ql(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,20,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,0,8,"button",[["color","whitec"],["icon-only",""],["ion-button",""],["left",""],["menuToggle","false"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,8).toggle()&&u),"click"===n&&(u=!1!==e.dismiss()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[1,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),Kl._5(1064960,null,0,ie.a,[At.a,[2,uu.a],[2,gu.a],[2,ae.a]],{menuToggle:[0,"menuToggle"]},null),Kl._5(16384,null,1,se.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],{color:[0,"color"]},null),Kl._25(603979776,1,{_buttons:1}),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,2,"ion-title",[],null,null,null,re.b,re.a)),Kl._5(49152,null,0,_e.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),(l()(),Kl._27(0,["\n            Add Gossip\n        "])),(l()(),Kl._27(3,["\n    "])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n\n"])),(l()(),Kl._6(0,null,null,166,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,162,"div",[["class","add-gossip"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n        "])),(l()(),Kl._6(0,null,null,159,"form",[["novalidate",""]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"submit"],[null,"reset"]],function(l,n,t){var u=!0;return"submit"===n&&(u=!1!==Kl._19(l,29).onSubmit(t)&&u),"reset"===n&&(u=!1!==Kl._19(l,29).onReset()&&u),u},null,null)),Kl._5(16384,null,0,xt.q,[],null,null),Kl._5(16384,[["gossipForm",4]],0,xt.k,[[8,null],[8,null]],null,null),Kl._24(2048,null,xt.b,null,[xt.k]),Kl._5(16384,null,0,xt.j,[xt.b],null,null),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._6(0,null,null,152,"ion-card",[["class","card-items ion-card-full"]],null,null,null,null,null)),Kl._5(16384,null,0,ku.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                "])),(l()(),Kl._6(0,null,null,148,"ion-card-content",[],null,null,null,null,null)),Kl._5(16384,null,0,Au.a,[ou.a,Kl.l,Kl.G],null,null),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,135,"ion-list",[],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._2(16777216,null,null,1,null,Rl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._2(16777216,null,null,1,null,Ul)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._2(16777216,null,null,1,null,$l)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,53,"ion-item",[["class","item item-block"],["style","margin-left: -17px"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,8,{contentLabel:0}),Kl._25(603979776,9,{_buttons:1}),Kl._25(603979776,10,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,45,"ion-grid",[["class","grid"]],null,null,null,null,null)),Kl._5(16384,null,0,Du.a,[],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,41,"ion-row",[["class","emo-img row"]],null,null,null,null,null)),Kl._5(16384,null,0,Tu.a,[],null,null),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._6(0,null,null,17,"ion-col",[["class","col"],["text-center",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                                        "])),(l()(),Kl._6(0,null,null,6,"input",[["id","pos"],["name","type"],["type","radio"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"input"],[null,"blur"],[null,"compositionstart"],[null,"compositionend"],[null,"change"]],function(l,n,t){var u=!0,e=l.component;return"input"===n&&(u=!1!==Kl._19(l,68)._handleInput(t.target.value)&&u),"blur"===n&&(u=!1!==Kl._19(l,68).onTouched()&&u),"compositionstart"===n&&(u=!1!==Kl._19(l,68)._compositionStart()&&u),"compositionend"===n&&(u=!1!==Kl._19(l,68)._compositionEnd(t.target.value)&&u),"change"===n&&(u=!1!==Kl._19(l,69).onChange()&&u),"blur"===n&&(u=!1!==Kl._19(l,69).onTouched()&&u),"ngModelChange"===n&&(u=!1!==(e.addGossip.feedbackType=t)&&u),u},null,null)),Kl._5(16384,null,0,xt.c,[Kl.G,Kl.l,[2,xt.a]],null,null),Kl._5(212992,null,0,xt.m,[Kl.G,Kl.l,xt.r,Kl.s],{name:[0,"name"],value:[1,"value"]},null),Kl._24(1024,null,xt.g,function(l,n){return[l,n]},[xt.c,xt.m]),Kl._5(671744,null,0,xt.l,[[2,xt.b],[8,null],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(null,["\n                                        "])),(l()(),Kl._6(0,null,null,5,"label",[["for","pos"]],null,null,null,null,null)),(l()(),Kl._27(null,[" "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["src","assets/img/loved.png"]],null,null,null,null,null)),(l()(),Kl._27(null,[" "])),(l()(),Kl._6(0,null,null,1,"div",[["class","type-text"]],null,null,null,null,null)),(l()(),Kl._27(null,["Positive Gossip"])),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._6(0,null,null,18,"ion-col",[["class","col"],["text-center",""]],null,null,null,null,null)),Kl._5(16384,null,0,Lu.a,[],null,null),(l()(),Kl._27(null,["\n                                        "])),(l()(),Kl._6(0,null,null,6,"input",[["id","neg"],["name","type"],["type","radio"]],[[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"input"],[null,"blur"],[null,"compositionstart"],[null,"compositionend"],[null,"change"]],function(l,n,t){var u=!0,e=l.component;return"input"===n&&(u=!1!==Kl._19(l,87)._handleInput(t.target.value)&&u),"blur"===n&&(u=!1!==Kl._19(l,87).onTouched()&&u),"compositionstart"===n&&(u=!1!==Kl._19(l,87)._compositionStart()&&u),"compositionend"===n&&(u=!1!==Kl._19(l,87)._compositionEnd(t.target.value)&&u),"change"===n&&(u=!1!==Kl._19(l,88).onChange()&&u),"blur"===n&&(u=!1!==Kl._19(l,88).onTouched()&&u),"ngModelChange"===n&&(u=!1!==(e.addGossip.feedbackType=t)&&u),u},null,null)),Kl._5(16384,null,0,xt.c,[Kl.G,Kl.l,[2,xt.a]],null,null),Kl._5(212992,null,0,xt.m,[Kl.G,Kl.l,xt.r,Kl.s],{name:[0,"name"],value:[1,"value"]},null),Kl._24(1024,null,xt.g,function(l,n){return[l,n]},[xt.c,xt.m]),Kl._5(671744,null,0,xt.l,[[2,xt.b],[8,null],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(null,["\n                                        "])),(l()(),Kl._6(0,null,null,6,"label",[["for","neg"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,0,"img",[["alt",""],["src","assets/img/hated.png"]],null,null,null,null,null)),(l()(),Kl._27(null,[" "])),(l()(),Kl._6(0,null,null,1,"div",[["class","type-text"]],null,null,null,null,null)),(l()(),Kl._27(null,["Negative Gossip"])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                                    "])),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(2,["\n                        "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,30,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,11,{contentLabel:0}),Kl._25(603979776,12,{_buttons:1}),Kl._25(603979776,13,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,1,2,"ion-label",[["stacked",""]],null,null,null,null,null)),Kl._5(16384,[[11,4]],0,pe.a,[ou.a,Kl.l,Kl.G,[8,null],[8,""],[8,null],[8,null]],null,null),(l()(),Kl._27(null,["Gossip as"])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,3,18,"ion-select",[["class","w40"],["interface","popover"],["name","poastedAs"]],[[2,"select-disabled",null],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"click"],[null,"keyup.space"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,118)._click(t)&&u),"keyup.space"===n&&(u=!1!==Kl._19(l,118)._keyup()&&u),"ngModelChange"===n&&(u=!1!==(e.addGossip.posted_as=t)&&u),u},me.b,me.a)),Kl._5(1228800,null,1,fe.a,[Dt.a,jt.a,ou.a,Kl.l,Kl.G,[2,Iu.a],au.a],{interface:[0,"interface"]},null),Kl._25(603979776,14,{options:1}),Kl._24(1024,null,xt.g,function(l){return[l]},[fe.a]),Kl._5(671744,[["poastedAs",4]],0,xt.l,[[2,xt.b],[8,null],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,2,"ion-option",[["value","anonymous"]],null,null,null,null,null)),Kl._5(16384,[[14,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["Anonymous"])),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._6(0,null,null,2,"ion-option",[],null,null,null,null,null)),Kl._5(16384,[[14,4]],0,be.a,[Kl.l],{value:[0,"value"]},null),(l()(),Kl._27(null,["",""])),(l()(),Kl._27(null,["\n                                "])),(l()(),Kl._2(16777216,null,null,1,null,Vl)),Kl._5(802816,null,0,Pt.h,[Kl.Q,Kl.N,Kl.t],{ngForOf:[0,"ngForOf"]},null),(l()(),Kl._27(null,["\n                            "])),(l()(),Kl._27(2,["\n                        "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,17,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,15,{contentLabel:0}),Kl._25(603979776,16,{_buttons:1}),Kl._25(603979776,17,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,7,"textarea",[["class","text-area"],["cols",""],["name","gossip"],["placeholder","Gossip Content"],["required",""],["rows","6"]],[[1,"required",0],[2,"ng-untouched",null],[2,"ng-touched",null],[2,"ng-pristine",null],[2,"ng-dirty",null],[2,"ng-valid",null],[2,"ng-invalid",null],[2,"ng-pending",null]],[[null,"ngModelChange"],[null,"input"],[null,"blur"],[null,"compositionstart"],[null,"compositionend"]],function(l,n,t){var u=!0,e=l.component;return"input"===n&&(u=!1!==Kl._19(l,147)._handleInput(t.target.value)&&u),"blur"===n&&(u=!1!==Kl._19(l,147).onTouched()&&u),"compositionstart"===n&&(u=!1!==Kl._19(l,147)._compositionStart()&&u),"compositionend"===n&&(u=!1!==Kl._19(l,147)._compositionEnd(t.target.value)&&u),"ngModelChange"===n&&(u=!1!==(e.addGossip.gossip=t)&&u),u},null,null)),Kl._5(16384,null,0,xt.c,[Kl.G,Kl.l,[2,xt.a]],null,null),Kl._5(16384,null,0,xt.o,[],{required:[0,"required"]},null),Kl._24(1024,null,xt.f,function(l){return[l]},[xt.o]),Kl._24(1024,null,xt.g,function(l){return[l]},[xt.c]),Kl._5(671744,[["gossip",4]],0,xt.l,[[2,xt.b],[2,xt.f],[8,null],[2,xt.g]],{name:[0,"name"],model:[1,"model"]},{update:"ngModelChange"}),Kl._24(2048,null,xt.h,null,[xt.l]),Kl._5(16384,null,0,xt.i,[xt.h],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._27(2,["\n                        "])),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._2(16777216,null,null,1,null,Bl)),Kl._5(16384,null,0,Pt.i,[Kl.Q,Kl.N],{ngIf:[0,"ngIf"]},null),(l()(),Kl._27(null,["\n\n                        "])),(l()(),Kl._6(0,null,null,13,"ion-item",[["class","pl8 item item-block"]],null,null,null,Gu.b,Gu.a)),Kl._5(1097728,null,3,Iu.a,[jt.a,ou.a,Kl.l,Kl.G,[2,Pu.a]],null,null),Kl._25(335544320,21,{contentLabel:0}),Kl._25(603979776,22,{_buttons:1}),Kl._25(603979776,23,{_icons:1}),Kl._5(16384,null,0,Eu.a,[],null,null),(l()(),Kl._27(2,["\n                            "])),(l()(),Kl._6(0,null,2,5,"button",[["block",""],["class","h35"],["icon-left",""],["ion-button",""],["outline",""]],null,[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.selectImage()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[22,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{outline:[0,"outline"],block:[1,"block"]},null),(l()(),Kl._27(0,["\n  "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","attach"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n ","  image\n"])),(l()(),Kl._27(2,["\n                        "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._6(0,null,null,7,"div",[["class","submit-btn"]],null,null,null,null,null)),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,0,"br",[],null,null,null,null,null)),(l()(),Kl._27(null,["\n                        "])),(l()(),Kl._6(0,null,null,2,"button",[["block",""],["color","primary"],["ion-button",""],["type","submit"]],[[8,"disabled",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==e.insertGossip(e.addGossip)&&u),u},hu.b,hu.a)),Kl._5(1097728,null,0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"],block:[1,"block"]},null),(l()(),Kl._27(0,["Post"])),(l()(),Kl._27(null,["\n                    "])),(l()(),Kl._27(null,["\n\n                "])),(l()(),Kl._27(null,["\n            "])),(l()(),Kl._27(null,["\n\n        "])),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,4,0,"primary");l(n,7,0,"whitec");l(n,8,0,"false");l(n,9,0,"whitec");l(n,13,0,"arrow-back"),l(n,43,0,!t.addGossip.id),l(n,46,0,t.selectedEntity.id),l(n,49,0,t.news);l(n,69,0,"type",0);l(n,71,0,"type",t.addGossip.feedbackType);l(n,88,0,"type",1);l(n,90,0,"type",t.addGossip.feedbackType);l(n,118,0,"popover");l(n,121,0,"poastedAs",t.addGossip.posted_as);l(n,126,0,"anonymous"),l(n,130,0,t.user.ID),l(n,134,0,t.myEntity);l(n,148,0,"");l(n,151,0,"gossip",t.addGossip.gossip),l(n,158,0,t.addGossip.image);l(n,168,0,"","");l(n,171,0,"attach");l(n,181,0,"primary","")},function(l,n){var t=n.component;l(n,3,0,Kl._19(n,4)._sbPadding),l(n,6,0,Kl._19(n,8).isHidden),l(n,12,0,Kl._19(n,13)._hidden),l(n,22,0,Kl._19(n,23).statusbarPadding,Kl._19(n,23)._hasRefresher),l(n,27,0,Kl._19(n,31).ngClassUntouched,Kl._19(n,31).ngClassTouched,Kl._19(n,31).ngClassPristine,Kl._19(n,31).ngClassDirty,Kl._19(n,31).ngClassValid,Kl._19(n,31).ngClassInvalid,Kl._19(n,31).ngClassPending),l(n,67,0,Kl._19(n,73).ngClassUntouched,Kl._19(n,73).ngClassTouched,Kl._19(n,73).ngClassPristine,Kl._19(n,73).ngClassDirty,Kl._19(n,73).ngClassValid,Kl._19(n,73).ngClassInvalid,Kl._19(n,73).ngClassPending),l(n,86,0,Kl._19(n,92).ngClassUntouched,Kl._19(n,92).ngClassTouched,Kl._19(n,92).ngClassPristine,Kl._19(n,92).ngClassDirty,Kl._19(n,92).ngClassValid,Kl._19(n,92).ngClassInvalid,Kl._19(n,92).ngClassPending),l(n,117,0,Kl._19(n,118)._disabled,Kl._19(n,123).ngClassUntouched,Kl._19(n,123).ngClassTouched,Kl._19(n,123).ngClassPristine,Kl._19(n,123).ngClassDirty,Kl._19(n,123).ngClassValid,Kl._19(n,123).ngClassInvalid,Kl._19(n,123).ngClassPending),l(n,131,0,t.user.display_name),l(n,146,0,Kl._19(n,148).required?"":null,Kl._19(n,153).ngClassUntouched,Kl._19(n,153).ngClassTouched,Kl._19(n,153).ngClassPristine,Kl._19(n,153).ngClassDirty,Kl._19(n,153).ngClassValid,Kl._19(n,153).ngClassInvalid,Kl._19(n,153).ngClassPending),l(n,170,0,Kl._19(n,171)._hidden),l(n,172,0,t.addGossip.image?"Change":"Attach"),l(n,180,0,!((0==t.addGossip.feedbackType||1==t.addGossip.feedbackType)&&t.addGossip.gossip&&t.addGossip.id))})}function Hl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,20,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,[" \n    "])),(l()(),Kl._6(0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,0,8,"button",[["color","white"],["icon-only",""],["ion-button",""],["left",""],["menuToggle","false"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,8).toggle()&&u),"click"===n&&(u=!1!==e.dismiss()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[1,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),Kl._5(1064960,null,0,ie.a,[At.a,[2,uu.a],[2,gu.a],[2,ae.a]],{menuToggle:[0,"menuToggle"]},null),Kl._5(16384,null,1,se.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],{color:[0,"color"]},null),Kl._25(603979776,1,{_buttons:1}),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,[" \n        "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,2,"ion-title",[],null,null,null,re.b,re.a)),Kl._5(49152,null,0,_e.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),(l()(),Kl._27(0,["\n           Gossips (",")\n        "])),(l()(),Kl._27(3,[" \n    "])),(l()(),Kl._27(null,[" \n"])),(l()(),Kl._27(null,[" \n"])),(l()(),Kl._6(0,null,null,5,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,1,"gossip-card",[],null,[[null,"dataUpdated"]],function(l,n,t){var u=!0,e=l.component;return"dataUpdated"===n&&(u=!1!==e.getGossips()&&u),u},h,Nu)),Kl._5(49152,null,0,Ct,[pn,xn,Vt.a,bn],{gossips:[0,"gossips"]},{dataUpdated:"dataUpdated"}),(l()(),Kl._27(1,["\n"]))],function(l,n){var t=n.component;l(n,4,0,"primary");l(n,7,0,"white");l(n,8,0,"false");l(n,9,0,"white");l(n,13,0,"arrow-back"),l(n,26,0,t.gossips)},function(l,n){var t=n.component;l(n,3,0,Kl._19(n,4)._sbPadding),l(n,6,0,Kl._19(n,8).isHidden),l(n,12,0,Kl._19(n,13)._hidden),l(n,18,0,t.category.name),l(n,22,0,Kl._19(n,23).statusbarPadding,Kl._19(n,23)._hasRefresher)})}function ql(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,20,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,0,8,"button",[["color","white"],["icon-only",""],["ion-button",""],["menuToggle","false"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,8).toggle()&&u),"click"===n&&(u=!1!==e.dismiss()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[1,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),Kl._5(1064960,null,0,ie.a,[At.a,[2,uu.a],[2,gu.a],[2,ae.a]],{menuToggle:[0,"menuToggle"]},null),Kl._5(16384,null,1,se.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],{color:[0,"color"]},null),Kl._25(603979776,1,{_buttons:1}),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,2,"ion-title",[],null,null,null,re.b,re.a)),Kl._5(49152,null,0,_e.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),(l()(),Kl._27(0,["\n            About Gossip Monger\n        "])),(l()(),Kl._27(3,["\n    "])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._6(0,null,null,6,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,2,"ion-list",[],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n      \n    "])),(l()(),Kl._27(1,["\n"]))],function(l,n){l(n,4,0,"primary");l(n,7,0,"white");l(n,8,0,"false");l(n,9,0,"white");l(n,13,0,"arrow-back")},function(l,n){l(n,3,0,Kl._19(n,4)._sbPadding),l(n,6,0,Kl._19(n,8).isHidden),l(n,12,0,Kl._19(n,13)._hidden),l(n,22,0,Kl._19(n,23).statusbarPadding,Kl._19(n,23)._hasRefresher)})}function zl(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,20,"ion-header",[],null,null,null,null,null)),Kl._5(16384,null,0,Qu.a,[ou.a,Kl.l,Kl.G,[2,uu.a]],null,null),(l()(),Kl._27(null,["\n    "])),(l()(),Kl._6(0,null,null,16,"ion-toolbar",[["class","toolbar"],["color","primary"]],[[2,"statusbar-padding",null]],null,null,Hu.b,Hu.a)),Kl._5(49152,null,0,qu.a,[ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,0,8,"button",[["color","white"],["icon-only",""],["ion-button",""],["menuToggle","false"]],[[8,"hidden",0]],[[null,"click"]],function(l,n,t){var u=!0,e=l.component;return"click"===n&&(u=!1!==Kl._19(l,8).toggle()&&u),"click"===n&&(u=!1!==e.dismiss()&&u),u},hu.b,hu.a)),Kl._5(1097728,[[1,4]],0,gu.a,[[8,""],ou.a,Kl.l,Kl.G],{color:[0,"color"]},null),Kl._5(1064960,null,0,ie.a,[At.a,[2,uu.a],[2,gu.a],[2,ae.a]],{menuToggle:[0,"menuToggle"]},null),Kl._5(16384,null,1,se.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],{color:[0,"color"]},null),Kl._25(603979776,1,{_buttons:1}),(l()(),Kl._27(0,["\n      "])),(l()(),Kl._6(0,null,0,1,"ion-icon",[["name","arrow-back"],["role","img"]],[[2,"hide",null]],null,null,null,null)),Kl._5(147456,null,0,Cu.a,[ou.a,Kl.l,Kl.G],{name:[0,"name"]},null),(l()(),Kl._27(0,["\n    "])),(l()(),Kl._27(3,["\n        "])),(l()(),Kl._6(0,null,3,2,"ion-title",[],null,null,null,re.b,re.a)),Kl._5(49152,null,0,_e.a,[ou.a,Kl.l,Kl.G,[2,qu.a],[2,ae.a]],null,null),(l()(),Kl._27(0,["\n            Terms & Condition\n        "])),(l()(),Kl._27(3,["\n    "])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._27(null,["\n"])),(l()(),Kl._6(0,null,null,6,"ion-content",[],[[2,"statusbar-padding",null],[2,"has-refresher",null]],null,null,mu.b,mu.a)),Kl._5(4374528,null,0,fu.a,[ou.a,iu.a,St.a,Kl.l,Kl.G,Dt.a,Ut.a,Kl.A,[2,uu.a],[2,eu.a]],null,null),(l()(),Kl._27(1,["\n    "])),(l()(),Kl._6(0,null,1,2,"ion-list",[],null,null,null,null,null)),Kl._5(16384,null,0,xu.a,[ou.a,Kl.l,Kl.G,iu.a,Tt.g,St.a],null,null),(l()(),Kl._27(null,["\n      \n    "])),(l()(),Kl._27(1,["\n"]))],function(l,n){l(n,4,0,"primary");l(n,7,0,"white");l(n,8,0,"false");l(n,9,0,"white");l(n,13,0,"arrow-back")},function(l,n){l(n,3,0,Kl._19(n,4)._sbPadding),l(n,6,0,Kl._19(n,8).isHidden),l(n,12,0,Kl._19(n,13)._hidden),l(n,22,0,Kl._19(n,23).statusbarPadding,Kl._19(n,23)._hasRefresher)})}Object.defineProperty(n,"__esModule",{value:!0});var Xl=t(21),Kl=t(0),Zl=t(19),Jl=t(153),Wl=t(193),Yl=t(44),ln=t(127),nn=t(128),tn=t(36),un=t(129),en=t(88),on=t(130),an=t(131),sn=t(37),rn=t(38),_n="http://thegossipmonger.com/api/?method=",cn="#ac61cd",dn={ios:{home:"http://thegossipmonger.com/app_intro/ios/home.jpg",entity:"http://thegossipmonger.com/app_intro/ios/entity.jpg",news:"http://thegossipmonger.com/app_intro/ios/news.jpg"},android:{home:"http://thegossipmonger.com/app_intro/android/home.jpg",entity:"http://thegossipmonger.com/app_intro/android/entity.jpg",news:"http://thegossipmonger.com/app_intro/android/news.jpg"}},pn=function(){function l(){this.playerId=null,this.user={},this.location="Mumbai"}return l.prototype.setAuthData=function(l){try{this.user=JSON.parse(l)}catch(n){this.user=l}this.userId=this.user.ID},l.prototype.setPlayerId=function(l){this.playerId=l},l.prototype.toggleMute=function(l){this.isMuted=l},l.prototype.dropAuthData=function(){this.userId=null,this.user=null},l.prototype.setLocation=function(l){l&&(l=l.replace(" ","-")),this.location=l},l}(),hn=this&&this.__decorate||function(l,n,t,u){var e,o=arguments.length,i=o<3?n:null===u?u=Object.getOwnPropertyDescriptor(n,t):u;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(l,n,t,u);else for(var a=l.length-1;a>=0;a--)(e=l[a])&&(i=(o<3?e(i):o>3?e(n,t,i):e(n,t))||i);return o>3&&i&&Object.defineProperty(n,t,i),i},gn=this&&this.__metadata||function(l,n){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(l,n)},mn=this&&this.__awaiter||function(l,n,t,u){return new(t||(t=Promise))(function(e,o){function i(l){try{s(u.next(l))}catch(l){o(l)}}function a(l){try{s(u.throw(l))}catch(l){o(l)}}function s(l){l.done?e(l.value):new t(function(n){n(l.value)}).then(i,a)}s((u=u.apply(l,n||[])).next())})},fn=this&&this.__generator||function(l,n){function t(l){return function(n){return u([l,n])}}function u(t){if(e)throw new TypeError("Generator is already executing.");for(;s;)try{if(e=1,o&&(i=o[2&t[0]?"return":t[0]?"throw":"next"])&&!(i=i.call(o,t[1])).done)return i;switch(o=0,i&&(t=[0,i.value]),t[0]){case 0:case 1:i=t;break;case 4:return s.label++,{value:t[1],done:!1};case 5:s.label++,o=t[1],t=[0];continue;case 7:t=s.ops.pop(),s.trys.pop();continue;default:if(i=s.trys,!(i=i.length>0&&i[i.length-1])&&(6===t[0]||2===t[0])){s=0;continue}if(3===t[0]&&(!i||t[1]>i[0]&&t[1]<i[3])){s.label=t[1];break}if(6===t[0]&&s.label<i[1]){s.label=i[1],i=t;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(t);break}i[2]&&s.ops.pop(),s.trys.pop();continue}t=n.call(l,s)}catch(l){t=[6,l],o=0}finally{e=i=0}if(5&t[0])throw t[1];return{value:t[0]?t[1]:void 0,done:!0}}var e,o,i,a,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return a={next:t(0),throw:t(1),return:t(2)},"function"==typeof Symbol&&(a[Symbol.iterator]=function(){return this}),a},bn=function(){function l(l,n,t,u,e,o,i,a,s,r){var _=this;this.platform=l,this._ionicApp=n,this.camera=t,this._loadingCtrl=u,this._toastCtrl=e,this._storage=o,this._alert=i,this._socialSharing=a,this._photoViewer=s,this.event=r,this.Loader={show:function(l,n){_._loading=_._loadingCtrl.create({content:l||"Please wait...",dismissOnPageChange:!0,duration:3500,showBackdrop:n||!0}),_._loading.present()},hide:function(){_._loading.dismiss(),_._loading=null},prompt:function(l,n){_.Loader.show(l),setTimeout(function(){_.Loader.hide()},n||3e3)},closeIfActive:function(){var l=_._ionicApp._loadingPortal.getActive();if(l)return l.dismiss(),void(_._loading=null)}},this.Toast={show:function(l,n,t,u,e){_._toastMsg=_._toastCtrl.create({message:l,duration:n||u?null:3e3,position:t||"top",showCloseButton:u||!1,closeButtonText:e||"OK"}),_._toastMsg.present()},hide:function(){this._toastMsg.dismiss()}},this.LS={get:function(l){return _._storage.get(l)},set:function(l,n){return _._storage.set(l,JSON.stringify(n))},remove:function(l){return _._storage.remove(l)}},this.Alert={confirm:function(l,n){return new Promise(function(t,u){_._alert.create({title:n||"Confirm",message:l||"Do you want continue?",buttons:[{text:"Cancel",role:"cancel",handler:function(){u(!1)}},{text:"Ok",handler:function(){t(!0)}}]}).present()})},alert:function(l,n){_._alert.create({title:n||"Alert",subTitle:l,buttons:["Dismiss"]}).present()}},this.SocialSharing={shareVia:function(l,n,t,u){_._socialSharing.share(l,n,t||null,u||null).then(function(){return!0}).catch(function(){return!1})}},this.imageViewer={show:function(l,n,t){_._photoViewer.show(l,n,{share:t||!0})}},this.uploadMedia={image:function(l){var n;n=1==l?_.camera.PictureSourceType.CAMERA:_.camera.PictureSourceType.PHOTOLIBRARY;var t={quality:20,targetWidth:600,targetHeight:600,destinationType:_.camera.DestinationType.DATA_URL,encodingType:_.camera.EncodingType.PNG,mediaType:_.camera.MediaType.PICTURE,sourceType:n,allowEdit:!0};return _.camera.getPicture(t)}}}return l.prototype.checkIntro=function(l){return mn(this,void 0,void 0,function(){var n;return fn(this,function(t){switch(t.label){case 0:return[4,this.LS.get("intro")];case 1:if(n=t.sent(),!(n=JSON.parse(n))[l]){if(n[l]=!0,this.LS.set("intro",n),"entity"==l)return[2,!0];this.platform.is("ios")?this.event.publish("app:intro",dn.ios[l]):this.event.publish("app:intro",dn.android[l])}return[2]}})})},l}();bn=hn([Object(Kl.q)(),gn("design:paramtypes",["function"==typeof(yn=void 0!==Zl.i&&Zl.i)&&yn||Object,"function"==typeof(vn=void 0!==Zl.d&&Zl.d)&&vn||Object,"function"==typeof(wn=void 0!==tn.a&&tn.a)&&wn||Object,"function"==typeof(Cn=void 0!==Zl.e&&Zl.e)&&Cn||Object,"function"==typeof(kn=void 0!==Zl.k&&Zl.k)&&kn||Object,"function"==typeof(Gn=void 0!==Jl.b&&Jl.b)&&Gn||Object,"function"==typeof(In=void 0!==Zl.a&&Zl.a)&&In||Object,"function"==typeof(Pn=void 0!==sn.a&&sn.a)&&Pn||Object,"function"==typeof(En=void 0!==rn.a&&rn.a)&&En||Object,"function"==typeof(Sn=void 0!==Zl.c&&Zl.c)&&Sn||Object])],bn);var yn,vn,wn,Cn,kn,Gn,In,Pn,En,Sn,An=t(89),Dn=(t(195),t(1)),Tn=(t(198),this&&this.__decorate||function(l,n,t,u){var e,o=arguments.length,i=o<3?n:null===u?u=Object.getOwnPropertyDescriptor(n,t):u;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(l,n,t,u);else for(var a=l.length-1;a>=0;a--)(e=l[a])&&(i=(o<3?e(i):o>3?e(n,t,i):e(n,t))||i);return o>3&&i&&Object.defineProperty(n,t,i),i}),Ln=this&&this.__metadata||function(l,n){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(l,n)},xn=function(){function l(l,n){this.globalProvider=l,this.http=n}return l.prototype.getCategories=function(){var l=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getEntityCategories&userId="+this.globalProvider.userId,{headers:l}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.topHatedGossips=function(){var l=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"topUpvotedNegativeGossips&userId="+this.globalProvider.userId,{headers:l}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.topLovedGossips=function(){var l=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"topUpvotedPositiveGossips&userId="+this.globalProvider.userId,{headers:l}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.latestGossips=function(){var l=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"topUpvotedPositiveGossips&userId="+this.globalProvider.userId,{headers:l}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.trendingEntity=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"topGossipedEntities&userId="+this.globalProvider.userId,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.followedEntity=function(){var l=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getMyFollowedEntities&userId="+this.globalProvider.userId,{headers:l}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.followedGossips=function(){var l=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getMyFollowedGossips&userId="+this.globalProvider.userId,{headers:l}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getMyFollowers=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getMyFollowers&userId="+(l||this.globalProvider.userId),{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getMyFollowees=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getMyFollowees&userId="+(l||this.globalProvider.userId),{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getMyGossips=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getMyGossips&userId="+(l||this.globalProvider.userId),{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getMyGossipsByCategory=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getGossipsByCategory&userId="+this.globalProvider.userId+"&id="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getGossip=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getGossip&userId="+this.globalProvider.userId+"&id="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getGossipByEntity=function(l,n){var t=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getGossips&feedback_type="+n+"&userId="+this.globalProvider.userId+"&id="+l,{headers:t}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getGossipComments=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getGossipComments&userId="+this.globalProvider.userId+"&id="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.insertComments=function(l,n){var t=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"insertComment&msg="+l+"&userId="+this.globalProvider.userId+"&id="+n,{headers:t}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.updateProfile=function(l,n,t){var u=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"insertComment&fname="+l+"&userId="+this.globalProvider.userId+"&lname="+n+"&mobileNo="+t,{headers:u}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.insertGossip=function(l){var n=new Yl.d({enctype:"multipart/form-data"});l.userId=this.globalProvider.userId;var t=new FormData;for(var u in l)t.append(u,l[u]);return this.http.post(_n+"insertGossip",t,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getUserDetail=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getUserDetails&id="+l+"&userId="+this.globalProvider.userId,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getEntityDetail=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getEntity&userId="+this.globalProvider.userId+"&id="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getLatestGossips=function(){var l=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"latestGossips&userId="+this.globalProvider.userId,{headers:l}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.vote=function(l,n){var t=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"vote&id="+n+"&type="+l+"&userId="+this.globalProvider.userId,{headers:t}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.followGossip=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"followGossip&userId="+this.globalProvider.userId+"&id="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.unFollowGossip=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"unfollowGossip&userId="+this.globalProvider.userId+"&id="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.deleteGossip=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"deletePost&userId="+this.globalProvider.userId+"&postId="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getEntityNews=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getEntityNews&userId="+this.globalProvider.userId+"&id="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.followUser=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"followUnfollow&userId="+this.globalProvider.userId+"&id="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getMyEntity=function(l,n){var t=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"getMyEntities&userId="+l+"&owner="+(n?"yes":""),{headers:t}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.searchEntity=function(l,n){var t=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"searchApi&title="+l+"&type="+n,{headers:t}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.searchEntityAvailability=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"exactMatchTitleEntities&title="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.followEntity=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"entityFollow&userId="+this.globalProvider.userId+"&id="+l,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.addEntity=function(l){var n=new Yl.d({enctype:"multipart/form-data"});l.userId=this.globalProvider.userId;var t=new FormData;for(var u in l)t.append(u,l[u]);return this.http.post(_n+"insertEntity",t,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getFbUserInfo=function(l){return this.http.get("https://graph.facebook.com/v2.2/me",{params:{access_token:l,fields:"name,first_name,last_name,location,picture,email",format:"json"}}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.socialLogin=function(l){l.player_id=this.globalProvider.playerId;var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"socialRegistration&fname="+l.fname+"&lname="+l.lname+"&email="+l.email+"&userId="+l.userId+"&source="+l.source+"&player_id="+l.player_id+"&playerId="+l.player_id,{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.logout=function(){var l=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get(_n+"appLogout&userId="+this.globalProvider.userId,{headers:l}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getGeoAddress=function(l){var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get("http://maps.googleapis.com/maps/api/geocode/json?latlng="+l.latitude+","+l.longitude+"&sensor=true",{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.getNews=function(){var l=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Fnews%2Fsection%3Fgeo%3D"+(this.globalProvider.location||"mumbai")+"%26output%3Drss%26num%3D40&api_key=o8aomlxn5spw5klgsqjgdlasz9kekalrp2hgptsb",{headers:l}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.searchNews=function(l){l&&(console.log(l),l=l.replace(/ /g,"-"));var n=new Yl.d({"Content-Type":"application/x-www-form-urlencoded"});return this.http.get("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Fnews%3Fq%3D"+l+"%26output%3Drss%26num%3D20&api_key=o8aomlxn5spw5klgsqjgdlasz9kekalrp2hgptsb",{headers:n}).map(function(l){return l.json()}).catch(this.handleError)},l.prototype.handleError=function(l){return console.error(l),Dn.Observable.throw(l||"Server error")},l}();xn=Tn([Object(Kl.q)(),Ln("design:paramtypes",["function"==typeof(Mn=void 0!==pn&&pn)&&Mn||Object,"function"==typeof(Nn=void 0!==Yl.e&&Yl.e)&&Nn||Object])],xn);var Mn,Nn,On=function(){function l(l,n,t,u,e,o,i,a){this.actionSheetCtrl=l,this.globalProvider=n,this.modal=t,this.navCtrl=u,this.navParams=e,this.viewCtrl=o,this.api=i,this.shared=a,this.addGossip={posted_as:this.globalProvider.userId,newsId:null},this.user=this.globalProvider.user,this.selectedEntity={category:[{name:null}]},this.type=this.navParams.get("type"),this.addGossip.feedbackType=this.navParams.get("type"),this.id=this.navParams.get("id"),this.addGossip.id=this.navParams.get("id"),this.navParams.get("data")&&(this.news=this.navParams.get("data"),this.addGossip.newsId=this.navParams.get("data").id,this.addGossip.newsTitle=this.navParams.get("data").title,this.addGossip.newsUrl=this.navParams.get("data").url),this.navParams.get("news")&&(this.news=this.navParams.get("news"),this.addGossip.newsTitle=this.navParams.get("news").title,this.addGossip.newsUrl=this.navParams.get("news").link)}return l.prototype.getMyEntity=function(){var l=this;this.shared.Loader.show(),this.api.getMyEntity(this.globalProvider.userId).subscribe(function(n){l.myEntity=n,l.shared.Loader.hide()},function(n){l.shared.Loader.hide(),console.error(n)})},l.prototype.searchEntity=function(){var l=this,n=this.modal.create(gt,{source:"gossip"});n.onDidDismiss(function(n){n&&(l.id=n.id,l.addGossip.id=n.id,l.selectedEntity=n)}),n.present()},l.prototype.insertGossip=function(l){var n=this;"anonymous"!=l.posted_as?l.isAnonymous=0:(l.isAnonymous=1,l.posted_as=null),l.type=l.feedbackType,l.image=this.addGossip.image,this.shared.Loader.show(),this.api.insertGossip(l).subscribe(function(l){n.shared.Toast.show("Gossip created successfully"),n.viewCtrl.dismiss(),n.shared.Loader.hide()},function(l){n.shared.Loader.hide(),console.error(l)})},l.prototype.chooseImage=function(l){var n=this;this.shared.uploadMedia.image(l).then(function(l){n.addGossip.image="data:image/png;base64,"+l},function(l){})},l.prototype.selectImage=function(){var l=this;this.actionSheetCtrl.create({title:"Capture image with",buttons:[{text:"Camera",icon:"camera",handler:function(){l.chooseImage(1)}},{text:"Gallery",icon:"images",handler:function(){l.chooseImage(2)}}]}).present()},l.prototype.ionViewDidLoad=function(){this.getMyEntity()},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.removeImage=function(){this.addGossip.image=""},l}(),Fn=function(){function l(l,n,t,u,e,o){this.api=l,this.shared=n,this.navCtrl=t,this.navParams=u,this.viewCtrl=e,this.modal=o,this.type=1,this.bgImage="assets/img/positive.jpg",1==(this.type=u.get("type"))&&(this.bgImage="assets/img/negative.jpg"),this._id=this.navParams.get("id")}return l.prototype.ionViewDidLoad=function(){this.getGossips()},l.prototype.addGossips=function(){var l=this,n=this.modal.create(On,{type:this.type,id:this._id});n.onDidDismiss(function(n){l.getGossips()}),n.present()},l.prototype.getGossips=function(){var l=this;this.shared.Loader.show(),this.api.getGossipByEntity(this._id,this.type).subscribe(function(n){l.entityGossips=n,l.shared.Loader.hide()},function(n){console.log(n),l.shared.Loader.hide()})},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l}(),jn=t(161),Rn=this&&this.__decorate||function(l,n,t,u){var e,o=arguments.length,i=o<3?n:null===u?u=Object.getOwnPropertyDescriptor(n,t):u;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(l,n,t,u);else for(var a=l.length-1;a>=0;a--)(e=l[a])&&(i=(o<3?e(i):o>3?e(n,t,i):e(n,t))||i);return o>3&&i&&Object.defineProperty(n,t,i),i},Un=this&&this.__metadata||function(l,n){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(l,n)},$n=function(){function l(l,n){this.nativeAudio=l,this.audioType="html5",this.sounds=[],n.is("cordova")&&(this.audioType="native")}return l.prototype.preload=function(l,n){if("html5"===this.audioType){t={key:l,asset:n,type:"html5"};this.sounds.push(t)}else{this.nativeAudio.preloadSimple(l,n);var t={key:l,asset:l,type:"native"};this.sounds.push(t)}},l.prototype.play=function(l){var n=this.sounds.find(function(n){return n.key===l});"html5"===n.type?new Audio(n.asset).play():this.nativeAudio.play(n.asset).then(function(l){console.log(l)},function(l){console.log(l)})},l}();$n=Rn([Object(Kl.q)(),Un("design:paramtypes",["function"==typeof(Vn=void 0!==jn.a&&jn.a)&&Vn||Object,"function"==typeof(Bn=void 0!==Zl.i&&Zl.i)&&Bn||Object])],$n);var Vn,Bn,Qn=t(136),Hn=this&&this.__awaiter||function(l,n,t,u){return new(t||(t=Promise))(function(e,o){function i(l){try{s(u.next(l))}catch(l){o(l)}}function a(l){try{s(u.throw(l))}catch(l){o(l)}}function s(l){l.done?e(l.value):new t(function(n){n(l.value)}).then(i,a)}s((u=u.apply(l,n||[])).next())})},qn=this&&this.__generator||function(l,n){function t(l){return function(n){return u([l,n])}}function u(t){if(e)throw new TypeError("Generator is already executing.");for(;s;)try{if(e=1,o&&(i=o[2&t[0]?"return":t[0]?"throw":"next"])&&!(i=i.call(o,t[1])).done)return i;switch(o=0,i&&(t=[0,i.value]),t[0]){case 0:case 1:i=t;break;case 4:return s.label++,{value:t[1],done:!1};case 5:s.label++,o=t[1],t=[0];continue;case 7:t=s.ops.pop(),s.trys.pop();continue;default:if(i=s.trys,!(i=i.length>0&&i[i.length-1])&&(6===t[0]||2===t[0])){s=0;continue}if(3===t[0]&&(!i||t[1]>i[0]&&t[1]<i[3])){s.label=t[1];break}if(6===t[0]&&s.label<i[1]){s.label=i[1],i=t;break}if(i&&s.label<i[2]){s.label=i[2],s.ops.push(t);break}i[2]&&s.ops.pop(),s.trys.pop();continue}t=n.call(l,s)}catch(l){t=[6,l],o=0}finally{e=i=0}if(5&t[0])throw t[1];return{value:t[0]?t[1]:void 0,done:!0}}var e,o,i,a,s={label:0,sent:function(){if(1&i[0])throw i[1];return i[1]},trys:[],ops:[]};return a={next:t(0),throw:t(1),return:t(2)},"function"==typeof Symbol&&(a[Symbol.iterator]=function(){return this}),a},zn=function(){function l(l,n,t,u,e,o,i,a,s,r,_){if(this.api=l,this.shared=n,this.navCtrl=t,this.navParams=u,this.modal=e,this.viewCtrl=o,this.smartAudio=i,this.vibration=a,this.globalProvider=s,this.ngZone=r,this.platform=_,this.segment="news",this.opacity=0,this.headerBackground="rgba(192, 108, 228, "+this.opacity+")",this._preScrollArea=0,this.entityDetail={category:[{}]},!s.isMuted)try{i.preload("negative","assets/sounds/Negative.mp3"),i.preload("positive","assets/sounds/Positive.mp3")}catch(l){console.warn(l)}this._id=this.navParams.get("id"),this._type=this.navParams.get("type")}return l.prototype.ionViewDidLoad=function(){return Hn(this,void 0,void 0,function(){return qn(this,function(l){switch(l.label){case 0:return 1==this._type?this.tapEvent(2):2==this._type&&this.tapEvent(1),this.getEntityDetail(),this.getGossips(!0),this.getEntityNews(),[4,this.shared.checkIntro("entity")];case 1:return l.sent()&&(this.showIntro=this.platform.is("ios")?dn.ios.entity:dn.android.entity),[2]}})})},l.prototype.update=function(){var l=this;this.platform.is("ios")||(this.ngZone.run(function(){l._preScrollArea>l.content.scrollTop?(l.opacity>0&&l.content.scrollTop<500&&(l.opacity=l.opacity-.9),l.headerBackground="rgba(192, 108, 228, "+l.opacity+")"):l._preScrollArea<l.content.scrollTop&&(l.opacity<1&&l.content.scrollTop<500&&(l.opacity=l.opacity+.9),l.headerBackground="rgba(192, 108, 228, "+l.opacity+")")}),this._preScrollArea=this.content.scrollTop)},l.prototype.boomarkEntity=function(l){var n=this;this.entityDetail.entityFollow=!this.entityDetail.entityFollow,this.api.followEntity(l).subscribe(function(l){n.entityDetail.entityFollow?n.shared.Toast.show("Started following "+n.entityDetail.title,null,"bottom"):n.shared.Toast.show("Unfollowed "+n.entityDetail.title,null,"bottom")},function(l){console.error(l)})},l.prototype.getGossips=function(l){var n=this;l&&this.shared.Loader.show();var t=0;"hated"==this.segment&&(t=1),this.api.getGossipByEntity(this._id,t).subscribe(function(l){n.entityGossips=l,n.shared.Loader.closeIfActive()},function(l){n.shared.Loader.closeIfActive(),console.error(l)})},l.prototype.getEntityNews=function(){var l=this;this.api.getEntityNews(this._id).subscribe(function(n){l.entityNews=n},function(l){console.error(l)})},l.prototype.updateSegment=function(l){"news"!=l&&this.getGossips(!0)},l.prototype.getEntityDetail=function(){var l=this;this.api.getEntityDetail(this._id).subscribe(function(n){l.entityDetail=n},function(l){console.error(l)})},l.prototype.tapEvent=function(l){var n,t=this;2==l.direction||2==l?(n=this.modal.create(Fn,{type:0,id:this._id}),this.globalProvider.isMuted||this.smartAudio.play("positive")):(n=this.modal.create(Fn,{type:1,id:this._id}),this.globalProvider.isMuted||this.smartAudio.play("negative")),this.vibration.vibrate(75),n.onDidDismiss(function(l){t.getGossips(),t.getEntityDetail()}),n.present()},l.prototype.jubToSegment=function(l){this.segment=l,this.scroll()},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l.prototype.scroll=function(){this.content.scrollTo(0,this.content.contentHeight,300)},l.prototype.addGossips=function(l){var n=this,t=this.modal.create(On,{type:null,id:this._id,data:l});t.onDidDismiss(function(l){n.getGossips(),n.getEntityDetail()}),t.present()},l}(),Xn=t(137),Kn=function(){function l(l,n,t,u,e,o,i,a,s,r){var _=this;this._geolocation=l,this.platform=n,this.oneSignal=t,this.globalProvider=u,this.api=e,this.shared=o,this.navCtrl=i,this.navParams=a,this.googlePlus=s,this.fb=r,n.is("cordova")&&this.oneSignal.getIds().then(function(l){void 0!==l.userId&&(console.log(JSON.stringify(l.userId)),_.globalProvider.setPlayerId(l.userId))})}return l.prototype.ionViewDidLoad=function(){var l=this;this._geolocation.getCurrentPosition().then(function(n){l.api.getGeoAddress(n.coords).subscribe(function(n){if(console.log(n.results),n.results[1])for(var t=0;t<n.results[0].address_components.length;t++)for(var u=0;u<n.results[0].address_components[t].types.length;u++)if("administrative_area_level_2"==n.results[0].address_components[t].types[u]){console.log(n.results[0].address_components[t]),l.globalProvider.setLocation(n.results[0].address_components[t].long_name),l._location=n.results[0].address_components[t].long_name,l.shared.LS.set("location",l._location);break}},function(l){console.log(l)})}).catch(function(l){console.log("Error getting location",l)})},l.prototype.googleLogin=function(){var l=this;this.googlePlus.login({}).then(function(n){l.shared.Loader.show(null,!1);var t={fname:n.givenName,lname:n.familyName,email:n.email,userId:n.userId,source:3};l.api.socialLogin(t).subscribe(function(n){l.shared.LS.set("user",n),l.shared.LS.set("isMuted",!1),l.globalProvider.setAuthData(n),l.googlePlus.logout(),l.navCtrl.setRoot(yt),l.shared.Loader.closeIfActive()},function(n){l.shared.Toast.show(n),l.shared.Loader.closeIfActive()})}).catch(function(n){console.error(n),l.shared.Loader.closeIfActive()})},l.prototype.skip=function(){var l={ID:"15",user_login:"theindianhippie",user_nicename:"5u5hil-2",user_email:"sushil@infiniteit.biz",user_url:"",user_registered:"2017-04-15 08:32:41",user_activation_key:"",user_status:"0",display_name:"Sushil Sudhakaran",first_name:"Sushil",last_name:"Sudhakaran",source:"",img:"http://tgm-inf.cruxservers.in/wp-content/themes/tgm/images/user.png",follower_count:1,following_count:2};this.shared.LS.set("user",l),this.shared.LS.set("isMuted",!1),this.globalProvider.setAuthData(l),this.navCtrl.setRoot(yt)},l.prototype.fbLogin=function(){var l=this;this.fb.login(["public_profile","email","user_location"]).then(function(n){l.shared.Loader.show(null,!1),l.api.getFbUserInfo(n.authResponse.accessToken).subscribe(function(t){var u={fname:t.first_name,lname:t.last_name,email:t.email,userId:n.authResponse.userID,source:2};l.api.socialLogin(u).subscribe(function(n){l.shared.LS.set("user",n),l.shared.LS.set("isMuted",!1),l.globalProvider.setAuthData(n),l.fb.logout(),l.shared.Loader.closeIfActive(),l.navCtrl.setRoot(yt)},function(n){l.shared.Toast.show(n),l.shared.Loader.closeIfActive()})})},function(n){l.shared.Toast.show(n)}).catch(function(n){console.log("Error logging into Facebook",n),l.shared.Loader.closeIfActive()})},l}(),Zn=function(){function l(l){this.viewCtrl=l}return l.prototype.ionViewDidLoad=function(){},l.prototype.dismiss=function(){this.viewCtrl.dismiss(!1)},l}(),Jn=function(){function l(l){this.viewCtrl=l}return l.prototype.ionViewDidLoad=function(){},l.prototype.dismiss=function(){this.viewCtrl.dismiss(!1)},l}(),Wn=this&&this.__decorate||function(l,n,t,u){var e,o=arguments.length,i=o<3?n:null===u?u=Object.getOwnPropertyDescriptor(n,t):u;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(l,n,t,u);else for(var a=l.length-1;a>=0;a--)(e=l[a])&&(i=(o<3?e(i):o>3?e(n,t,i):e(n,t))||i);return o>3&&i&&Object.defineProperty(n,t,i),i},Yn=this&&this.__metadata||function(l,n){if("object"==typeof Reflect&&"function"==typeof Reflect.metadata)return Reflect.metadata(l,n)},lt=nt=function(){function l(l,n,t,u,e,o,i,a,s){this.popoverCtrl=l,this.globalProvider=n,this.navCtrl=t,this.navParams=u,this.app=e,this.viewCtrl=o,this.modal=i,this.api=a,this.shared=s,this.userDetail={},this.showBack=!1,this.segment="myGossips",this._checkCached=!1,this._anyAction=!1,this.submitted=!1,this.navParams.get("userId")!=this.globalProvider.userId&&(this.id=this.navParams.get("userId")),this.navParams.get("userId")&&(this.showBack=!0)}return l.prototype.ionViewDidEnter=function(){this._checkCached?this.ionViewDidLoad():this._checkCached=!0},l.prototype.updateUser=function(l){},l.prototype.ionViewDidLoad=function(){this.getMyGossips(!0),this.getMyFollowers(),this.getMyFollowees(),this.id?this.getUserDetail():(this.userDetail=this.globalProvider.user,this.getMyEntity())},l.prototype.displayImage=function(l,n){this.shared.imageViewer.show(l,n)},l.prototype.dismiss=function(){this.viewCtrl.dismiss(this._anyAction)},l.prototype.getMyEntity=function(l){var n=this;this.api.getMyEntity(this.globalProvider.userId).subscribe(function(l){n.myEntity=l},function(l){console.error(l)})},l.prototype.userProfile=function(l){var n=this,t=this.modal.create(nt,{userId:l});t.onDidDismiss(function(l){console.log(l),l&&n.ionViewDidLoad()}),t.present()},l.prototype.getMyGossips=function(l){var n=this;l&&!this.myGossips&&this.shared.Loader.show(),this.api.getMyGossips(this.id).subscribe(function(t){n.myGossips=t,l&&n.shared.Loader.closeIfActive()},function(t){l&&n.shared.Loader.closeIfActive(),console.error(t)})},l.prototype.getMyFollowers=function(){var l=this;this.api.getMyFollowers(this.id).subscribe(function(n){l.myFollowers=n},function(l){console.error(l)})},l.prototype.getUserDetail=function(){var l=this;this.api.getUserDetail(this.id).subscribe(function(n){l.userDetail=n},function(l){console.error(l)})},l.prototype.getMyFollowees=function(){var l=this;this.api.getMyFollowees(this.id).subscribe(function(n){l.myFollowees=n},function(l){console.error(l)})},l.prototype.follow=function(l,n){var t=this;this._anyAction=!0,"userDetail"==n&&l&&(this.userDetail.isFollowing=!this.userDetail.isFollowing),this.api.followUser(l).subscribe(function(l){"following"==t.segment?t.getMyFollowees():"followers"==t.segment&&t.getMyFollowers()},function(l){console.log(l)})},l.prototype.presentPopover=function(l){this.popoverCtrl.create(ct).present({ev:l})},l}();lt=nt=Wn([Object(Kl.j)({selector:"page-user-profile",templateUrl:"user-profile.html",providers:[bn,xn]}),Yn("design:paramtypes",["function"==typeof(tt=void 0!==Zl.j&&Zl.j)&&tt||Object,"function"==typeof(ut=void 0!==pn&&pn)&&ut||Object,"function"==typeof(et=void 0!==Zl.g&&Zl.g)&&et||Object,"function"==typeof(ot=void 0!==Zl.h&&Zl.h)&&ot||Object,"function"==typeof(it=void 0!==Zl.b&&Zl.b)&&it||Object,"function"==typeof(at=void 0!==Zl.l&&Zl.l)&&at||Object,"function"==typeof(st=void 0!==Zl.f&&Zl.f)&&st||Object,"function"==typeof(rt=void 0!==xn&&xn)&&rt||Object,"function"==typeof(_t=void 0!==bn&&bn)&&_t||Object])],lt);var nt,tt,ut,et,ot,it,at,st,rt,_t,ct=function(){function l(l,n,t,u,e,o){this.globalProvider=l,this.api=n,this.shared=t,this.app=u,this.modal=e,this.viewCtrl=o,this.isMuted=l.isMuted}return l.prototype.toggleMute=function(){return this.shared.LS.set("isMuted",!this.isMuted),this.globalProvider.toggleMute(!this.isMuted),this.isMuted=!this.isMuted,!0},l.prototype.logOut=function(){var l=this;this.viewCtrl.dismiss(),this.shared.Alert.confirm("Do you want to log out?").then(function(n){l.api.logout().subscribe(function(n){l.shared.LS.remove("user"),l.globalProvider.dropAuthData(),l.app.getRootNav().setRoot(Kn)},function(n){l.shared.Toast.show("Oops! something went wrong. Please try again")})},function(l){console.log("user cancelled")})},l.prototype.about=function(){this.viewCtrl.dismiss(),this.modal.create(Zn).present()},l.prototype.terms=function(){this.viewCtrl.dismiss(),this.modal.create(Jn).present()},l}(),dt=function(){function l(l,n,t,u,e,o){this.modal=l,this.navCtrl=n,this.navParams=t,this.viewCtrl=u,this.shared=e,this.api=o,this.gossip={gossip_about:{},author:{},category:[{}]},this._id=this.navParams.get("id")}return l.prototype.ionViewDidLoad=function(){this.getGossip(),this.getGossipComment(!0)},l.prototype.getGossip=function(){var l=this;this.api.getGossip(this._id).subscribe(function(n){l.gossip=n},function(l){console.error(l)})},l.prototype.entityProfile=function(l){this.modal.create(zn,{id:l}).present()},l.prototype.insertComment=function(l){var n=this;if(!l)return!1;this.shared.Loader.show(),this.api.insertComments(l,this._id).subscribe(function(l){n.getGossipComment(),n.commentContent="",n.shared.Loader.hide()},function(l){n.shared.Loader.hide(),console.error(l)})},l.prototype.userProfile=function(l){this.modal.create(lt,{userId:l}).present()},l.prototype.getGossipComment=function(l){var n=this;l&&this.shared.Loader.show(),this.api.getGossipComments(this._id).subscribe(function(t){n.comments=t,l&&n.shared.Loader.hide()},function(t){console.error(t),l&&n.shared.Loader.hide()})},l.prototype.dismiss=function(){this.viewCtrl.dismiss(!1)},l}(),pt=function(){function l(l,n,t,u){this.viewCtrl=l,this.api=n,this.navParams=t,this.shared=u,this._isPageLoaded=0,this.category=this.navParams.get("data")}return l.prototype.ionViewDidLoad=function(){this.getGossips(!0)},l.prototype.ionViewDidEnter=function(){this._isPageLoaded>0&&this.getGossips(),this._isPageLoaded=this._isPageLoaded+Number(1)},l.prototype.getGossips=function(l){var n=this;l&&this.shared.Loader.show(),this.api.getMyGossipsByCategory(this.category.term_id).subscribe(function(t){n.gossips=t,l&&n.shared.Loader.hide()},function(t){l&&n.shared.Loader.hide(),console.error(t)})},l.prototype.dismiss=function(l){this.viewCtrl.dismiss(l)},l}(),ht=function(){function l(l,n,t,u,e,o,i,a,s,r,_){this.actionSheetCtrl=l,this.sanitizer=n,this.globalProvider=t,this.modal=u,this.navCtrl=e,this.navParams=o,this.alertCtrl=i,this.api=a,this.shared=s,this.viewCtrl=r,this._ngZone=_,this.icon="assets/img/loved.png",this.addGossip={posted_as:this.globalProvider.userId,image:null},this.user=this.globalProvider.user,this.segment="entity",this.selectedEntity={category:[{name:null}]},this.showNotFound=!1,this.isCategorySelected=!1,this.entityDetail={owner:"no",image:null},this.submitted=!1,this.isModal=!1,this.navParams.get("type")&&(this.isModal=!0)}return l.prototype.chooseImage=function(l){var n=this;this.shared.uploadMedia.image(l).then(function(l){"gossip"==n.segment?n.addGossip.image="data:image/png;base64,"+l:n.entityDetail.image="data:image/png;base64,"+l},function(l){})},l.prototype.ionViewDidLoad=function(){this.getCategories(),this.getMyEntity()},l.prototype.selectImage=function(){var l=this;this.actionSheetCtrl.create({title:"Capture image with",buttons:[{text:"Camera",icon:"camera",handler:function(){l.chooseImage(1)}},{text:"Gallery",icon:"images",handler:function(){l.chooseImage(2)}}]}).present()},l.prototype.getMyEntity=function(){var l=this;this.api.getMyEntity(this.globalProvider.userId,!0).subscribe(function(n){l.myEntities=n},function(l){console.error(l)})},l.prototype.searchEntity=function(){var l=this,n=this.modal.create(gt,{source:"gossip"});n.onDidDismiss(function(n){n&&(l.id=n.id,l.addGossip.id=n.id,l.selectedEntity=n)}),n.present()},l.prototype.reset=function(){this.isCategorySelected=!1,this.entityDetail={owner:"no",image:null}},l.prototype.ionViewDidEnter=function(){this.reset(),this.getMyEntity()},l.prototype.entityProfile=function(l,n){this.modal.create(zn,{id:l,type:n}).present()},l.prototype.getEntityBackground=function(l){return this.sanitizer.bypassSecurityTrustStyle(l?"linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url("+l.url+")":"linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5))")},l.prototype.categorySelect=function(l){var n=this;this.isCategorySelected=!0,this.entityDetail.category=l.term_id,this.selectedCat=l.name,this.navParams.get("name")&&this._ngZone.run(function(){n.entityDetail.entity=n.navParams.get("name")})},l.prototype.getCategories=function(){var l=this;this.api.getCategories().subscribe(function(n){l.categories=n},function(l){console.error(l)})},l.prototype.addEntity=function(l){var n=this;return l.valid?(this.shared.Loader.show("Adding Entity.."),this.api.addEntity(this.entityDetail).subscribe(function(l){l&&(n.shared.Loader.hide(),n.shared.Toast.show("Entity added successfully"),n.entityDetail={owner:"no",image:null},n.navCtrl.push(zn,{id:l}))},function(l){n.shared.Loader.hide(),n.shared.Toast.show("Error: "+l)})):this.shared.Toast.show("Please fill all mandatory fields."),!1},l.prototype.insertGossip=function(l){var n=this;"anonymous"!=l.posted_as?l.isAnonymous=0:(l.isAnonymous=1,l.posted_as=null),l.image=this.addGossip.image,l.type=l.feedbackType,this.shared.Loader.show(),this.api.insertGossip(l).subscribe(function(t){n.shared.Toast.show("Gossip created successfully"),n.addGossip={posted_as:n.globalProvider.userId},n.selectedEntity={category:[{name:null}]},n.modal.create(zn,{id:l.id,type:l.feedbackType}).present(),n.shared.Loader.hide()},function(l){n.shared.Loader.hide(),console.error(l)})},l.prototype.removeImage=function(){this.addGossip.image="",this.entityDetail.image=""},l.prototype.dismiss=function(){this.viewCtrl.dismiss()},l}(),gt=function(){function l(l,n,t,u,e,o,i,a){this.sanitizer=l,this.modal=n,this.viewCtrl=t,this.shared=u,this.statusBar=e,this.navParams=o,this.api=i,this.navCtrl=a,this.users=[],this.results=[],this.geoNews=[],this.loadingData=!1,this.showNotFound=!1,this.type="entity",this.param="entity",this.news=!1,this._isEdding=!1,this.queryText="",this.param=this.navParams.get("source"),this.navParams.get("source")&&(this._isEdding=!0),this.navParams.get("news")&&(this.news=!0,this.type="news",this.param="news")}return l.prototype.ionViewDidEnter=function(){var l=document.querySelector("page-search input");l&&l.focus(),this.statusBar.backgroundColorByHexString("#e0e0e0")},l.prototype.ionViewWillLeave=function(){this.statusBar.backgroundColorByHexString(cn)},l.prototype.clearUsers=function(){this.users=[]},l.prototype.searchNews=function(l){var n=this;this.loadingData=!0,this.api.searchNews(l).subscribe(function(l){try{l.items.length||(n.showNotFound=!0)}catch(l){console.error(l)}n.geoNews=l.items,n.loadingData=!1},function(l){n.loadingData=!1})},l.prototype.searchEntity=function(){var l=this;if(this.showNotFound=!1,!this.queryText)return!1;this.loadingData=!0,this.api.searchEntity(this.queryText,this.type).subscribe(function(n){l.results=n;try{l.results.length||(l.showNotFound=!0)}catch(l){console.error(l)}l.loadingData=!1},function(n){console.error(n),l.loadingData=!1})},l.prototype.dismiss=function(l){this.viewCtrl.dismiss(l)},l.prototype.entitySelected=function(l){this._isEdding?this.dismiss(l):this.modal.create(zn,{id:l.id}).present()},l.prototype.gossipSelected=function(l){this.modal.create(dt,{id:l}).present()},l.prototype.categorySelected=function(l){this.modal.create(pt,{data:l}).present()},l.prototype.selectChange=function(){this.results=[],this.queryText=""},l.prototype.createNewEntity=function(l){var n=this;this.shared.Loader.show(),this.api.searchEntityAvailability(l).subscribe(function(t){n.shared.Loader.hide();try{t.length?(n.shared.Toast.show("Entity with this name already exists, Please add gossip to this entity",null,"top",!0),n.openEntity(t[0].id)):n.createEntity(l)}catch(t){n.createEntity(l)}},function(t){n.shared.Loader.hide(),n.createEntity(l)})},l.prototype.openEntity=function(l){this.modal.create(zn,{id:l}).present()},l.prototype.createEntity=function(l){this.modal.create(ht,{type:"modal",name:l}).present()},l.prototype.getBackground=function(l){return this.sanitizer.bypassSecurityTrustStyle(l?"linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url("+l+")":"linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5))")},l}(),mt=function(){function l(l,n,t,u,e,o,i,a){this.platform=l,this.navCtrl=n,this.api=t,this.ngZone=u,this.modal=e,this.shared=o,this.actionSheetCtrl=i,this.alertCtrl=a,this.segment="trending",this._preScrollArea=0,this.showSearch=!0,this.category="allCategories",this._isPageLoaded=0,this._firstLoad=!0}return l.prototype.ionViewDidLoad=function(){this.trendingEntity(),this.getNews()},l.prototype.ionViewDidEnter=function(){this._isPageLoaded>0?this.tabChange(this.segment,!0):(this._isPageLoaded=this._isPageLoaded+Number(1),this.shared.checkIntro("home"))},l.prototype.getNews=function(){var l=this;this.api.getNews().subscribe(function(n){l.geoNews=n.items},function(l){console.error(l)})},l.prototype.topHatedGossips=function(){var l=this;this._firstLoad&&!this.hatedGossips&&this.shared.Loader.show(),this.api.topHatedGossips().subscribe(function(n){l.hatedGossips=n,l.shared.Loader.closeIfActive()},function(n){console.error(n),l.shared.Loader.closeIfActive()})},l.prototype.topLovedGossips=function(){var l=this;this._firstLoad&&!this.lovedGossips&&this.shared.Loader.show(),this.api.topLovedGossips().subscribe(function(n){l.lovedGossips=n,l.shared.Loader.closeIfActive()},function(n){console.error(n),l.shared.Loader.closeIfActive()})},l.prototype.trendingEntity=function(){var l=this;this._firstLoad&&!this.trendingEntities&&this.shared.Loader.show(),this.api.trendingEntity().subscribe(function(n){l.trendingEntities=n,l.shared.Loader.closeIfActive()},function(n){console.error(n),l.shared.Loader.closeIfActive()})},l.prototype.update=function(){var l=this;this.platform.is("ios")||(this.ngZone.run(function(){l.showSearch=l._preScrollArea>l.content.scrollTop}),this._preScrollArea=this.content.scrollTop)},l.prototype.search=function(){("news"==this.segment?this.modal.create(gt,{news:"news"}):this.modal.create(gt)).present()},l.prototype.tabChange=function(l,n){this._firstLoad=!n,"topHated"==l?this.topHatedGossips():"topRated"==l?this.topLovedGossips():"news"==l?this.shared.checkIntro("news"):"trending"==l&&this.trendingEntity()},l.prototype.addGossips=function(l){var n=this.modal.create(On,{type:null,id:460,data:l});n.onDidDismiss(function(l){}),n.present()},l}(),ft=function(){function l(l,n,t,u){this.sanitizer=l,this.navCtrl=n,this.shared=t,this.api=u}return l.prototype.ionViewDidLoad=function(){this.getCategories()},l.prototype.getCategories=function(){var l=this;this.shared.Loader.show(),this.api.getCategories().subscribe(function(n){l.categories=n,console.log(n),l.shared.Loader.hide()},function(n){l.shared.Loader.hide(),console.log(n)})},l.prototype.gossips=function(l){this.navCtrl.push(pt,{data:l})},l.prototype.getBackground=function(l){return this.sanitizer.bypassSecurityTrustStyle(l?"linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url("+l.url+")":"linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5))")},l}(),bt=function(){function l(l,n,t){this.modal=l,this.api=n,this.shared=t,this.segment="gossips",this.showNotFound=!1,this.showNotFound1=!1,this._isPageLoaded=0}return l.prototype.ionViewDidLoad=function(){this.getFollowedEntities(!0),this.getFollowedGossips()},l.prototype.ionViewDidEnter=function(){this._isPageLoaded>0?(this.getFollowedEntities(),this.getFollowedGossips()):this._isPageLoaded=this._isPageLoaded+Number(1)},l.prototype.getFollowedEntities=function(l){var n=this;l&&this.shared.Loader.show(),this.api.followedEntity().subscribe(function(t){n.followedEntities=t,n.followedEntities.length||(n.showNotFound=!0),l&&n.shared.Loader.hide()},function(t){l&&n.shared.Loader.hide(),console.error(t)})},l.prototype.entityProfile=function(l,n){console.log("EntityProfile"),this.modal.create(zn,{id:l,type:n}).present()},l.prototype.getFollowedGossips=function(){var l=this;this.api.followedGossips().subscribe(function(n){l.followedGossips=n,l.followedGossips.length||(l.showNotFound1=!0)},function(l){console.error(l)})},l}(),yt=function(){function l(l){this.events=l,this.tab1Root=ft,this.tab2Root=ht,this.tab3Root=mt,this.tab4Root=bt,this.tab5Root=lt}return l.prototype.ionViewDidLoad=function(){var l=this;this.events.publish("root:created",Date.now()),this.events.subscribe("app:intro",function(n){l.appIntroImg=n})},l}(),vt=function(){function l(l,n,t,u,e,o,i,a,s){var r=this;this.events=l,this.deeplinks=n,this.globalProvider=t,this.oneSignal=u,this.shared=s,this._isColdStart=!0,s.LS.get("user").then(function(l){l?(r.globalProvider.setAuthData(l),r.rootPage=yt,r._isColdStart=!1):r.rootPage=Kn}),s.LS.get("isMuted").then(function(l){r.globalProvider.toggleMute(l)}),s.LS.get("location").then(function(l){r.globalProvider.setLocation(l)}),s.LS.get("intro").then(function(l){l||s.LS.set("intro",{home:!1,news:!1,entity:!1})}),e.ready().then(function(){a.disableScroll(!0),a.hideKeyboardAccessoryBar(!1),o.styleDefault(),o.backgroundColorByHexString(cn),i.hide(),e.is("cordova")&&(r.oneSignal.startInit("4cf261ef-295d-4258-b259-788d122d8e0b","Y2MwMTZjZmEtMThlZS00NmE5LWIyMGEtODUyYzVhY2QyMjc3"),r.oneSignal.inFocusDisplaying(r.oneSignal.OSInFocusDisplayOption.Notification),r.oneSignal.handleNotificationReceived().subscribe(function(l){}),r.oneSignal.handleNotificationOpened().subscribe(function(n){var t=n;r._isColdStart?l.subscribe("root:created",function(n){r.redirectToPage(t),l.unsubscribe("root:created")}):r.redirectToPage(n)}),r.oneSignal.endInit()),r.deeplinks.routeWithNavController(r.navController,{"/gossip/:id":dt}).subscribe(function(l){console.info("Successfully matched route",l)},function(l){console.error("Got a deeplink that didn't match",l)})})}return l.prototype.redirectToPage=function(l){var n;try{n=l.notification.payload.additionalData.type}catch(l){console.warn(l)}switch(n){case"Followers":this.navController.push(lt,{userId:l.notification.payload.additionalData.uid});break;case"comment":this.navController.push(dt,{id:l.notification.payload.additionalData.pid})}},l}(),wt=t(221),Ct=function(){function l(l,n,t,u){this.globalProvider=l,this.api=n,this.modal=t,this.shared=u,this.gossips=[{}],this.unFollowEvent=new Kl.n,this.dataUpdated=new Kl.n,this.userId=l.userId}return l.prototype.ionViewDidLoad=function(){},l.prototype.entityProfile=function(l){var n=this,t=this.modal.create(zn,{id:l});t.onDidDismiss(function(l){n.dataUpdated.next()}),t.present()},l.prototype.displayImage=function(l,n){this.shared.imageViewer.show(l,n)},l.prototype.vote=function(l,n,t){console.log(t),"positive"==n?null!=this.gossips[t].action.up?(this.gossips[t].total_upvotes=Number(this.gossips[t].total_upvotes)-1,this.gossips[t].action.up=null):(this.gossips[t].total_upvotes=Number(this.gossips[t].total_upvotes)+1,this.gossips[t].action.up={voter:this.globalProvider.userId}):"negative"==n&&(null!=this.gossips[t].action.down?(this.gossips[t].total_downvotes=Number(this.gossips[t].total_downvotes)-1,this.gossips[t].action.down=null):(this.gossips[t].total_downvotes=Number(this.gossips[t].total_downvotes)+1,this.gossips[t].action.down={voter:this.globalProvider.userId})),this.api.vote("positive"==n?0:1,l.id).subscribe(function(l){},function(l){console.error(l)})},l.prototype.shareVia=function(l){try{this.shared.SocialSharing.shareVia("Hey, I found an interesting Gossip on this Crazy app 'The Gossip Monger'; an app where you can Gossip about anyone and everyone.\n\nGossip on: "+l.gossip_about.entity+": "+l.content+"\n\nDownload now and start Gossiping :)","The Gossip Monger",l.img,l.google_short_url)}catch(l){this.shared.Toast.show("Oops! something went wrong while sharing."),console.error(l)}},l.prototype.openComments=function(l){var n=this,t=this.modal.create(dt,{id:l});t.onDidDismiss(function(l){n.dataUpdated.next()}),t.present()},l.prototype.deleteGossip=function(l,n){var t=this;this.shared.Alert.confirm().then(function(u){t.shared.Loader.show(),t.api.deleteGossip(l.id).subscribe(function(l){t.shared.Loader.hide(),"success"==l.errorType&&(t.shared.Toast.show("Gossip deleted successfully."),t.gossips.splice(n,1))},function(l){t.shared.Loader.hide(),t.shared.Loader.show("Oops! something went wrong.")})},function(l){console.log("user cancelled")})},l.prototype.followGossip=function(l,n){var t=this,u="follow";null!=this.gossips[n].action.follow?(this.gossips[n].action.follow=null,u="unfollow"):this.gossips[n].action.follow={voter:this.globalProvider.userId},"follow"==u?this.api.followGossip(l.id).subscribe(function(l){},function(l){}):this.api.unFollowGossip(l.id).subscribe(function(l){t.unFollowEvent.next()},function(l){})},l}(),kt=function(){function l(l,n,t,u){this.sanitizer=l,this.api=n,this.modal=t,this.shared=u,this.entities=[{}],this.showBookmark=!0,this.unFollowEvent=new Kl.n,this.dataUpdated=new Kl.n}return l.prototype.getBackground=function(l){return this.sanitizer.bypassSecurityTrustStyle("linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url("+l+")")},l.prototype.entityProfile=function(l,n){var t=this,u=this.modal.create(zn,{id:l,type:n});u.onDidDismiss(function(l){t.dataUpdated.next()}),u.present()},l.prototype.bookmarkEntity=function(l,n){var t=this;this.entities[n].entityFollow=!this.entities[n].entityFollow,this.api.followEntity(l).subscribe(function(l){t.unFollowEvent.next()},function(l){console.error(l)})},l}(),Gt=function(){function l(l,n,t){this.shared=l,this.api=n,this.modal=t}return l.prototype.addGossips=function(l){var n=this;this.shared.Loader.show(),this.api.searchEntity(l.title,"news").subscribe(function(t){n.shared.Loader.hide();try{t.length?(n.shared.Toast.show("Gossip about this news already exist, Please add comment to this gossip",null,"top",!0),n.openGossip(t[0].id)):n.entityId?n.createGossip(l):n.checkForAvailability(l)}catch(t){n.entityId?n.createGossip(l):n.checkForAvailability(l)}},function(t){n.shared.Loader.hide(),n.entityId?n.createGossip(l):n.checkForAvailability(l)})},l.prototype.openGossip=function(l){this.modal.create(dt,{id:l}).present()},l.prototype.checkForAvailability=function(l){var n=this;this.shared.Loader.show(),this.api.searchEntityAvailability(this.newsText).subscribe(function(t){n.shared.Loader.hide();try{t.length&&(n.entityId=t[0].id)}catch(l){console.warn(l)}n.createGossip(l)},function(t){n.shared.Loader.hide(),n.createGossip(l)})},l.prototype.createGossip=function(l){this.modal.create(On,{type:null,id:this.entityId?this.entityId:460,news:l}).present()},l}(),It=function(){return function(){}}(),Pt=t(12),Et=t(190),St=t(8),At=t(45),Dt=t(7),Tt=t(11),Lt=t(147),xt=t(25),l=t(191),Mt=t(152),Nt=t(82),Ot=t(32),Ft=t(30),jt=t(29),Rt=t(117),Ut=t(20),$t=t(33),Vt=t(42),Bt=t(119),Qt=t(149),Ht=t(35),qt=t(60),zt=t(497),Xt=t(498),Kt=t(499),Zt=t(500),Jt=t(501),Wt=t(502),Yt=t(503),lu=t(504),nu=t(505),tu=t(116),uu=t(6),eu=t(16),ou=t(2),iu=t(4),au=t(23),su=t(72),ru=t(26),_u=t(43),cu=[],du=Kl._4({encapsulation:2,styles:cu,data:{}}),pu=Kl._3("ng-component",vt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,2,"ng-component",[],null,null,null,u,du)),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,vt,[Ft.a,un.a,pn,An.a,iu.a,en.a,an.a,on.a,bn],null,null)],null,null)},{},{},[]),hu=t(18),gu=t(13),mu=t(50),fu=t(24),bu=t(14),yu=[],vu=Kl._4({encapsulation:2,styles:yu,data:{}}),wu=Kl._3("page-auth",Kn,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-auth",[],null,null,null,o,vu)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,Kn,[Xn.a,iu.a,An.a,pn,xn,bn,eu.a,bu.a,ln.a,nn.a],null,null)],null,null)},{},{},[]),Cu=t(17),ku=t(56),Gu=t(77),Iu=t(41),Pu=t(58),Eu=t(65),Su=t(73),Au=t(64),Du=t(96),Tu=t(57),Lu=t(53),xu=t(46),Mu=[],Nu=Kl._4({encapsulation:2,styles:Mu,data:{}}),Ou=(Kl._3("gossip-card",Ct,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"gossip-card",[],null,null,null,h,Nu)),Kl._5(49152,null,0,Ct,[pn,xn,Vt.a,bn],null,null)],null,null)},{gossips:"gossips"},{unFollowEvent:"unFollowEvent",dataUpdated:"dataUpdated"},[]),[]),Fu=Kl._4({encapsulation:2,styles:Ou,data:{}}),ju=(Kl._3("entity-card",kt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"entity-card",[],null,null,null,b,Fu)),Kl._5(49152,null,0,kt,[Xl.c,xn,Vt.a,bn],null,null)],null,null)},{entities:"entities",showBookmark:"showBookmark"},{unFollowEvent:"unFollowEvent",dataUpdated:"dataUpdated"},[]),[]),Ru=Kl._4({encapsulation:2,styles:ju,data:{}}),Uu=(Kl._3("news",Gt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,2,"news",[],null,null,null,v,Ru)),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,Gt,[bn,xn,Vt.a],null,null)],null,null)},{newsList:"newsList",entityId:"entityId",newsText:"newsText"},{},[]),t(223)),$u=t(95),Vu=t(224),Bu=t(75),Qu=t(47),Hu=t(55),qu=t(27),zu=t(76),Xu=t(102),Ku=t(66),Zu=[],Ju=Kl._4({encapsulation:2,styles:Zu,data:{animation:[{name:"myAnimation",definitions:[{type:1,expr:"in => void",animation:[{type:6,styles:{height:"*"}},{type:4,styles:{type:6,styles:{height:250}},timings:0}]},{type:1,expr:"* => void",animation:[{type:6,styles:{height:"*"}},{type:4,styles:{type:6,styles:{height:0}},timings:250}]}]}]}}),Wu=Kl._3("page-home",mt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-home",[],null,null,null,P,Ju)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,mt,[iu.a,eu.a,xn,Kl.A,Vt.a,bn,Nt.a,Ot.a],null,null)],null,null)},{},{},[]),Yu=t(506),le=t(87),ne=t(507),te=t(122),ue=[],ee=Kl._4({encapsulation:2,styles:ue,data:{}}),oe=Kl._3("ng-component",yt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"ng-component",[],null,null,null,S,ee)),Kl._5(49152,null,0,yt,[Ft.a],null,null)],null,null)},{},{},[]),ie=t(61),ae=t(34),se=t(62),re=t(67),_e=t(54),ce=t(144),de=t(126),pe=t(71),he=t(508),ge=t(111),me=t(162),fe=t(86),be=t(84),ye=t(163),ve=t(85),we=[],Ce=Kl._4({encapsulation:2,styles:we,data:{}}),ke=Kl._3("page-request",ht,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-request",[],null,null,null,R,Ce)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,ht,[Nt.a,Xl.c,pn,Vt.a,eu.a,bu.a,Ot.a,xn,bn,uu.a,Kl.A],null,null)],null,null)},{},{},[]),Ge=t(509),Ie=[],Pe=Kl._4({encapsulation:2,styles:Ie,data:{}}),Ee=Kl._3("page-categories",ft,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-categories",[],null,null,null,$,Pe)),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._5(49152,null,0,ft,[Xl.c,eu.a,bn,xn],null,null)],null,null)},{},{},[]),Se=t(510),Ae=t(120),De=t(97),Te=[],Le=Kl._4({encapsulation:2,styles:Te,data:{}}),xe=Kl._3("page-user-profile",lt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-user-profile",[],null,null,null,tl,Le)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,lt,[Bt.a,pn,eu.a,bu.a,Dt.a,uu.a,Vt.a,xn,bn],null,null)],null,null)},{},{},[]),Me=[],Ne=Kl._4({encapsulation:2,styles:Me,data:{}}),Oe=Kl._3("ng-component",ct,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"ng-component",[],null,null,null,ul,Ne)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,ct,[pn,xn,bn,Dt.a,Vt.a,uu.a],null,null)],null,null)},{},{},[]),Fe=[],je=Kl._4({encapsulation:2,styles:Fe,data:{}}),Re=Kl._3("page-bookmark",bt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-bookmark",[],null,null,null,il,je)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,bt,[Vt.a,xn,bn],null,null)],null,null)},{},{},[]),Ue=t(222),$e=t(98),Ve=[],Be=Kl._4({encapsulation:2,styles:Ve,data:{}}),Qe=Kl._3("page-search",gt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-search",[],null,null,null,Gl,Be)),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._5(49152,null,0,gt,[Xl.c,Vt.a,uu.a,bn,en.a,bu.a,xn,eu.a],null,null)],null,null)},{},{},[]),He=[],qe=Kl._4({encapsulation:2,styles:He,data:{}}),ze=Kl._3("page-entity-profile",zn,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-entity-profile",[],null,null,null,Sl,qe)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,zn,[xn,bn,eu.a,bu.a,Vt.a,uu.a,$n,Qn.a,pn,Kl.A,iu.a],null,null)],null,null)},{},{},[]),Xe=[],Ke=Kl._4({encapsulation:2,styles:Xe,data:{}}),Ze=Kl._3("page-comments",dt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-comments",[],null,null,null,Fl,Ke)),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._5(49152,null,0,dt,[Vt.a,eu.a,bu.a,uu.a,bn,xn],null,null)],null,null)},{},{},[]),Je=[],We=Kl._4({encapsulation:2,styles:Je,data:{}}),Ye=Kl._3("page-review",Fn,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-review",[],null,null,null,jl,We)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,Fn,[xn,bn,eu.a,bu.a,uu.a,Vt.a],null,null)],null,null)},{},{},[]),lo=[],no=Kl._4({encapsulation:2,styles:lo,data:{}}),to=Kl._3("page-add-gossip",On,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-add-gossip",[],null,null,null,Ql,no)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,On,[Nt.a,pn,Vt.a,eu.a,bu.a,uu.a,xn,bn],null,null)],null,null)},{},{},[]),uo=[],eo=Kl._4({encapsulation:2,styles:uo,data:{}}),oo=Kl._3("page-gossips",pt,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,3,"page-gossips",[],null,null,null,Hl,eo)),Kl._24(512,null,xn,xn,[pn,Yl.e]),Kl._24(512,null,bn,bn,[iu.a,ru.b,tn.a,$t.a,Ht.a,_u.a,Ot.a,sn.a,rn.a,Ft.a]),Kl._5(49152,null,0,pt,[uu.a,xn,bu.a,bn],null,null)],null,null)},{},{},[]),io=[],ao=Kl._4({encapsulation:2,styles:io,data:{}}),so=Kl._3("page-about",Zn,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"page-about",[],null,null,null,ql,ao)),Kl._5(49152,null,0,Zn,[uu.a],null,null)],null,null)},{},{},[]),ro=[],_o=Kl._4({encapsulation:2,styles:ro,data:{}}),co=Kl._3("page-terms",Jn,function(l){return Kl._29(0,[(l()(),Kl._6(0,null,null,1,"page-terms",[],null,null,null,zl,_o)),Kl._5(49152,null,0,Jn,[uu.a],null,null)],null,null)},{},{},[]),po=t(93),ho=t(150),go=t(83),mo=t(151),fo=t(194),bo=this&&this.__extends||function(){var l=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(l,n){l.__proto__=n}||function(l,n){for(var t in n)n.hasOwnProperty(t)&&(l[t]=n[t])};return function(n,t){function u(){this.constructor=n}l(n,t),n.prototype=null===t?Object.create(t):(u.prototype=t.prototype,new u)}}(),yo=function(n){function t(l){return n.call(this,l,[zt.a,Xt.a,Kt.a,Zt.a,Jt.a,Wt.a,Yt.a,lu.a,pu,wu,Wu,oe,ke,Ee,xe,Re,Qe,ze,Ze,Ye,to,oo,Oe,so,co],[Kt.a])||this}return bo(t,n),Object.defineProperty(t.prototype,"_LOCALE_ID_28",{get:function(){return null==this.__LOCALE_ID_28&&(this.__LOCALE_ID_28=Kl._17(this.parent.get(Kl.v,null))),this.__LOCALE_ID_28},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_NgLocalization_29",{get:function(){return null==this.__NgLocalization_29&&(this.__NgLocalization_29=new Pt.j(this._LOCALE_ID_28)),this.__NgLocalization_29},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_APP_ID_30",{get:function(){return null==this.__APP_ID_30&&(this.__APP_ID_30=Kl._8()),this.__APP_ID_30},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_IterableDiffers_31",{get:function(){return null==this.__IterableDiffers_31&&(this.__IterableDiffers_31=Kl._14()),this.__IterableDiffers_31},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_KeyValueDiffers_32",{get:function(){return null==this.__KeyValueDiffers_32&&(this.__KeyValueDiffers_32=Kl._16()),this.__KeyValueDiffers_32},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_DomSanitizer_33",{get:function(){return null==this.__DomSanitizer_33&&(this.__DomSanitizer_33=new Xl.s(this.parent.get(Xl.b))),this.__DomSanitizer_33},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Sanitizer_34",{get:function(){return null==this.__Sanitizer_34&&(this.__Sanitizer_34=this._DomSanitizer_33),this.__Sanitizer_34},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_HAMMER_GESTURE_CONFIG_35",{get:function(){return null==this.__HAMMER_GESTURE_CONFIG_35&&(this.__HAMMER_GESTURE_CONFIG_35=new Mt.a),this.__HAMMER_GESTURE_CONFIG_35},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_EVENT_MANAGER_PLUGINS_36",{get:function(){return null==this.__EVENT_MANAGER_PLUGINS_36&&(this.__EVENT_MANAGER_PLUGINS_36=[new Xl.l(this.parent.get(Xl.b)),new Xl.p(this.parent.get(Xl.b)),new Xl.o(this.parent.get(Xl.b),this._HAMMER_GESTURE_CONFIG_35)]),this.__EVENT_MANAGER_PLUGINS_36},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_EventManager_37",{get:function(){return null==this.__EventManager_37&&(this.__EventManager_37=new Xl.e(this._EVENT_MANAGER_PLUGINS_36,this.parent.get(Kl.A))),this.__EventManager_37},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ɵDomSharedStylesHost_38",{get:function(){return null==this.__ɵDomSharedStylesHost_38&&(this.__ɵDomSharedStylesHost_38=new Xl.n(this.parent.get(Xl.b))),this.__ɵDomSharedStylesHost_38},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ɵDomRendererFactory2_39",{get:function(){return null==this.__ɵDomRendererFactory2_39&&(this.__ɵDomRendererFactory2_39=new Xl.m(this._EventManager_37,this._ɵDomSharedStylesHost_38)),this.__ɵDomRendererFactory2_39},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_AnimationDriver_40",{get:function(){return null==this.__AnimationDriver_40&&(this.__AnimationDriver_40=Wl.c()),this.__AnimationDriver_40},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ɵAnimationStyleNormalizer_41",{get:function(){return null==this.__ɵAnimationStyleNormalizer_41&&(this.__ɵAnimationStyleNormalizer_41=Wl.d()),this.__ɵAnimationStyleNormalizer_41},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ɵAnimationEngine_42",{get:function(){return null==this.__ɵAnimationEngine_42&&(this.__ɵAnimationEngine_42=new Wl.b(this._AnimationDriver_40,this._ɵAnimationStyleNormalizer_41)),this.__ɵAnimationEngine_42},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_RendererFactory2_43",{get:function(){return null==this.__RendererFactory2_43&&(this.__RendererFactory2_43=Wl.e(this._ɵDomRendererFactory2_39,this._ɵAnimationEngine_42,this.parent.get(Kl.A))),this.__RendererFactory2_43},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ɵSharedStylesHost_44",{get:function(){return null==this.__ɵSharedStylesHost_44&&(this.__ɵSharedStylesHost_44=this._ɵDomSharedStylesHost_38),this.__ɵSharedStylesHost_44},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Testability_45",{get:function(){return null==this.__Testability_45&&(this.__Testability_45=new Kl.O(this.parent.get(Kl.A))),this.__Testability_45},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Meta_46",{get:function(){return null==this.__Meta_46&&(this.__Meta_46=new Xl.h(this.parent.get(Xl.b))),this.__Meta_46},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Title_47",{get:function(){return null==this.__Title_47&&(this.__Title_47=new Xl.j(this.parent.get(Xl.b))),this.__Title_47},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_BrowserXhr_48",{get:function(){return null==this.__BrowserXhr_48&&(this.__BrowserXhr_48=new Yl.c),this.__BrowserXhr_48},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ResponseOptions_49",{get:function(){return null==this.__ResponseOptions_49&&(this.__ResponseOptions_49=new Yl.b),this.__ResponseOptions_49},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_XSRFStrategy_50",{get:function(){return null==this.__XSRFStrategy_50&&(this.__XSRFStrategy_50=Yl.k()),this.__XSRFStrategy_50},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_XHRBackend_51",{get:function(){return null==this.__XHRBackend_51&&(this.__XHRBackend_51=new Yl.i(this._BrowserXhr_48,this._ResponseOptions_49,this._XSRFStrategy_50)),this.__XHRBackend_51},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_RequestOptions_52",{get:function(){return null==this.__RequestOptions_52&&(this.__RequestOptions_52=new Yl.a),this.__RequestOptions_52},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Http_53",{get:function(){return null==this.__Http_53&&(this.__Http_53=Yl.l(this._XHRBackend_51,this._RequestOptions_52)),this.__Http_53},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ɵi_54",{get:function(){return null==this.__ɵi_54&&(this.__ɵi_54=new xt.r),this.__ɵi_54},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_FormBuilder_55",{get:function(){return null==this.__FormBuilder_55&&(this.__FormBuilder_55=new xt.d),this.__FormBuilder_55},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ActionSheetController_58",{get:function(){return null==this.__ActionSheetController_58&&(this.__ActionSheetController_58=new Nt.a(this._App_8,this._Config_5)),this.__ActionSheetController_58},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_AlertController_59",{get:function(){return null==this.__AlertController_59&&(this.__AlertController_59=new Ot.a(this._App_8,this._Config_5)),this.__AlertController_59},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Events_60",{get:function(){return null==this.__Events_60&&(this.__Events_60=new Ft.a),this.__Events_60},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Form_61",{get:function(){return null==this.__Form_61&&(this.__Form_61=new jt.a),this.__Form_61},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Haptic_62",{get:function(){return null==this.__Haptic_62&&(this.__Haptic_62=new Rt.a(this._Platform_4)),this.__Haptic_62},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Keyboard_63",{get:function(){return null==this.__Keyboard_63&&(this.__Keyboard_63=new Ut.a(this._Config_5,this._Platform_4,this.parent.get(Kl.A),this._DomController_6)),this.__Keyboard_63},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_LoadingController_64",{get:function(){return null==this.__LoadingController_64&&(this.__LoadingController_64=new $t.a(this._App_8,this._Config_5)),this.__LoadingController_64},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_LocationStrategy_65",{get:function(){return null==this.__LocationStrategy_65&&(this.__LocationStrategy_65=l.b(this.parent.get(Pt.q),this._APP_BASE_HREF_57,this._Config_5)),this.__LocationStrategy_65},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Location_66",{get:function(){return null==this.__Location_66&&(this.__Location_66=new Pt.e(this._LocationStrategy_65)),this.__Location_66},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_UrlSerializer_67",{get:function(){return null==this.__UrlSerializer_67&&(this.__UrlSerializer_67=po.d(this._App_8,this._DeepLinkConfigToken_10)),this.__UrlSerializer_67},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_DeepLinker_68",{get:function(){return null==this.__DeepLinker_68&&(this.__DeepLinker_68=au.b(this._App_8,this._UrlSerializer_67,this._Location_66,this._ModuleLoader_13,this.componentFactoryResolver)),this.__DeepLinker_68},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ModalController_69",{get:function(){return null==this.__ModalController_69&&(this.__ModalController_69=new Vt.a(this._App_8,this._Config_5,this._DeepLinker_68)),this.__ModalController_69},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_PopoverController_71",{get:function(){return null==this.__PopoverController_71&&(this.__PopoverController_71=new Bt.a(this._App_8,this._Config_5,this._DeepLinker_68)),this.__PopoverController_71},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_TapClick_72",{get:function(){return null==this.__TapClick_72&&(this.__TapClick_72=new Qt.a(this._Config_5,this._Platform_4,this._DomController_6,this._App_8,this._GestureController_9)),this.__TapClick_72},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_ToastController_73",{get:function(){return null==this.__ToastController_73&&(this.__ToastController_73=new Ht.a(this._App_8,this._Config_5)),this.__ToastController_73},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_TransitionController_74",{get:function(){return null==this.__TransitionController_74&&(this.__TransitionController_74=new qt.a(this._Platform_4,this._Config_5)),this.__TransitionController_74},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Storage_76",{get:function(){return null==this.__Storage_76&&(this.__Storage_76=_u.c(this._StorageConfigToken_75)),this.__Storage_76},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_StatusBar_77",{get:function(){return null==this.__StatusBar_77&&(this.__StatusBar_77=new en.a),this.__StatusBar_77},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_SplashScreen_78",{get:function(){return null==this.__SplashScreen_78&&(this.__SplashScreen_78=new an.a),this.__SplashScreen_78},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Network_79",{get:function(){return null==this.__Network_79&&(this.__Network_79=new wt.a),this.__Network_79},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Keyboard_80",{get:function(){return null==this.__Keyboard_80&&(this.__Keyboard_80=new on.a),this.__Keyboard_80},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_GooglePlus_81",{get:function(){return null==this.__GooglePlus_81&&(this.__GooglePlus_81=new ln.a),this.__GooglePlus_81},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Facebook_82",{get:function(){return null==this.__Facebook_82&&(this.__Facebook_82=new nn.a),this.__Facebook_82},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_SocialSharing_83",{get:function(){return null==this.__SocialSharing_83&&(this.__SocialSharing_83=new sn.a),this.__SocialSharing_83},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_NativeAudio_84",{get:function(){return null==this.__NativeAudio_84&&(this.__NativeAudio_84=new jn.a),this.__NativeAudio_84},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_SmartAudio_85",{get:function(){return null==this.__SmartAudio_85&&(this.__SmartAudio_85=new $n(this._NativeAudio_84,this._Platform_4)),this.__SmartAudio_85},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Vibration_86",{get:function(){return null==this.__Vibration_86&&(this.__Vibration_86=new Qn.a),this.__Vibration_86},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_PhotoViewer_87",{get:function(){return null==this.__PhotoViewer_87&&(this.__PhotoViewer_87=new rn.a),this.__PhotoViewer_87},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_GlobalProvider_88",{get:function(){return null==this.__GlobalProvider_88&&(this.__GlobalProvider_88=new pn),this.__GlobalProvider_88},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_MongerApi_89",{get:function(){return null==this.__MongerApi_89&&(this.__MongerApi_89=new xn(this._GlobalProvider_88,this._Http_53)),this.__MongerApi_89},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_OneSignal_90",{get:function(){return null==this.__OneSignal_90&&(this.__OneSignal_90=new An.a),this.__OneSignal_90},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Camera_91",{get:function(){return null==this.__Camera_91&&(this.__Camera_91=new tn.a),this.__Camera_91},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Deeplinks_92",{get:function(){return null==this.__Deeplinks_92&&(this.__Deeplinks_92=new un.a),this.__Deeplinks_92},enumerable:!0,configurable:!0}),Object.defineProperty(t.prototype,"_Geolocation_93",{get:function(){return null==this.__Geolocation_93&&(this.__Geolocation_93=new Xn.a),this.__Geolocation_93},enumerable:!0,configurable:!0}),t.prototype.createInternal=function(){return this._CommonModule_0=new Pt.b,this._ErrorHandler_1=new Et.a,this._ConfigToken_2=null,this._PlatformConfigToken_3=ho.b(),this._Platform_4=iu.b(this.parent.get(Xl.b),this._PlatformConfigToken_3,this.parent.get(Kl.A)),this._Config_5=ou.c(this._ConfigToken_2,this._Platform_4),this._DomController_6=new St.a(this._Platform_4),this._MenuController_7=new At.a,this._App_8=new Dt.a(this._Config_5,this._Platform_4,this._MenuController_7),this._GestureController_9=new Tt.g(this._App_8),this._DeepLinkConfigToken_10=null,this._Compiler_11=new Kl.i,this._NgModuleLoader_12=new Lt.a(this._Compiler_11),this._ModuleLoader_13=go.c(this._NgModuleLoader_12,this),this._APP_INITIALIZER_14=[Kl._20,Xl.r(this.parent.get(Xl.i,null),this.parent.get(Kl.z,null)),mo.a(this._Config_5),Ft.b(this._Platform_4,this._DomController_6),Qt.b(this._Config_5,this._Platform_4,this._DomController_6,this._App_8,this._GestureController_9),go.d(this._Config_5,this._DeepLinkConfigToken_10,this._ModuleLoader_13,this.parent.get(Kl.A))],this._ApplicationInitStatus_15=new Kl.d(this._APP_INITIALIZER_14),this._ɵf_16=new Kl._7(this.parent.get(Kl.A),this.parent.get(Kl._0),this,this._ErrorHandler_1,this.componentFactoryResolver,this._ApplicationInitStatus_15),this._ApplicationRef_17=this._ɵf_16,this._ApplicationModule_18=new Kl.e(this._ApplicationRef_17),this._BrowserModule_19=new Xl.a(this.parent.get(Xl.a,null)),this._HttpModule_20=new Yl.f,this._BrowserAnimationsModule_21=new Wl.a,this._ɵba_22=new xt.p,this._FormsModule_23=new xt.e,this._ReactiveFormsModule_24=new xt.n,this._IonicModule_25=new l.a,this._IonicStorageModule_26=new Jl.a,this._AppModule_27=new It,this._AppRootToken_56=vt,this._APP_BASE_HREF_57="/",this._StorageConfigToken_75=null,this._AppModule_27},t.prototype.getInternal=function(n,t){return n===Pt.b?this._CommonModule_0:n===Kl.m?this._ErrorHandler_1:n===ou.b?this._ConfigToken_2:n===ho.a?this._PlatformConfigToken_3:n===iu.a?this._Platform_4:n===ou.a?this._Config_5:n===St.a?this._DomController_6:n===At.a?this._MenuController_7:n===Dt.a?this._App_8:n===Tt.g?this._GestureController_9:n===po.a?this._DeepLinkConfigToken_10:n===Kl.i?this._Compiler_11:n===Lt.a?this._NgModuleLoader_12:n===go.b?this._ModuleLoader_13:n===Kl.c?this._APP_INITIALIZER_14:n===Kl.d?this._ApplicationInitStatus_15:n===Kl._7?this._ɵf_16:n===Kl.f?this._ApplicationRef_17:n===Kl.e?this._ApplicationModule_18:n===Xl.a?this._BrowserModule_19:n===Yl.f?this._HttpModule_20:n===Wl.a?this._BrowserAnimationsModule_21:n===xt.p?this._ɵba_22:n===xt.e?this._FormsModule_23:n===xt.n?this._ReactiveFormsModule_24:n===l.a?this._IonicModule_25:n===Jl.a?this._IonicStorageModule_26:n===It?this._AppModule_27:n===Kl.v?this._LOCALE_ID_28:n===Pt.k?this._NgLocalization_29:n===Kl.b?this._APP_ID_30:n===Kl.t?this._IterableDiffers_31:n===Kl.u?this._KeyValueDiffers_32:n===Xl.c?this._DomSanitizer_33:n===Kl.J?this._Sanitizer_34:n===Xl.f?this._HAMMER_GESTURE_CONFIG_35:n===Xl.d?this._EVENT_MANAGER_PLUGINS_36:n===Xl.e?this._EventManager_37:n===Xl.n?this._ɵDomSharedStylesHost_38:n===Xl.m?this._ɵDomRendererFactory2_39:n===fo.a?this._AnimationDriver_40:n===fo.c?this._ɵAnimationStyleNormalizer_41:n===fo.b?this._ɵAnimationEngine_42:n===Kl.H?this._RendererFactory2_43:n===Xl.q?this._ɵSharedStylesHost_44:n===Kl.O?this._Testability_45:n===Xl.h?this._Meta_46:n===Xl.j?this._Title_47:n===Yl.c?this._BrowserXhr_48:n===Yl.h?this._ResponseOptions_49:n===Yl.j?this._XSRFStrategy_50:n===Yl.i?this._XHRBackend_51:n===Yl.g?this._RequestOptions_52:n===Yl.e?this._Http_53:n===xt.r?this._ɵi_54:n===xt.d?this._FormBuilder_55:n===ru.a?this._AppRootToken_56:n===Pt.a?this._APP_BASE_HREF_57:n===Nt.a?this._ActionSheetController_58:n===Ot.a?this._AlertController_59:n===Ft.a?this._Events_60:n===jt.a?this._Form_61:n===Rt.a?this._Haptic_62:n===Ut.a?this._Keyboard_63:n===$t.a?this._LoadingController_64:n===Pt.f?this._LocationStrategy_65:n===Pt.e?this._Location_66:n===po.b?this._UrlSerializer_67:n===au.a?this._DeepLinker_68:n===Vt.a?this._ModalController_69:n===Bt.a?this._PopoverController_71:n===Qt.a?this._TapClick_72:n===Ht.a?this._ToastController_73:n===qt.a?this._TransitionController_74:n===_u.b?this._StorageConfigToken_75:n===_u.a?this._Storage_76:n===en.a?this._StatusBar_77:n===an.a?this._SplashScreen_78:n===wt.a?this._Network_79:n===on.a?this._Keyboard_80:n===ln.a?this._GooglePlus_81:n===nn.a?this._Facebook_82:n===sn.a?this._SocialSharing_83:n===jn.a?this._NativeAudio_84:n===$n?this._SmartAudio_85:n===Qn.a?this._Vibration_86:n===rn.a?this._PhotoViewer_87:n===pn?this._GlobalProvider_88:n===xn?this._MongerApi_89:n===An.a?this._OneSignal_90:n===tn.a?this._Camera_91:n===un.a?this._Deeplinks_92:n===Xn.a?this._Geolocation_93:t},t.prototype.destroyInternal=function(){this._ɵf_16.ngOnDestroy(),this.__ɵDomSharedStylesHost_38&&this._ɵDomSharedStylesHost_38.ngOnDestroy()},t}(Kl._1),vo=new Kl.x(yo,It);Object(Kl.U)(),Object(Xl.k)().bootstrapModuleFactory(vo)}},[225]);
+webpackJsonp([0],{
+
+/***/ 131:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TabsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__home_home__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__categories_categories__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__request_request__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__user_profile_user_profile__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bookmark_bookmark__ = __webpack_require__(280);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var TabsPage = (function () {
+    function TabsPage(events) {
+        this.events = events;
+        this.tab1Root = __WEBPACK_IMPORTED_MODULE_3__categories_categories__["a" /* CategoriesPage */];
+        this.tab2Root = __WEBPACK_IMPORTED_MODULE_4__request_request__["a" /* RequestPage */];
+        this.tab3Root = __WEBPACK_IMPORTED_MODULE_2__home_home__["a" /* HomePage */];
+        this.tab4Root = __WEBPACK_IMPORTED_MODULE_6__bookmark_bookmark__["a" /* BookmarkPage */];
+        this.tab5Root = __WEBPACK_IMPORTED_MODULE_5__user_profile_user_profile__["b" /* UserProfilePage */];
+    }
+    TabsPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this.events.publish('root:created', Date.now());
+        this.events.subscribe('app:intro', function (data) {
+            _this.appIntroImg = data;
+        });
+    };
+    return TabsPage;
+}());
+TabsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/tabs/tabs.html"*/'<ion-tabs selectedIndex="2">\n    <ion-tab [root]="tab1Root" tabIcon="list"></ion-tab>\n    <ion-tab [root]="tab2Root" tabIcon="add-circle"></ion-tab>\n    <ion-tab [root]="tab3Root" tabIcon="home"></ion-tab>\n    <ion-tab [root]="tab4Root" tabIcon="bookmark"></ion-tab>\n    <ion-tab [root]="tab5Root" tabIcon="person"></ion-tab>\n</ion-tabs> \n<div class="app-intro" *ngIf="appIntroImg" (click)="appIntroImg = false">\n    <img [src]="appIntroImg">\n    <button ion-button color="primary" class="intro-button ">\n        OK, Got it! \n    </button>\n</div> '/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/tabs/tabs.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Events */]])
+], TabsPage);
+
+//# sourceMappingURL=tabs.js.map
+
+/***/ }),
+
+/***/ 139:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AuthPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_config__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_onesignal__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_geolocation__ = __webpack_require__(276);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+var AuthPage = (function () {
+    function AuthPage(_geolocation, platform, oneSignal, globalProvider, api, shared, navCtrl, navParams, googlePlus, fb) {
+        var _this = this;
+        this._geolocation = _geolocation;
+        this.platform = platform;
+        this.oneSignal = oneSignal;
+        this.globalProvider = globalProvider;
+        this.api = api;
+        this.shared = shared;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.googlePlus = googlePlus;
+        this.fb = fb;
+        if (platform.is('cordova')) {
+            this.oneSignal.getIds().then(function (ids) {
+                if (typeof (ids['userId']) !== 'undefined') {
+                    console.log(JSON.stringify(ids['userId']));
+                    _this.globalProvider.setPlayerId(ids['userId']);
+                }
+            });
+        }
+    }
+    AuthPage.prototype.ionViewDidLoad = function () {
+        var _this = this;
+        this._geolocation.getCurrentPosition().then(function (resp) {
+            _this.api.getGeoAddress(resp.coords).subscribe(function (response) {
+                console.log(response.results);
+                if (response.results[1]) {
+                    for (var i = 0; i < response.results[0].address_components.length; i++) {
+                        for (var b = 0; b < response.results[0].address_components[i].types.length; b++) {
+                            if (response.results[0].address_components[i].types[b] == "administrative_area_level_2") {
+                                console.log(response.results[0].address_components[i]);
+                                _this.globalProvider.setLocation(response.results[0].address_components[i].long_name);
+                                _this._location = response.results[0].address_components[i].long_name;
+                                _this.shared.LS.set('location', _this._location);
+                                break;
+                            }
+                        }
+                    }
+                }
+            }, function (err) {
+                console.log(err);
+            });
+        }).catch(function (error) {
+            console.log('Error getting location', error);
+        });
+    };
+    AuthPage.prototype.googleLogin = function () {
+        var _this = this;
+        this.googlePlus.login({})
+            .then(function (res) {
+            _this.shared.Loader.show(null, false);
+            var data = { fname: res.givenName, lname: res.familyName, email: res.email, userId: res.userId, source: 3 };
+            _this.api.socialLogin(data).subscribe(function (res) {
+                _this.shared.LS.set('user', res);
+                _this.shared.LS.set('isMuted', false);
+                _this.globalProvider.setAuthData(res);
+                _this.googlePlus.logout();
+                _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */]);
+                _this.shared.Loader.closeIfActive();
+            }, function (err) {
+                _this.shared.Toast.show(err);
+                _this.shared.Loader.closeIfActive();
+            });
+        })
+            .catch(function (err) {
+            console.error(err);
+            _this.shared.Loader.closeIfActive();
+        });
+    };
+    AuthPage.prototype.skip = function () {
+        var user = { "ID": "15", "user_login": "theindianhippie", "user_nicename": "5u5hil-2", "user_email": "sushil@infiniteit.biz", "user_url": "", "user_registered": "2017-04-15 08:32:41", "user_activation_key": "", "user_status": "0", "display_name": "Sushil Sudhakaran", "first_name": "Sushil", "last_name": "Sudhakaran", "source": "", "img": "http:\/\/tgm-inf.cruxservers.in\/wp-content\/themes\/tgm\/images\/user.png", "follower_count": 1, "following_count": 2 };
+        this.shared.LS.set('user', user);
+        this.shared.LS.set('isMuted', false);
+        this.globalProvider.setAuthData(user);
+        this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */]);
+    };
+    AuthPage.prototype.fbLogin = function () {
+        var _this = this;
+        this.fb.login(['public_profile', 'email', 'user_location'])
+            .then(function (res) {
+            _this.shared.Loader.show(null, false);
+            _this.api.getFbUserInfo(res.authResponse.accessToken).subscribe(function (response) {
+                var data = { fname: response.first_name, lname: response.last_name, email: response.email, userId: res.authResponse.userID, source: 2 };
+                _this.api.socialLogin(data).subscribe(function (res) {
+                    _this.shared.LS.set('user', res);
+                    _this.shared.LS.set('isMuted', false);
+                    _this.globalProvider.setAuthData(res);
+                    _this.fb.logout();
+                    _this.shared.Loader.closeIfActive();
+                    _this.navCtrl.setRoot(__WEBPACK_IMPORTED_MODULE_7__pages_tabs_tabs__["a" /* TabsPage */]);
+                }, function (err) {
+                    _this.shared.Toast.show(err);
+                    _this.shared.Loader.closeIfActive();
+                });
+            });
+        }, function (err) {
+            _this.shared.Toast.show(err);
+        })
+            .catch(function (e) {
+            console.log('Error logging into Facebook', e);
+            _this.shared.Loader.closeIfActive();
+        });
+    };
+    return AuthPage;
+}());
+AuthPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-auth',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/auth/auth.html"*/'<ion-content class="auth-bg">\n    <div padding class="btn-wrapper">\n        <img src="assets/img/logo.png" alt="" class="logo">\n        <div *ngIf="!platform.is(\'cordova\')">\n            <button ion-button full class="login-btn skip-login" (click)="skip()"> \n        Skip (Developement only);\n      </button>\n      <br><br>\n        </div>\n        <div>\n            <button ion-button full class="login-btn google-login" (click)="googleLogin()"> \n        Login with Google\n      </button>\n        </div>\n        <div>\n            <button ion-button full class="login-btn fb-login mt12" (click)="fbLogin()"> \n        Login with Facebook\n      </button>\n        </div>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/auth/auth.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_4__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_9__ionic_native_geolocation__["a" /* Geolocation */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_onesignal__["a" /* OneSignal */], __WEBPACK_IMPORTED_MODULE_6__providers_config__["a" /* GlobalProvider */], __WEBPACK_IMPORTED_MODULE_5__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_4__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_google_plus__["a" /* GooglePlus */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_facebook__["a" /* Facebook */]])
+], AuthPage);
+
+//# sourceMappingURL=auth.js.map
+
+/***/ }),
+
+/***/ 140:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GossipsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var GossipsPage = (function () {
+    function GossipsPage(viewCtrl, api, navParams, shared) {
+        this.viewCtrl = viewCtrl;
+        this.api = api;
+        this.navParams = navParams;
+        this.shared = shared;
+        this._isPageLoaded = 0;
+        this.category = this.navParams.get('data');
+    }
+    GossipsPage.prototype.ionViewDidLoad = function () {
+        this.getGossips(true);
+    };
+    GossipsPage.prototype.ionViewDidEnter = function () {
+        if (this._isPageLoaded > 0) {
+            this.getGossips();
+        }
+        this._isPageLoaded = this._isPageLoaded + Number(1);
+    };
+    GossipsPage.prototype.getGossips = function (loader) {
+        var _this = this;
+        if (loader) {
+            this.shared.Loader.show();
+        }
+        this.api.getMyGossipsByCategory(this.category.term_id).subscribe(function (data) {
+            _this.gossips = data;
+            if (loader) {
+                _this.shared.Loader.hide();
+            }
+        }, function (err) {
+            if (loader) {
+                _this.shared.Loader.hide();
+            }
+            console.error(err);
+        });
+    };
+    GossipsPage.prototype.dismiss = function (data) {
+        this.viewCtrl.dismiss(data);
+    };
+    return GossipsPage;
+}());
+GossipsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-gossips',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/gossips/gossips.html"*/'<ion-header> \n    <ion-toolbar color="primary">\n        <button ion-button icon-only menuToggle="false" left color="white" (click)="dismiss()">\n      <ion-icon name="arrow-back"></ion-icon> \n        </button>\n        <ion-title>\n           Gossips ({{category.name}})\n        </ion-title> \n    </ion-toolbar> \n</ion-header> \n<ion-content>\n    <gossip-card [gossips]="gossips" (dataUpdated)="getGossips()"></gossip-card>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/gossips/gossips.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */]],
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */], __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */]])
+], GossipsPage);
+
+//# sourceMappingURL=gossips.js.map
+
+/***/ }),
+
+/***/ 141:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RequestPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_config__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_entity_profile_entity_profile__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_search_search__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_api_provider__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+var RequestPage = (function () {
+    function RequestPage(actionSheetCtrl, sanitizer, globalProvider, modal, navCtrl, navParams, alertCtrl, api, shared, viewCtrl, _ngZone) {
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.sanitizer = sanitizer;
+        this.globalProvider = globalProvider;
+        this.modal = modal;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.alertCtrl = alertCtrl;
+        this.api = api;
+        this.shared = shared;
+        this.viewCtrl = viewCtrl;
+        this._ngZone = _ngZone;
+        this.icon = 'assets/img/loved.png';
+        this.addGossip = { posted_as: this.globalProvider.userId, image: null };
+        this.user = this.globalProvider.user;
+        this.segment = 'entity';
+        this.selectedEntity = { category: [{ name: null }] };
+        this.showNotFound = false;
+        this.isCategorySelected = false;
+        this.entityDetail = { owner: 'no', image: null };
+        this.submitted = false;
+        this.isModal = false;
+        if (this.navParams.get('type')) {
+            this.isModal = true;
+        }
+    }
+    RequestPage.prototype.chooseImage = function (source) {
+        var _this = this;
+        this.shared.uploadMedia.image(source)
+            .then(function (imageData) {
+            if (_this.segment == 'gossip') {
+                _this.addGossip.image = 'data:image/png;base64,' + imageData;
+            }
+            else {
+                _this.entityDetail.image = 'data:image/png;base64,' + imageData;
+            }
+        }, function (err) {
+        });
+    };
+    RequestPage.prototype.ionViewDidLoad = function () {
+        this.getCategories();
+        this.getMyEntity();
+    };
+    RequestPage.prototype.selectImage = function () {
+        var _this = this;
+        var actionSheet = this.actionSheetCtrl.create({
+            title: 'Capture image with',
+            buttons: [
+                {
+                    text: 'Camera',
+                    icon: 'camera',
+                    handler: function () {
+                        _this.chooseImage(1);
+                    }
+                },
+                {
+                    text: 'Gallery',
+                    icon: 'images',
+                    handler: function () {
+                        _this.chooseImage(2);
+                    }
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    RequestPage.prototype.getMyEntity = function () {
+        var _this = this;
+        this.api.getMyEntity(this.globalProvider.userId, true).subscribe(function (data) {
+            _this.myEntities = data;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    RequestPage.prototype.searchEntity = function () {
+        var _this = this;
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_6__pages_search_search__["a" /* SearchPage */], { source: 'gossip' });
+        modal.onDidDismiss(function (data) {
+            if (data) {
+                _this.id = data.id;
+                _this.addGossip.id = data.id;
+                _this.selectedEntity = data;
+            }
+            else {
+            }
+        });
+        modal.present();
+    };
+    RequestPage.prototype.reset = function () {
+        this.isCategorySelected = false;
+        this.entityDetail = { owner: 'no', image: null };
+    };
+    RequestPage.prototype.ionViewDidEnter = function () {
+        this.reset();
+        this.getMyEntity();
+    };
+    RequestPage.prototype.entityProfile = function (id, type) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_4__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */], { id: id, type: type });
+        modal.present();
+    };
+    RequestPage.prototype.getEntityBackground = function (image) {
+        if (!image) {
+            return this.sanitizer.bypassSecurityTrustStyle("linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5))");
+        }
+        return this.sanitizer.bypassSecurityTrustStyle("linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url(" + image.url + ")");
+    };
+    RequestPage.prototype.categorySelect = function (data) {
+        var _this = this;
+        this.isCategorySelected = true;
+        this.entityDetail.category = data.term_id;
+        this.selectedCat = data.name;
+        if (this.navParams.get('name')) {
+            this._ngZone.run(function () {
+                _this.entityDetail.entity = _this.navParams.get('name');
+            });
+        }
+    };
+    RequestPage.prototype.getCategories = function () {
+        var _this = this;
+        this.api.getCategories().subscribe(function (data) {
+            _this.categories = data;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    RequestPage.prototype.addEntity = function (form) {
+        var _this = this;
+        if (form.valid) {
+            this.shared.Loader.show('Adding Entity..');
+            this.api.addEntity(this.entityDetail).subscribe(function (response) {
+                if (response) {
+                    _this.shared.Loader.hide();
+                    _this.shared.Toast.show('Entity added successfully');
+                    _this.entityDetail = { owner: 'no', image: null };
+                    _this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */], { id: response });
+                }
+            }, function (err) {
+                _this.shared.Loader.hide();
+                _this.shared.Toast.show('Error: ' + err);
+            });
+        }
+        else {
+            this.shared.Toast.show('Please fill all mandatory fields.');
+        }
+        return false;
+    };
+    RequestPage.prototype.insertGossip = function (gossip) {
+        var _this = this;
+        if (gossip.posted_as != 'anonymous') {
+            gossip.isAnonymous = 0;
+        }
+        else {
+            gossip.isAnonymous = 1;
+            gossip.posted_as = null;
+        }
+        gossip.image = this.addGossip.image;
+        gossip.type = gossip.feedbackType;
+        this.shared.Loader.show();
+        this.api.insertGossip(gossip).subscribe(function (data) {
+            _this.shared.Toast.show('Gossip created successfully');
+            _this.addGossip = { posted_as: _this.globalProvider.userId };
+            _this.selectedEntity = { category: [{ name: null }] };
+            var modal = _this.modal.create(__WEBPACK_IMPORTED_MODULE_4__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */], { id: gossip.id, type: gossip.feedbackType });
+            modal.present();
+            _this.shared.Loader.hide();
+        }, function (err) {
+            _this.shared.Loader.hide();
+            console.error(err);
+        });
+    };
+    RequestPage.prototype.removeImage = function () {
+        this.addGossip.image = '';
+        this.entityDetail.image = '';
+    };
+    RequestPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    return RequestPage;
+}());
+RequestPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-request',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/request/request.html"*/'<ion-header>\n    <ion-toolbar color="primary" *ngIf="!isModal">\n        <ion-segment [(ngModel)]="segment" color="whitec" (ionChange)="reset()">\n            <ion-segment-button value="gossip">\n                Add Gossip\n            </ion-segment-button>\n            <ion-segment-button value="entity">\n                Add Entity\n            </ion-segment-button>\n\n        </ion-segment>\n    </ion-toolbar>\n    <ion-toolbar color="primary" *ngIf="isModal">\n        <button ion-button icon-only menuToggle="false" left color="white" (click)="dismiss()">\n      <ion-icon name="arrow-back"></ion-icon> \n        </button>\n        <ion-title>\n            Add Entity\n        </ion-title>\n    </ion-toolbar>\n</ion-header>\n<ion-content>\n\n    <!--<entity-card *ngIf="segment == \'entity\'" (dataUpdated)="getMyEntity()" [entities]="myEntity"></entity-card>-->\n\n    <div *ngIf="segment == \'entity\'" class="entity">\n        <div class="category select-category" *ngIf="!isCategorySelected">\n            <ion-card-header color="primary">\n                Select category of entity (1/2)\n            </ion-card-header>\n            <ion-row>\n                <ion-col col-6 col-md-4 *ngFor="let category of categories">\n                    <ion-card class="m0" (click)="categorySelect(category)">\n                        <div class="category-content" [style.background-image]="getEntityBackground(category.attachment)">\n                            <div class="card-title">{{category.name}}</div>\n                        </div>\n                    </ion-card>\n                </ion-col>\n\n            </ion-row>\n        </div>\n        <div class="" *ngIf="isCategorySelected">\n\n            <div class="entity-fields">\n                <div class="profile-wrapper">\n                    <div class="profile-data">\n                        <h1 color="whitec" ion-text>{{entityDetail.entity || \'Name Here\'}}</h1>\n                        <h4 color="whitec" ion-text class="mt0">{{entityDetail.subtitle || \'Tagline Here\'}} ({{selectedCat}})</h4>\n                    </div>\n                    <img src="{{entityDetail.image || \'assets/img/image.png\'}}" (click)="selectImage()" class="profile-img" alt="">\n                </div>\n            </div>\n            <form #entityDetailForm="ngForm" (ngSubmit)="addEntity(entityDetailForm)" action="#" novalidate>\n                <ion-card class="card-items ion-card-full">\n                    <ion-card-header color="primary">\n                        Information about entity (2/2)\n                    </ion-card-header>\n                    <ion-card-content>\n                        <ion-list>\n                            <ion-item class="pl8">\n                                <ion-label stacked>Name*</ion-label>\n                                <ion-input type="text" [(ngModel)]="entityDetail.entity" name="firstname" #firstName="ngModel" required></ion-input>\n                            </ion-item>\n                            <p [hidden]="firstName.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>\n                                Name is required\n                            </p>\n                            <ion-item class="pl8">\n                                <ion-label stacked>Tagline*</ion-label>\n                                <ion-input type="text" [(ngModel)]="entityDetail.subtitle" name="lastname" #lastName="ngModel" required></ion-input>\n                            </ion-item>\n                            <p [hidden]="lastName.valid || submitted == false" ion-text color="danger" class="validationErr" padding-left>\n                                Tagline is required\n                            </p>\n                            <!--<div class="pl8">\n                            <ion-label class="color-gray" stacked>Entity Picture*</ion-label>\n                         <input type="file" accept="image/*" (change)="changeListener($event)" name="image" required id="fileInput" class="mt10"> \n                             \n                        </div>-->\n                            <ion-item class="pl8">\n                                <ion-label stacked>Contact Number</ion-label>\n                                <ion-input type="number" [(ngModel)]="entityDetail.contact_number" name="contact" #contact="ngModel"></ion-input>\n                            </ion-item>\n                            <ion-item class="pl8">\n                                <ion-label stacked>Own this entity?</ion-label>\n                                <ion-select class="w40" interface="popover" name="owner" #owner="ngModel" [(ngModel)]="entityDetail.owner">\n                                    <ion-option value="yes">Yes</ion-option>\n                                    <ion-option value="no">No</ion-option>\n                                </ion-select>\n                            </ion-item>\n                            <ion-item class="pl8">\n                                <button class="h35" type="button" (click)="selectImage()" ion-button block outline icon-left>\n  <ion-icon name="attach"></ion-icon>\n {{ entityDetail.image ? \'Change\' : \'Attach\'}}  image\n</button>\n                            </ion-item>\n                        </ion-list>\n                        <div class="submit-btn">\n                            <br>\n                            <button ion-button color="primary" type="submit" block>Submit Request</button>\n                        </div>\n\n                    </ion-card-content>\n                </ion-card>\n\n            </form>\n        </div>\n    </div>\n    <div class="add-gossip" *ngIf="segment == \'gossip\'" class="gossip">\n        <form #gossipForm="ngForm" novalidate>\n            <ion-card class="card-items ion-card-full">\n                <!--<ion-card-header color="primary">\n                    Gossip Information\n                </ion-card-header>-->\n                <ion-card-content>\n                    <ion-list>\n                        <ion-searchbar (click)="searchEntity()" placeholder="Search Entities"></ion-searchbar>\n\n                        <ion-item *ngIf="selectedEntity.id" style="margin-left: -6px">\n                            <ion-avatar item-left>\n                                <img [src]="selectedEntity.img">\n                            </ion-avatar>\n                            <h2>{{selectedEntity.title}}</h2>\n                            <p>{{selectedEntity.category[0].name}}</p>\n                        </ion-item>\n\n                        <ion-item style="margin-left: -17px">\n                            <ion-grid>\n                                <ion-row class="emo-img">\n                                    <ion-col text-center>\n                                        <input type="radio" id="pos" [(ngModel)]="addGossip.feedbackType" name="type" value="0">\n                                        <label for="pos"> <img src="assets/img/loved.png"   alt=""> <div class="type-text">Positive Gossip</div></label>\n                                    </ion-col>\n                                    <ion-col text-center>\n                                        <input type="radio" id="neg" [(ngModel)]="addGossip.feedbackType" name="type" value="1">\n                                        <label for="neg">\n                    <img src="assets/img/hated.png"  alt=""> <div class="type-text">Negative Gossip</div>\n                    </label>\n                                    </ion-col>\n                                </ion-row>\n                            </ion-grid>\n                        </ion-item>\n\n\n                        <ion-item class="pl8">\n                            <ion-label stacked>Gossip as</ion-label>\n                            <ion-select class="w40" interface="popover" name="poastedAs" #poastedAs="ngModel" [(ngModel)]="addGossip.posted_as">\n                                <ion-option value="anonymous">Anonymous</ion-option>\n                                <ion-option [value]="user.ID">{{user.display_name}}</ion-option>\n                                <ion-option [value]="item.id" *ngFor="let item of myEntities">{{item.title}}</ion-option>\n                            </ion-select>\n                        </ion-item>\n                        <ion-item class="pl8">\n                            <!--<ion-label stacked>Description*</ion-label>-->\n                            <textarea class="text-area" rows="6" placeholder="Gossip Content" cols="" [(ngModel)]="addGossip.gossip" name="gossip" #gossip="ngModel"\n                                required></textarea>\n                            <!--<ion-input type="text" [(ngModel)]="addGossip.gossip" name="gossip" #gossip="ngModel" required></ion-input>-->\n                        </ion-item>\n                        <ion-item class="pl8 img-preview" *ngIf="addGossip.image">\n                            <div>\n                                <img [src]="addGossip.image" alt="attachment">\n                                <button class="action-btn" (click)="removeImage()" ion-button icon-left clear small>\n                                        <ion-icon name="md-close"></ion-icon> \n                                    </button>\n                            </div>\n                        </ion-item>\n                        <ion-item class="pl8">\n                            <button class="h35" (click)="selectImage()" ion-button block outline icon-left>\n  <ion-icon name="attach"></ion-icon>\n {{ addGossip.image ? \'Change\' : \'Attach\'}}  image\n</button>\n                        </ion-item>\n                    </ion-list>\n                    <div class="submit-btn">\n                        <br>\n                        <button [disabled]="!(addGossip.feedbackType && addGossip.gossip && addGossip.id)" ion-button (click)="insertGossip(addGossip)"\n                            color="primary" type="submit" block>Post</button>\n                    </div>\n\n                </ion-card-content>\n            </ion-card>\n\n        </form>\n    </div>\n    <!--<ion-fab bottom right *ngIf="segment == \'entity\'">\n        <button ion-fab color="primary" (click)="addEntity()">\n      <ion-icon name="add"></ion-icon>\n   </button>\n    </ion-fab>-->\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/request/request.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_7__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */], __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["c" /* DomSanitizer */], __WEBPACK_IMPORTED_MODULE_2__providers_config__["a" /* GlobalProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_7__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* NgZone */]])
+], RequestPage);
+
+//# sourceMappingURL=request.js.map
+
+/***/ }),
+
+/***/ 151:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 151;
+
+/***/ }),
+
+/***/ 194:
+/***/ (function(module, exports) {
+
+function webpackEmptyAsyncContext(req) {
+	// Here Promise.resolve().then() is used instead of new Promise() to prevent
+	// uncatched exception popping up in devtools
+	return Promise.resolve().then(function() {
+		throw new Error("Cannot find module '" + req + "'.");
+	});
+}
+webpackEmptyAsyncContext.keys = function() { return []; };
+webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
+module.exports = webpackEmptyAsyncContext;
+webpackEmptyAsyncContext.id = 194;
+
+/***/ }),
+
+/***/ 20:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SharedProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_photo_viewer__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_camera__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__config__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+
+
+var SharedProvider = (function () {
+    function SharedProvider(platform, _ionicApp, camera, _loadingCtrl, _toastCtrl, _storage, _alert, _socialSharing, _photoViewer, event) {
+        var _this = this;
+        this.platform = platform;
+        this._ionicApp = _ionicApp;
+        this.camera = camera;
+        this._loadingCtrl = _loadingCtrl;
+        this._toastCtrl = _toastCtrl;
+        this._storage = _storage;
+        this._alert = _alert;
+        this._socialSharing = _socialSharing;
+        this._photoViewer = _photoViewer;
+        this.event = event;
+        //Loader Start 
+        this.Loader = {
+            show: function (template, showBackdrop) {
+                _this._loading = _this._loadingCtrl.create({
+                    content: template || 'Please wait...',
+                    dismissOnPageChange: true,
+                    duration: 3500,
+                    showBackdrop: showBackdrop || true
+                });
+                _this._loading.present();
+            },
+            hide: function () {
+                _this._loading.dismiss();
+                _this._loading = null;
+            },
+            prompt: function (template, timer) {
+                _this.Loader.show(template);
+                setTimeout(function () {
+                    _this.Loader.hide();
+                }, timer || 3000);
+            },
+            closeIfActive: function () {
+                var activePortal = _this._ionicApp._loadingPortal.getActive();
+                if (activePortal) {
+                    activePortal.dismiss();
+                    _this._loading = null;
+                    return;
+                }
+            }
+        };
+        this.Toast = {
+            show: function (text, duration, position, closeButton, btnText) {
+                _this._toastMsg = _this._toastCtrl.create({
+                    message: text,
+                    duration: duration || closeButton ? null : 3000,
+                    position: position || 'top',
+                    showCloseButton: closeButton || false,
+                    closeButtonText: btnText || 'OK'
+                });
+                _this._toastMsg.present();
+            },
+            hide: function () {
+                this._toastMsg.dismiss();
+            }
+        };
+        this.LS = {
+            get: function (key) {
+                return _this._storage.get(key);
+            },
+            set: function (key, value) {
+                return _this._storage.set(key, JSON.stringify(value));
+            },
+            remove: function (key) {
+                return _this._storage.remove(key);
+            }
+        };
+        this.Alert = {
+            confirm: function (msg, title) {
+                return new Promise(function (resolve, reject) {
+                    var alert = _this._alert.create({
+                        title: title || 'Confirm',
+                        message: msg || 'Do you want continue?',
+                        buttons: [
+                            {
+                                text: 'Cancel',
+                                role: 'cancel',
+                                handler: function () {
+                                    reject(false);
+                                }
+                            },
+                            {
+                                text: 'Ok',
+                                handler: function () {
+                                    resolve(true);
+                                }
+                            }
+                        ]
+                    });
+                    alert.present();
+                });
+            },
+            alert: function (msg, title) {
+                var alert = _this._alert.create({
+                    title: title || 'Alert',
+                    subTitle: msg,
+                    buttons: ['Dismiss']
+                });
+                alert.present();
+            }
+        };
+        this.SocialSharing = {
+            shareVia: function (message, subject, file, url) {
+                _this._socialSharing.share(message, subject, file || null, url || null).then(function () {
+                    return true;
+                }).catch(function () {
+                    return false;
+                });
+            }
+        };
+        this.imageViewer = {
+            show: function (url, title, share) {
+                _this._photoViewer.show(url, title, { share: share || true });
+            }
+        };
+        this.uploadMedia = {
+            image: function (source) {
+                var sourceType;
+                if (source == 1) {
+                    sourceType = _this.camera.PictureSourceType.CAMERA;
+                }
+                else {
+                    sourceType = _this.camera.PictureSourceType.PHOTOLIBRARY;
+                }
+                var options = {
+                    quality: 20,
+                    targetWidth: 600,
+                    targetHeight: 600,
+                    destinationType: _this.camera.DestinationType.DATA_URL,
+                    encodingType: _this.camera.EncodingType.PNG,
+                    mediaType: _this.camera.MediaType.PICTURE,
+                    sourceType: sourceType,
+                    allowEdit: true
+                };
+                return _this.camera.getPicture(options);
+            }
+        };
+    }
+    SharedProvider.prototype.checkIntro = function (component) {
+        return __awaiter(this, void 0, void 0, function () {
+            var isIntroduced;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.LS.get('intro')];
+                    case 1:
+                        isIntroduced = _a.sent();
+                        isIntroduced = JSON.parse(isIntroduced);
+                        if (!isIntroduced[component]) {
+                            isIntroduced[component] = true;
+                            this.LS.set('intro', isIntroduced);
+                            if (component == 'entity') {
+                                return [2 /*return*/, true];
+                            }
+                            if (this.platform.is('ios')) {
+                                this.event.publish('app:intro', __WEBPACK_IMPORTED_MODULE_6__config__["b" /* appIntro */].ios[component]);
+                            }
+                            else {
+                                this.event.publish('app:intro', __WEBPACK_IMPORTED_MODULE_6__config__["b" /* appIntro */].android[component]);
+                            }
+                        }
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    return SharedProvider;
+}());
+SharedProvider = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicApp */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["p" /* ToastController */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_social_sharing__["a" /* SocialSharing */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_photo_viewer__["a" /* PhotoViewer */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Events */]])
+], SharedProvider);
+
+//# sourceMappingURL=shared.provider.js.map
+
+/***/ }),
+
+/***/ 21:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MongerApi; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_config__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_Rx__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var MongerApi = (function () {
+    function MongerApi(globalProvider, http) {
+        this.globalProvider = globalProvider;
+        this.http = http;
+    }
+    MongerApi.prototype.getCategories = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getEntityCategories&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.topHatedGossips = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "topUpvotedNegativeGossips&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.topLovedGossips = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "topUpvotedPositiveGossips&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.latestGossips = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "topUpvotedPositiveGossips&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.trendingEntity = function (pageNo) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "topGossipedEntities&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.followedEntity = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getMyFollowedEntities&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.followedGossips = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getMyFollowedGossips&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getMyFollowers = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getMyFollowers&userId=" + (id || this.globalProvider.userId), { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getMyFollowees = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getMyFollowees&userId=" + (id || this.globalProvider.userId), { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getMyGossips = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getMyGossips&userId=" + (id || this.globalProvider.userId), { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getMyGossipsByCategory = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getGossipsByCategory&userId=" + this.globalProvider.userId + "&id=" + id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getGossip = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getGossip&userId=" + this.globalProvider.userId + "&id=" + id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getGossipByEntity = function (id, feedbackType) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getGossips&feedback_type=" + feedbackType + "&userId=" + this.globalProvider.userId + "&id=" + id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getGossipComments = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getGossipComments&userId=" + this.globalProvider.userId + "&id=" + id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.insertComments = function (msg, id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "insertComment&msg=" + msg + "&userId=" + this.globalProvider.userId + "&id=" + id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.updateProfile = function (fname, lname, mobile) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "insertComment&fname=" + fname + "&userId=" + this.globalProvider.userId + "&lname=" + lname + "&mobileNo=" + mobile, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.insertGossip = function (data) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ "enctype": "multipart/form-data" });
+        data.userId = this.globalProvider.userId;
+        var form_data = new FormData();
+        for (var key in data) {
+            form_data.append(key, data[key]);
+        }
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "insertGossip", form_data, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getUserDetail = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getUserDetails&id=" + id + "&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getEntityDetail = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getEntity&userId=" + this.globalProvider.userId + "&id=" + id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getLatestGossips = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "latestGossips&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.vote = function (type, gossipId) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "vote&id=" + gossipId + "&type=" + type + "&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.followGossip = function (gossipId) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "followGossip&userId=" + this.globalProvider.userId + "&id=" + gossipId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.unFollowGossip = function (gossipId) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "unfollowGossip&userId=" + this.globalProvider.userId + "&id=" + gossipId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.deleteGossip = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "deletePost&userId=" + this.globalProvider.userId + "&postId=" + id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getEntityNews = function (entityId) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getEntityNews&userId=" + this.globalProvider.userId + "&id=" + entityId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.followUser = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "followUnfollow&userId=" + this.globalProvider.userId + "&id=" + id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getMyEntity = function (id, owned) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "getMyEntities&userId=" + id + "&owner=" + (owned ? 'yes' : ''), { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.searchEntity = function (title, type) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "searchApi&title=" + title + "&type=" + type, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.searchEntityAvailability = function (title) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "exactMatchTitleEntities&title=" + title, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.followEntity = function (id) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "entityFollow&userId=" + this.globalProvider.userId + "&id=" + id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.addEntity = function (data) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ "enctype": "multipart/form-data" });
+        data.userId = this.globalProvider.userId;
+        var form_data = new FormData();
+        for (var key in data) {
+            form_data.append(key, data[key]);
+        }
+        return this.http.post(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "insertEntity", form_data, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getFbUserInfo = function (access_token) {
+        return this.http.get("https://graph.facebook.com/v2.2/me", {
+            params: {
+                access_token: access_token,
+                fields: "name,first_name,last_name,location,picture,email",
+                format: "json"
+            }
+        })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.socialLogin = function (data) {
+        data.player_id = this.globalProvider.playerId;
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "socialRegistration&fname=" + data.fname + "&lname=" + data.lname + "&email=" + data.email + "&userId=" + data.userId + "&source=" + data.source + "&player_id=" + data.player_id + "&playerId=" + data.player_id, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.logout = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get(__WEBPACK_IMPORTED_MODULE_3__providers_config__["c" /* baseURL */] + "appLogout&userId=" + this.globalProvider.userId, { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    // searchNews(title): Observable<any> {
+    //   let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
+    //   return this.http.get(`${baseURL}getEntitySearchNews&title=${title}`, { headers: headers })
+    //     .map((response: Response) => {
+    //       return response.json();
+    //     })
+    //     .catch(this.handleError);
+    // }
+    MongerApi.prototype.getGeoAddress = function (coords) {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get("http://maps.googleapis.com/maps/api/geocode/json?latlng=" + coords.latitude + "," + coords.longitude + "&sensor=true", { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.getNews = function () {
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Fnews%2Fsection%3Fgeo%3D" + (this.globalProvider.location || 'mumbai') + "%26output%3Drss%26num%3D40&api_key=o8aomlxn5spw5klgsqjgdlasz9kekalrp2hgptsb", { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.searchNews = function (query) {
+        if (query) {
+            console.log(query);
+            query = query.replace(/ /g, "-");
+        }
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/x-www-form-urlencoded' });
+        return this.http.get("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fnews.google.com%2Fnews%3Fq%3D" + query + "%26output%3Drss%26num%3D20&api_key=o8aomlxn5spw5klgsqjgdlasz9kekalrp2hgptsb", { headers: headers })
+            .map(function (response) {
+            return response.json();
+        })
+            .catch(this.handleError);
+    };
+    MongerApi.prototype.handleError = function (error) {
+        console.error(error);
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].throw(error || 'Server error');
+    };
+    return MongerApi;
+}());
+MongerApi = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_config__["a" /* GlobalProvider */], __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
+], MongerApi);
+
+//# sourceMappingURL=api.provider.js.map
+
+/***/ }),
+
+/***/ 248:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_animations__ = __webpack_require__(235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__search_search__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__add_gossip_add_gossip__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_api_provider__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var HomePage = (function () {
+    function HomePage(platform, navCtrl, api, ngZone, modal, shared, actionSheetCtrl, alertCtrl) {
+        this.platform = platform;
+        this.navCtrl = navCtrl;
+        this.api = api;
+        this.ngZone = ngZone;
+        this.modal = modal;
+        this.shared = shared;
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.alertCtrl = alertCtrl;
+        this.segment = 'trending';
+        this._preScrollArea = 0;
+        this.showSearch = true;
+        this.category = 'allCategories';
+        this._isPageLoaded = 0;
+        this._firstLoad = true;
+    }
+    HomePage.prototype.ionViewDidLoad = function () {
+        this.trendingEntity();
+        this.getNews();
+    };
+    HomePage.prototype.ionViewDidEnter = function () {
+        if (this._isPageLoaded > 0) {
+            this.tabChange(this.segment, true);
+        }
+        else {
+            this._isPageLoaded = this._isPageLoaded + Number(1);
+            this.shared.checkIntro('home');
+        }
+    };
+    HomePage.prototype.getNews = function () {
+        var _this = this;
+        this.api.getNews().subscribe(function (data) {
+            _this.geoNews = data.items;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    HomePage.prototype.topHatedGossips = function () {
+        var _this = this;
+        if (this._firstLoad && !this.hatedGossips) {
+            this.shared.Loader.show();
+        }
+        this.api.topHatedGossips().subscribe(function (data) {
+            _this.hatedGossips = data;
+            _this.shared.Loader.closeIfActive();
+        }, function (err) {
+            console.error(err);
+            _this.shared.Loader.closeIfActive();
+        });
+    };
+    HomePage.prototype.topLovedGossips = function () {
+        var _this = this;
+        if (this._firstLoad && !this.lovedGossips) {
+            this.shared.Loader.show();
+        }
+        this.api.topLovedGossips().subscribe(function (data) {
+            _this.lovedGossips = data;
+            _this.shared.Loader.closeIfActive();
+        }, function (err) {
+            console.error(err);
+            _this.shared.Loader.closeIfActive();
+        });
+    };
+    HomePage.prototype.trendingEntity = function () {
+        var _this = this;
+        if (this._firstLoad && !this.trendingEntities) {
+            this.shared.Loader.show();
+        }
+        this.api.trendingEntity().subscribe(function (data) {
+            _this.trendingEntities = data;
+            _this.shared.Loader.closeIfActive();
+        }, function (err) {
+            console.error(err);
+            _this.shared.Loader.closeIfActive();
+        });
+    };
+    HomePage.prototype.update = function () {
+        var _this = this;
+        if (!(this.platform.is('ios'))) {
+            this.ngZone.run(function () {
+                if (_this._preScrollArea > _this.content.scrollTop) {
+                    _this.showSearch = true;
+                }
+                else {
+                    _this.showSearch = false;
+                }
+            });
+            this._preScrollArea = this.content.scrollTop;
+        }
+    };
+    HomePage.prototype.search = function () {
+        var modal;
+        if (this.segment == 'news') {
+            modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_3__search_search__["a" /* SearchPage */], { news: 'news' });
+        }
+        else {
+            modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_3__search_search__["a" /* SearchPage */]);
+        }
+        modal.present();
+    };
+    HomePage.prototype.tabChange = function (segment, loader) {
+        if (loader) {
+            this._firstLoad = false;
+        }
+        else {
+            this._firstLoad = true;
+        }
+        if (segment == 'topHated') {
+            this.topHatedGossips();
+        }
+        else if (segment == 'topRated') {
+            this.topLovedGossips();
+        }
+        else if (segment == 'news') {
+            this.shared.checkIntro('news');
+        }
+        else if (segment == 'trending') {
+            this.trendingEntity();
+        }
+    };
+    HomePage.prototype.addGossips = function (news) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_4__add_gossip_add_gossip__["a" /* AddGossipPage */], { type: null, id: 460, data: news });
+        modal.onDidDismiss(function (type) {
+        });
+        modal.present();
+    };
+    return HomePage;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* Content */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* Content */])
+], HomePage.prototype, "content", void 0);
+HomePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-home',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/home/home.html"*/'<ion-header>\n    <ion-toolbar color="primary">\n        <ion-segment [(ngModel)]="segment" color="whitec" (ionChange)="tabChange(segment, false)">\n            <ion-segment-button value="trending">\n                Trending\n            </ion-segment-button>\n            <ion-segment-button value="topHated">\n                Hated\n            </ion-segment-button>\n            <ion-segment-button value="topRated">\n                Rated\n            </ion-segment-button>\n            <ion-segment-button value="news">\n                News\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n</ion-header>\n<ion-content (ionScroll)="update()"> \n    <gossip-card *ngIf="segment == \'topHated\'" (dataUpdated)="tabChange(segment, true)" [gossips]="hatedGossips"></gossip-card>\n    <gossip-card *ngIf="segment == \'topRated\'" (dataUpdated)="tabChange(segment, true)" [gossips]="lovedGossips"></gossip-card>\n    <entity-card *ngIf="segment == \'trending\'" (dataUpdated)="tabChange(segment, true)" [showBookmark]="false" [entities]="trendingEntities"></entity-card>\n    <news [newsList]="geoNews" *ngIf="segment == \'news\'"></news>\n    <ion-fab bottom right *ngIf="showSearch" [@myAnimation]>\n        <button ion-fab color="primary" (click)="search()">\n      <ion-icon name="search"></ion-icon>\n   </button>\n    </ion-fab>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/home/home.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_6__providers_api_provider__["a" /* MongerApi */]],
+        animations: [
+            Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["g" /* trigger */])('myAnimation', [
+                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["f" /* transition */])('in => void', [
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* style */])({ height: '*' }),
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["c" /* animate */])(0, Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* style */])({ height: 250 }))
+                ]),
+                Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["f" /* transition */])('* => void', [
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* style */])({ height: '*' }),
+                    Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["c" /* animate */])(250, Object(__WEBPACK_IMPORTED_MODULE_1__angular_animations__["e" /* style */])({ height: 0 }))
+                ])
+            ])
+        ]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_6__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* NgZone */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["a" /* ActionSheetController */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["b" /* AlertController */]])
+], HomePage);
+
+//# sourceMappingURL=home.js.map
+
+/***/ }),
+
+/***/ 272:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReviewPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__add_gossip_add_gossip__ = __webpack_require__(59);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var ReviewPage = (function () {
+    function ReviewPage(api, shared, navCtrl, navParams, viewCtrl, modal) {
+        this.api = api;
+        this.shared = shared;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.modal = modal;
+        this.type = 1;
+        this.bgImage = 'assets/img/positive.jpg';
+        this.type = navParams.get('type');
+        if (this.type == 1) {
+            this.bgImage = 'assets/img/negative.jpg';
+        }
+        // this._id = 31; //hard coded
+        this._id = this.navParams.get('id');
+    }
+    ReviewPage.prototype.ionViewDidLoad = function () {
+        this.getGossips();
+    };
+    ReviewPage.prototype.addGossips = function () {
+        var _this = this;
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_4__add_gossip_add_gossip__["a" /* AddGossipPage */], { type: this.type, id: this._id });
+        modal.onDidDismiss(function (type) {
+            _this.getGossips();
+        });
+        modal.present();
+    };
+    ReviewPage.prototype.getGossips = function () {
+        var _this = this;
+        this.shared.Loader.show();
+        this.api.getGossipByEntity(this._id, this.type).subscribe(function (data) {
+            _this.entityGossips = data;
+            _this.shared.Loader.hide();
+        }, function (err) {
+            console.log(err);
+            _this.shared.Loader.hide();
+        });
+    };
+    ReviewPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    return ReviewPage;
+}());
+ReviewPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-review',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/review/review.html"*/'<ion-header>\n\n    <ion-toolbar color="primary">\n        <button ion-button icon-only menuToggle="false" left color="white" (click)="dismiss()">\n      <ion-icon name="arrow-back"></ion-icon> \n        </button>\n        <ion-title>\n            Gossips \n        </ion-title>\n\n    </ion-toolbar>\n\n</ion-header>\n\n<ion-content>\n    <ion-list class="comments bg-gossip"  [style.backgroundImage]="\'url(\' + bgImage + \')\'">  \n <gossip-card [gossips]="entityGossips"></gossip-card>\n    </ion-list>\n    <ion-fab bottom right>\n        <button ion-fab color="primary" (click)="addGossips()">\n      <ion-icon name="add"></ion-icon>\n   </button>\n    </ion-fab>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/review/review.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */]])
+], ReviewPage);
+
+//# sourceMappingURL=review.js.map
+
+/***/ }),
+
+/***/ 273:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SmartAudio; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__ = __webpack_require__(274);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var SmartAudio = (function () {
+    function SmartAudio(nativeAudio, platform) {
+        this.nativeAudio = nativeAudio;
+        this.audioType = 'html5';
+        this.sounds = [];
+        if (platform.is('cordova')) {
+            this.audioType = 'native';
+        }
+    }
+    SmartAudio.prototype.preload = function (key, asset) {
+        if (this.audioType === 'html5') {
+            var audio = {
+                key: key,
+                asset: asset,
+                type: 'html5'
+            };
+            this.sounds.push(audio);
+        }
+        else {
+            this.nativeAudio.preloadSimple(key, asset);
+            var audio = {
+                key: key,
+                asset: key,
+                type: 'native'
+            };
+            this.sounds.push(audio);
+        }
+    };
+    SmartAudio.prototype.play = function (key) {
+        var audio = this.sounds.find(function (sound) {
+            return sound.key === key;
+        });
+        if (audio.type === 'html5') {
+            var audioAsset = new Audio(audio.asset);
+            audioAsset.play();
+        }
+        else {
+            this.nativeAudio.play(audio.asset).then(function (res) {
+                console.log(res);
+            }, function (err) {
+                console.log(err);
+            });
+        }
+    };
+    return SmartAudio;
+}());
+SmartAudio = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__ionic_native_native_audio__["a" /* NativeAudio */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */]])
+], SmartAudio);
+
+//# sourceMappingURL=smart-audio.js.map
+
+/***/ }),
+
+/***/ 277:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AboutPage = (function () {
+    function AboutPage(viewCtrl) {
+        this.viewCtrl = viewCtrl;
+    }
+    AboutPage.prototype.ionViewDidLoad = function () { };
+    AboutPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss(false);
+    };
+    return AboutPage;
+}());
+AboutPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-about',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/about/about.html"*/'<ion-header>\n    <ion-toolbar color="primary">\n        <button ion-button icon-only menuToggle="false" color="white" (click)="dismiss()">\n      <ion-icon name="arrow-back"></ion-icon>\n    </button>\n        <ion-title>\n            About Gossip Monger\n        </ion-title>\n    </ion-toolbar>\n</ion-header>\n<ion-content>\n    <ion-list>\n      \n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/about/about.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */]])
+], AboutPage);
+
+//# sourceMappingURL=about.js.map
+
+/***/ }),
+
+/***/ 278:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TermsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var TermsPage = (function () {
+    function TermsPage(viewCtrl) {
+        this.viewCtrl = viewCtrl;
+    }
+    TermsPage.prototype.ionViewDidLoad = function () { };
+    TermsPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss(false);
+    };
+    return TermsPage;
+}());
+TermsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-terms',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/terms/terms.html"*/'<ion-header>\n    <ion-toolbar color="primary">\n        <button ion-button icon-only menuToggle="false" color="white" (click)="dismiss()">\n      <ion-icon name="arrow-back"></ion-icon>\n    </button>\n        <ion-title>\n            Terms & Condition\n        </ion-title>\n    </ion-toolbar>\n</ion-header>\n<ion-content>\n    <ion-list>\n      \n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/terms/terms.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */]])
+], TermsPage);
+
+//# sourceMappingURL=terms.js.map
+
+/***/ }),
+
+/***/ 279:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CategoriesPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__gossips_gossips__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__ = __webpack_require__(25);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var CategoriesPage = (function () {
+    function CategoriesPage(sanitizer, navCtrl, shared, api) {
+        this.sanitizer = sanitizer;
+        this.navCtrl = navCtrl;
+        this.shared = shared;
+        this.api = api;
+    }
+    CategoriesPage.prototype.ionViewDidLoad = function () {
+        this.getCategories();
+    };
+    CategoriesPage.prototype.getCategories = function () {
+        var _this = this;
+        this.shared.Loader.show();
+        this.api.getCategories().subscribe(function (data) {
+            _this.categories = data;
+            console.log(data);
+            _this.shared.Loader.hide();
+        }, function (err) {
+            _this.shared.Loader.hide();
+            console.log(err);
+        });
+    };
+    CategoriesPage.prototype.gossips = function (gossip) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_4__gossips_gossips__["a" /* GossipsPage */], { data: gossip });
+    };
+    CategoriesPage.prototype.getBackground = function (image) {
+        if (!image) {
+            return this.sanitizer.bypassSecurityTrustStyle("linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5))");
+        }
+        return this.sanitizer.bypassSecurityTrustStyle("linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url(" + image.url + ")");
+    };
+    return CategoriesPage;
+}());
+CategoriesPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-categories',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/categories/categories.html"*/'<ion-header>\n    <ion-navbar color="primary">\n        <ion-title>Categories</ion-title>\n    </ion-navbar>\n</ion-header>\n<ion-content>\n    <div class="category">\n        <ion-row>\n            <ion-col col-6 col-md-4 *ngFor="let category of categories">\n                <ion-card class="m0" (click)="gossips(category)">\n                    <div class="category-content" [style.background-image]="getBackground(category.attachment)">\n                        <div class="card-title">{{category.name}}</div>\n                    </div>\n                    <div class="entity-count border-right">\n                        {{category.count}} {{category.count > 1 ? \'Gossips\' : \'Gossip\'}}\n                    </div>\n\n                </ion-card>\n            </ion-col>\n        </ion-row>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/categories/categories.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_1__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__angular_platform_browser__["c" /* DomSanitizer */], __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_1__providers_api_provider__["a" /* MongerApi */]])
+], CategoriesPage);
+
+//# sourceMappingURL=categories.js.map
+
+/***/ }),
+
+/***/ 280:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BookmarkPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_entity_profile_entity_profile__ = __webpack_require__(45);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var BookmarkPage = (function () {
+    function BookmarkPage(modal, api, shared) {
+        this.modal = modal;
+        this.api = api;
+        this.shared = shared;
+        this.segment = 'gossips';
+        this.showNotFound = false;
+        this.showNotFound1 = false;
+        this._isPageLoaded = 0;
+    }
+    BookmarkPage.prototype.ionViewDidLoad = function () {
+        this.getFollowedEntities(true);
+        this.getFollowedGossips();
+    };
+    BookmarkPage.prototype.ionViewDidEnter = function () {
+        if (this._isPageLoaded > 0) {
+            this.getFollowedEntities();
+            this.getFollowedGossips();
+        }
+        else {
+            this._isPageLoaded = this._isPageLoaded + Number(1);
+        }
+    };
+    BookmarkPage.prototype.getFollowedEntities = function (loader) {
+        var _this = this;
+        if (loader) {
+            this.shared.Loader.show();
+        }
+        this.api.followedEntity().subscribe(function (data) {
+            _this.followedEntities = data;
+            if (!_this.followedEntities.length) {
+                _this.showNotFound = true;
+            }
+            if (loader) {
+                _this.shared.Loader.hide();
+            }
+        }, function (err) {
+            if (loader) {
+                _this.shared.Loader.hide();
+            }
+            console.error(err);
+        });
+    };
+    BookmarkPage.prototype.entityProfile = function (id, type) {
+        console.log('EntityProfile');
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_4__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */], { id: id, type: type });
+        modal.present();
+    };
+    BookmarkPage.prototype.getFollowedGossips = function () {
+        var _this = this;
+        this.api.followedGossips().subscribe(function (data) {
+            _this.followedGossips = data;
+            if (!_this.followedGossips.length) {
+                _this.showNotFound1 = true;
+            }
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    return BookmarkPage;
+}());
+BookmarkPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-bookmark',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/bookmark/bookmark.html"*/'<ion-header>\n    <ion-toolbar color="primary">\n        <ion-segment [(ngModel)]="segment" color="whitec">\n            <ion-segment-button value="gossips">\n                Gossips\n            </ion-segment-button>\n            <ion-segment-button value="entity">\n                Entities\n            </ion-segment-button>\n        </ion-segment>\n    </ion-toolbar>\n</ion-header>\n<ion-content>\n    <gossip-card *ngIf="segment == \'gossips\'" (dataUpdated)="getFollowedGossips()"  (unFollowEvent)="getFollowedGossips()" [gossips]="followedGossips"></gossip-card> \n    <entity-card *ngIf="segment == \'entity\'" (dataUpdated)="getFollowedEntities()" (unFollowEvent)="getFollowedEntities()" [entities]="followedEntities"></entity-card>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/bookmark/bookmark.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */]])
+], BookmarkPage);
+
+//# sourceMappingURL=bookmark.js.map
+
+/***/ }),
+
+/***/ 281:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(282);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_module__ = __webpack_require__(286);
+
+
+
+Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["_20" /* enableProdMode */])();
+Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__app_module__["a" /* AppModule */]);
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 286:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__ = __webpack_require__(326);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_google_plus__ = __webpack_require__(237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_facebook__ = __webpack_require__(241);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__ = __webpack_require__(242);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__ionic_native_deeplinks__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__app_component__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_home_home__ = __webpack_require__(248);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_tabs_tabs__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_auth_auth__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_search_search__ = __webpack_require__(77);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_categories_categories__ = __webpack_require__(279);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_request_request__ = __webpack_require__(141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_about_about__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_terms_terms__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_user_profile_user_profile__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_entity_profile_entity_profile__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_add_gossip_add_gossip__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_bookmark_bookmark__ = __webpack_require__(280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_comments_comments__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_review_review__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_gossips_gossips__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_onesignal__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__ionic_native_geolocation__ = __webpack_require__(276);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__providers_config__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__ionic_native_network__ = __webpack_require__(597);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__ionic_native_keyboard__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__ionic_native_vibration__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__providers_smart_audio_smart_audio__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ionic_native_native_audio__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__ionic_native_status_bar__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__ionic_native_splash_screen__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__ionic_native_social_sharing__ = __webpack_require__(246);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__ionic_native_photo_viewer__ = __webpack_require__(247);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__components_gossip_card_gossip_card__ = __webpack_require__(598);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__components_entity_card_entity_card__ = __webpack_require__(599);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__components_news_news__ = __webpack_require__(600);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var AppModule = (function () {
+    function AppModule() {
+    }
+    return AppModule;
+}());
+AppModule = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["L" /* NgModule */])({
+        declarations: [
+            __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_auth_auth__["a" /* AuthPage */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_tabs_tabs__["a" /* TabsPage */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_categories_categories__["a" /* CategoriesPage */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_search_search__["a" /* SearchPage */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_request_request__["a" /* RequestPage */],
+            __WEBPACK_IMPORTED_MODULE_19__pages_user_profile_user_profile__["b" /* UserProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_22__pages_bookmark_bookmark__["a" /* BookmarkPage */],
+            __WEBPACK_IMPORTED_MODULE_20__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_23__pages_comments_comments__["a" /* CommentsPage */],
+            __WEBPACK_IMPORTED_MODULE_24__pages_review_review__["a" /* ReviewPage */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_add_gossip_add_gossip__["a" /* AddGossipPage */],
+            __WEBPACK_IMPORTED_MODULE_25__pages_gossips_gossips__["a" /* GossipsPage */],
+            __WEBPACK_IMPORTED_MODULE_39__components_gossip_card_gossip_card__["a" /* GossipCardComponent */],
+            __WEBPACK_IMPORTED_MODULE_40__components_entity_card_entity_card__["a" /* EntityCardComponent */],
+            __WEBPACK_IMPORTED_MODULE_19__pages_user_profile_user_profile__["a" /* MoreOptionProfile */],
+            __WEBPACK_IMPORTED_MODULE_17__pages_about_about__["a" /* AboutPage */],
+            __WEBPACK_IMPORTED_MODULE_18__pages_terms_terms__["a" /* TermsPage */],
+            __WEBPACK_IMPORTED_MODULE_41__components_news_news__["a" /* NewsComponent */]
+        ],
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["a" /* BrowserModule */],
+            __WEBPACK_IMPORTED_MODULE_5__angular_http__["c" /* HttpModule */],
+            __WEBPACK_IMPORTED_MODULE_4__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */]),
+            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["a" /* IonicStorageModule */].forRoot()
+        ],
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicApp */]],
+        entryComponents: [
+            __WEBPACK_IMPORTED_MODULE_10__app_component__["a" /* MyApp */],
+            __WEBPACK_IMPORTED_MODULE_13__pages_auth_auth__["a" /* AuthPage */],
+            __WEBPACK_IMPORTED_MODULE_11__pages_home_home__["a" /* HomePage */],
+            __WEBPACK_IMPORTED_MODULE_12__pages_tabs_tabs__["a" /* TabsPage */],
+            __WEBPACK_IMPORTED_MODULE_16__pages_request_request__["a" /* RequestPage */],
+            __WEBPACK_IMPORTED_MODULE_15__pages_categories_categories__["a" /* CategoriesPage */],
+            __WEBPACK_IMPORTED_MODULE_19__pages_user_profile_user_profile__["b" /* UserProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_22__pages_bookmark_bookmark__["a" /* BookmarkPage */],
+            __WEBPACK_IMPORTED_MODULE_14__pages_search_search__["a" /* SearchPage */],
+            __WEBPACK_IMPORTED_MODULE_20__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_23__pages_comments_comments__["a" /* CommentsPage */],
+            __WEBPACK_IMPORTED_MODULE_24__pages_review_review__["a" /* ReviewPage */],
+            __WEBPACK_IMPORTED_MODULE_21__pages_add_gossip_add_gossip__["a" /* AddGossipPage */],
+            __WEBPACK_IMPORTED_MODULE_25__pages_gossips_gossips__["a" /* GossipsPage */],
+            __WEBPACK_IMPORTED_MODULE_19__pages_user_profile_user_profile__["a" /* MoreOptionProfile */],
+            __WEBPACK_IMPORTED_MODULE_17__pages_about_about__["a" /* AboutPage */],
+            __WEBPACK_IMPORTED_MODULE_18__pages_terms_terms__["a" /* TermsPage */]
+        ],
+        providers: [
+            __WEBPACK_IMPORTED_MODULE_35__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_36__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_30__ionic_native_network__["a" /* Network */],
+            __WEBPACK_IMPORTED_MODULE_31__ionic_native_keyboard__["a" /* Keyboard */],
+            __WEBPACK_IMPORTED_MODULE_6__ionic_native_google_plus__["a" /* GooglePlus */],
+            __WEBPACK_IMPORTED_MODULE_7__ionic_native_facebook__["a" /* Facebook */],
+            __WEBPACK_IMPORTED_MODULE_37__ionic_native_social_sharing__["a" /* SocialSharing */],
+            __WEBPACK_IMPORTED_MODULE_34__ionic_native_native_audio__["a" /* NativeAudio */],
+            __WEBPACK_IMPORTED_MODULE_33__providers_smart_audio_smart_audio__["a" /* SmartAudio */],
+            __WEBPACK_IMPORTED_MODULE_32__ionic_native_vibration__["a" /* Vibration */],
+            __WEBPACK_IMPORTED_MODULE_38__ionic_native_photo_viewer__["a" /* PhotoViewer */],
+            { provide: __WEBPACK_IMPORTED_MODULE_0__angular_core__["v" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicErrorHandler */] },
+            __WEBPACK_IMPORTED_MODULE_28__providers_api_provider__["a" /* MongerApi */],
+            __WEBPACK_IMPORTED_MODULE_26__ionic_native_onesignal__["a" /* OneSignal */],
+            __WEBPACK_IMPORTED_MODULE_29__providers_config__["a" /* GlobalProvider */],
+            __WEBPACK_IMPORTED_MODULE_8__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_9__ionic_native_deeplinks__["a" /* Deeplinks */],
+            __WEBPACK_IMPORTED_MODULE_27__ionic_native_geolocation__["a" /* Geolocation */]
+        ]
+    })
+], AppModule);
+
+//# sourceMappingURL=app.module.js.map
+
+/***/ }),
+
+/***/ 29:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return baseURL; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return statusBarColor; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return appIntro; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GlobalProvider; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var baseURL = 'http://thegossipmonger.com/api/?method=';
+
+var statusBarColor = '#ac61cd';
+var appIntro = { ios: { home: 'http://thegossipmonger.com/app_intro/ios/home.jpg', entity: 'http://thegossipmonger.com/app_intro/ios/entity.jpg', news: 'http://thegossipmonger.com/app_intro/ios/news.jpg' }, android: { home: 'http://thegossipmonger.com/app_intro/android/home.jpg', entity: 'http://thegossipmonger.com/app_intro/android/entity.jpg', news: 'http://thegossipmonger.com/app_intro/android/news.jpg' } };
+var GlobalProvider = (function () {
+    function GlobalProvider() {
+        this.playerId = null;
+        this.user = {};
+        this.location = 'Mumbai';
+    }
+    GlobalProvider.prototype.setAuthData = function (data) {
+        try {
+            this.user = JSON.parse(data);
+        }
+        catch (e) {
+            this.user = data;
+        }
+        this.userId = this.user.ID;
+    };
+    GlobalProvider.prototype.setPlayerId = function (id) {
+        this.playerId = id;
+    };
+    GlobalProvider.prototype.toggleMute = function (value) {
+        this.isMuted = value;
+    };
+    GlobalProvider.prototype.dropAuthData = function () {
+        this.userId = null;
+        this.user = null;
+    };
+    GlobalProvider.prototype.setLocation = function (location) {
+        if (location) {
+            location = location.replace(' ', '-');
+        }
+        this.location = location;
+    };
+    return GlobalProvider;
+}());
+GlobalProvider = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])()
+], GlobalProvider);
+
+//# sourceMappingURL=config.js.map
+
+/***/ }),
+
+/***/ 334:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__ = __webpack_require__(244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__ = __webpack_require__(245);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_config__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_onesignal__ = __webpack_require__(130);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__ionic_native_deeplinks__ = __webpack_require__(243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__ = __webpack_require__(131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_auth_auth__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_comments_comments__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_user_profile_user_profile__ = __webpack_require__(82);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+var MyApp = (function () {
+    function MyApp(events, deeplinks, globalProvider, oneSignal, platform, statusBar, splashScreen, keyboard, shared) {
+        var _this = this;
+        this.events = events;
+        this.deeplinks = deeplinks;
+        this.globalProvider = globalProvider;
+        this.oneSignal = oneSignal;
+        this.shared = shared;
+        this._isColdStart = true;
+        shared.LS.get('user').then(function (data) {
+            if (!data) {
+                _this.rootPage = __WEBPACK_IMPORTED_MODULE_10__pages_auth_auth__["a" /* AuthPage */];
+            }
+            else {
+                _this.globalProvider.setAuthData(data);
+                _this.rootPage = __WEBPACK_IMPORTED_MODULE_9__pages_tabs_tabs__["a" /* TabsPage */];
+                _this._isColdStart = false;
+            }
+        });
+        shared.LS.get('isMuted').then(function (data) {
+            _this.globalProvider.toggleMute(data);
+        });
+        shared.LS.get('location').then(function (data) {
+            _this.globalProvider.setLocation(data);
+        });
+        shared.LS.get('intro').then(function (data) {
+            if (!data) {
+                shared.LS.set('intro', { home: false, news: false, entity: false });
+            }
+        });
+        platform.ready().then(function () {
+            // Okay, so the platform is ready and our plugins are available.
+            // Here you can do any higher level native things you might need.
+            keyboard.disableScroll(true);
+            keyboard.hideKeyboardAccessoryBar(false);
+            statusBar.styleDefault();
+            statusBar.backgroundColorByHexString(__WEBPACK_IMPORTED_MODULE_6__providers_config__["d" /* statusBarColor */]);
+            splashScreen.hide();
+            if (platform.is('cordova')) {
+                _this.oneSignal.startInit('4cf261ef-295d-4258-b259-788d122d8e0b', 'Y2MwMTZjZmEtMThlZS00NmE5LWIyMGEtODUyYzVhY2QyMjc3');
+                _this.oneSignal.inFocusDisplaying(_this.oneSignal.OSInFocusDisplayOption.Notification);
+                _this.oneSignal.handleNotificationReceived().subscribe(function (data) {
+                });
+                _this.oneSignal.handleNotificationOpened().subscribe(function (data) {
+                    var payload = data;
+                    if (_this._isColdStart) {
+                        events.subscribe('root:created', function (data) {
+                            _this.redirectToPage(payload);
+                            events.unsubscribe('root:created');
+                        });
+                    }
+                    else {
+                        _this.redirectToPage(data);
+                    }
+                });
+                _this.oneSignal.endInit();
+            }
+            _this.deeplinks.routeWithNavController(_this.navController, {
+                '/gossip/:id': __WEBPACK_IMPORTED_MODULE_11__pages_comments_comments__["a" /* CommentsPage */]
+            }).subscribe(function (match) {
+                console.info('Successfully matched route', match);
+            }, function (nomatch) {
+                console.error('Got a deeplink that didn\'t match', nomatch);
+            });
+        });
+    }
+    MyApp.prototype.redirectToPage = function (data) {
+        var type;
+        try {
+            type = data.notification.payload.additionalData.type;
+        }
+        catch (e) {
+            console.warn(e);
+        }
+        switch (type) {
+            case 'Followers': {
+                this.navController.push(__WEBPACK_IMPORTED_MODULE_12__pages_user_profile_user_profile__["b" /* UserProfilePage */], { userId: data.notification.payload.additionalData.uid });
+                break;
+            }
+            case 'comment': {
+                this.navController.push(__WEBPACK_IMPORTED_MODULE_11__pages_comments_comments__["a" /* CommentsPage */], { id: data.notification.payload.additionalData.pid });
+                break;
+            }
+        }
+    };
+    return MyApp;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */])
+], MyApp.prototype, "navController", void 0);
+MyApp = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/app/app.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Events */], __WEBPACK_IMPORTED_MODULE_8__ionic_native_deeplinks__["a" /* Deeplinks */], __WEBPACK_IMPORTED_MODULE_6__providers_config__["a" /* GlobalProvider */], __WEBPACK_IMPORTED_MODULE_7__ionic_native_onesignal__["a" /* OneSignal */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_keyboard__["a" /* Keyboard */],
+        __WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */]])
+], MyApp);
+
+//# sourceMappingURL=app.component.js.map
+
+/***/ }),
+
+/***/ 45:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EntityProfilePage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__review_review__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_vibration__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__add_gossip_add_gossip__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_config__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+
+
+
+
+var EntityProfilePage = (function () {
+    function EntityProfilePage(api, shared, navCtrl, navParams, modal, viewCtrl, smartAudio, vibration, globalProvider, ngZone, platform) {
+        this.api = api;
+        this.shared = shared;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.modal = modal;
+        this.viewCtrl = viewCtrl;
+        this.smartAudio = smartAudio;
+        this.vibration = vibration;
+        this.globalProvider = globalProvider;
+        this.ngZone = ngZone;
+        this.platform = platform;
+        this.segment = 'news';
+        this.opacity = 0;
+        this.headerBackground = "rgba(192, 108, 228, " + this.opacity + ")";
+        this._preScrollArea = 0;
+        this.entityDetail = { category: [{}] };
+        if (!globalProvider.isMuted) {
+            try {
+                smartAudio.preload('negative', 'assets/sounds/Negative.mp3');
+                smartAudio.preload('positive', 'assets/sounds/Positive.mp3');
+            }
+            catch (exception) {
+                console.warn(exception);
+            }
+        }
+        this._id = this.navParams.get('id');
+        this._type = this.navParams.get('type');
+    }
+    EntityProfilePage.prototype.ionViewDidLoad = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (this._type == 1) {
+                            this.tapEvent(2);
+                        }
+                        else if (this._type == 2) {
+                            this.tapEvent(1);
+                        }
+                        this.getEntityDetail();
+                        this.getGossips(true);
+                        this.getEntityNews();
+                        return [4 /*yield*/, this.shared.checkIntro('entity')];
+                    case 1:
+                        if (_a.sent()) {
+                            if (this.platform.is('ios')) {
+                                this.showIntro = __WEBPACK_IMPORTED_MODULE_8__providers_config__["b" /* appIntro */].ios.entity;
+                            }
+                            else {
+                                this.showIntro = __WEBPACK_IMPORTED_MODULE_8__providers_config__["b" /* appIntro */].android.entity;
+                            }
+                        }
+                        ;
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    EntityProfilePage.prototype.update = function () {
+        var _this = this;
+        if (!(this.platform.is('ios'))) {
+            this.ngZone.run(function () {
+                if (_this._preScrollArea > _this.content.scrollTop) {
+                    if (_this.opacity > 0 && _this.content.scrollTop < 500)
+                        _this.opacity = _this.opacity - 0.9;
+                    _this.headerBackground = "rgba(192, 108, 228, " + _this.opacity + ")";
+                }
+                else if (_this._preScrollArea < _this.content.scrollTop) {
+                    if (_this.opacity < 1 && _this.content.scrollTop < 500)
+                        _this.opacity = _this.opacity + 0.9;
+                    _this.headerBackground = "rgba(192, 108, 228, " + _this.opacity + ")";
+                }
+            });
+            this._preScrollArea = this.content.scrollTop;
+        }
+    };
+    EntityProfilePage.prototype.boomarkEntity = function (id) {
+        var _this = this;
+        this.entityDetail.entityFollow = !this.entityDetail.entityFollow;
+        this.api.followEntity(id).subscribe(function (data) {
+            if (_this.entityDetail.entityFollow) {
+                _this.shared.Toast.show('Started following ' + _this.entityDetail.title, null, 'bottom');
+            }
+            else {
+                _this.shared.Toast.show('Unfollowed ' + _this.entityDetail.title, null, 'bottom');
+            }
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    EntityProfilePage.prototype.getGossips = function (showLoader) {
+        var _this = this;
+        if (showLoader) {
+            this.shared.Loader.show();
+        }
+        var feedbackType = 0;
+        if (this.segment == 'hated') {
+            feedbackType = 1;
+        }
+        this.api.getGossipByEntity(this._id, feedbackType).subscribe(function (data) {
+            _this.entityGossips = data;
+            _this.shared.Loader.closeIfActive();
+        }, function (err) {
+            _this.shared.Loader.closeIfActive();
+            console.error(err);
+        });
+    };
+    EntityProfilePage.prototype.getEntityNews = function () {
+        var _this = this;
+        this.api.getEntityNews(this._id).subscribe(function (data) {
+            _this.entityNews = data;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    EntityProfilePage.prototype.updateSegment = function (segment) {
+        if (segment != 'news') {
+            this.getGossips(true);
+        }
+    };
+    EntityProfilePage.prototype.getEntityDetail = function () {
+        var _this = this;
+        this.api.getEntityDetail(this._id).subscribe(function (data) {
+            _this.entityDetail = data;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    EntityProfilePage.prototype.tapEvent = function (ev) {
+        var _this = this;
+        var modal;
+        if (ev.direction == 2 || ev == 2) {
+            modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_4__review_review__["a" /* ReviewPage */], { type: 0, id: this._id });
+            if (!this.globalProvider.isMuted) {
+                this.smartAudio.play('positive');
+            }
+        }
+        else {
+            modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_4__review_review__["a" /* ReviewPage */], { type: 1, id: this._id });
+            if (!this.globalProvider.isMuted) {
+                this.smartAudio.play('negative');
+            }
+        }
+        this.vibration.vibrate(75);
+        modal.onDidDismiss(function (type) {
+            _this.getGossips();
+            _this.getEntityDetail();
+        });
+        modal.present();
+    };
+    EntityProfilePage.prototype.jubToSegment = function (param) {
+        this.segment = param;
+        this.scroll();
+    };
+    EntityProfilePage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    EntityProfilePage.prototype.scroll = function () {
+        this.content.scrollTo(0, this.content.contentHeight, 300);
+    };
+    EntityProfilePage.prototype.addGossips = function (news) {
+        var _this = this;
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_7__add_gossip_add_gossip__["a" /* AddGossipPage */], { type: null, id: this._id, data: news });
+        modal.onDidDismiss(function (type) {
+            _this.getGossips();
+            _this.getEntityDetail();
+        });
+        modal.present();
+    };
+    return EntityProfilePage;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_13" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */]),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* Content */])
+], EntityProfilePage.prototype, "content", void 0);
+EntityProfilePage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-entity-profile',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/entity-profile/entity-profile.html"*/'<ion-content (ionScroll)="update()">\n    <div class="subject-bg ">\n        <ion-toolbar color="primary" class="trasparent-header" [style.background]="headerBackground">\n            <button ion-button icon-left color="white" (click)="dismiss()">\n      <ion-icon name="arrow-back"></ion-icon>\n    <ion-title>{{entityDetail.category[0].name}}</ion-title>\n    </button>\n            <button ion-button icon-only color="whitec" (click)="boomarkEntity(entityDetail.id)" item-right [class]="entityDetail.entityFollow ? \'bookmark-btn1 liked\' : \'bookmark-btn1\'">\n      <ion-icon name="bookmark"></ion-icon>\n    </button>\n\n        </ion-toolbar>\n\n        <div class="profile-wrapper">\n            <div class="profile-data">\n                <h1 color="whitec" ion-text>{{entityDetail.title}}</h1>\n                <h4 color="whitec" ion-text class="mt0">{{ entityDetail.subtitle || entityDetail.category[0].name}}</h4>\n            </div>\n            <img [src]="entityDetail.img || \'assets/img/image.png\'" (click)="shared.imageViewer.show(entityDetail.img || \'assets/img/image.png\', entityDetail.title)"\n                class="profile-img" alt="">\n            <div>\n                        <ion-row class="custom-row">\n                            <ion-col class="pt0">\n                                <button ion-button text-right outline color="whitec" (click)="jubToSegment(\'rated\')" class="add-btn"> Top Rated </button>\n                            </ion-col>\n                            <ion-col  class="pt0">\n                                <button ion-button text-right outline color="whitec" (click)="jubToSegment(\'hated\')" class="add-btn">   Top Hated </button>\n                            </ion-col>\n                        </ion-row>  \n\n                <button ion-button text-right outline color="whitec"  (click)="jubToSegment(\'news\')" class="add-btn"> Word out there! </button>\n                <br>\n                <button ion-button text-right outline color="whitec" (click)="addGossips()" class="add-btn mt10"> Add Gossip </button>\n            </div>\n            <div class="drag-section-wrap" padding-left padding-right>\n                <div class="drag-section">\n                    <div class="slider-wrap" (swipe)="tapEvent($event)">\n                        <ion-row>\n\n                            <ion-col text-center (click)="tapEvent(2)">\n                                <h5 class="mt0 mb0 white">\n                                    {{entityDetail.total_positive_gossips}}\n                                </h5>\n                                <img src="assets/img/loved.png" alt="">\n                            </ion-col>\n                            <ion-col text-center class="slide-img-wrap">\n                                <button ion-button icon-only class="down-btn mt10" (click)="scroll()">\n  <ion-icon name="ios-arrow-down-outline"></ion-icon>\n</button>\n                            </ion-col>\n                            <ion-col (click)="tapEvent(1)" text-center>\n                                <h5 class="mt0 mb0 white">\n                                    {{entityDetail.total_negative_gossips}}\n                                </h5>\n                                <img src="assets/img/hated.png" alt="">\n                            </ion-col>\n                        </ion-row>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n    <ion-segment [(ngModel)]="segment" color="whitec" (ionChange)="updateSegment(segment)">\n        <ion-segment-button value="news">\n            News\n        </ion-segment-button>\n        <ion-segment-button value="rated">\n            Top Rated\n        </ion-segment-button>\n        <ion-segment-button value="hated">\n            Top Hated\n        </ion-segment-button>\n    </ion-segment>\n    <ion-list class="comments">\n        <gossip-card [gossips]="entityGossips" *ngIf="segment == \'hated\' || segment == \'rated\'"></gossip-card>\n        <news *ngIf="segment == \'news\'" [entityId]="entityDetail.id" [newsList]="entityNews"></news>\n    </ion-list>\n</ion-content>\n<div class="app-intro" *ngIf="showIntro" (click)="showIntro = false"> \n    <img src="http://tgm-inf.cruxservers.in/app_intro/android/entity.jpg">\n    <button ion-button color="primary" class="intro-button">\n        OK, Got it! \n    </button>\n</div> '/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/entity-profile/entity-profile.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */],
+        __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */],
+        __WEBPACK_IMPORTED_MODULE_5__providers_smart_audio_smart_audio__["a" /* SmartAudio */],
+        __WEBPACK_IMPORTED_MODULE_6__ionic_native_vibration__["a" /* Vibration */],
+        __WEBPACK_IMPORTED_MODULE_8__providers_config__["a" /* GlobalProvider */],
+        __WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* NgZone */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */]])
+], EntityProfilePage);
+
+//# sourceMappingURL=entity-profile.js.map
+
+/***/ }),
+
+/***/ 59:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddGossipPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_config__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_search_search__ = __webpack_require__(77);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var AddGossipPage = (function () {
+    function AddGossipPage(actionSheetCtrl, globalProvider, modal, navCtrl, navParams, viewCtrl, api, shared) {
+        this.actionSheetCtrl = actionSheetCtrl;
+        this.globalProvider = globalProvider;
+        this.modal = modal;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.api = api;
+        this.shared = shared;
+        this.addGossip = { posted_as: this.globalProvider.userId, newsId: null };
+        this.user = this.globalProvider.user;
+        this.selectedEntity = { category: [{ name: null }] };
+        this.type = this.navParams.get('type');
+        this.addGossip.feedbackType = this.navParams.get('type');
+        this.id = this.navParams.get('id');
+        this.addGossip.id = this.navParams.get('id');
+        if (this.navParams.get('data')) {
+            this.news = this.navParams.get('data');
+            this.addGossip.newsId = this.navParams.get('data').id;
+            this.addGossip.newsTitle = this.navParams.get('data').title;
+            this.addGossip.newsUrl = this.navParams.get('data').url;
+        }
+        if (this.navParams.get('news')) {
+            this.news = this.navParams.get('news');
+            this.addGossip.newsTitle = this.navParams.get('news').title;
+            this.addGossip.newsUrl = this.navParams.get('news').link;
+        }
+    }
+    AddGossipPage.prototype.getMyEntity = function () {
+        var _this = this;
+        this.shared.Loader.show();
+        this.api.getMyEntity(this.globalProvider.userId).subscribe(function (data) {
+            _this.myEntity = data;
+            _this.shared.Loader.hide();
+        }, function (err) {
+            _this.shared.Loader.hide();
+            console.error(err);
+        });
+    };
+    AddGossipPage.prototype.searchEntity = function () {
+        var _this = this;
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_5__pages_search_search__["a" /* SearchPage */], { source: 'gossip' });
+        modal.onDidDismiss(function (data) {
+            if (data) {
+                _this.id = data.id;
+                _this.addGossip.id = data.id;
+                _this.selectedEntity = data;
+            }
+            else {
+            }
+        });
+        modal.present();
+    };
+    AddGossipPage.prototype.insertGossip = function (gossip) {
+        var _this = this;
+        if (gossip.posted_as != 'anonymous') {
+            gossip.isAnonymous = 0;
+        }
+        else {
+            gossip.isAnonymous = 1;
+            gossip.posted_as = null;
+        }
+        gossip.type = gossip.feedbackType;
+        gossip.image = this.addGossip.image;
+        this.shared.Loader.show();
+        this.api.insertGossip(gossip).subscribe(function (data) {
+            _this.shared.Toast.show('Gossip created successfully');
+            _this.viewCtrl.dismiss();
+            _this.shared.Loader.hide();
+        }, function (err) {
+            _this.shared.Loader.hide();
+            console.error(err);
+        });
+    };
+    AddGossipPage.prototype.chooseImage = function (source) {
+        var _this = this;
+        this.shared.uploadMedia.image(source)
+            .then(function (imageData) {
+            _this.addGossip.image = 'data:image/png;base64,' + imageData;
+        }, function (err) {
+        });
+    };
+    AddGossipPage.prototype.selectImage = function () {
+        var _this = this;
+        var actionSheet = this.actionSheetCtrl.create({
+            title: 'Capture image with',
+            buttons: [
+                {
+                    text: 'Camera',
+                    icon: 'camera',
+                    handler: function () {
+                        _this.chooseImage(1);
+                    }
+                },
+                {
+                    text: 'Gallery',
+                    icon: 'images',
+                    handler: function () {
+                        _this.chooseImage(2);
+                    }
+                }
+            ]
+        });
+        actionSheet.present();
+    };
+    AddGossipPage.prototype.ionViewDidLoad = function () {
+        this.getMyEntity();
+    };
+    AddGossipPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss();
+    };
+    AddGossipPage.prototype.removeImage = function () {
+        this.addGossip.image = '';
+    };
+    return AddGossipPage;
+}());
+AddGossipPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-add-gossip',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/add-gossip/add-gossip.html"*/'<ion-header>\n    <ion-toolbar color="primary">\n        <button ion-button icon-only menuToggle="false" left color="whitec" (click)="dismiss()">\n      <ion-icon name="arrow-back"></ion-icon>\n    </button>\n        <ion-title>\n            Add Gossip\n        </ion-title>\n    </ion-toolbar>\n</ion-header>\n\n<ion-content>\n    <div class="add-gossip">\n        <form #gossipForm="ngForm" novalidate>\n            <ion-card class="card-items ion-card-full">\n                <ion-card-content>\n                    <ion-list>\n                        <ion-searchbar *ngIf="!addGossip.id" (click)="searchEntity()" placeholder="Search Entities"></ion-searchbar>\n                        <ion-item *ngIf="selectedEntity.id">\n                            <ion-avatar item-left>\n                                <img [src]="selectedEntity.img">\n                            </ion-avatar>\n                            <h2>{{selectedEntity.title}}</h2>\n                            <p>{{selectedEntity.category[0].name}}</p>\n                        </ion-item>\n                        <ion-item class="pl8 news-wrap" *ngIf="news">\n                            <div class="news-display">\n                                <span class="bold">Source - </span> {{news.title}}\n                            </div>\n                        </ion-item>\n                        <ion-item style="margin-left: -17px">\n                            <ion-grid>\n                                <ion-row class="emo-img">\n                                    <ion-col text-center>\n                                        <input type="radio" id="pos" [(ngModel)]="addGossip.feedbackType" name="type" [value]="0">\n                                        <label for="pos"> <img src="assets/img/loved.png"   alt=""> <div class="type-text">Positive Gossip</div></label>\n                                    </ion-col>\n                                    <ion-col text-center>\n                                        <input type="radio" id="neg" [(ngModel)]="addGossip.feedbackType" name="type" [value]="1">\n                                        <label for="neg">\n                    <img src="assets/img/hated.png"  alt=""> <div class="type-text">Negative Gossip</div>\n                    </label>\n                                    </ion-col>\n                                </ion-row>\n                            </ion-grid>\n                        </ion-item>\n                        <ion-item class="pl8">\n                            <ion-label stacked>Gossip as</ion-label>\n                            <ion-select interface="popover" name="poastedAs" class="w40" #poastedAs="ngModel" [(ngModel)]="addGossip.posted_as">\n                                <ion-option value="anonymous">Anonymous</ion-option>\n                                <ion-option [value]="user.ID">{{user.display_name}}</ion-option>\n                                <ion-option [value]="item.id" *ngFor="let item of myEntity">{{item.title}}</ion-option>\n                            </ion-select>\n                        </ion-item>\n                        <ion-item class="pl8">\n                            <!--<ion-label stacked>Description*</ion-label>-->\n                            <textarea class="text-area" rows="6" placeholder="Gossip Content" cols="" [(ngModel)]="addGossip.gossip" name="gossip" #gossip="ngModel"\n                                required></textarea>\n                            <!--<ion-input type="text" [(ngModel)]="addGossip.gossip" name="gossip" #gossip="ngModel" required></ion-input>-->\n                        </ion-item>\n                        <ion-item class="pl8 img-preview" *ngIf="addGossip.image">\n                            <div>\n                                <img [src]="addGossip.image" alt="attachment">\n                                <button class="action-btn" (click)="removeImage()" ion-button icon-left clear small>\n                                        <ion-icon name="md-close"></ion-icon> \n                                    </button>\n                            </div>\n                        </ion-item>\n\n                        <ion-item class="pl8">\n                            <button class="h35" (click)="selectImage()" ion-button block outline icon-left>\n  <ion-icon name="attach"></ion-icon>\n {{ addGossip.image ? \'Change\' : \'Attach\'}}  image\n</button>\n                        </ion-item>\n                    </ion-list>\n                    <div class="submit-btn">\n                        <br>\n                        <button [disabled]="!((addGossip.feedbackType == 0 || addGossip.feedbackType == 1) && addGossip.gossip && addGossip.id)"\n                            ion-button (click)="insertGossip(addGossip)" color="primary" type="submit" block>Post</button>\n                    </div>\n\n                </ion-card-content>\n            </ion-card>\n\n        </form>\n    </div>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/add-gossip/add-gossip.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_4__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */], __WEBPACK_IMPORTED_MODULE_2__providers_config__["a" /* GlobalProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */], __WEBPACK_IMPORTED_MODULE_3__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_4__providers_shared_provider__["a" /* SharedProvider */]])
+], AddGossipPage);
+
+//# sourceMappingURL=add-gossip.js.map
+
+/***/ }),
+
+/***/ 598:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GossipCardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_entity_profile_entity_profile__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_config__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_comments_comments__ = __webpack_require__(60);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var GossipCardComponent = (function () {
+    function GossipCardComponent(globalProvider, api, modal, shared) {
+        this.globalProvider = globalProvider;
+        this.api = api;
+        this.modal = modal;
+        this.shared = shared;
+        this.gossips = [{}];
+        this.unFollowEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this.dataUpdated = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this.userId = globalProvider.userId;
+    }
+    GossipCardComponent.prototype.ionViewDidLoad = function () { };
+    GossipCardComponent.prototype.entityProfile = function (id) {
+        var _this = this;
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_2__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */], { id: id });
+        modal.onDidDismiss(function (data) {
+            _this.dataUpdated.next();
+        });
+        modal.present();
+    };
+    GossipCardComponent.prototype.displayImage = function (url, title) {
+        this.shared.imageViewer.show(url, title);
+    };
+    GossipCardComponent.prototype.vote = function (gossip, type, index) {
+        console.log(index);
+        if (type == 'positive') {
+            if (this.gossips[index].action.up != null) {
+                this.gossips[index].total_upvotes = Number(this.gossips[index].total_upvotes) - 1;
+                this.gossips[index].action.up = null;
+            }
+            else {
+                this.gossips[index].total_upvotes = Number(this.gossips[index].total_upvotes) + 1;
+                this.gossips[index].action.up = { voter: this.globalProvider.userId };
+            }
+        }
+        else if (type == 'negative') {
+            if (this.gossips[index].action.down != null) {
+                this.gossips[index].total_downvotes = Number(this.gossips[index].total_downvotes) - 1;
+                this.gossips[index].action.down = null;
+            }
+            else {
+                this.gossips[index].total_downvotes = Number(this.gossips[index].total_downvotes) + 1;
+                this.gossips[index].action.down = { voter: this.globalProvider.userId };
+            }
+        }
+        this.api.vote(type == 'positive' ? 0 : 1, gossip.id).subscribe(function (data) {
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    GossipCardComponent.prototype.shareVia = function (gossip) {
+        try {
+            this.shared.SocialSharing.shareVia("Hey, I found an interesting Gossip on this Crazy app 'The Gossip Monger'; an app where you can Gossip about anyone and everyone.\n\nGossip on: " + gossip.gossip_about.entity + ": " + gossip.content + "\n\nDownload now and start Gossiping :)", 'The Gossip Monger', gossip.img, gossip.google_short_url);
+        }
+        catch (e) {
+            this.shared.Toast.show('Oops! something went wrong while sharing.');
+            console.error(e);
+        }
+    };
+    GossipCardComponent.prototype.openComments = function (id) {
+        var _this = this;
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_6__pages_comments_comments__["a" /* CommentsPage */], { id: id });
+        modal.onDidDismiss(function (data) {
+            _this.dataUpdated.next();
+        });
+        modal.present();
+    };
+    GossipCardComponent.prototype.deleteGossip = function (gossip, index) {
+        var _this = this;
+        this.shared.Alert.confirm().then(function (res) {
+            _this.shared.Loader.show();
+            _this.api.deleteGossip(gossip.id).subscribe(function (data) {
+                _this.shared.Loader.hide();
+                if (data.errorType == 'success') {
+                    _this.shared.Toast.show('Gossip deleted successfully.');
+                    _this.gossips.splice(index, 1);
+                }
+            }, function (err) {
+                _this.shared.Loader.hide();
+                _this.shared.Loader.show('Oops! something went wrong.');
+            });
+        }, function (err) {
+            console.log('user cancelled');
+        });
+    };
+    GossipCardComponent.prototype.followGossip = function (gossip, index) {
+        var _this = this;
+        var action = 'follow';
+        if (this.gossips[index].action.follow != null) {
+            this.gossips[index].action.follow = null;
+            action = 'unfollow';
+        }
+        else {
+            this.gossips[index].action.follow = { voter: this.globalProvider.userId };
+        }
+        if (action == 'follow') {
+            this.api.followGossip(gossip.id).subscribe(function (data) {
+            }, function (err) {
+            });
+        }
+        else {
+            this.api.unFollowGossip(gossip.id).subscribe(function (data) {
+                _this.unFollowEvent.next();
+            }, function (err) {
+            });
+        }
+    };
+    return GossipCardComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+    __metadata("design:type", Object)
+], GossipCardComponent.prototype, "gossips", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Output */])(),
+    __metadata("design:type", Object)
+], GossipCardComponent.prototype, "unFollowEvent", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Output */])(),
+    __metadata("design:type", Object)
+], GossipCardComponent.prototype, "dataUpdated", void 0);
+GossipCardComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'gossip-card',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/components/gossip-card/gossip-card.html"*/' <ion-list class="mt10">\n   <span *ngFor="let gossip of gossips; let index = index"> \n      <ion-card class="home-listing">\n            <ion-item class="border-top transparent">\n                <ion-avatar item-left (click)="entityProfile(gossip.gossip_about.ID)">\n                    <img [src]="gossip.gossip_about.img">\n                </ion-avatar>\n                <h2 (click)="entityProfile(gossip.gossip_about.ID)">{{gossip.gossip_about.entity}}</h2>\n                <p (click)="entityProfile(gossip.gossip_about.ID)">{{gossip.category[0].name}}</p>\n                <div class="category-icon">\n                    <img src="assets/img/hated.png" alt="neg" *ngIf="gossip.feedback_type == 1" class="bookmark-btn">\n                    <img src="assets/img/loved.png" alt="pos" *ngIf="gossip.feedback_type == 0" class="bookmark-btn">\n                </div>\n            </ion-item>\n            <ion-card-content>\n                <p>\n                    {{gossip.content}}\n                </p>\n                <img *ngIf="gossip.img"  [src]="gossip.img" (click)="displayImage(gossip.img,gossip.title)">\n                 <div class="news-display" *ngIf="gossip.news_title">\n                       <span class="bold" style="margin-left: 0px">Source - </span> {{gossip.news_title}}\n                 </div>\n                <p text-right class="gossip-id">Gossip #{{gossip.id}}</p>\n            </ion-card-content>\n            <ion-grid class="post">\n                <ion-row>\n                    <ion-col class="p0">\n                        <button color="dark"  [class]="gossip.action.up != null ? \'up-voted\' : \'\' "  ion-button clear small (click)="vote(gossip, \'positive\', index)"> \n                      <ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>\n                      <span>{{gossip.total_upvotes}}</span> \n                  </button>\n                    </ion-col>\n                    <ion-col class="p0">\n                        <button color="dark"  [class]="gossip.action.down != null ? \'down-voted\' : \'\' " ion-button clear small (click)="vote(gossip, \'negative\', index)"> \n                      <ion-icon ios="ios-thumbs-down" md="md-thumbs-down"></ion-icon>\n                       <span>{{gossip.total_downvotes}} </span>\n                  </button>\n                    </ion-col>\n                    <ion-col class="p0">\n                        <button color="dark" ion-button icon-left clear small (click)="openComments(gossip.id)">\n                     <ion-icon name="text"></ion-icon>\n                     <div>{{gossip.total_comments}}</div>\n                  </button>\n                    </ion-col>\n                    <ion-col class="p0" text-center center>\n                        \n                        <button *ngIf="userId != gossip.author.ID" [color]="gossip.action.follow != null ? \'primary\' : \'dark\'" class="action-btn" (click)="followGossip(gossip, index)" ion-button icon-left clear small>\n                     <ion-icon name="md-bookmark"></ion-icon> \n                  </button>\n                    <button *ngIf="userId == gossip.author.ID" color="danger" class="action-btn" (click)="deleteGossip(gossip, index)" ion-button icon-left clear small>\n                     <ion-icon name="md-trash"></ion-icon> \n                  </button>\n                    </ion-col>\n                    <ion-col class="p0" center text-center>\n                        <button color="dark" class="action-btn" (click)="shareVia(gossip)" ion-button icon-left clear small>\n                     <ion-icon name="share"></ion-icon> \n                  </button>\n                    </ion-col>\n                </ion-row>\n            </ion-grid>\n        </ion-card> \n        </span>\n        <div  center text-center class="no-data" *ngIf="!gossips?.length">No gossip found.</div>\n    </ion-list>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/components/gossip-card/gossip-card.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__providers_config__["a" /* GlobalProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_3__providers_shared_provider__["a" /* SharedProvider */]])
+], GossipCardComponent);
+
+//# sourceMappingURL=gossip-card.js.map
+
+/***/ }),
+
+/***/ 599:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EntityCardComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_entity_profile_entity_profile__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_api_provider__ = __webpack_require__(21);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var EntityCardComponent = (function () {
+    function EntityCardComponent(sanitizer, api, modal, shared) {
+        this.sanitizer = sanitizer;
+        this.api = api;
+        this.modal = modal;
+        this.shared = shared;
+        this.entities = [{}];
+        this.showBookmark = true;
+        this.unFollowEvent = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+        this.dataUpdated = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["w" /* EventEmitter */]();
+    }
+    EntityCardComponent.prototype.getBackground = function (image) {
+        return this.sanitizer.bypassSecurityTrustStyle("linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url(" + image + ")");
+    };
+    EntityCardComponent.prototype.entityProfile = function (id, type) {
+        var _this = this;
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_3__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */], { id: id, type: type });
+        modal.onDidDismiss(function (data) {
+            _this.dataUpdated.next();
+        });
+        modal.present();
+    };
+    EntityCardComponent.prototype.bookmarkEntity = function (id, index) {
+        var _this = this;
+        this.entities[index].entityFollow = !this.entities[index].entityFollow;
+        this.api.followEntity(id).subscribe(function (data) {
+            _this.unFollowEvent.next();
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    return EntityCardComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+    __metadata("design:type", Object)
+], EntityCardComponent.prototype, "entities", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+    __metadata("design:type", Boolean)
+], EntityCardComponent.prototype, "showBookmark", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Output */])(),
+    __metadata("design:type", Object)
+], EntityCardComponent.prototype, "unFollowEvent", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["S" /* Output */])(),
+    __metadata("design:type", Object)
+], EntityCardComponent.prototype, "dataUpdated", void 0);
+EntityCardComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'entity-card',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/components/entity-card/entity-card.html"*/'<ion-list class="trending-card">\n    <ion-row>\n        <ion-col col-6 col-md-4 *ngFor="let entity of entities; let index = index">\n            <ion-card>\n                <div>\n                    <div class="tending-content" (click)="entityProfile(entity.id)" [style.background-image]="getBackground(entity.img)">\n                        <div class="card-title oneLiner">{{entity.title}}</div>\n                        <div class="card-subtitle">{{entity.category[0].name}}</div>\n                    </div>\n\n                </div>\n                <ion-row>\n                    <ion-col class="entity-icon border-right">\n                        <button color="dark" ion-button clear small (click)="entityProfile(entity.id, 1)"> \n                            <img src="assets/img/loved.png" alt=""> \n                            <span class="gossip-count">\n                                {{entity.total_positive_gossips}}\n                            </span>\n                             </button>\n                    </ion-col>\n                    <ion-col [class]="showBookmark ? \'entity-icon border-right col\' : \'entity-icon col\'">\n                        <button color="dark" ion-button clear small (click)="entityProfile(entity.id, 2)">  \n                            <img src="assets/img/hated.png" alt="">\n                                <span class="gossip-count">\n                                 {{entity.total_negative_gossips}}\n                                </span>\n                             </button>\n                    </ion-col>\n                    <ion-col class="entity-icon" *ngIf="showBookmark">\n                        <button ion-button icon-only small color="whitec" (click)="bookmarkEntity(entity.id, index)" item-right [class]="entity.entityFollow ? \'bookmark-btn1 liked\' : \'bookmark-btn1\'">\n                                <ion-icon name="bookmark"></ion-icon>\n                        </button>\n                    </ion-col>\n                </ion-row>\n            </ion-card>\n        </ion-col>\n    </ion-row>\n    <div center text-center class="no-data" *ngIf="!entities?.length">No entity found.</div>\n</ion-list>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/components/entity-card/entity-card.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["c" /* DomSanitizer */], __WEBPACK_IMPORTED_MODULE_5__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_4__providers_shared_provider__["a" /* SharedProvider */]])
+], EntityCardComponent);
+
+//# sourceMappingURL=entity-card.js.map
+
+/***/ }),
+
+/***/ 60:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CommentsPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__user_profile_user_profile__ = __webpack_require__(82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__entity_profile_entity_profile__ = __webpack_require__(45);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+var CommentsPage = (function () {
+    function CommentsPage(modal, navCtrl, navParams, viewCtrl, shared, api) {
+        this.modal = modal;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.viewCtrl = viewCtrl;
+        this.shared = shared;
+        this.api = api;
+        this.gossip = { gossip_about: {}, author: {}, category: [{}] };
+        this._id = this.navParams.get('id');
+    }
+    CommentsPage.prototype.ionViewDidLoad = function () {
+        this.getGossip();
+        this.getGossipComment(true);
+    };
+    CommentsPage.prototype.getGossip = function () {
+        var _this = this;
+        this.api.getGossip(this._id).subscribe(function (data) {
+            _this.gossip = data;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    CommentsPage.prototype.entityProfile = function (id) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_5__entity_profile_entity_profile__["a" /* EntityProfilePage */], { id: id });
+        modal.present();
+    };
+    CommentsPage.prototype.insertComment = function (msg) {
+        var _this = this;
+        if (!msg) {
+            return false;
+        }
+        this.shared.Loader.show();
+        this.api.insertComments(msg, this._id).subscribe(function (data) {
+            _this.getGossipComment();
+            _this.commentContent = '';
+            _this.shared.Loader.hide();
+        }, function (err) {
+            _this.shared.Loader.hide();
+            console.error(err);
+        });
+    };
+    CommentsPage.prototype.userProfile = function (id) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_3__user_profile_user_profile__["b" /* UserProfilePage */], { userId: id, });
+        modal.present();
+    };
+    CommentsPage.prototype.getGossipComment = function (loader) {
+        var _this = this;
+        if (loader) {
+            this.shared.Loader.show();
+        }
+        this.api.getGossipComments(this._id).subscribe(function (data) {
+            _this.comments = data;
+            if (loader) {
+                _this.shared.Loader.hide();
+            }
+        }, function (err) {
+            console.error(err);
+            if (loader) {
+                _this.shared.Loader.hide();
+            }
+        });
+    };
+    CommentsPage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss(false);
+    };
+    return CommentsPage;
+}());
+CommentsPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-comments',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/comments/comments.html"*/'<ion-header>\n    <ion-toolbar color="primary">\n        <button ion-button icon-only menuToggle="false" color="white" (click)="dismiss()">\n      <ion-icon name="arrow-back"></ion-icon>\n    </button>\n        <ion-title>\n            Comments\n        </ion-title>\n    </ion-toolbar>\n</ion-header>\n<ion-content>\n    <ion-list>\n        <ion-card class="home-listing"> \n              <ion-item class="user-block" *ngIf="gossip.is_anonymous != \'1\'">\n                <ion-avatar item-left  (click)="userProfile(gossip.author.ID)">\n                    <img [src]="gossip.author.img">\n                </ion-avatar>\n                <h2  (click)="userProfile(gossip.author.ID)">{{gossip.author.display_name}}</h2>\n                <p> {{gossip.comment_date}} </p> \n            </ion-item> \n              <ion-item class="user-block" *ngIf="gossip.is_anonymous == \'1\'">\n                <ion-avatar item-left>\n                    <img src="assets/img/anonymous.jpg">\n                </ion-avatar>\n                <h2>Anonymous</h2>\n                <p> {{gossip.created_at}} </p> \n            </ion-item> \n           <ion-item class="border-top">\n                <ion-avatar item-left (click)="entityProfile(gossip.gossip_about.ID)">\n                    <img [src]="gossip.gossip_about.img">\n                </ion-avatar>\n                <h2>{{gossip.gossip_about.entity}}</h2>\n                <p>{{gossip.category[0].name}}</p>\n                <div class="category-icon">\n                    <img src="assets/img/hated.png" *ngIf="gossip.feedback_type == 1" alt="" class="bookmark-btn">\n                    <img src="assets/img/loved.png" *ngIf="gossip.feedback_type == 0" alt="" class="bookmark-btn">\n                </div>\n            </ion-item>\n            <ion-card-content>\n                <p>\n                    {{gossip.content}}\n                </p>\n                <img *ngIf="gossip.img" [src]="gossip.img" (click)="displayImage(gossip.img,gossip.title)">\n                <div class="news-display" *ngIf="gossip.news_title">\n                       <span class="bold" style="margin-left: 0px">Source - </span> {{gossip.news_title}}\n                </div>\n                <p text-right class="gossip-id">Gossip #{{gossip.id}}</p>\n            </ion-card-content> \n            <ion-list class="comments">\n                <ion-item class="border-top">\n                    <ion-row>\n                        <ion-col col-10 class="p0">\n                            <textarea rows="2" class="w100 textarea" [(ngModel)]="commentContent" placeholder="Write comment"></textarea>\n                        </ion-col>\n                        <ion-col col-2 class="send-btn-wrap">\n                            <div> \n                                <button style="background-color: #ae00ff !important;" class="send-btn" [disabled]="!commentContent" (click)="insertComment(commentContent)" ion-button icon-only color="primary">\n                             <ion-icon name="send"></ion-icon>\n                         </button>\n                            </div>\n                        </ion-col>\n                    </ion-row>\n                </ion-item>\n                <ion-list-header class="mb0 pl8">\n                    Recent Comments\n                </ion-list-header>\n                <ion-item *ngFor="let comment of comments">\n                    <ion-avatar item-left (click)="userProfile(comment.author.ID)">\n                        <img [src]="comment.author.img" class="user-radius">\n                    </ion-avatar>\n                    <h2 (click)="userProfile(comment.author.ID)">{{comment.author.display_name}}</h2>\n                    <h4 class="comment-date">{{comment.comment_date | date:\'medium\'}}</h4> \n                    <p class="comment"> \n                        {{comment.comment_content}}\n                    </p> \n                </ion-item>\n                <div  center text-center class="no-data" *ngIf="!comments?.length">No comments found.</div>\n\n            </ion-list>\n        </ion-card>\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/comments/comments.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */], __WEBPACK_IMPORTED_MODULE_2__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_api_provider__["a" /* MongerApi */]])
+], CommentsPage);
+
+//# sourceMappingURL=comments.js.map
+
+/***/ }),
+
+/***/ 600:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_comments_comments__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_add_gossip_add_gossip__ = __webpack_require__(59);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs__ = __webpack_require__(249);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs__);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+var NewsComponent = (function () {
+    function NewsComponent(shared, api, modal) {
+        this.shared = shared;
+        this.api = api;
+        this.modal = modal;
+    }
+    NewsComponent.prototype.addGossips = function (news) {
+        var _this = this;
+        this.shared.Loader.show();
+        this.api.searchEntity(news.title, 'news').subscribe(function (response) {
+            _this.shared.Loader.hide();
+            try {
+                if (response.length) {
+                    _this.shared.Toast.show('Gossip about this news already exist, Please add comment to this gossip', null, 'top', true);
+                    _this.openGossip(response[0].id);
+                }
+                else {
+                    if (!_this.entityId) {
+                        _this.checkForAvailability(news);
+                    }
+                    else {
+                        _this.createGossip(news);
+                    }
+                }
+            }
+            catch (exception) {
+                if (!_this.entityId) {
+                    _this.checkForAvailability(news);
+                }
+                else {
+                    _this.createGossip(news);
+                }
+            }
+        }, function (err) {
+            _this.shared.Loader.hide();
+            if (!_this.entityId) {
+                _this.checkForAvailability(news);
+            }
+            else {
+                _this.createGossip(news);
+            }
+        });
+    };
+    NewsComponent.prototype.openGossip = function (gossipId) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_4__pages_comments_comments__["a" /* CommentsPage */], { id: gossipId });
+        modal.present();
+    };
+    NewsComponent.prototype.checkForAvailability = function (news) {
+        var _this = this;
+        this.shared.Loader.show();
+        this.api.searchEntityAvailability(this.newsText).subscribe(function (response) {
+            _this.shared.Loader.hide();
+            try {
+                if (response.length) {
+                    _this.entityId = response[0].id;
+                }
+            }
+            catch (exception) {
+                console.warn(exception);
+            }
+            _this.createGossip(news);
+        }, function (err) {
+            _this.shared.Loader.hide();
+            _this.createGossip(news);
+        });
+    };
+    NewsComponent.prototype.createGossip = function (news) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_5__pages_add_gossip_add_gossip__["a" /* AddGossipPage */], { type: null, id: this.entityId ? this.entityId : 460, news: news });
+        modal.present();
+    };
+    return NewsComponent;
+}());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_6_rxjs__["Observable"])
+], NewsComponent.prototype, "newsList", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+    __metadata("design:type", Number)
+], NewsComponent.prototype, "entityId", void 0);
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["E" /* Input */])(),
+    __metadata("design:type", Object)
+], NewsComponent.prototype, "newsText", void 0);
+NewsComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'news',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/components/news/news.html"*/'<div class="mt10">\n  <ion-card *ngFor="let news of newsList" class="news-card">\n    <ion-card-content class="news-content">\n      {{news?.title}}\n    </ion-card-content>\n    <ion-col class="p0">\n      <button color="dark" class="add-gossip" ion-button icon-left clear small (click)="addGossips(news)"> \n                      <ion-icon ios="ios-add" md="md-add" class="bold"></ion-icon>\n                      <span class="mt2">Gossip about this!</span>\n                      <ion-icon name="arrow-round-forward" class="ml8 news-arrow"></ion-icon>\n    </button>\n    </ion-col>\n  </ion-card>\n</div>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/components/news/news.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_1__providers_shared_provider__["a" /* SharedProvider */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_2__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["j" /* ModalController */]])
+], NewsComponent);
+
+//# sourceMappingURL=news.js.map
+
+/***/ }),
+
+/***/ 77:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SearchPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_entity_profile_entity_profile__ = __webpack_require__(45);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_comments_comments__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_gossips_gossips__ = __webpack_require__(140);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_config__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__angular_platform_browser__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__request_request__ = __webpack_require__(141);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+var SearchPage = (function () {
+    function SearchPage(sanitizer, modal, viewCtrl, shared, statusBar, navParams, api, navCtrl) {
+        this.sanitizer = sanitizer;
+        this.modal = modal;
+        this.viewCtrl = viewCtrl;
+        this.shared = shared;
+        this.statusBar = statusBar;
+        this.navParams = navParams;
+        this.api = api;
+        this.navCtrl = navCtrl;
+        this.users = [];
+        this.results = [];
+        this.geoNews = [];
+        this.loadingData = false;
+        this.showNotFound = false;
+        this.type = 'entity';
+        this.param = 'entity';
+        this.news = false;
+        this._isEdding = false;
+        this.queryText = '';
+        this.param = this.navParams.get('source');
+        if (this.navParams.get('source')) {
+            this._isEdding = true;
+        }
+        if (this.navParams.get('news')) {
+            this.news = true;
+            this.type = 'news';
+            this.param = 'news';
+        }
+    }
+    SearchPage.prototype.ionViewDidEnter = function () {
+        var elem = document.querySelector('page-search input');
+        if (elem) {
+            elem.focus();
+        }
+        this.statusBar.backgroundColorByHexString('#e0e0e0');
+    };
+    SearchPage.prototype.ionViewWillLeave = function () {
+        this.statusBar.backgroundColorByHexString(__WEBPACK_IMPORTED_MODULE_8__providers_config__["d" /* statusBarColor */]);
+    };
+    SearchPage.prototype.clearUsers = function () {
+        this.users = [];
+    };
+    SearchPage.prototype.searchNews = function (test) {
+        var _this = this;
+        this.loadingData = true;
+        this.api.searchNews(test).subscribe(function (data) {
+            try {
+                if (!data.items.length) {
+                    _this.showNotFound = true;
+                }
+            }
+            catch (exception) {
+                console.error(exception);
+            }
+            _this.geoNews = data.items;
+            _this.loadingData = false;
+        }, function (err) {
+            _this.loadingData = false;
+        });
+    };
+    SearchPage.prototype.searchEntity = function () {
+        var _this = this;
+        this.showNotFound = false;
+        if (!this.queryText) {
+            return false;
+        }
+        this.loadingData = true;
+        this.api.searchEntity(this.queryText, this.type).subscribe(function (data) {
+            _this.results = data;
+            try {
+                if (!_this.results.length) {
+                    _this.showNotFound = true;
+                }
+            }
+            catch (exception) {
+                console.error(exception);
+            }
+            _this.loadingData = false;
+        }, function (err) {
+            console.error(err);
+            _this.loadingData = false;
+        });
+    };
+    SearchPage.prototype.dismiss = function (data) {
+        this.viewCtrl.dismiss(data);
+    };
+    SearchPage.prototype.entitySelected = function (data) {
+        if (this._isEdding) {
+            this.dismiss(data);
+        }
+        else {
+            var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_5__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */], { id: data.id });
+            modal.present();
+        }
+    };
+    SearchPage.prototype.gossipSelected = function (id) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_6__pages_comments_comments__["a" /* CommentsPage */], { id: id });
+        modal.present();
+    };
+    SearchPage.prototype.categorySelected = function (gossip) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_7__pages_gossips_gossips__["a" /* GossipsPage */], { data: gossip });
+        modal.present();
+    };
+    SearchPage.prototype.selectChange = function () {
+        this.results = [];
+        this.queryText = '';
+    };
+    SearchPage.prototype.createNewEntity = function (entityText) {
+        var _this = this;
+        this.shared.Loader.show();
+        this.api.searchEntityAvailability(entityText).subscribe(function (response) {
+            _this.shared.Loader.hide();
+            try {
+                if (response.length) {
+                    _this.shared.Toast.show("Entity with this name already exists, Please add gossip to this entity", null, 'top', true);
+                    _this.openEntity(response[0].id);
+                }
+                else {
+                    _this.createEntity(entityText);
+                }
+            }
+            catch (exception) {
+                _this.createEntity(entityText);
+            }
+        }, function (err) {
+            _this.shared.Loader.hide();
+            _this.createEntity(entityText);
+        });
+    };
+    SearchPage.prototype.openEntity = function (entityId) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_5__pages_entity_profile_entity_profile__["a" /* EntityProfilePage */], { id: entityId });
+        modal.present();
+    };
+    SearchPage.prototype.createEntity = function (entityName) {
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_10__request_request__["a" /* RequestPage */], { type: 'modal', name: entityName });
+        modal.present();
+    };
+    SearchPage.prototype.getBackground = function (image) {
+        if (!image) {
+            return this.sanitizer.bypassSecurityTrustStyle("linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5))");
+        }
+        return this.sanitizer.bypassSecurityTrustStyle("linear-gradient( rgba(29, 29, 29, 0), rgba(16, 16, 23, 0.5)), url(" + image + ")");
+    };
+    return SearchPage;
+}());
+SearchPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-search',
+        providers: [__WEBPACK_IMPORTED_MODULE_3__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_4__providers_api_provider__["a" /* MongerApi */]],template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/search/search.html"*/'<ion-header>\n    <ion-toolbar>\n        <ion-searchbar color="primary" *ngIf="param != \'news\'" [(ngModel)]="queryText" [debounce]="250" (ionInput)="searchEntity()"\n            placeholder="Search.." showCancelButton="true" (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">\n        </ion-searchbar>\n        <form #form="ngForm" (ngSubmit)="searchNews(newsText)">\n            <ion-row class="p0 m0" *ngIf="param == \'news\'">\n                <ion-col class="p0 m0" col-10>\n                    <ion-searchbar color="primary" [(ngModel)]="newsText" name="newsText" placeholder="Search the web.." showCancelButton="true"\n                        (ionCancel)="dismiss()" autocomplete="off" autocorrect="off" animated="true">\n                    </ion-searchbar>\n                </ion-col>\n                <ion-col class="p0 m0" col-2>\n                    <button type="submit" [disabled]="!newsText" ion-button icon-only class="w100 h100 p0 m0">\n                <ion-icon name="search" *ngIf="!loadingData"></ion-icon>\n                <ion-spinner class="newsLoader" *ngIf="loadingData"  color="whitec" icon="android"></ion-spinner>            \n            </button>\n                </ion-col>\n            </ion-row>\n        </form>\n        <ion-spinner class="filterSpinner" *ngIf="loadingData && param != \'news\'" color="primary" icon="android"></ion-spinner>\n    </ion-toolbar>\n</ion-header>\n<ion-content class="outer-content">\n    <div class="" *ngIf="param != \'gossip\' && param != \'news\'">\n        <ion-select interface="popover" name="param" (ionChange)="selectChange()" class="full-width-select" [(ngModel)]="type">\n            <ion-option value="gossip">Gossip</ion-option>\n            <ion-option value="entity">Entity</ion-option>\n            <ion-option value="categories">Category</ion-option>\n        </ion-select>\n    </div>\n    <ion-list *ngIf="type == \'entity\'">\n        <ion-item (click)="entitySelected(result)" *ngFor="let result of results">\n            <ion-avatar item-left>\n                <img [src]="result.img">\n            </ion-avatar>\n            <h2>{{result.title}}</h2>\n            <p>{{result.category[0].name}}</p>\n        </ion-item>\n    </ion-list>\n    <ion-list *ngIf="type == \'gossip\'">\n        <ion-card class="home-listing" (click)="gossipSelected(gossip.id)" *ngFor="let gossip of results">\n            <ion-item class="border-top">\n                <ion-avatar item-left>\n                    <img [src]="gossip.gossip_about.img">\n                </ion-avatar>\n                <h2>{{gossip.gossip_about.entity}}</h2>\n                <p>{{gossip.category[0].name}}</p>\n                <div class="category-icon">\n                    <img src="assets/img/hated.png" alt="neg" *ngIf="gossip.feedback_type == 1" class="bookmark-btn">\n                    <img src="assets/img/loved.png" alt="pos" *ngIf="gossip.feedback_type == 0" class="bookmark-btn">\n                </div>\n            </ion-item>\n            <ion-card-content>\n                <p class="oneLiner">\n                    {{gossip.content}}\n                </p>\n                <p text-right class="gossip-id">Gossip #{{gossip.id}}</p>\n            </ion-card-content>\n        </ion-card>\n\n    </ion-list>\n    <ion-list *ngIf="type == \'categories\'">\n        <div class="category">\n            <ion-row>\n                <ion-col col-6 col-md-4 *ngFor="let category of results">\n                    <ion-card class="m0" (click)="categorySelected(category)">\n                        <div class="category-content" [style.background-image]="getBackground(category.attachment)">\n                            <div class="card-title">{{category.name}}</div>\n                        </div>\n                        <div class="entity-count border-right">\n                            {{category.count}} {{category.count > 1 ? \'Entities\' : \'Entity\'}}\n                        </div>\n                    </ion-card>\n                </ion-col>\n            </ion-row>\n        </div>\n    </ion-list>\n    <div *ngIf="type == \'news\'" text-center>\n        <news [newsList]="geoNews" [newsText]="newsText"></news>\n        <button ion-button icon-left outline (click)="createNewEntity(newsText)" *ngIf="!geoNews?.length && newsText" color="primary" class="mt20 add-button ">\n            <ion-icon name="add"></ion-icon>\n            Create entity for &nbsp; <span class="bold capitalize italic">{{newsText}} </span> \n        </button>\n    </div>\n    <div *ngIf="showNotFound" class="listing-done" text-center padding>No result found.</div>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/search/search.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_9__angular_platform_browser__["c" /* DomSanitizer */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */], __WEBPACK_IMPORTED_MODULE_3__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */], __WEBPACK_IMPORTED_MODULE_4__providers_api_provider__["a" /* MongerApi */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */]])
+], SearchPage);
+
+//# sourceMappingURL=search.js.map
+
+/***/ }),
+
+/***/ 82:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return UserProfilePage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MoreOptionProfile; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth_auth__ = __webpack_require__(139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__about_about__ = __webpack_require__(277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__terms_terms__ = __webpack_require__(278);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_api_provider__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_config__ = __webpack_require__(29);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+var UserProfilePage = UserProfilePage_1 = (function () {
+    function UserProfilePage(popoverCtrl, globalProvider, navCtrl, navParams, app, viewCtrl, modal, api, shared) {
+        this.popoverCtrl = popoverCtrl;
+        this.globalProvider = globalProvider;
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.app = app;
+        this.viewCtrl = viewCtrl;
+        this.modal = modal;
+        this.api = api;
+        this.shared = shared;
+        this.userDetail = {};
+        this.showBack = false;
+        this.segment = 'myGossips';
+        this._checkCached = false;
+        this._anyAction = false;
+        this.submitted = false;
+        if (this.navParams.get('userId') != this.globalProvider.userId) {
+            this.id = this.navParams.get('userId');
+        }
+        if (this.navParams.get('userId')) {
+            this.showBack = true;
+        }
+    }
+    UserProfilePage.prototype.ionViewDidEnter = function () {
+        if (this._checkCached) {
+            this.ionViewDidLoad();
+        }
+        else {
+            this._checkCached = true;
+        }
+    };
+    UserProfilePage.prototype.updateUser = function (form) {
+        // console.log(form.valid());
+        // if (form.valid()) {
+        //   this.api.updateProfile(form.first_name, form.last_name, form.mobile).subscribe(data => {
+        //     console.log(data);
+        //   }, err => {
+        //     console.log(err);
+        //   })
+        // }
+    };
+    UserProfilePage.prototype.ionViewDidLoad = function () {
+        this.getMyGossips(true);
+        this.getMyFollowers();
+        this.getMyFollowees();
+        if (this.id) {
+            this.getUserDetail();
+        }
+        else {
+            this.userDetail = this.globalProvider.user;
+            this.getMyEntity();
+        }
+    };
+    UserProfilePage.prototype.displayImage = function (url, title) {
+        this.shared.imageViewer.show(url, title);
+    };
+    UserProfilePage.prototype.dismiss = function () {
+        this.viewCtrl.dismiss(this._anyAction);
+    };
+    UserProfilePage.prototype.getMyEntity = function (loader) {
+        var _this = this;
+        this.api.getMyEntity(this.globalProvider.userId).subscribe(function (data) {
+            _this.myEntity = data;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    UserProfilePage.prototype.userProfile = function (id) {
+        var _this = this;
+        var modal = this.modal.create(UserProfilePage_1, { userId: id, });
+        modal.onDidDismiss(function (data) {
+            console.log(data);
+            if (data) {
+                _this.ionViewDidLoad();
+            }
+        });
+        modal.present();
+    };
+    UserProfilePage.prototype.getMyGossips = function (loader) {
+        var _this = this;
+        if (loader && !this.myGossips) {
+            this.shared.Loader.show();
+        }
+        this.api.getMyGossips(this.id).subscribe(function (data) {
+            _this.myGossips = data;
+            if (loader) {
+                _this.shared.Loader.closeIfActive();
+            }
+        }, function (err) {
+            if (loader) {
+                _this.shared.Loader.closeIfActive();
+            }
+            console.error(err);
+        });
+    };
+    UserProfilePage.prototype.getMyFollowers = function () {
+        var _this = this;
+        this.api.getMyFollowers(this.id).subscribe(function (data) {
+            _this.myFollowers = data;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    UserProfilePage.prototype.getUserDetail = function () {
+        var _this = this;
+        this.api.getUserDetail(this.id).subscribe(function (data) {
+            _this.userDetail = data;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    UserProfilePage.prototype.getMyFollowees = function () {
+        var _this = this;
+        this.api.getMyFollowees(this.id).subscribe(function (data) {
+            _this.myFollowees = data;
+        }, function (err) {
+            console.error(err);
+        });
+    };
+    UserProfilePage.prototype.follow = function (id, type) {
+        var _this = this;
+        this._anyAction = true;
+        if (type == 'userDetail' && id) {
+            this.userDetail.isFollowing = !this.userDetail.isFollowing;
+        }
+        this.api.followUser(id).subscribe(function (data) {
+            if (_this.segment == 'following') {
+                _this.getMyFollowees();
+            }
+            else if (_this.segment == 'followers') {
+                _this.getMyFollowers();
+            }
+        }, function (err) {
+            console.log(err);
+        });
+    };
+    UserProfilePage.prototype.presentPopover = function (ev) {
+        var popover = this.popoverCtrl.create(MoreOptionProfile);
+        popover.present({
+            ev: ev
+        });
+    };
+    return UserProfilePage;
+}());
+UserProfilePage = UserProfilePage_1 = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-user-profile',template:/*ion-inline-start:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/user-profile/user-profile.html"*/'<ion-header>\n    <ion-toolbar no-border-bottom color="primary">\n        <button ion-button icon-only *ngIf="showBack" menuToggle="false" color="white" (click)="dismiss()">\n      <ion-icon name="arrow-back"></ion-icon>\n    </button>\n        <!--<ion-buttons end *ngIf="!id">\n            <button ion-button item-right outline small class="mark-complete logout-btn" (click)="logOut()"> \n        <span ion-text  class="clear-selection" >Logout</span> \n            </button>\n        </ion-buttons>-->\n         <ion-buttons end *ngIf="!id">\n      <button ion-button icon-only (click)="presentPopover($event)">\n        <ion-icon name="more"></ion-icon>\n      </button>\n    </ion-buttons>\n    </ion-toolbar>\n</ion-header>\n<ion-content>\n    <ion-toolbar no-border-top color="primary">\n        <div width-profile center text-center class="user-block" color="primary">\n            <img [src]="userDetail.img || \'assets/img/user.png\'" (click)="displayImage(userDetail.img || \'assets/img/user.png\', userDetail.display_name)"\n                class="profile-pic" item-left />\n        </div>\n        <div no-border center text-center class="pl0 no-border-custom" color="primary">\n            <h2 class="user-name capitalize">{{userDetail.display_name}}</h2>\n        </div>\n        <div no-border center text-center class="pl0 mb8" color="primary">\n            <button ion-button outline small (click)="follow(userDetail.ID, \'userDetail\')" *ngIf="id" color="whitec">{{userDetail.isFollowing ? \'Unfollow\' : \'Follow\'}}</button>\n        </div>\n\n    </ion-toolbar>\n    <ion-scroll scrollX="true" style="height: 42px">\n\n        <ion-segment [(ngModel)]="segment" color="whitec">\n            <ion-segment-button value="myGossips">\n                Gossips ({{myGossips?.length}})\n            </ion-segment-button>\n            <ion-segment-button value="myEntity" *ngIf="!id">\n                Entities ({{myEntity?.length}})\n            </ion-segment-button>\n            <ion-segment-button value="followers">\n                Followers ({{myFollowers?.length}})\n            </ion-segment-button>\n            <ion-segment-button value="following">\n                Following ({{myFollowees?.length}})\n            </ion-segment-button>\n        </ion-segment>\n    </ion-scroll>\n    <gossip-card *ngIf="segment == \'myGossips\'" (dataUpdated)="getMyGossips()" [gossips]="myGossips"></gossip-card>\n    <entity-card *ngIf="segment == \'myEntity\' && !id" (dataUpdated)="getMyEntity()" [entities]="myEntity"></entity-card>\n\n    <ion-list class="users-wrapper mt10" *ngIf="segment == \'following\'">\n        <ion-card *ngFor="let myFollowee of myFollowees">\n            <ion-card-content class="p0">\n                <ion-row>\n                    <ion-col class="p0 sq-col" col-4 (click)="userProfile(myFollowee.ID)"> <img [src]="myFollowee.img" alt="" class="profile-pic"> </ion-col>\n                    <ion-col col-8 padding-left class="pl5">\n                        <div class="entity-title" (click)="userProfile(myFollowee.ID)">{{myFollowee.display_name}}</div>\n                        <div class="entity-status" *ngIf="myFollowee.ID != globalProvider.userId">\n                            <button ion-button small outline (click)="follow(myFollowee.ID)">{{myFollowee.isFollowing ? \'Unfollow\' : \'Follow\'}}</button> \n                        </div>\n                    </ion-col>\n                </ion-row>\n            </ion-card-content>\n        </ion-card>\n        <div center text-center class="no-data" *ngIf="!myFollowees?.length">No data found.</div>\n    </ion-list>\n    <ion-list class="users-wrapper mt10" *ngIf="segment == \'followers\'">\n        <ion-card *ngFor="let myFollower of myFollowers">\n            <ion-card-content class="p0">\n                <ion-row>\n                    <ion-col class="p0 sq-col" col-4 (click)="userProfile(myFollower.ID)"> <img [src]="myFollower.img" alt="profile" class="profile-pic"> </ion-col>\n                    <ion-col col-8 padding-left class="pl5">\n                        <div class="entity-title" (click)="userProfile(myFollower.ID)">{{myFollower.display_name}}</div>\n                        <div class="entity-status" *ngIf="myFollower.ID != globalProvider.userId">\n                            <button ion-button small outline (click)="follow(myFollower.ID)">{{myFollower.isFollowing ? \'Unfollow\' : \'Follow\'}}</button>\n                        </div>\n                    </ion-col>\n                </ion-row>\n            </ion-card-content>\n        </ion-card>\n        <div center text-center class="no-data" *ngIf="!myFollowers?.length">No data found.</div>\n\n    </ion-list>\n</ion-content>'/*ion-inline-end:"/Users/swapnilpatwa/Documents/ionic2/tgm/src/pages/user-profile/user-profile.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_6__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["o" /* PopoverController */],
+        __WEBPACK_IMPORTED_MODULE_7__providers_config__["a" /* GlobalProvider */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* App */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
+        __WEBPACK_IMPORTED_MODULE_6__providers_api_provider__["a" /* MongerApi */],
+        __WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */]])
+], UserProfilePage);
+
+// popoverMoreoption
+var MoreOptionProfile = (function () {
+    function MoreOptionProfile(globalProvider, api, shared, app, modal, viewCtrl) {
+        this.globalProvider = globalProvider;
+        this.api = api;
+        this.shared = shared;
+        this.app = app;
+        this.modal = modal;
+        this.viewCtrl = viewCtrl;
+        this.isMuted = globalProvider.isMuted;
+    }
+    MoreOptionProfile.prototype.toggleMute = function () {
+        this.shared.LS.set('isMuted', !this.isMuted);
+        this.globalProvider.toggleMute(!this.isMuted);
+        this.isMuted = !this.isMuted;
+        return true;
+    };
+    MoreOptionProfile.prototype.logOut = function () {
+        var _this = this;
+        this.viewCtrl.dismiss();
+        this.shared.Alert.confirm('Do you want to log out?').then(function (res) {
+            _this.api.logout().subscribe(function (response) {
+                _this.shared.LS.remove('user');
+                _this.globalProvider.dropAuthData();
+                _this.app.getRootNav().setRoot(__WEBPACK_IMPORTED_MODULE_2__auth_auth__["a" /* AuthPage */]);
+            }, function (err) {
+                _this.shared.Toast.show('Oops! something went wrong. Please try again');
+            });
+        }, function (err) {
+            console.log('user cancelled');
+        });
+    };
+    MoreOptionProfile.prototype.about = function () {
+        this.viewCtrl.dismiss();
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_3__about_about__["a" /* AboutPage */]);
+        modal.present();
+    };
+    MoreOptionProfile.prototype.terms = function () {
+        this.viewCtrl.dismiss();
+        var modal = this.modal.create(__WEBPACK_IMPORTED_MODULE_4__terms_terms__["a" /* TermsPage */]);
+        modal.present();
+    };
+    return MoreOptionProfile;
+}());
+MoreOptionProfile = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        template: "\n  <ion-list no-border>\n    <ion-list-header>\n      Action\n    </ion-list-header> \n    <ion-item (click)=\"toggleMute()\"> \n      <ion-label>\n         {{isMuted ? 'Unmute' : 'Mute'}} Sound\n      </ion-label>\n      <ion-icon [name]='isMuted ? \"md-notifications-off\" : \"md-notifications\"' item-start></ion-icon>\n    </ion-item>\n    <ion-item (click)=\"about()\">\n      <ion-icon name='md-information-circle' item-start></ion-icon>\n      About Gossip Monger \n    </ion-item>\n    <ion-item (click)=\"terms()\">\n      <ion-icon name='md-paper' item-start></ion-icon>\n        Terms & Conditions  \n    </ion-item> \n    <ion-item (click)=\"logOut()\">\n      <ion-icon name='log-out' item-start></ion-icon>\n        Logout \n    </ion-item>\n  </ion-list>\n",
+        providers: [__WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */], __WEBPACK_IMPORTED_MODULE_6__providers_api_provider__["a" /* MongerApi */]]
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_7__providers_config__["a" /* GlobalProvider */],
+        __WEBPACK_IMPORTED_MODULE_6__providers_api_provider__["a" /* MongerApi */],
+        __WEBPACK_IMPORTED_MODULE_5__providers_shared_provider__["a" /* SharedProvider */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* App */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
+        __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["q" /* ViewController */]])
+], MoreOptionProfile);
+
+var UserProfilePage_1;
+//# sourceMappingURL=user-profile.js.map
+
+/***/ })
+
+},[281]);
+//# sourceMappingURL=main.js.map
